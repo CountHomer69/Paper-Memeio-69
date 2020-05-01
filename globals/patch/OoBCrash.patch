@@ -1,0 +1,23 @@
+#new:Function $CrashGameIfYAxisLT1000
+PUSH t0, t1
+LIO t0, C47A0000
+LAW t1, 8010EFF4
+MTC1 t0, f0
+MTC1 t1, f1
+C.LE.S f0, f1
+NOP
+BC1F .crashgame
+NOP
+POP t0, t1
+JR RA
+NOP
+.crashgame
+SW r0, 0001 (sp)
+
+@Hook 82760
+JAL $CrashGameIfYAxisLT1000
+NOP
+LIO ra, 800E974C
+LW    S7, 0084 (SP)
+J     800E92B8
+LW    S6, 0080 (SP)

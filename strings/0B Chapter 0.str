@@ -1,0 +1,2579 @@
+#string:0B:000
+[STYLE:RIGHT][...]
+{SpeechSound:02}{StartFX:Faded:D9}Oh, thank heavens!
+[PAUSE:0A]He's been gravely injured, but I
+think he'll recover.[WAIT][END][...]
+
+#string:0B:001
+[STYLE:RIGHT][...]
+{SpeechSound:02}{StartFX:Faded:D9}But Bup Boi has the Star Rod tool!
+[WAIT][NEXT][...]
+It's hopeless! All is lost![WAIT][END][...]
+
+#string:0B:002
+[STYLE:RIGHT][...]
+{SpeechSound:02}{StartFX:Faded:D9}Calm the fuck down!
+[PAUSE:0A]I don't give a shit,
+you whippersnappers!
+[WAIT][NEXT][...]
+Our fates are in this hobo's hands.
+So we GOTTA FUCKING REVIVE HIM.
+[WAIT][NEXT][...] 
+Gather round, everyone.
+[PAUSE:0F]WAKE HIM THE FUCK UP![WAIT][END][...]
+
+#string:0B:003
+[STYLE:RIGHT][...]
+{SpeechSound:02}{StartFX:Faded:D9}Phew...that's it. That's all we
+can do right now.
+[WAIT][NEXT][...]
+{Var:00}...
+[PAUSE:0A]Please get up... Please...
+[WAIT][NEXT][...]
+[STYLE:LEFT]{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:10:10}I FUCKING MEAN IT!
+{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT]
+[WAIT][NEXT][...]
+[STYLE:RIGHT] GET OFF YOUR LAZY ASS! WE'VE
+GOT A WORLD TO SAVE!
+[WAIT][END][...]
+
+#string:0B:004
+[STYLE:RIGHT][...]
+It really sounded like Godzilla
+busted a nut around here...
+[WAIT][NEXT][...]
+Oh[PAUSE:03].[PAUSE:03].[PAUSE:03].[PAUSE:0A][...]
+Could that be HIM?[WAIT][END][...]
+
+#string:0B:005
+[STYLE:RIGHT]This red shirt, [PAUSE:05]this hat, [PAUSE:05]and
+this mustache...[PAUSE:05]and that flabber...
+[WAIT][NEXT][...]
+[PAUSE:0A]HIS DICK![PAUSE:0A] HE'S REAL!
+[WAIT][NEXT][...]
+Ohmygodohmygodohmygodohmygod[WAIT][END][...]
+
+#string:0B:006
+[STYLE:RIGHT]{StartFX:Shrinking}Hey! 
+[PAUSE:04]WAKE UP, {Var:00}![HEART]
+[PAUSE:08]C'mon!! I NEED YOU![HEART]
+{EndFX:Shrinking}[WAIT][NEXT][...]
+Oh no! He won't wake up!!!
+Shit! Looks like I won't be
+doing the Mario.[WAIT][END][...]
+
+#string:0B:007
+[STYLE:RIGHT][...]
+Oh, oh, what am I gonna do!?[WAIT][END][...]
+
+#string:0B:008
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}Dad!!
+[PAUSE:05]Goom-pa!!
+[PAUSE:05]Goom-bas-tard!!![WAIT][END][...]
+
+#string:0B:009
+[STYLE:RIGHT][...]
+{SpeechSound:02}{StartFX:Faded:D9}[PAUSE:0A][...]
+{Var:00}...
+[WAIT][NEXT][...]
+[STYLE:LEFT]WAKE THE FUCK UP!
+[WAIT][NEXT][...]
+I'm Clover, a Modders' Spirit...
+[PAUSE:0F]I have something very important
+to tell you...
+[WAIT][NEXT][...]
+It concerns the people...and
+all of the Mushroom Kingdom...
+[WAIT][NEXT][...]
+[PAUSE:0A]But sadly,
+[PAUSE:05]I haven't the strength to talk
+to you here...
+[WAIT][NEXT][...]
+{Var:00}...
+[PAUSE:0A][...]
+I need to have you come to
+{Color:20}Shitting Star Summit{Color:0A}.
+[PAUSE:0A][WAIT][NEXT][...]
+[PAUSE:05]Please... {Var:00}...
+[PAUSE:0A]We Star Spirits will be waiting
+for you at the summit...
+[WAIT][NEXT][...]
+[STYLE:LEFT]{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:13:13}AND YOU BETTER COME!{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END][...]
+
+#string:0B:00A
+[STYLE:RIGHT][...]
+Oh...[PAUSE:05]{Var:00}!
+[WAIT][NEXT][...]
+I'm so happy
+[PAUSE:0A]to see you awake![WAIT][END][...]
+
+#string:0B:00B
+[STYLE:RIGHT][...]
+Don't ask what I've
+been doing to you. You'll
+get mad at me.[WAIT][END][...]
+
+#string:0B:00C
+[STYLE:RIGHT][...]
+This place?
+[WAIT][NEXT][...]
+This is {Color:20}Goomba Village{Color:0A}.
+[PAUSE:0A]It's a tiny village that's just
+west of {Color:20}Bup Town{Color:0A},
+which is also called "Toad Town".
+[WAIT][NEXT][...]
+The only residents are me and a
+single family of Goombas.[WAIT][END][...]
+
+#string:0B:00D
+[STYLE:RIGHT][...]
+The Goombas in the family are
+just the nicest folks you'll ever
+meet.
+[WAIT][NEXT][...]
+They're the ones who found you
+unconscious in the forest and
+carried you here to get better.
+[WAIT][NEXT][...]
+And that little girl {Color:20}Goombaria{Color:0A},
+She really wanted to Super Smash
+you, bro.[WAIT][END][...]
+
+#string:0B:00E
+[STYLE:RIGHT][...]
+Huh...?
+[PAUSE:05]Clover? Star Rod's Creator?
+[WAIT][NEXT][PAUSE:0A][...]
+You're saying he yelled at you
+and told you to go to Shitting
+Star Summit?[WAIT][END][...]
+
+#string:0B:00F
+[STYLE:RIGHT][...]
+No,
+[PAUSE:04]I didn't see any of that shit.
+[WAIT][NEXT][...]
+[PAUSE:0A]And I sure didn't see anyone
+come in or out of this house.
+[WAIT][NEXT][...]
+{Var:00}, lay off the magic
+mushrooms, okay?[WAIT][END][...]
+
+#string:0B:010
+[STYLE:RIGHT][...]
+Although maybe it's
+not the shrooms at all?
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+It could have been some sort of
+message from a Modders' Spirit.
+They hang around the PM64
+Modding Discord Server
+[WAIT][NEXT][...]
+Shitting Star Summit is the 
+nearest place to the server,
+so that would make sense...[WAIT][END][...]
+
+#string:0B:011
+[STYLE:RIGHT][...]
+Who knows? In any case, I'm glad
+to see you've recovered.
+[WAIT][NEXT][...]
+I know the Goombas would be
+happy if you paid them a visit.
+[WAIT][NEXT][...]
+[STYLE:LEFT]{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:12:12}AND DON'T JUMP ON THEM!{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END][...]
+
+#string:0B:012
+[STYLE:RIGHT][...]
+Please feel free to come here
+anytime you get tired.
+[WAIT][NEXT][...]
+A good nap will work wonders
+when you're feeling weak.
+[WAIT][NEXT][...]
+And I promise I won't draw
+penises on your forehead anymore.[WAIT][END][...]
+
+#string:0B:013
+[STYLE:RIGHT][...]
+The Toad House's slogan is...
+[PAUSE:0A][...]
+"Refresh your Body and Mind!"
+[WAIT][NEXT][...]
+Anytime you feel tired, a good
+rest will fix you right up.
+[WAIT][NEXT][...]
+Would you like to take a nap?
+{Func_04}[END][...]
+
+#string:0B:014
+[STYLE:RIGHT][...]
+Welcome to Bup and Breakfast!
+Our slogan is, "Refresh your
+Dick and Balls!"
+[WAIT][NEXT][...]
+Would you like to take a nap?
+{Func_04}[END][...]
+
+#string:0B:015
+[STYLE:RIGHT][...]
+...Really?
+[PAUSE:0A][...]
+You look pretty healthy to me.
+[PAUSE:0A][...]
+Are you sure you want to take a
+nap?
+{Func_04}[END][...]
+
+#string:0B:016
+[NEXT][...]
+[WAIT][END][...]
+
+#string:0B:017
+[NEXT][...]
+Make yourself comfortable and
+enjoy your stay.
+[WAIT][NEXT][...]
+[STYLE:LEFT][...]
+{StartFX:Shrinking}{StartFX:Wavy}Hehehehehehehe.....{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END][...]
+
+#string:0B:018
+[STYLE:RIGHT][...]
+Did you sleep well?
+[WAIT][NEXT][...]
+Take care now!
+[WAIT][NEXT][...]
+[STYLE:LEFT][...]
+{StartFX:Shrinking}{StartFX:Wavy}Hehehehehehehe.....{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END][...]
+
+#string:0B:019
+[STYLE:RIGHT][...]
+HOLY SHIT! You scared me!
+[PAUSE:0A]Hm, yes, {Var:00}, isn't it?
+[WAIT][NEXT][...]
+So you've awakened at last!
+Good! Knew you'd pull through!
+[WAIT][NEXT][...]
+Call me Goompa.
+[PAUSE:0F]I'm the Goomba grandfather,
+so...I'm Goompa.
+GEDDOFF MY PROPERTY!
+[WAIT][NEXT][...]
+Just kidding. Fuck around all
+you want, {Var:00}.[WAIT][END][...]
+
+#string:0B:01A
+[STYLE:RIGHT][...]
+Did you feel that earthquake the
+other day, young feller?
+WAS IT YOU!?!?!?
+I doubt it...
+[WAIT][NEXT][...]
+But little by little, Goompapa
+and I are fixing it all up.
+[WAIT][NEXT][...]
+People think this EekitsBowser
+guy that's being shouted out
+all the time lifted the castle.
+[PAUSE:0A][...]
+Boy, I sure hope not.[WAIT][END][...]
+
+#string:0B:01B
+[STYLE:RIGHT][...]
+Did you feel that earthquake the
+other day, young feller?
+WAS IT YOU!?!?!?
+I doubt it...
+[WAIT][NEXT][...]
+But little by little, Goompapa
+and I are fixing it all up.
+[WAIT][NEXT][...]
+People think this EekitsBowser
+guy that's being shouted out
+all the time lifted the castle.
+[PAUSE:0A][...]
+Boy, I sure hope not.[WAIT][END][...]
+
+
+#string:0B:01C
+[STYLE:RIGHT][...]
+Don't worry, I didn't die.
+[PAUSE:05][...]
+Thanks to young {Var:00} here, he
+stopped my back from breaking
+into pieces out there.[WAIT][END][...]
+
+#string:0B:01D
+[STYLE:RIGHT][...]
+Oh, is that thing locked?
+[PAUSE:0A][...]
+Let me open it up for you.[WAIT][END][...]
+
+#string:0B:01E
+[STYLE:RIGHT][...]
+Goompa!
+[PAUSE:0A][...]
+YOU'RE ALIVE!
+[WAIT][NEXT][...]
+I looked outside and...wow!
+[PAUSE:0A][...]
+Both you and the veranda
+FUCKING DIED.[WAIT][END][...]
+
+#string:0B:01F
+[STYLE:RIGHT][...]
+Goompa,
+[PAUSE:0A][...]
+I was very, very worried about
+you! Really worried![WAIT][END][...]
+
+#string:0B:020
+[STYLE:RIGHT][...]
+Sorry guys, I apologize. 
+[PAUSE:0A][...]
+I didn't mean to make you shit
+your pants. I'll take it easy, now.
+[WAIT][NEXT][...]
+I'm back safe and sound.[WAIT][END][...]
+
+#string:0B:021
+[STYLE:RIGHT][...]
+Now!
+[WAIT][NEXT][...]
+Before I forget, Count Homer
+told me to give this to {Var:00}.
+[PAUSE:0A][...]
+Wait here a minute.[WAIT][END][...]
+
+#string:0B:022
+[STYLE:RIGHT][...]
+Huh?
+[PAUSE:0A][...]
+Hey... That sex doll you've got...
+That's the one Goombaria lost!
+[WAIT][NEXT][...]
+She was looking all over for it.
+[PAUSE:0A][...]
+Would you give it back to her?
+{Func_04}[END][...]
+
+#string:0B:023
+[NEXT][...]
+Dude. WHAT THE FUCK!?
+[WAIT][NEXT][...]
+I DON'T FUCKING LOVE YOU
+ANYMORE! ASSHOLE![WAIT][END][...]
+
+#string:0B:024
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}It's my dolly! Dolly, dolly!
+[PAUSE:14][...]
+You're back!!
+{EndFX:Shrinking}Thank you so much![HEART]
+[WAIT][NEXT][...]
+I LOVE YOU!!![HEART][HEART][HEART]
+[PAUSE:0A][...]
+My sweet dolly! Don't you ever
+get lost again![WAIT][END][...]
+
+#string:0B:025
+[STYLE:RIGHT][...]
+Here's a present from me!
+[PAUSE:0A][...]
+Look at the pretty glitter![WAIT][END][...]
+
+#string:0B:026
+[STYLE:RIGHT][...]
+And 
+[PAUSE:0A][...]
+take this, 
+[PAUSE:0A][...]
+too!
+[WAIT][NEXT][...]
+Don't tell mom.[WAIT][END][...]
+
+#string:0B:027
+[STYLE:RIGHT][...]
+You always seem to kick ass
+and take names...
+But are you good at Smash? 
+[WAIT][NEXT][...]
+I study ass kicking by
+watching hardcore cock
+and ball torture.
+[WAIT][NEXT][...]
+And, I also beat up Goombaria
+every day so I can be strong
+like you!
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+It's starting to show, too! I'm
+getting a big dick![WAIT][END][...]
+
+#string:0B:028
+[STYLE:RIGHT][...]
+Yeah, Goombastard hitting me
+hard makes me hard. [HEART]
+[WAIT][NEXT][...]
+Wait, I don't have a dick.
+Forget what I said![WAIT][END][...]
+
+#string:0B:029
+[STYLE:RIGHT][...]
+Shut up, Goombaria! {Var:00}'s
+going to call the police!
+[PAUSE:0A][...]
+THAT'S the weird shit we
+do in our forest.[WAIT][END][...]
+
+#string:0B:02A
+[STYLE:RIGHT][...]
+HEY JACKASS!!!
+I HAVE THE THING![WAIT][END][...]
+
+#string:0B:02B
+[STYLE:RIGHT][...]
+Calm down, old man.
+[PAUSE:0A][...]
+Goombaria was raping {Var:00}...[WAIT][END][...]
+
+#string:0B:02C
+[STYLE:RIGHT][...]
+Oh. "Raping," huh? Sorry.
+[PAUSE:0A][...]
+{Var:00}, it's a Goomba thing.
+It's totally legal here.[WAIT][END][...]
+
+#string:0B:02D
+[STYLE:RIGHT][...]
+This is called a {Color:20}Badge{Color:0A}.
+[WAIT][NEXT][...]
+I'm pretty sure you should
+understand what they do.
+[WAIT][NEXT][...]
+Count Homer says some badges
+are in different places and
+can act differently.
+[WAIT][NEXT][...]
+But listen here, and listen well.
+You'll only be able to do it if
+you're wearing the Badge.
+[WAIT][NEXT][...]
+You'd better try it first.
+[PAUSE:0A][...]
+Putting Badges on and taking
+them off is easy. You're
+retarded if you don't know how!
+[WAIT][NEXT][...]
+Would you like a mindless
+tutorial? This one's called,
+"Baby's First Badge".
+{Func_04}[END][...]
+
+#string:0B:02E
+[NEXT][...]
+You better not press the
+"YES" option.
+[PAUSE:0A][...]
+It'll cost you!
+[PAUSE:0A][...]
+Select "NO!"
+{Func_04}[END][...]
+
+#string:0B:02F
+[NEXT][...]
+Good job, you avoided
+a useless tutorial![WAIT][END][...]
+
+#string:0B:030
+[PAUSE:0A][STYLE:LEFT][...]
+{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:15:15}YOU'RE FUCKED!
+{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}
+[WAIT][NEXT][...]
+[STYLE:RIGHT][...]
+Blah blah blah, press {PushColor}{Color:12}[START]{PopColor}.
+[PAUSE:0A][...]
+The menu will open.
+{Func_04}[END][...]
+
+#string:0B:031
+[STYLE:RIGHT][...]
+Now remember, you need
+{Color:20}FP (Fuck Points) {Color:0A}to use this.
+(Name is not actually Fuck Points)
+[WAIT][NEXT][...]
+{StartAnim}{Down:08}{Image1:00}{EndAnim}{SetPrintPos:00:28}{Down:06}Do you remember that we
+{SetPrintPos:00:28}saw a block like this on the
+{SetPrintPos:00:28}way back to the village?
+{Up:06}
+[WAIT][NEXT][...]
+Well, these blocks will restore
+not only HP but also FP.
+[WAIT][NEXT][...]
+They're lifesavers, {Var:00}! Use
+them whenever you feel like
+a limpy dick.[WAIT][END][...]
+
+#string:0B:032
+[STYLE:RIGHT][...]
+By the by, {Var:00},
+[PAUSE:0F][...]
+I heard from Gooma...
+[WAIT][NEXT][...]
+You're taking it upon yourself to
+try to rescue that bitch
+from Bup Boi's spores and to
+cure the meme plague.[WAIT][END][...]
+
+#string:0B:033
+[STYLE:RIGHT][...]
+Oh yeah! {Var:00} can kick ass
+with one hand tied behind his
+back![WAIT][END][...]
+
+#string:0B:034
+[STYLE:RIGHT][...]
+Fuck off, Goombastard. {Var:00},
+please take this Hammer.
+[WAIT][NEXT][...]
+It should serve you well. If I
+were just a bit younger, I'd
+accompany you on your trip. I'd
+have done some damage!
+[WAIT][NEXT][...]
+The years have started to weigh
+on me, though. I tell you, this
+lower back pain...
+[WAIT][NEXT][...]
+AH FUCK!
+THERE IT IS AGAIN![WAIT][END][...]
+
+#string:0B:035
+[STYLE:RIGHT][...]
+Adventure...you're so lucky!
+[WAIT][NEXT][...]
+Just look at all the memes
+and jokes! I really want
+to join you guys![WAIT][END][...]
+
+#string:0B:036
+[STYLE:RIGHT][...]
+Me too!![WAIT][END][...]
+
+#string:0B:037
+[STYLE:RIGHT][...]
+Oh! 
+[PAUSE:05][...]
+Here's an idea!
+[PAUSE:0F][...]
+Goombastard...
+[WAIT][NEXT][...]
+Perhaps the timing is perfect.
+You are no longer a child, and
+gay times are upon us.
+[WAIT][NEXT][...]
+I'm sure {Var:00} will agree...
+[PAUSE:0F][...]
+You should join him on
+his wacky meme adventure.[WAIT][END][...]
+
+#string:0B:038
+[STYLE:RIGHT][...]
+What!? Really!? Can I go,
+Goompa!? CAN I!?!?!?!? 
+[WAIT][NEXT][...]
+{StartFX:Shrinking}YEAH!!!!! HELL YEAH!!!
+{EndFX:Shrinking}[WAIT][NEXT][...]
+{Var:00}! You won't regret this![WAIT][END][...]
+
+#string:0B:039
+[STYLE:RIGHT][...]
+Way to go, Goombastard![WAIT][END][...]
+
+#string:0B:03A
+[STYLE:RIGHT][...]
+{Var:00},
+[PAUSE:0F][...]
+help cure our son from
+the meme plague.
+[WAIT][NEXT][...]
+...Well, I think it's about time for
+me to sit around and
+wait for death.
+[WAIT][NEXT][...]
+Good-byes have a way of making
+this old Goomba want to die.[WAIT][END][...]
+
+#string:0B:03B
+[STYLE:RIGHT][...]
+This is so cool! {Var:00}!
+[PAUSE:0A][...]
+{StartFX:Shrinking}{DelayOff}Let's go!!
+{DelayOn}[WAIT][END][...]
+
+#string:0B:03C
+[STYLE:RIGHT][...]
+This is so cool! {Var:00}!
+[PAUSE:0A][...]
+{StartFX:Shrinking}{DelayOff}Let's go!!
+{DelayOn}{EndFX:Shrinking}[WAIT][NEXT][...]
+But wait...
+[PAUSE:0A][...]
+Your HP looks a little low.
+[WAIT][NEXT][...]
+Maybe you ought to take a rest
+at Bup n' Breakfast.[WAIT][END][...]
+
+#string:0B:03D
+[STYLE:RIGHT][...]
+Ah! Goombastard,
+[PAUSE:0A][...]
+I expect that you'll become a
+fine, upstanding young Goomba by
+the time you return.[WAIT][END][...]
+
+#string:0B:03E
+[STYLE:RIGHT][...]
+{Var:00}, 
+[PAUSE:0A][...]
+you should know that
+danger lurks everywhere.
+It can even strike while you're
+fixing the veranda!
+[WAIT][NEXT][...]
+I know you get used to danger
+while you're adventuring, but
+don't ever scoff at it!
+[PAUSE:14][...]
+You should always be careful![WAIT][END][...]
+
+#string:0B:03F
+[STYLE:RIGHT][...]
+So, Goombastard, how goes
+the adventure thus far?
+[WAIT][NEXT][...]
+Are you keeping cool?
+[PAUSE:0A][...]
+Keep your wits about you and
+you'll beat Bowser hands down.[WAIT][END][...]
+
+#string:0B:040
+[STYLE:RIGHT][...]
+How have you been?
+[PAUSE:0F][...]
+You must have traveled all over
+the Mushroom Kingdom by now!
+[WAIT][NEXT][...]
+Is Goombastard pulling his weight?
+[WAIT][NEXT][...]
+The day you beat Bowser will be
+a fine time, yes indeedy![WAIT][END][...]
+
+#string:0B:041
+[STYLE:RIGHT][...]
+Goombastard, 
+[PAUSE:0A][...]
+how are you doing? I'm
+waiting for the day you come
+back a full-grown Goomba of the
+world![WAIT][END][...]
+
+#string:0B:042
+[STYLE:RIGHT][...]
+Even out here we hear stories of
+your remarkable deeds!
+[WAIT][NEXT][...]
+Keep up the good work![WAIT][END][...]
+
+#string:0B:043
+[STYLE:RIGHT][...]
+Goombastard,
+[PAUSE:0A][...]
+Your family misses you.
+[PAUSE:05][...]
+Come back to us soon![WAIT][END][...]
+
+#string:0B:044
+[STYLE:RIGHT][...]
+Goompa,
+[PAUSE:0A][...]
+I'll do my best![WAIT][END][...]
+
+#string:0B:045
+[STYLE:RIGHT][...]
+You're Goompa, correct?
+[WAIT][NEXT][...]
+The name's Parakarry. I deliver
+letters.
+[WAIT][NEXT][...]
+I believe I have one for you.
+[PAUSE:0A][...]
+Hang on a moment.[WAIT][END][...]
+
+#string:0B:046
+[STYLE:RIGHT][...]
+Oh...no! Confound it!
+[PAUSE:0A][...]
+I seem to have lost it!
+[PAUSE:0A][...]
+...I'm terribly sorry.[WAIT][END][...]
+
+#string:0B:047
+[STYLE:RIGHT][...]
+Another letter, duly delivered.
+A postman's job is never done.[WAIT][END][...]
+
+#string:0B:048
+[STYLE:RIGHT][...]
+Now what could this be...?
+[PAUSE:0A][...]
+Koopa Koot...?
+[PAUSE:05][...]
+Eh...I have a bad feeling about
+this, so I'll read it later.
+[WAIT][NEXT][...]
+It's probably the old Koot's usual
+backstabbing gossip.  
+[PAUSE:0A][...]
+He really needs to get out more.
+[WAIT][NEXT][...]
+What's the point of sending all
+of these gossipy letters? Huh?
+[WAIT][NEXT][...]
+I know you're pretty busy, so
+thanks for delivering this.
+[PAUSE:0A][...]
+Why don't you take this as a
+token of my thanks?[WAIT][END][...]
+
+#string:0B:049
+[STYLE:RIGHT][...]
+Hm, {Var:00}.
+[PAUSE:0A][...]
+It looks like something else is on
+your mind.[WAIT][END][...]
+
+#string:0B:04A
+[STYLE:RIGHT][...]
+What!?
+[PAUSE:0A][...]
+Koopa Koot said he wants "The
+Tape" back?
+[WAIT][NEXT][...]
+That old Koopa...
+[PAUSE:05][...]
+How does he remember things
+from so long ago?
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+OK...
+[PAUSE:05][...]
+Wait for just a minute. I'll bring
+it out for you.[WAIT][END][...]
+
+#string:0B:04B
+[STYLE:RIGHT][...]
+Here. 
+[PAUSE:05][...]
+This is it.
+[PAUSE:0A][...]
+When you see that old Koopa,
+give him my regards.[WAIT][END][...]
+
+#string:0B:04C
+[STYLE:RIGHT][...]
+What's that?
+[PAUSE:0A][...]
+You want to know what's on The
+Tape, do you?
+[WAIT][NEXT][...]
+Oh, no no... I'm sorry...
+[PAUSE:05][...]
+I'm afraid I can't tell you at
+the moment.
+[WAIT][NEXT][...]
+It was great, though![WAIT][END][...]
+
+#string:0B:04D
+[STYLE:RIGHT][...]
+Hey {Var:00}!
+[PAUSE:0A][...]
+I'm Goombastard.
+[PAUSE:05][...]
+I'm your biggest fan!
+[WAIT][NEXT][...]
+SIGN MY ASS CHEEKS!!!![WAIT][END][...]
+
+#string:0B:04E
+[STYLE:RIGHT][...]
+{Var:00}, I know all about your
+adventures around the world.
+You've been everywhere!
+[WAIT][NEXT][...]
+And you always get the best of
+the bad guys. Every time!
+Somehow...
+[WAIT][NEXT][...]
+AND YOU GET ALL THE BITCHES!
+Teach me your strategies!
+[PAUSE:05][...]
+I wanna be just like you![WAIT][END][...]
+
+#string:0B:04F
+[STYLE:RIGHT][...]
+{Var:00}, I know all about your
+adventures around the world.
+You've been everywhere!
+[WAIT][NEXT][...]
+And you always get the best of
+the bad guys. Every time!
+Somehow...
+[WAIT][NEXT][...]
+AND YOU GET ALL THE BITCHES!
+Teach me your strategies!
+[PAUSE:05][...]
+I wanna be just like you![WAIT][END][...]
+
+#string:0B:050
+[STYLE:RIGHT][...]
+Oh! You again!...
+[PAUSE:0A][...]
+My dad was looking for you.
+[PAUSE:0A][...]
+He said to tell you that he
+finished fixing the gate.
+[WAIT][NEXT][...]
+So I guess now you can travel
+east to Bup Town and Shitting 
+Star Summit, huh?
+[WAIT][END][...]
+
+#string:0B:051
+[STYLE:RIGHT][...]
+Hey...I know that ol' Koopa!
+[PAUSE:0A][...]
+That was Koopa Koot!
+[WAIT][NEXT][...]
+Wait...is that the real Koot?
+He'd never flip the bird at
+anyone!
+[WAIT][NEXT][...]
+This meme plague is getting
+on my damn nerves!
+[WAIT][END][...]
+
+#string:0B:052
+[STYLE:RIGHT][...]
+Howdy, {Var:00}!
+[PAUSE:0A][...]
+Feeling better?
+[WAIT][NEXT][...]
+Feel free to rest in our house.[WAIT][END][...]
+
+#string:0B:053
+[STYLE:RIGHT][...]
+You what?
+[PAUSE:0A][...]
+You have to leave right now?
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+...Oh, Shitting Star Summit.
+Something important, no doubt.
+[PAUSE:0A][...]
+Well, I believe that the summit
+is near Toad Town.
+[WAIT][NEXT][...]
+You'll have to wait a bit.
+[PAUSE:0A][...]
+I have to fix this gate before
+you can head out to the east.
+[WAIT][NEXT][...]
+That earthquake the other day
+really did a job on it.
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+I really hope when I
+finish, nothing bad happens to
+it again.
+Like that'll happen!
+[WAIT][NEXT][...]
+Just relax and don't worry. I'll
+have this fixed in a jiffy.[WAIT][END][...]
+
+#string:0B:054
+[STYLE:RIGHT][...]
+Just a little while longer...
+[PAUSE:0A][...]
+This hinge on the bottom of the
+gate is kind of tricky.[WAIT][END][...]
+
+#string:0B:055
+[STYLE:RIGHT][...]
+Hoo! What a job! Sorry to have
+kept you waiting.
+[PAUSE:0A][...]
+The gate is finally fixed!
+[WAIT][NEXT][...]
+Now you can shut your fucking
+lips and stop bugging me
+about it!
+[WAIT][NEXT][...]
+I believe that Shitting Star
+Summit is just beyond there.
+[WAIT][NEXT][...]
+It's too bad you can't stay... I
+feel like I just met you! But
+duty calls, I know.
+[PAUSE:0A][...]
+Come back and visit if you can![WAIT][END][...]
+
+#string:0B:056
+[STYLE:RIGHT][...]
+Howdy, {Var:00}!
+[PAUSE:0A][...]
+Feeling better?
+[WAIT][NEXT][...]
+Feel free to rest in our house.
+[WAIT][NEXT][...]
+It's not such a shabby place. It
+may look a little unkempt at the
+moment, but I'm fixing all the
+earthquake damage.
+[WAIT][NEXT][...]
+In fact, I just spent ages
+fixing this gate.[WAIT][END][...]
+
+#string:0B:057
+[STYLE:RIGHT][...]
+You what?
+[PAUSE:0A][...]
+You have to leave right now?
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+...Oh, Shitting Star Summit.
+Something important, no doubt.
+[PAUSE:0A][...]
+Well, I believe that the summit
+is near Toad Town.
+[WAIT][NEXT][...]
+You'll have to wait a bit.
+[PAUSE:0A][...]
+I have to fix this gate before
+you can head out to the east.
+[WAIT][NEXT][...]
+That earthquake the other day
+really did a job on it.
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+I really hope when I
+finish, nothing bad happens to
+it again.
+Like that'll happen!
+[WAIT][NEXT][...]
+Just relax and don't worry. I'll
+have this fixed in a jiffy.[WAIT][END][...]
+
+#string:0B:058
+[STYLE:RIGHT][...]
+Best of luck, {Var:00}.[WAIT][END][...]
+
+#string:0B:059
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}Heee!! 
+[PAUSE:05][...]
+Yee hee heee!!![WAIT][END][...]
+
+#string:0B:05A
+[STYLE:RIGHT][...]
+Bleah heh heh heh...
+[PAUSE:0A][...]
+Ah, my instincts were right...
+[WAIT][NEXT][...]
+{Var:00}... I can't believe YOU'RE
+STILL ON MY FUCKING PROPERTY!
+[WAIT][NEXT][...]
+Bup Boi should have KILLED you!
+[PAUSE:0A][...]
+I'm too old to do it
+myself.[WAIT][END][...]
+
+#string:0B:05B
+[STYLE:RIGHT][...]
+Whuh...what? What's that,
+Daddy!?
+[PAUSE:0A][...]
+Why is there a flying
+old man in the skies?[WAIT][END][...]
+
+#string:0B:05C
+[STYLE:RIGHT][...]
+Weird? RESPECT YOUR
+FUCKING ELDERS!
+[PAUSE:0A][...]
+I OUGHTA TEACH YOU!
+YA WHIPPERSNAPPERS!
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+I wish I'm spry enough to
+KICK YOUR ASSES! But no.
+[WAIT][NEXT][...]
+{Var:00}! Hear this!
+[PAUSE:0A][...]
+It is useless for you to try to
+save Princess Bitch. Ridiculous!
+Laughable!
+[WAIT][NEXT][...]
+As you have seen, Bup Boi is
+more powerful of a modder
+than Thamz! And even Clover!
+[WAIT][NEXT][...]
+Here's a gift from Count Homer![WAIT][END][...]
+
+#string:0B:05D
+[STYLE:RIGHT][...]
+Nyeah heh heh heh!
+[WAIT][NEXT][...]
+{Var:00}! 
+[PAUSE:0A][...]
+You will kneel and weep
+when you see the wonderful
+memes we've spread! 
+[WAIT][NEXT][...]
+Your world is ours now![WAIT][END][...]
+
+#string:0B:05E
+[STYLE:RIGHT][...]
+{StartFX:Wavy}Bleah heh ho hyuck heh heh HA!! {EndFX:Wavy}
+[WAIT][NEXT][...]
+{StartFX:Jitter} *cough* *cough*
+[WAIT][NEXT][...]
+{StartFX:Wavy}{StartFX:Jitter}{StartFX:Shrinking} Fuck, I can't laugh anymore! 
+[PAUSE:14][END][...]
+
+#string:0B:05F
+[STYLE:RIGHT][...]
+Ummmmmm...
+[PAUSE:0A][...]
+I just fixed that gate[PAUSE:03].[PAUSE:05].[PAUSE:08]. 
+[WAIT][NEXT][...]
+Nobody say "gate" to me...
+[WAIT][NEXT][...]
+Koopa Koot, that fiend!
+[PAUSE:0A][...]
+Did you hear what he said about
+your bitch?
+[WAIT][NEXT][...]
+It didn't sound good. I hope
+she didn't catch the meme plague.[WAIT][END][...]
+
+#string:0B:060
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}Wha... [PAUSE:03]Wha... [PAUSE:03]What!?
+{EndFX:Shrinking}[PAUSE:0A][WAIT][NEXT][...]
+Bup Boi has the
+Princess? What a shock!
+[WAIT][NEXT][...]
+Oh, unbelievable! I was
+expecting Bowser! We all
+were!
+[WAIT][NEXT][...]
+Go, {Var:00}!
+[PAUSE:05]Save your girl![WAIT][END][...]
+
+#string:0B:061
+[STYLE:RIGHT][...]
+Dad, we've just gotta do 
+something, right?
+[WAIT][NEXT][...]
+{Var:00}'s gotta stop the memes!
+Nobody else can do it![WAIT][END][...]
+
+#string:0B:062
+[STYLE:RIGHT][...]
+Ummmmmmm...
+[WAIT][NEXT][...]
+Oh, here's an idea!
+[WAIT][NEXT][...]
+Maybe we can break this block
+with Goompa's big Hammer!
+[WAIT][NEXT][...]
+I think he's using it now to fix
+the veranda.
+[WAIT][NEXT][...]
+Go and bug him about it, will you?[WAIT][END][...]
+
+#string:0B:063
+[STYLE:RIGHT][...]
+I think Goompa is fixing the
+veranda on the house.
+[WAIT][NEXT][...]
+I'm thinking his Hammer might be
+able to break this cock block.[WAIT][END][...]
+
+#string:0B:064
+[STYLE:RIGHT][...]
+Dad!
+[PAUSE:0A][...]
+Did ya hear? I'm going out
+adventuring with {Var:00}!
+[WAIT][NEXT][...]
+I'll make you proud, Dad, I swear
+it! Just wait! And I'll DM you
+all the memes we see![WAIT][END][...]
+
+#string:0B:065
+[STYLE:RIGHT][...]
+Do your best, son.
+[PAUSE:0A][...]
+You've grown into a strong boy. I
+know you'll be a great help.
+[WAIT][NEXT][...]
+Also, you need to know something.
+We've been holding it back forever.
+[WAIT][NEXT][...]
+Goombastard........
+[PAUSE:0A][...]
+We adopted you.[WAIT][END][...]
+
+#string:0B:066
+[STYLE:RIGHT][...]
+There we go! Problem solved.
+[WAIT][NEXT][...]
+Now what was that about me being
+adopted? Pfft. I already know.
+Just look at me! Do I look
+anything like my stupid family?
+[WAIT][NEXT][...]
+Alright dude, let's go.
+[PAUSE:0A][...]
+We've got places to go
+and memes to see![WAIT][END][...]
+
+#string:0B:067
+[STYLE:RIGHT][...]
+Oh, hang on now, {Var:00}!
+[PAUSE:0A][...]
+I noticed you aren't wearing
+the Badge Goompa gave you.
+[WAIT][NEXT][...]
+You absolute retard.
+PUT ON THE BADGE.
+[PAUSE:14][...]
+Count Homer says
+it will be very useful.[WAIT][END][...]
+
+#string:0B:068
+[STYLE:RIGHT][...]
+It's simple, {Var:00}.
+[PAUSE:0A][...]
+Just keep going straight on this
+road to find Toad Town.[WAIT][END][...]
+
+#string:0B:069
+[STYLE:RIGHT][...]
+Howdy! Welcome back to Goomba
+Village, {Var:00}!
+[PAUSE:0A][...]
+How's that meme journey going?[WAIT][END][...]
+
+#string:0B:06A
+[STYLE:RIGHT][...]
+Howdy, {Var:00}.
+[PAUSE:0A][...]
+How're you doing?[WAIT][END][...]
+
+#string:0B:06B
+[STYLE:RIGHT][...]
+Howdy, {Var:00}.
+[PAUSE:0A][...]
+How's my son Goombastard doing?
+[WAIT][NEXT][...]
+Hey, by the way, I named the lad
+after you, {Var:00}.
+[WAIT][NEXT][...]
+I was so happy to find him in
+the woods all those years ago.
+[WAIT][NEXT][...]
+He was born a meme. He
+might help you navigate you
+in this meme hell. He IS
+a meme after all![WAIT][END][...]
+
+#string:0B:06C
+[STYLE:RIGHT][...]
+Goombastard, [PAUSE:0A][...]
+how goes it, son?
+[WAIT][NEXT][...]
+I can't wait to hear about all
+the funny memes you sent me.
+[WAIT][NEXT][...]
+Oh yeah, I'm hip and cool with
+the kids.
+[WAIT][NEXT][...]
+DAB! 
+[PAUSE:0A][...]
+DAB!
+[PAUSE:0A][...]
+DAB![WAIT][END][...]
+
+#string:0B:06D
+[STYLE:RIGHT][...]
+It must be pretty gloomy around
+the castle, huh?
+[PAUSE:14][...]
+I'm sure the people there are
+depending on you, {Var:00}.
+[WAIT][NEXT][...]
+The only way to help them is to
+stop the meme plague and trounce
+Bup Boi! Please hurry![WAIT][END][...]
+
+#string:0B:06E
+[STYLE:RIGHT][...]
+Goombastard,
+[PAUSE:0A][...]
+do your best to help {Var:00}, OK?
+[WAIT][NEXT][...]
+I'll make a wish to the Stars for
+you to have good luck.
+Oh wait...
+[PAUSE:0A][...]
+The Star Rod's FUCKING GONE.[WAIT][END][...]
+
+#string:0B:06F
+[STYLE:RIGHT][...]
+You're Goompapa, correct?
+[WAIT][NEXT][...]
+The name's Parakarry. I deliver
+letters.
+[WAIT][NEXT][...]
+I believe I have one for you.
+[PAUSE:0A][...]
+Hang on a moment.[WAIT][END][...]
+
+#string:0B:070
+[STYLE:RIGHT][...]
+Oh...no! Confound it!
+[PAUSE:0A][...]
+I seem to have lost it!
+[PAUSE:0A][...]
+...I'm terribly sorry.[WAIT][END][...]
+
+#string:0B:071
+[STYLE:RIGHT][...]
+Another letter, duly delivered.
+A postman's job is never done.[WAIT][END][...]
+
+#string:0B:072
+[STYLE:RIGHT][...]
+Hey, thanks. Much obliged, Mr.
+Postal Worker!
+[PAUSE:0A][...]
+...Oh, great news! 
+[WAIT][NEXT][...]
+Fishing is one of my hobbies, and
+this is from a friend who's
+planning a fishing trip. 
+[PAUSE:05][...]
+I can't wait... 
+[WAIT][NEXT][...]
+...Oh...
+[PAUSE:05][...]
+Sorry to pile work on you, but
+could I give you a letter?
+[WAIT][NEXT][...]
+If it's at all possible for you,
+could you deliver this to a Toad
+named Muss T.? He hangs around
+the castle garden.
+[WAIT][NEXT][...]
+I'd really appreciate it.[WAIT][END][...]
+
+#string:0B:073
+[STYLE:RIGHT][...]
+Mr. Goompapa! Parakarry here.
+[WAIT][NEXT][...]
+I have a letter for you.
+[PAUSE:0A][...]
+Hang on a moment.[WAIT][END][...]
+
+#string:0B:074
+[STYLE:RIGHT][...]
+Oh...no! Confound it!
+[PAUSE:0A][...]
+I seem to have lost it!
+[PAUSE:0A][...]
+...I'm terribly sorry.[WAIT][END][...]
+
+#string:0B:075
+[STYLE:RIGHT][...]
+Another letter, duly delivered.
+A postman's job is never done.[WAIT][END][...]
+
+#string:0B:076
+[STYLE:RIGHT][...]
+Thank you, sir. What would we do
+without postal service?
+[WAIT][NEXT][...]
+Oh, how interesting... A letter
+for Goombaria.
+[PAUSE:0F][...]
+I guess I could open it...
+[PAUSE:14][WAIT][NEXT][...]
+I remember she wrote a letter
+just the other day and I was
+wondering what it was.
+[PAUSE:0A][...]
+I see. I guess it was a question.
+[WAIT][NEXT][...]
+And this seems like the answer.
+[PAUSE:05][...]
+It looks pretty complicated...
+but I think I understand.
+[WAIT][NEXT][...]
+I'll tell her all about it.
+[WAIT][NEXT][...]
+Thanks so much for the prompt
+delivery.
+[PAUSE:0A][...]
+Here, take this![WAIT][END][...]
+
+#string:0B:077
+[STYLE:RIGHT][...]
+Oh, land sakes! {Var:00}!
+[PAUSE:0A][...]
+So nice to meet you! My!
+[WAIT][NEXT][...]
+I'm so glad you woke up! I can't
+tell you how worried I was when
+you were just lying there asleep
+for so long.
+[WAIT][NEXT][...]
+But why was the Toad at Bup
+and Breakfast drawing dicks
+on your forehead?[WAIT][END][...]
+
+#string:0B:078
+[STYLE:RIGHT][...]
+You should know that my son,
+Goombastard, is a big fan of yours.
+[WAIT][NEXT][...]
+All he does the livelong day is
+train and tell people how he
+wants to be great like you.
+[WAIT][NEXT][...]
+I tell him, "Goombastard! It's all
+well and good to train, but don't
+you go getting into danger!"
+[WAIT][NEXT][...]
+Then he comes in like, "LEAVE
+ME THE FUCK ALONE 
+WITH MY HENTAI!"[WAIT][END][...]
+
+#string:0B:079
+[STYLE:RIGHT][...]
+Goompa...?
+[PAUSE:05][...]
+I thought he was fixing the
+veranda.
+[WAIT][NEXT][...]
+I think...
+[PAUSE:05][...]
+He most likely had the Hammer
+you're looking for, too.[WAIT][END][...]
+
+#string:0B:07A
+[STYLE:RIGHT][...]
+Mom![PAUSE:0A] I get to go with {Var:00}!
+[PAUSE:0A]I promise when I come back, I'll
+bring home memes and 
+tell you jokes![WAIT][END][...]
+
+#string:0B:07B
+[STYLE:RIGHT][...]
+Oh, my little baby! I can't
+believe you're going out into the
+world with {Var:00}!
+[WAIT][NEXT][...]
+Now you listen!
+[PAUSE:0A][...]
+You be a good boy, you hear!
+Don't cause {Var:00} any trouble!
+[WAIT][NEXT][...]
+Remember the incident with your
+pee pee? Don't do that again.[WAIT][END][...]
+
+#string:0B:07C
+[STYLE:RIGHT][...]
+I know, Mom, sheesh. I'll be good.
+[WAIT][NEXT][...]
+Gee, you can't go out talking about
+my dick like that in front of {Var:00}.[WAIT][END][...]
+
+#string:0B:07D
+[STYLE:RIGHT][...]
+Goombastard, you mind your mom!
+[PAUSE:0A][...]
+Wear a sweater when it's cold!
+[PAUSE:0A][...]
+Don't touch your weiner!
+Don't start fights! All that shit.
+[WAIT][NEXT][...]
+Don't boast about all the things
+Goompa taught you
+[PAUSE:0A][...]
+as if you already knew them!!
+[WAIT][NEXT][...]
+And remember... Fu-[WAIT][END][...]
+
+#string:0B:07E
+[STYLE:RIGHT][...]
+Urgh...
+[PAUSE:05][...]
+Mom always nags me...[WAIT][END][...]
+
+#string:0B:07F
+[STYLE:RIGHT][...]
+Now hush! {Var:00},
+[PAUSE:0A][...]
+please take good care of my
+sweet little Goombastard.[WAIT][END][...]
+
+#string:0B:080
+[STYLE:RIGHT][...]
+{Var:00}, please take good care of
+my sweet little Goombastard.[WAIT][END][...]
+
+#string:0B:081
+[STYLE:RIGHT][...]
+Oh, land sakes! {Var:00}!
+[PAUSE:14][...]
+Is my Goombastard bothering you?
+[WAIT][NEXT][...]
+He can be a real handful,
+sometimes, so I worry...[WAIT][END][...]
+
+#string:0B:082
+[STYLE:RIGHT][...]
+Ugh...
+[PAUSE:0F][...]
+Mom! C'mon, cut it out![WAIT][END][...]
+
+#string:0B:083
+[STYLE:RIGHT][...]
+I heard that Toad Town has
+finally calmed down a bit.
+[PAUSE:0A][...]
+Finally! It's been ages since I
+went shopping in peace!
+[WAIT][NEXT][...]
+We owe it all to you, {Var:00}.
+[PAUSE:14][...]
+...Or maybe, possibly, my dear
+son Goombastard helped? A little,
+perhaps?[WAIT][END][...]
+
+#string:0B:084
+[STYLE:RIGHT][...]
+Goombastard, c'mere.
+[PAUSE:0A][...]
+I'm sure you're working hard.
+[WAIT][NEXT][...]
+Let me just get that gunk off
+your face. Hold still.[WAIT][END][...]
+
+#string:0B:085
+[STYLE:RIGHT][...]
+C'mon, Mom, quit it![WAIT][END][...]
+
+#string:0B:086
+[STYLE:RIGHT][...]
+I do love to shop, but the
+problem with Toad Town is that
+there are just too many things.
+[WAIT][NEXT][...]
+Still, it's nice to be in a busy
+area now and then.
+[WAIT][NEXT][...]
+I think the next time I shop, I'll
+bring Goombaria.[WAIT][END][...]
+
+#string:0B:087
+[STYLE:RIGHT][...]
+Goombastard, 
+[PAUSE:0A][...]
+good luck, sweetie![WAIT][END][...]
+
+#string:0B:088
+[STYLE:RIGHT][...]
+{Var:00}, you look better.
+[PAUSE:0A][...]
+I'm so glad...
+[WAIT][NEXT][...]
+I was really worried about you,
+[PAUSE:0A][...]
+because you were lying there in
+the forest and you didn't open
+your eyes at all the whole time.[WAIT][END][...]
+
+#string:0B:089
+[STYLE:RIGHT][...]
+I was the one who found you,
+you know, {Var:00}. Me! Goombaria!
+[WAIT][NEXT][...]
+I was in the forest and I found
+you and then I called Daddy and
+Goompa and Goombastard.
+[WAIT][NEXT][...]
+And then they came and got you
+and I'm glad you're better![WAIT][END][...]
+
+#string:0B:08A
+[STYLE:RIGHT][...]
+I was the one who found you,
+you know, {Var:00}. Me! Goombaria!
+[WAIT][NEXT][...]
+I was in the forest and I found
+you and then I called Daddy and
+Goompa and Goombastard.
+[WAIT][NEXT][...]
+And then they came and got you
+and I'm glad you're better![WAIT][END][...]
+
+#string:0B:08B
+[STYLE:RIGHT][...]
+I wanted to go with you, too, you
+know, but Daddy told me it was
+too dangerous, so I have to stay
+here instead. Hmmph.[WAIT][END][...]
+
+#string:0B:08C
+[STYLE:RIGHT][...]
+Goompa! Come out here! {Var:00}'s
+in trouble![WAIT][END][...]
+
+#string:0B:08D
+[STYLE:RIGHT][...]
+It's not fair! Goombastard always
+gets to do all the fun stuff!
+[PAUSE:0A][...]
+{Var:00}, when I grow up, can I go
+on an adventure, too?[WAIT][END][...]
+
+#string:0B:08E
+[STYLE:RIGHT][...]
+{Var:00}! Have you been beating up
+lots and lots of bad guys?[WAIT][END][...]
+
+#string:0B:08F
+[STYLE:RIGHT][...]
+{Var:00}! I wanna go with you like
+Goombastard gets to!
+[WAIT][NEXT][...]
+You go to all kinds of pretty
+towns and places, don't you?
+[PAUSE:0A][...]
+I wanna go, too! I wanna go!
+Why can't I go, too?[WAIT][END][...]
+
+#string:0B:090
+[STYLE:RIGHT][...]
+You're just a little too young
+right now, Goombaria.
+[PAUSE:0A][...]
+You wouldn't believe how hard life
+is out on the road.[WAIT][END][...]
+
+#string:0B:091
+[STYLE:RIGHT][...]
+Shut up, Goombastard!
+[PAUSE:0A][...]
+Stop smiling! I wanna go, too![WAIT][END][...]
+
+#string:0B:092
+[STYLE:RIGHT][...]
+Everyone in the world is counting
+on you, huh, {Var:00}?
+[PAUSE:0A][...]
+How do you deal with the
+pressure all the time?
+[WAIT][NEXT][...]
+Well, if it helps at all, you can
+depend on me, {Var:00}.
+[PAUSE:02][...]
+I'll grow up extra fast so I can
+help you out! [WAIT][END][...]
+
+#string:0B:093
+[STYLE:RIGHT][...]
+Goombastard,
+[PAUSE:0A][...]
+do you actually do anything?
+[PAUSE:0A][...]
+I never hear about anything you
+do. Only {Var:00}.[WAIT][END][...]
+
+#string:0B:094
+[STYLE:RIGHT][...]
+Of course you don't hear!!
+[PAUSE:0A][...]
+My role is to assist {Var:00}, not to
+be the hero.[WAIT][END][...]
+
+#string:0B:095
+[STYLE:RIGHT][...]
+Huh...?
+[PAUSE:0F][...]
+Really...? You fibber...[WAIT][END][...]
+
+#string:0B:096
+[STYLE:RIGHT][...]
+Please take care of Goombastard,
+OK?[WAIT][END][...]
+
+#string:0B:097
+[STYLE:RIGHT][...]
+Wait, {Var:00}!!
+[WAIT][NEXT][...]
+That dolly you are holding is
+mine, I know it!
+[WAIT][NEXT][...]
+Give it back! I need it for...
+...............reasons.
+{Func_04}[END][...]
+
+
+#string:0B:098
+[STYLE:RIGHT][...]
+That dolly you are holding is
+mine, I know it!
+[WAIT][NEXT][...]
+Give it back! I need it for...
+...............reasons.
+{Func_04}[END][...]
+
+#string:0B:099
+[NEXT][...]
+{StartFX:Shrinking}You fucking dickhead![WAIT][END][...]
+
+#string:0B:09A
+[NEXT][...]
+Oh, thanks, {Var:00}!
+[PAUSE:0A][...]
+I LOVE YOU!!![HEART][HEART][HEART]
+[WAIT][NEXT][...]
+Here, you can have this.
+[PAUSE:0A][...]
+Isn't it pretty, the way it
+glitters in the sun?[WAIT][END][...]
+
+#string:0B:09B
+[STYLE:RIGHT][...]
+And [PAUSE:0A][...]
+take this
+[PAUSE:0A][...]
+too.
+[PAUSE:0A][...]
+Don't tell mom![WAIT][END][...]
+
+#string:0B:09C
+[STYLE:RIGHT][...]
+Oh, {Var:00}. Hello, dearie.
+[PAUSE:0A][...]
+You may call me Gooma.
+[WAIT][NEXT][...]
+I'm a Goomba grandmother, so
+that's where I got the name.
+[PAUSE:0A]Ho[PAUSE:03]ho[PAUSE:03]ho[PAUSE:03]ho.
+[WAIT][NEXT][...]
+Have you already met my lovely
+grandchildren? Aren't they
+sweet?
+[WAIT][NEXT][...]
+Especially little Goombaria. Why,
+she looks just like I did when I
+was young...
+[PAUSE:0A]Ho[PAUSE:03]ho[PAUSE:03]ho[PAUSE:03]ho.[WAIT][END][...]
+
+#string:0B:09D
+[STYLE:RIGHT][...]
+You're quite a looker, aren't
+you?
+[PAUSE:0A][...]
+Why, if I were just 10 years
+younger, and single, of course...[WAIT][END][...]
+
+#string:0B:09E
+[STYLE:RIGHT][...]
+Are you looking for Goompa?
+[PAUSE:0A][...]
+He was just on the veranda.[WAIT][END][...]
+
+#string:0B:09F
+[STYLE:RIGHT][...]
+Good health is all that matters!
+[PAUSE:0A][...]
+Stay healthy no matter what.
+[PAUSE:0A][...]
+Don't overwork yourself, and
+take a rest when you're weary.[WAIT][END][...]
+
+#string:0B:0A0
+[STYLE:RIGHT][...]
+Take care, Goombastard.
+[PAUSE:0A][...]
+You're already one fine Goomba!
+[WAIT][NEXT][...]
+With the meme plague spreading,
+you'll surely blend in![WAIT][END][...]
+
+#string:0B:0A1
+[STYLE:RIGHT][...]
+I have a bad feeling in my bones
+these days.
+[PAUSE:05][...]
+Evil things are afoot, I think.
+[WAIT][NEXT][...]
+I wish that everyone could just
+[PAUSE:05][...]
+live together in peace.[WAIT][END][...]
+
+#string:0B:0A2
+[STYLE:RIGHT][...]
+What lovely weather today!
+[PAUSE:0A][...]
+The laundry's already dry.
+[WAIT][NEXT][...]
+How's my Goombastard doing? 
+[PAUSE:0A][...]
+I get so much joy just seeing
+my grandchildren's cute faces...
+Ho ho ho![WAIT][END][...]
+
+#string:0B:0A3
+[STYLE:RIGHT][...]
+Is Goombastard leaving again?
+[WAIT][NEXT][...]
+I miss you when you're not
+around here, little Goomba!
+[PAUSE:0A][...]
+You hurry up and finish this trip
+and come home to Gooma![WAIT][END][...]
+
+#string:0B:0A4
+[STYLE:RIGHT][...]
+I'm sure our little Goombastard is
+trying his best and is doing all
+sorts of great deeds.
+[WAIT][NEXT][...]
+But I still miss him when he's
+gone, you know.[WAIT][END][...]
+
+#string:0B:0A5
+[STYLE:RIGHT][...]
+I'm sure our little Goombastard is
+trying his best and is doing all
+sorts of great deeds.
+[WAIT][NEXT][...]
+But I still miss him when he's
+gone, you know.
+[WAIT][NEXT][...]
+Goombastard...
+[PAUSE:05][...]
+When will you be able to stay
+at home for a while?[WAIT][END][...]
+
+#string:0B:0A6
+[STYLE:RIGHT][...]
+Oh, my dick... 
+[PAUSE:05][...]
+Hm? Who's that?
+[WAIT][NEXT][...]
+I remember a great crashing
+noise and then the veranda
+collapsed and I almost
+FUCKING DIED.
+[WAIT][NEXT][...]
+Did you fall, too?
+[PAUSE:0A][...]
+Just stepped out the door into
+thin air, did you?
+[WAIT][NEXT][...]
+Thank god we're alive.
+Also, that stupid ass
+block is in the way.[WAIT][END][...]
+
+#string:0B:0A7
+[STYLE:RIGHT][...]
+This block...
+[PAUSE:05][...]
+This block shouldn't be here.
+[PAUSE:0A][...]
+Well, this is a cock block for us.[WAIT][END][...]
+
+#string:0B:0A8
+[STYLE:RIGHT][...]
+......Huh?
+[PAUSE:05][...]
+A Hammer? Oh, of course!
+[PAUSE:0A][...]
+Um... [PAUSE:0A][...]
+Where did it go?
+Gay Baby Jail? Most likely not.
+[WAIT][NEXT][...]
+I was using it to fix the
+veranda, so it's likely around
+here somewhere...
+[WAIT][NEXT][...]
+Hm! Nowhere to be seen.
+[PAUSE:14][...]
+I guess it must have fallen
+somewhere over there.
+[WAIT][NEXT][...]
+{Var:00}, [PAUSE:0A][...]
+we'd better look for it
+or else we're FUCKED.[WAIT][END][...]
+
+#string:0B:0A9
+[STYLE:RIGHT][...]
+The Hammer has got to be
+somewhere close by.
+[WAIT][NEXT][...]
+{StartAnim}{SetPrintPos:00:12}{Down:0C}{Item:00:04}{EndAnim}
+{SetPrintPos:00:3F}{Down:06}It looks just like my dick.
+
+{Up:06}
+[WAIT][NEXT][...]
+Look for bushes that might cover
+it up.
+[WAIT][NEXT][...]
+If "{Color:20}!{Color:0A}" appears over your head,
+you can press {PushColor}{Color:10}[A]{PopColor}ss to search. [WAIT][END][...]
+
+#string:0B:0AA
+[STYLE:RIGHT][...]
+HALLELUJAH!
+[PAUSE:0A][...]
+That's it! That's the Hammer!
+[WAIT][NEXT][...]
+I'll wager that if you use that
+Hammer, you can break that damn
+block that's in our way.
+[WAIT][NEXT][...]
+You can also use the Hammer to
+hit shit and abuse trees.
+Sometimes crap will fall out!
+[WAIT][NEXT][...]
+You can use it by pressing {PushColor}{Color:02}[B]{PopColor}ITCH.[WAIT][END][...]
+
+#string:0B:0AB
+[STYLE:RIGHT][...]
+Oh! Well now!
+[PAUSE:05][...]
+I believe that's the sex doll
+that Goombaria said she lost!
+[WAIT][NEXT][...]
+She'll no doubt be overjoyed if
+you give it back to her.
+[WAIT][NEXT][...]
+If she tries to hit on you
+again, try to resist it.
+[WAIT][NEXT][...]
+You're an old ass plumber,
+and she's 5 years old.
+We don't want you to go to
+jail, do we?[WAIT][END][...]
+
+#string:0B:0AC
+[STYLE:RIGHT][...]
+Hmmm... Well!
+[PAUSE:0A][...]
+We found the Hammer, so I guess
+we should head for home.[WAIT][END][...]
+
+#string:0B:0AD
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}{Size:30:30}MY LEG!!![WAIT][END][...]
+
+#string:0B:0AE
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}WHO THE FUCK'S THIS?!
+[PAUSE:05][...]
+GET OUT OF HERE NORMIE!
+[WAIT][NEXT][...]
+YOU'RE RUINING MY MARIO
+PISSING MEME!
+[WAIT][NEXT][...]
+YOU'RE NOT LEAVING WITHOUT
+A FIGHT, ASSHOLE![WAIT][END][...]
+
+#string:0B:0AF
+[STYLE:RIGHT][...]
+This is Jr. Cringe.
+He thinks he's the dankest
+thing alive, but is just a
+cringy Fortnite kid.
+[WAIT][NEXT][...]
+"Also, watch out for his hidden
+spike!"
+A quote from CountHomer69
+[WAIT][NEXT][...]
+Just boost yourself up and don't
+take any shit!
+[WAIT][NEXT][...]
+"Use the action commands I
+gave you!"
+Also from CountHomer69[WAIT][END][...]
+
+#string:0B:0B0
+[STYLE:RIGHT][...]
+Oh, excellent!
+[PAUSE:0A][...]
+Nice timing![WAIT][END][...]
+
+#string:0B:0B1
+[STYLE:RIGHT][...]
+FUCK YOU!
+[PAUSE:0A][...]
+I'M GONNA SHOW YOU BITCHES
+WHAT I'M MADE OUT OF!!![WAIT][END][...]
+
+#string:0B:0B2
+[STYLE:RIGHT][...]
+He's almost dead!
+[PAUSE:0A][...]
+Kick his ass![WAIT][END][...]
+
+#string:0B:0B3
+[STYLE:RIGHT][...]
+I'M GONNA NUT ALL OVER YOU!
+[PAUSE:0A][...]
+PREPARE YOUR ANUSES!
+[WAIT][NEXT][...]
+{Down:0A}{StartFX:Shrinking}{Size:18:18}M A X  N U T ![WAIT][END][...]
+
+#string:0B:0B4
+[STYLE:RIGHT][...]
+You whooped him good! You
+got {Color:20}PISS POINTS{Color:0A}!
+[WAIT][NEXT][...]
+You get Piss Points every time
+you beat an enemy.
+[WAIT][NEXT][...]
+Every time you save up 100 Piss
+Points, you'll go up a level.
+[WAIT][NEXT][...]
+But I'm sure you already know...[WAIT][END][...]
+
+#string:0B:0B5
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}FUUUUUUUCK!!!
+[PAUSE:05][...]
+I WAS BEATEN! I USED ALL MY
+FORTNITE STRATS TO MAUL YOU!
+[PAUSE:05][...]
+FORTNITE GOOD![WAIT][END][...]
+
+#string:0B:0B6
+[STYLE:RIGHT][...]
+MINECRAFT BAD![WAIT][END][...]
+
+#string:0B:0B7
+[STYLE:RIGHT][...]
+I see meme Goombas ahead.
+They're the ones from the
+first Mario Pissing.
+[WAIT][NEXT][...]
+If they see you, they'll want
+you to jump on them.
+[WAIT][NEXT][...]
+If you can successfully attack
+an enemy in the field with a
+{Color:20}Kick {Color:0A}in the {Color:20}Balls{Color:0A},
+[WAIT][NEXT][...]
+you'll get the {Color:20}First Strike {Color:0A}when
+you enter the battle.
+[WAIT][NEXT][...]
+Striking first really helps when
+it comes to battling. But you
+should know that.[WAIT][END][...]
+
+#string:0B:0B8
+[STYLE:RIGHT][...]
+Listen up, bitch.
+[PAUSE:0A][...]
+The enemy's flying. 
+[PAUSE:0A][...]
+Your Hammer won't reach
+enemies in the air.
+[WAIT][NEXT][...]
+Yeah, no shit indeed.[WAIT][END][...]
+
+#string:0B:0B9
+[STYLE:RIGHT][...]
+This is a Spiked Goomba.
+[PAUSE:0A][...]
+See the spike on his head?
+[WAIT][NEXT][...]
+Be careful not to jump on him.
+You'll definitely get hurt.
+No shit, sherlock. Am I right?[WAIT][END][...]
+
+#string:0B:0BA
+[STYLE:RIGHT][...]
+Oh I forgot something!
+[WAIT][NEXT][...]
+During a battle, you can change
+the order we attack in with {PushColor}{Color:14}BALL[Z]{PopColor}.
+[WAIT][NEXT][...]
+I can attack first if you want.
+I don't mind at all!
+[PAUSE:0A][...]
+But you know this shit![WAIT][END][...]
+
+#string:0B:0BB
+[STYLE:RIGHT][...]
+HEY BETER
+[PAUSE:14][...]
+HEY BETER[WAIT][END][...]
+
+#string:0B:0BC
+[STYLE:RIGHT][...]
+HEY BETER
+[WAIT][NEXT][...]
+HEY BETER
+[WAIT][NEXT][...]
+HEY BETER![WAIT][END][...]
+
+#string:0B:0BD
+[STYLE:LEFT][...]
+{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:18:18}HEY BETER!!!{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END][...]
+
+#string:0B:0BE
+[STYLE:RIGHT][...]
+HEY BETER[WAIT][END][...]
+
+#string:0B:0BF
+[STYLE:RIGHT][...]
+HEY BETER[WAIT][END][...]
+
+#string:0B:0C0
+[STYLE:RIGHT][...]
+{StartFX:Jitter}NO! BETER!!!{EndFX:Jitter}[WAIT][END][...]
+
+#string:0B:0C1
+[STYLE:RIGHT][...]
+{StartFX:Jitter}NO! BETER!!!{EndFX:Jitter}[WAIT][END][...]
+
+#string:0B:0C2
+[STYLE:RIGHT][...]
+{StartFX:Jitter}OUR LEGS!!
+{EndFX:Jitter} WE SHALL WARN BETER![WAIT][END][...]
+
+#string:0B:0C3
+[STYLE:RIGHT][...]
+HEY BETER! HEY BETER![WAIT][END][...]
+
+#string:0B:0C4
+[STYLE:RIGHT][...]
+HEY BETER! HEY BETER![WAIT][END][...]
+
+#string:0B:0C5
+[STYLE:RIGHT][...]
+Wait a sec....
+[PAUSE:0A][...]
+See that building over there?
+[WAIT][NEXT][...]
+I'm pretty sure there used to
+be a bridge on the other side.
+[PAUSE:0A][...]
+Looks like they yeeted it away.[WAIT][END][...]
+
+#string:0B:0C6
+[STYLE:RIGHT][...]
+{StartFX:Jitter}{StartFX:Shrinking}HEY LOIS! LOOK WHO'S TRYING
+TO BE THE FUNNY MAN!
+[PAUSE:0A][...]
+HE HIT JOE!
+[WAIT][NEXT][...]
+YOU DON'T HIT A GUY WITH
+A WHEELCHAIR!
+[WAIT][NEXT][...]
+HEY LOIS! REMEMBER THE
+TIME WHEN I KICKED {Var:00}
+RIGHT IN THE NUTS!?
+[WAIT][NEXT][...]
+[STYLE:LEFT][PAUSE:0A][...]
+{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:18:18}HEHEHEHEHEHE{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][END][...]
+
+#string:0B:0C7
+[STYLE:RIGHT][...]
+HEY BETER[WAIT][END][...]
+
+#string:0B:0C8
+[STYLE:RIGHT][...]
+HEY BETER[WAIT][END][...]
+
+#string:0B:0C9
+[STYLE:RIGHT][...]
+Wow... Peter Griffin is...
+a Goomba now? Who would
+have thought!?
+[WAIT][NEXT][...]
+Whatever, let's kick some ass.[WAIT][END][...]
+
+#string:0B:0CA
+[STYLE:RIGHT][STYLE:RIGHT][...]
+YEAH, WE WOULDN'T WANT
+THE BEES TO GET MAD!
+[PAUSE:0A] I HATE YOU BEES![PAUSE:0A]
+I HATE YOU BEES![WAIT][END][...]
+
+#string:0B:0CB
+[STYLE:RIGHT][...]
+KICK HIS ASS, BETER![WAIT][END][...]
+
+#string:0B:0CC
+[STYLE:RIGHT][...]
+YEAH, BETER![WAIT][END][...]
+
+#string:0B:0CD
+[STYLE:RIGHT][...]
+THIS IS AN
+[PAUSE:04]EPIC [PAUSE:04]GAMER [PAUSE:04]MOMENT![WAIT][END][...]
+
+#string:0B:0CE
+[STYLE:RIGHT][...]
+I think maybe we ought to take
+out the Joes with the
+M A X  N U T  Tree.[WAIT][END][...]
+
+#string:0B:0CF
+[STYLE:RIGHT][...]
+NO, BETER![WAIT][END][...]
+
+#string:0B:0D0
+[STYLE:RIGHT][...]
+NO, BETER![WAIT][END][...]
+
+#string:0B:0D1
+[STYLE:RIGHT][...]
+AAAAAAAAAAAAAAAAAAA
+[PAUSE:0A][...]
+SSSSSSSSSSSSSSSSS
+[PAUSE:0A][...]
+AAAAAAAAAAAAAAAAA
+[PAUSE:0A][...]
+SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS[WAIT][END][...]
+
+#string:0B:0D2
+[STYLE:RIGHT][...]
+Yeah! I knew we could do it!
+[PAUSE:0A][...]
+This is an epic gamer moment![WAIT][END][...]
+
+#string:0B:0D3
+[STYLE:RIGHT][...]
+{StartFX:Faded:D9}BETER! THE SWITCH![WAIT][END][...]
+
+#string:0B:0D4
+[STYLE:RIGHT][...]
+{StartFX:Faded:D9}BETER! THE SWITCH![WAIT][END][...]
+
+#string:0B:0D5
+[STYLE:RIGHT][...]
+{StartFX:Faded:D9}{StartFX:Shrinking}{StartFX:Jitter}IN THE BUSH, BETER![WAIT][END][...]
+
+#string:0B:0D6
+[STYLE:RIGHT][...]
+{StartFX:Faded:D9}{StartFX:Shrinking}YEAH BETER![WAIT][END][...]
+
+#string:0B:0D7
+[STYLE:RIGHT][...]
+{StartFX:Faded:D9}BETER, FOOL MUSTACHE MAN![WAIT][END][...]
+
+#string:0B:0D8
+[STYLE:RIGHT][...]
+HEY MR. FUNNY MAN!
+[PAUSE:0A][...]
+THAT WAS AN EPIC BRAWL!
+BUT I GOTTA SAY...
+[WAIT][NEXT][...]
+DON'T JUMP ON MY NINTENDO
+SWITCH!
+[PAUSE:0A][...]
+I DON'T WANNA DIE!
+[WAIT][NEXT][...]
+.[PAUSE:05].[PAUSE:05].[PAUSE:05][...]
+WHAT THE FUCK!?
+[PAUSE:0F][...]
+{StartFX:Shrinking}{StartFX:Jitter}YOU FUCKING DID?![WAIT][END][...]
+
+#string:0B:0D9
+[STYLE:RIGHT][...]
+{StartFX:Jitter}{StartFX:Shrinking}{Size:30:30}FUUUUUCK!
+[PAUSE:64][END][...]
+
+#string:0B:0DA
+[STYLE:RIGHT][...]
+Thank god.
+[PAUSE:0A][...]
+We just beat that
+dumb Goomba.
+[WAIT][NEXT][...]
+I swear he wasn't this
+strong before.[WAIT][END][...]
+
+#string:0B:0DB
+[STYLE:RIGHT][...]
+I love stroking my canolli
+outside! I hope there are
+no interruptions.[WAIT][END][...]
+
+#string:0B:0DC
+[STYLE:RIGHT][...]
+{Speed:01:02}Oh fuck!
+[PAUSE:0F][...]
+I hope you didn't see that![WAIT][END][...]
+
+#string:0B:0DD
+[STYLE:RIGHT][...]
+Anyways, welcome home.
+[PAUSE:0A][...]
+I'm glad you survived the Bup
+Boi incident. I need friends
+like you.
+[WAIT][NEXT][...]
+Lucky for me, I bailed out
+of that shitty castle as soon
+as you left the room! I just
+couldn't stand it![WAIT][END][...]
+
+#string:0B:0DE
+[STYLE:RIGHT][...]
+Hey...
+[PAUSE:0A][...]
+Who the hell is this chump?[WAIT][END][...]
+
+#string:0B:0DF
+[STYLE:RIGHT][...]
+Hello meme-ified Luigi.
+[WAIT][NEXT][...]
+The name's Goombastard.
+It's nice to see another
+victim of the meme plague![WAIT][END][...]
+
+#string:0B:0E0
+[STYLE:RIGHT][...]
+Waluigi? Huh?
+[PAUSE:0A][...]
+You guys are related?
+[PAUSE:0A][...]
+Anyway, I'm Kooper.[WAIT][END][...]
+
+#string:0B:0E1
+[STYLE:RIGHT][...]
+Hey "Waluigi".
+[PAUSE:0A][...]
+Another victim of the meme
+plague, eh?
+[WAIT][NEXT][...]
+I feel like I was the most
+effected. JUST LOOK AT ME.[WAIT][END][...]
+
+#string:0B:0E2
+[STYLE:RIGHT][...]
+The name's Parakarry.
+[PAUSE:0A][...]
+Hey, wasn't there a fat
+Shy Guy trying to steal
+my job around here?[WAIT][END][...]
+
+#string:0B:0E3
+[STYLE:RIGHT][...]
+Memed partners? Epic.
+[PAUSE:0A][...]
+Why can't Waluigi come?
+Do I not have the balls?
+[WAIT][NEXT][...]
+Shame I have to sit here
+and chase that Gourmet Guy
+away from shitting on your
+beautiful house.[WAIT][END][...]
+
+#string:0B:0E4
+[STYLE:RIGHT][...]
+Bro, save the real Luigi! I'm
+already sick of his life![WAIT][END][...]
+
+#string:0B:0E5
+[STYLE:RIGHT][...]
+{Var:00}, go on and stop that
+meme plague![WAIT][END][...]
+
+#string:0B:0E6
+[STYLE:RIGHT][...]
+Hey can I be a partner?
+[WAIT][NEXT][...]
+My penis nose is so sharp
+it can paralyze enemies.
+[WAIT][NEXT][...]
+Huh...I guess that turned
+you off.
+[PAUSE:0F][...]
+Okay nevermind then.[WAIT][END][...]
+
+#string:0B:0E7
+[STYLE:RIGHT][...]
+Koopa Bros.?
+[PAUSE:0A][...]
+You mean they're a bunch of
+brothers who're Koopa Troopas?
+[PAUSE:0A][...]
+Tough name to remember, huh?
+[WAIT][NEXT][...]
+I have an idea, {Var:00}!
+[PAUSE:0A][...]
+Why don't we give them a taste
+of our Mario Bros. power!
+[WAIT][NEXT][...]
+I'll join you and together...
+[WAIT][NEXT][...]
+What? I can't? Why not?
+[PAUSE:0F][...]
+Come on, Mario![WAIT][END][...]
+
+#string:0B:0E8
+[STYLE:RIGHT][...]
+Hi, {Var:00}.
+[PAUSE:0A][...]
+I figure I'll have an adventure
+sooner or later, so I'm training.
+[WAIT][NEXT][...]
+What's that? Dry Dry Desert?
+[PAUSE:0A][...]
+Oh, sure. There's a train that
+goes there from Toad Town.
+[WAIT][NEXT][...]
+Hey, maybe I'll tag along...
+[WAIT][NEXT][...]
+No? You sure?
+[PAUSE:0F][...]
+Just gimme a chance![WAIT][END][...]
+
+#string:0B:0E9
+[STYLE:RIGHT][...]
+I wonder how ol' {Var:00} is doing in
+his quest.[WAIT][END][...]
+
+#string:0B:0EA
+[STYLE:RIGHT][...]
+{StartFX:Shrinking}WTF MAN!?!!?
+[PAUSE:05][...]
+LET ME WRITE MY FANFICS
+IN PEACE!
+[WAIT][NEXT][...]
+(This is how bad Memeio's
+dialogue is).
+{EndFX:Shrinking}[WAIT][END][...]
+
+#string:0B:0EB
+[STYLE:RIGHT][...]
+Uh-oh... [PAUSE:05][...]
+I mean, never mind.
+[PAUSE:0F][...]
+How did you find this place?[WAIT][END][...]
+
+#string:0B:0EC
+[STYLE:INSPECT][...]
+There's nothing on the desk.[WAIT][END][...]
+
+#string:0B:0ED
+[STYLE:RIGHT][...]
+Anything wrong?
+[PAUSE:0F][...]
+Nothing suspicious in the
+basement, was there?[WAIT][END][...]
+
+#string:0B:0EE
+[STYLE:RIGHT][...]
+Huff 
+[PAUSE:05][...]
+huff...
+[PAUSE:05][...]
+[PAUSE:05][...]
+You wouldn't believe it... Shy
+Guys were everywhere...
+[WAIT][NEXT][...]
+They moved...like the wind! Huff
+huff... All I managed to do was
+get really upset and yell.[WAIT][END][...]
+
+#string:0B:0EF
+[STYLE:RIGHT][...]
+Huff 
+[PAUSE:05][...]
+Huff...
+[PAUSE:05][...]
+I'm a great jumper, but my
+running really needs some work.
+[WAIT][NEXT][...]
+A little more training and I'll be
+vital to your team...
+[WAIT][NEXT][...]
+All right, take it easy. I know I
+can't go.
+[PAUSE:0A][...]
+You go on your adventure. I
+don't even want to anymore.
+[WAIT][NEXT][...]
+I know that it's up to you to
+save Princess Peach, so hurry
+up for my sake![WAIT][END][...]
+
+#string:0B:0F0
+[STYLE:RIGHT][...]
+...Hi, {Var:00}. 
+[PAUSE:0F][...]
+Are you doing OK?
+[PAUSE:0F][WAIT][NEXT][...]
+Don't worry, Bro, I'll watch the
+house until you get back.[WAIT][END][...]
+
+#string:0B:0F1
+[STYLE:RIGHT][...]
+Boy, hanging out way up high
+sure was nice...  Such a great
+view and everything...
+[WAIT][NEXT][...]
+Uh...never mind! Say, that's a
+cool Hammer you got there!
+[PAUSE:0F][...]
+I bet you can even beat up
+enemies with hard shells now![WAIT][END][...]
+
+#string:0B:0F2
+[STYLE:RIGHT][...]
+Boy, hanging out way up high
+sure was nice... Such a great
+view and everything...
+[WAIT][NEXT][...]
+Uh...never mind. Say, are those
+new Boots? They look really
+flashy!
+[PAUSE:0F][...]
+Now you'll be a better jumper![WAIT][END][...]
+
+#string:0B:0F3
+[STYLE:RIGHT][...]
+Princess Peach is still caught
+way up there in the sky...
+[WAIT][NEXT][...]
+C'mon, {Var:00}!
+[PAUSE:0F][...]
+You're a hero, Bro! You have to
+save her![WAIT][END][...]
+
+#string:0B:0F4
+Number of Battles:[END][...]
+
+#string:0B:0F5
+pcs.[END][...]
+
+#string:0B:0F6
+times[END][...]
+
+#string:0B:0F7
+Your First Strikes:[END][...]
+
+#string:0B:0F8
+Enemies' First Strikes:[END][...]
+
+#string:0B:0F9
+Total Power Bounces:[END][...]
+
+#string:0B:0FA
+?  ?  ?[END][...]
+
+#string:0B:0FB
+Star Pieces Collected:[END][...]
+
+#string:0B:0FC
+Coins Earned:[END][...]
+
+#string:0B:0FD
+Badges Collected:[END][...]
+
+#string:0B:0FE
+Chef Ramsay's Recipes:[END][...]
+
+#string:0B:0FF
+Chuck Quizmo's Quizzes:[END][...]
+
+#string:0B:100
+[STYLE:INSPECT][...]
+There's Luigi's diary![WAIT][END][...]
+
+#string:0B:101
+[STYLE:INSPECT][...]
+There's a letter for {Var:00}![WAIT][END][...]
+
+#string:0B:102
+[STYLE:INSPECT][...]
+Here's the box where letters
+addressed to {Var:00} go.
+[PAUSE:0A][...]
+It's empty right now.[WAIT][END][...]
+
+#string:0B:103
+[STYLE:RIGHT][...]
+What's that, {Var:00}?
+[PAUSE:0A][...]
+You need something?[WAIT][END][...]
+
+#string:0B:104
+[STYLE:RIGHT][...]
+He what? 
+[PAUSE:0A][...]
+Mr. Koopa Koot wants to get my
+autograph? Me? He wants me to
+sign something?
+[WAIT][NEXT][...]
+Whoa! Cool! I'm flattered!
+[PAUSE:0A][...]
+I guess maybe I'm a little bit of
+a celebrity, huh?
+[WAIT][NEXT][...]
+[PAUSE:0A][...]
+Wait one second.
+[PAUSE:05][...]
+I'll write it right now.[WAIT][END][...]
+
+#string:0B:105
+[STYLE:RIGHT][...]
+Here you are, {Var:00}.
+[PAUSE:0A][...]
+My autograph.
+[WAIT][NEXT][...]
+Give my regards to Mr. Koopa
+Koot, OK?[WAIT][END][...]
+
+#string:0B:106
+[STYLE:INSPECT][...]
+[STYLE:INSPECT][...]
+Do you want to expand?
+{Func_04}[END][...]
+
+#string:0B:107
+[STYLE:INSPECT][...]
+You're fully expanded.
+Sure you still want to dong?
+{Func_04}[END][...]
+
+#string:0B:108
+[STYLE:INSPECT][...]
+100% Charged Dong
+[WAIT][END][...]
+

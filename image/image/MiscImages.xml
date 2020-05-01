@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Pretty self-explanatory. Offsets in hex, image sizes in decimal. -->
+<!-- Use flip="true" to vertically flip images. Some reqire this. -->
+<MiscImages>
+	<Image offset="1443F0" palette="15D3F0" fmt="CI-8" w="320" h="320" out="world_map"/>
+	<Image offset="15D5F0" palette="15F170" fmt="CI-4" w="128" h="110" out="spirits_bg"/>
+	<Image offset="1164B8" palette="11A240" fmt="CI-8" w="150" h="105" out="peach_letter"/>
+	
+	<Image offset="1FE1B0" fmt="RGBA-16" w="128" h="112" out="logo-N64"/>
+	<Image offset="2051B0" fmt="RGBA-16" w="256" h="112" out="logo-IS"/>
+	<Image offset="2131B0" fmt="RGBA-16" w="256" h="48" out="logo-nintendo"/>
+</MiscImages>

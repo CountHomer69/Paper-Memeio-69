@@ -1,0 +1,220 @@
+@ $Script_802427C8
+  Call     DisablePlayerInput 	( .True )
+  Call     DisablePartnerAI 	( 00000000 )
+  Call     UseSettingsFrom 	( .Default FFFFFFDD 000000FA FFFFFF6F )
+  Call     SetPanTarget 	( .Default FFFFFFDD 000000FA FFFFFF6F )
+  Call     SetCamDistance ( .Default 000001C2 )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-5.5] )
+  Call     SetCamSpeed 	( .Default *Fixed[0.5] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     802D2C14 ( 00000002 )
+  Call     SetNpcFlagBits ( .Npc:Partner 00000100 .True )
+  Thread
+  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  	Add  *Var[2]  0000001E 
+  	Call     SetNpcJumpscale 	( .Npc:Partner 00000000 )
+  	Call     NpcJump0    	( .Npc:Partner *Var[0] *Var[1] *Var[2] 0000000F )
+  	Call     SetNpcAnimation 	( .Npc:Partner 00000106 )
+  EndThread
+  Call     SetMusicTrack 	( 00000000 .Song:StarSpiritTheme 00000001 00000008 )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A0000 ) % Welcome Mario... We've been waiting for you.
+  Wait     0000000A 
+  Wait     00000001 
+  Call     PlayerFaceNpc 	( 00000000 00000001 )
+  Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  Call     SetNpcJumpscale 	( 00000000 00000000 )
+  Call     NpcJump0    	( 00000000 00000015 00000104 FFFFFEEB 0000001E )
+  Call     EnableModel 	( {Model:1} .True )
+  Call     PlaySound   	( 00000064 )
+  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     $Function_80240CDC ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     $Function_80240CDC ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     $Function_80240CDC ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     $Function_80240CDC ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     $Function_80240CDC ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  Call     GetNpcPos   	( 00000006 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     $Function_80240CDC ( 00000000 *Var[0] *Var[1] *Var[2] 0000000A )
+  Call     EnableModel 	( {Model:2} .True )
+  Call     EnableModel 	( {Model:3} .True )
+  Call     EnableModel 	( {Model:4} .True )
+  Call     EnableModel 	( {Model:5} .True )
+  Call     EnableModel 	( {Model:6} .True )
+  Call     EnableModel 	( {Model:7} .True )
+  SetF  *MapVar[1]  *Fixed[-80.0] 
+  Loop     00000014 
+  	AddF  *MapVar[1]  *Fixed[6.0] 
+  	Wait     00000001 
+  EndLoop
+  Call     EnableNpcShadow 	( 00000001 .True )
+  Call     EnableNpcShadow 	( 00000002 .True )
+  Call     EnableNpcShadow 	( 00000003 .True )
+  Call     EnableNpcShadow 	( 00000004 .True )
+  Call     EnableNpcShadow 	( 00000005 .True )
+  Call     EnableNpcShadow 	( 00000006 .True )
+  Wait     0000000A 
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A0001 ) % We're the 7 Star Spirits. Our job is to grant the  ...
+  Call     SetCamDistance ( .Default 0000010E )
+  Call     SetCamSpeed 	( .Default *Fixed[2.8007812] )
+  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.5] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A0002 ) % The other day, Bowser and his followers invaded ou ...
+  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.899414] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000001 00130002 00120001 00000000 000A0003 ) % The Star Rod... ...is powerful beyond belief. It c ...
+  Call     GetNpcPos   	( 00000002 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.2998047] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000002 00140002 00130001 00000000 000A0004 ) % Bowser...that fiend... When he found out that we w ...
+  Call     GetNpcPos   	( 00000003 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.6992188] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000003 00150002 00150001 00000000 000A0005 ) % It is the responsibility of the 7 Star Spirits to  ...
+  Call     GetNpcPos   	( 00000004 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.6992188] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000004 00160002 00160001 00000000 000A0006 ) % Sadly... ...right now you are not strong enough to ...
+  Call     GetNpcPos   	( 00000005 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-7.2998047] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000005 00170003 00170001 00000000 000A0007 ) % Once we 7 Star Spirits are reunited in Star Haven, ...
+  Call     GetNpcPos   	( 00000006 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamAngles 	( .Default *Fixed[20.0] *Fixed[-6.899414] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000006 00180002 00180001 00000000 000A0008 ) % Mario...we are... 
+  Set  *AreaByte[6]  000000C8 
+  Wait     0000001E 
+  Set  *AreaByte[6]  00000000 
+  Wait     00000014 
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000006 00180002 00180001 00000000 000A0009 ) % Alas... We've nearly exhausted our power to talk t ...
+  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default FFFFFED4 )
+  Call     SetCamAngles 	( .Default *Fixed[16.0] *Fixed[-6.0] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A000A ) % In order to take the Star Rod back from Bowser...  ...
+  Set  *AreaByte[0]  000000C8 
+  Set  *AreaByte[1]  000000C8 
+  Set  *AreaByte[2]  000000C8 
+  Set  *AreaByte[3]  000000C8 
+  Set  *AreaByte[4]  000000C8 
+  Set  *AreaByte[5]  000000C8 
+  Set  *AreaByte[6]  000000C8 
+  Wait     0000001E 
+  Set  *AreaByte[0]  00000000 
+  Set  *AreaByte[1]  00000000 
+  Set  *AreaByte[2]  00000000 
+  Set  *AreaByte[3]  00000000 
+  Set  *AreaByte[4]  00000000 
+  Set  *AreaByte[5]  00000000 
+  Set  *AreaByte[6]  00000000 
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00120002 00120001 00000000 000A000B ) % Please, Mario... you are our last hope... and we w ...
+  Call     EnableNpcShadow 	( 00000000 .False )
+  Call     EnableNpcShadow 	( 00000001 .False )
+  Call     EnableNpcShadow 	( 00000002 .False )
+  Call     EnableNpcShadow 	( 00000003 .False )
+  Call     EnableNpcShadow 	( 00000004 .False )
+  Call     EnableNpcShadow 	( 00000005 .False )
+  Call     EnableNpcShadow 	( 00000006 .False )
+  Call     FullyRestoreHPandFP 	( )
+  Set  *AreaByte[0]  00000064 
+  Set  *AreaByte[1]  00000064 
+  Set  *AreaByte[2]  00000064 
+  Set  *AreaByte[3]  00000064 
+  Set  *AreaByte[4]  00000064 
+  Set  *AreaByte[5]  00000064 
+  Set  *AreaByte[6]  00000064 
+  SetF  *MapVar[0]  *Fixed[40.0] 
+  SetF  *MapVar[1]  *Fixed[40.0] 
+  Loop     00000014 
+  	AddF  *MapVar[0]  *Fixed[-6.0] 
+  	AddF  *MapVar[1]  *Fixed[-6.0] 
+  	Wait     00000001 
+  EndLoop
+  Set  *MapFlag[00]  00000001 
+  Set  *AreaByte[0]  00000000 
+  Set  *AreaByte[1]  00000000 
+  Set  *AreaByte[2]  00000000 
+  Set  *AreaByte[3]  00000000 
+  Set  *AreaByte[4]  00000000 
+  Set  *AreaByte[5]  00000000 
+  Set  *AreaByte[6]  00000000 
+  Call     EnableModel 	( {Model:1} .False )
+  Call     EnableModel 	( {Model:2} .False )
+  Call     EnableModel 	( {Model:3} .False )
+  Call     EnableModel 	( {Model:4} .False )
+  Call     EnableModel 	( {Model:5} .False )
+  Call     EnableModel 	( {Model:6} .False )
+  Call     EnableModel 	( {Model:7} .False )
+  Call     DisablePartnerAI 	( 00000000 )
+  Wait     0000000A 
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  00000014 
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default 0000012C )
+  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  Call     $Function_80240CB0 ( 00000001 )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  0000001E 
+  Add  *Var[2]  0000001E 
+  Call     SetNpcSpeed 	( .Npc:Partner *Fixed[2.0] )
+  Call     MoveNpcTo   	( .Npc:Partner *Var[0] *Var[2] 00000000 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Wait     0000000A 
+  Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000A000C ) % Mario... It looks like things are a lot more serio ...
+  Call     EnablePartnerAI 	( )
+  Thread
+  	Set  *StoryProgress  FFFFFF96 
+  	Call     ResetCam    	( .Default *Fixed[1.5] )
+  EndThread
+  Call     FadeOutMusic 	( 00000000 00000BB8 )
+  Wait     0000000A 
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End

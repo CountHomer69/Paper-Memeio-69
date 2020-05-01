@@ -1,0 +1,388 @@
+@ $NpcGroup_8024221C
+00000001 $NpcSettings_80241B34 {Vec3f:NPC_8024221C} % 0 -1000 0
+00840701 $Script_Init_80241E80 00000000 00000000 0000010E 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+{Movement:NPC_8024221C}
+00600009 0060000A 0060000A 0060000A 0060000A 0060000A 00600019 00600019 
+0060000D 0060000F 0060000A 0060000A 0060000A 0060000A 0060000A 0060000A 
+00000000 00000000 00000000 00000000 % no tattle string
+
+
+@ $Script_80242F20
+  Loop     
+  	Wait     00000001 
+  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  	If  *Var[0]  <  FFFFFF9C 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     DisablePlayerInput 	( .True )
+  Call     802CF56C ( 00000002 )
+  Thread
+  	Add  *Var[0]  FFFFFFEC 
+  	Call     MovePlayerTo 	( *Var[0] *Var[2] 0000000A )
+  EndThread
+  Call     SetNpcPos   	( 00000000 00000032 000000B4 00000000 )
+  Call     SetNpcJumpscale 	( 00000000 00000000 )
+  Add  *Var[0]  FFFFFFF6 
+  Call     NpcJump0    	( 00000000 *Var[0] 00000014 *Var[2] 0000000F )
+  Call     PlaySoundAtPlayer 	( 000000E1 00000000 )
+  Call     SetPlayerAnimation 	( .PlayerAnim:ShockStill )
+  Call     SetNpcAnimation 	( 00000000 0020000E )
+  Thread
+  	Call     SetNpcAnimation 	( 00000000 00200016 )
+  	Call     SetNpcJumpscale 	( 00000000 *Fixed[0.60058594] )
+  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  	Add  *Var[0]  FFFFFF9C 
+  	Call     NpcJump0    	( 00000000 *Var[0] 0000000A *Var[2] 00000014 )
+  	Call     SetPlayerAnimation 	( 00010002 )
+  EndThread
+  Thread
+  	Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[2.0] )
+  EndThread
+  Thread
+  	Set  *Var[3]  00000168 
+  	Loop     00000003 
+  		Label    00000016 
+  		Wait     00000001 
+  		Sub  *Var[3]  0000002D 
+  		If  *Var[3]  >  00000000 
+  			Call     SetNpcRotation ( 00000000 00000000 *Var[3] 00000000 )
+  			If  *Var[3]  ==  0000010E 
+  				Call     SetNpcAnimation 	( 00000000 0020001A )
+  			EndIf
+  			If  *Var[3]  ==  0000005A 
+  				Call     SetNpcAnimation 	( 00000000 00200016 )
+  			EndIf
+  			Goto     00000016 
+  		EndIf
+  	EndLoop
+  	Call     SetNpcRotation ( 00000000 00000000 00000000 00000000 )
+  EndThread
+  Call     ShowMessage 	( 000A000D 000000A0 00000028 ) % Ouch!! 
+  Call     SetMusicTrack 	( 00000000 .Song:TwinkTheme 00000000 00000008 )
+  Call     SetPlayerAnimation 	( 00010002 )
+  Call     SetNpcAnimation 	( 00000000 00200001 )
+  Call     NpcFacePlayer 	( 00000000 00000000 )
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 0020000C 00200001 00000000 000A000E ) % Oh, sorry, sorry, so sorry! I'm in a huge hurry!!
+  Call     $Function_80240B20 ( )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  FFFFFFEC 
+  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default 00000113 )
+  Call     SetCamAngles 	( .Default *Fixed[16.0] *Fixed[-8.5] )
+  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  00000028 
+  Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 00000000 )
+  Call     ShowEmote   	( 00000000 .Emote:Shock 0000002D 00000014 00000001 00000000 00000000 00000000 00000000 )
+  Wait     00000014 
+  Call     SetNpcAnimation 	( 00000000 0020000F )
+  Call     SetNpcJumpscale 	( 00000000 *Fixed[1.0] )
+  Loop     00000002 
+  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  	Call     NpcJump0    	( 00000000 *Var[0] *Var[1] *Var[2] 0000000F )
+  EndLoop
+  Call     DisablePartnerAI 	( 00000000 )
+  Call     SetNpcJumpscale 	( .Npc:Partner 00000000 )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  00000019 
+  Call     NpcJump0    	( .Npc:Partner *Var[0] *Var[1] *Var[2] 0000000A )
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00200009 00200001 00000000 000A000F ) % Oh...it's...!? You're Mario, aren't you!? Thank th ...
+  Wait     00000005 
+  Call     GetNpcPos   	( 00000000 *Var[4] *Var[5] *Var[6] )
+  Call     LoadPath    	( 00000046 $VectorList_802429D4 0000000A 00000000 )
+  Label    00000001 
+  Call     GetNextPathPos ( )
+  AddF  *Var[1]  *Var[4] 
+  AddF  *Var[2]  *Var[5] 
+  AddF  *Var[3]  *Var[6] 
+  Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  Call     $Function_80240994 ( )
+  Wait     00000001 
+  If  *Var[0]  ==  00000001 
+  	Goto     00000001 
+  EndIf
+  Call     SetNpcAnimation 	( 00000000 00200001 )
+  Wait     0000000A 
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00200009 00200001 00000000 000A0010 ) % How do you do? I'm Twink. Princess Peach asked me  ...
+  Call     SetNpcYaw   	( 00000000 0000010E )
+  Call     SetNpcAnimation 	( 00000000 0020001A )
+  Call     SayMessage0 	( 00000000 FFFFFFFF FFFFFFFF 00000005 000A0011 ) % Ahhh... Yes, here it is! 
+  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  Add  *Var[1]  0000000F 
+  Call     MakeItemEntity ( .Item:LuckyStar *Var[0] *Var[1] *Var[2] 00000001 00000000 )
+  Set  *MapVar[A]  *Var[0] 
+  Exec     $Script_80242D8C *Var[8] 
+  Exec     $Script_80242E98 *Var[9] 
+  Call     SetNpcAnimation 	( 00000000 00200017 )
+  Call     SayMessage2 	( 00000000 FFFFFFFF FFFFFFFF 00000200 000A0012 ) % Here, this is it! Take it!
+  Call     GetPlayerPos 	( *Var[5] *Var[3] *Var[4] )
+  Add  *Var[5]  FFFFFFE2 
+  Call     MoveNpcTo   	( 00000000 *Var[5] *Var[4] 0000000F )
+  Kill     *Var[9] 
+  Kill     *Var[8] 
+  Thread
+  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  	Add  *Var[1]  0000000F 
+  	Set  *Var[4]  *Var[1] 
+  	Add  *Var[4]  0000001E 
+  	Set  *Var[3]  *Var[0] 
+  	Call     MakeLerp    	( *Var[1] *Var[4] 00000007 00000004 )
+  	Loop     
+  		Call     UpdateLerp  	( )
+  		Call     SetItemPos  	( *MapVar[A] *Var[3] *Var[0] *Var[2] )
+  		Wait     00000001 
+  		Add  *Var[3]  00000002 
+  		If  *Var[1]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  	Call     GetPlayerPos 	( *Var[5] *Var[6] *Var[7] )
+  	Add  *Var[6]  00000026 
+  	Call     MakeLerp    	( *Var[0] *Var[6] 00000007 00000001 )
+  	Loop     
+  		Call     UpdateLerp  	( )
+  		Call     SetItemPos  	( *MapVar[A] *Var[3] *Var[0] *Var[2] )
+  		Wait     00000001 
+  		Add  *Var[3]  00000002 
+  		If  *Var[1]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  	Call     RemoveItemEntity 	( *MapVar[A] )
+  EndThread
+  Call     SetNpcAnimation 	( 00000000 00200014 )
+  Wait     0000000B 
+  Call     SetNpcAnimation 	( 00000000 00200015 )
+  Set  *Var[0]  00000007 
+  Set  *Var[1]  00000004 
+  Call     ShowGotItem 	( *Var[0] 00000001 00000000 )
+  Call     AddKeyItem  	( *Var[0] )
+  Call     $Function_80240908 ( )
+  Call     SetNpcAnimation 	( 00000000 00200001 )
+  Wait     00000014
+  Exec     $Script_80241084 
+  Call     ShowMessage 	( 000A0031 00000140 00000000 ) % Here you are!
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamSpeed 	( .Default *Fixed[3.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Thread
+  	Wait     00000014 
+  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  	Add  *Var[0]  FFFFFF06 
+  	Div  *Var[0]  00000002 
+  	Call     SetPanTarget 	( .Default FFFFFF06 00000035 00000000 )
+  	Call     SetCamSpeed 	( .Default *Fixed[1.4003906] )
+  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  	Wait     0000000A 
+  	Call     SetPanTarget 	( .Default *Var[0] 00000000 00000000 )
+  	Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  EndThread
+  Exec     $Script_80242BA4 *Var[A] 
+  Call     LoadPath    	( 00000043 $VectorList_80242A4C 00000005 00000000 )
+  Label    00000002 
+  Call     GetNextPathPos ( )
+  Call     SetNpcPos   	( 00000001 *Var[1] *Var[2] *Var[3] )
+  Wait     00000001 
+  If  *Var[0]  ==  00000001 
+  	Goto     00000002 
+  EndIf
+  Kill     *Var[A] 
+  ChildThread
+  	Loop     
+  		Loop     0000000A 
+  			Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  			Add  *Var[1]  00000001 
+  			Call     SetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  			Wait     00000002 
+  		EndLoop
+  		Wait     00000003 
+  		Loop     0000000A 
+  			Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  			Add  *Var[1]  FFFFFFFF 
+  			Call     SetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  			Wait     00000002 
+  		EndLoop
+  		Wait     00000003 
+  	EndLoop
+  EndChildThread
+  Call     SetNpcAnimation 	( 00000001 00570000 )
+  Loop     00000003 
+  	Call     SetNpcRotation ( 00000001 00000000 00000000 0000000A )
+  	Wait     00000001 
+  	Call     SetNpcRotation ( 00000001 00000000 00000000 00000000 )
+  	Wait     00000001 
+  EndLoop
+  Wait     00000014 
+  Exec     $Script_80242D20 *Var[A] 
+  Call     SayMessage0 	( 00000000 00200009 00200000 00000005 000A0032 ) % What!? It can't be... Were you following me!?
+  Kill     *Var[A] 
+  Wait     0000000A 
+  Call     GetNpcPos   	( 00000001 *Var[0] *Var[1] *Var[2] )
+  Call     UseSettingsFrom 	( .Default *Var[0] 00000000 *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default *Fixed[260.0] )
+  Call     SetCamAngles 	( .Default *Fixed[13.0] *Fixed[-8.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     00000001 
+  Call     SayMessage0 	( 00000001 00570009 00570000 00000200 000A0033 ) % What a foolish Star Kid!! I knew that if I followe ...
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  FFFFFF06 
+  Div  *Var[0]  00000002 
+  Call     UseSettingsFrom 	( .Default *Var[0] 00000000 00000000 )
+  Call     SetPanTarget 	( .Default *Var[0] 00000000 00000000 )
+  Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     SetNpcVar   	( 00000001 00000000 00000001 )
+  Call     EnablePartnerAI 	( )
+  Unbind
+  Return
+  End
+  
+@ $Script_80244210
+  Call     802D5830 ( 00000001 )
+  Call     SetMusicTrack 	( 00000000 .Song:TwinkTheme 00000000 00000008 )
+  Wait     0000003C 
+  Call     SetCamFlag4 	( .Default .True )
+  Call     GetNpcPos   	( 00000000 *Var[3] *Var[1] *Var[2] )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  *Var[3] 
+  Div  *Var[0]  00000002 
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default *Fixed[275.0] )
+  Call     SetCamAngles 	( .Default *Fixed[16.0] *Fixed[-9.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     00000001 
+  Call     InterpNpcYaw 	( 00000000 0000005A 00000000 )
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00200009 00200001 00000000 000A0034 ) % Well done, Mario! You're as strong as they say. I  ...
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Call     SetPlayerJumpscale 	( *Fixed[0.5] )
+  Call     PlayerJump  	( *Var[0] *Var[1] *Var[2] 0000000F )
+  Wait     0000000A 
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00200009 00200001 00000000 000A0035 ) % I'm going to return to Princess Peach's side. I'm  ...
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default *Fixed[700.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[1.3007812] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     GetNpcPos   	( 00000000 *Var[4] *Var[5] *Var[6] )
+  Call     LoadPath    	( 00000055 $VectorList_80242A88 00000008 00000000 )
+  Label    00000000 
+  Call     GetNextPathPos ( )
+  AddF  *Var[1]  *Var[4] 
+  AddF  *Var[2]  *Var[5] 
+  AddF  *Var[3]  *Var[6] 
+  Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  Call     $Function_80240994 ( )
+  Wait     00000001 
+  If  *Var[0]  ==  00000001 
+  	Goto     00000000 
+  EndIf
+  Wait     0000002D 
+  Thread
+  	Call     LoadPath    	( 0000003C $VectorList_80242AE8 00000006 00000000 )
+  	Label    00000001 
+  	Call     GetNextPathPos ( )
+  	Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  	Call     $Function_80240994 ( )
+  	Wait     00000001 
+  	If  *Var[0]  ==  00000001 
+  		Goto     00000001 
+  	EndIf
+  EndThread
+  Wait     0000001E 
+  Call     GetNpcPos   	( 00000000 *Var[3] *Var[1] *Var[2] )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  *Var[3] 
+  Div  *Var[0]  00000002 
+  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default *Fixed[275.0] )
+  Call     SetCamAngles 	( .Default *Fixed[16.0] *Fixed[-8.5] )
+  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00200009 00200001 00000000 000A0036 ) % Oh dear! I almost forgot to tell you the message f ...
+  Thread
+  	Call     GetNpcPos   	( 00000000 *Var[4] *Var[5] *Var[6] )
+  	Call     LoadPath    	( 00000078 $VectorList_80242B30 00000009 00000001 )
+  	Label    00000002 
+  	Call     GetNextPathPos ( )
+  	AddF  *Var[1]  *Var[4] 
+  	AddF  *Var[2]  *Var[5] 
+  	AddF  *Var[3]  *Var[6] 
+  	Call     SetNpcPos   	( 00000000 *Var[1] *Var[2] *Var[3] )
+  	Call     $Function_80240994 ( )
+  	Wait     00000001 
+  	If  *Var[0]  ==  00000001 
+  		Goto     00000002 
+  	EndIf
+  EndThread
+  Call     SetCamDistance ( .Default *Fixed[300.0] )
+  Call     SetCamAngles 	( .Default *Fixed[12.5] *Fixed[-10.0] )
+  Call     $Function_80240B3C ( )
+  Call     SetCamPosA  	( .Default *Var[0] *Var[1] )
+  Call     SetCamPosB  	( .Default *Var[2] *Var[3] )
+  Call     SetCamSpeed 	( .Default *Fixed[0.5] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     0000001E 
+  Call     SetNpcFlagBits ( 00000000 00040000 .True )
+  SetF  *Var[0]  *Fixed[0.0] 
+  Loop     0000000A 
+  	AddF  *Var[0]  *Fixed[36.0] 
+  	Call     SetNpcRotation ( 00000000 00000000 *Var[0] 00000000 )
+  	Wait     00000001 
+  EndLoop
+  Call     SetNpcFlagBits ( 00000000 00040000 .False )
+  Wait     00000078 
+  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default *Fixed[275.0] )
+  Call     SetCamAngles 	( .Default *Fixed[13.0] *Fixed[-7.5] )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     0000000A 
+  Call     DisablePartnerAI 	( 00000000 )
+      Call     $GetFileName()
+    Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000A0037 ) % There he goes... back to Bowser's Castle. What a b ...
+  Call     EnablePartnerAI 	( )
+  Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  Wait     0000001E 
+  Call     SetPlayerAnimation 	( 00010002 )
+  Thread
+  	Set  *StoryProgress  FFFFFF98 
+  	Call     802D5830 ( 00000000 )
+  	Call     ResetCam    	( .Default *Fixed[4.0] )
+  EndThread
+  Wait     0000000A 
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End

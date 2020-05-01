@@ -1,0 +1,805 @@
+% Script File: 05 Smooch.bscr
+% Decoded from: 791D90 to 793D20 (05 Smooch)
+
+#new:Function $Function_802A1000
+	ADDIU     SP, SP, FFD8
+	SW        S1, 1C (SP)
+	DADDU     S1, A0, R0
+	SW        RA, 24 (SP)
+	SW        S2, 20 (SP)
+	SW        S0, 18 (SP)
+	LW        S0, C (S1)
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	ADDIU     S0, S0, 4
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetVariable}
+	DADDU     S2, V0, R0
+	DADDU     A0, S1, R0
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	DADDU     S0, V0, R0
+	MTC1      S2, F2
+	NOP
+	CVT.S.W   F2, F2
+	MFC1      A1, F2
+	MTC1      S0, F2
+	NOP
+	CVT.S.W   F2, F2
+	MFC1      A2, F2
+	MTC1      V0, F2
+	NOP
+	CVT.S.W   F2, F2
+	LIF       F0, 40.0
+	MFC1      A3, F2
+	DADDU     A0, R0, R0
+	JAL       8006FEF0
+	SWC1      F0, 10 (SP)
+	LW        RA, 24 (SP)
+	LW        S2, 20 (SP)
+	LW        S1, 1C (SP)
+	LW        S0, 18 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 28
+
+#new:Function $Function_802A10AC
+	ADDIU     SP, SP, FFD0
+	SW        S1, 24 (SP)
+	DADDU     S1, A0, R0
+	SW        RA, 2C (SP)
+	SW        S2, 28 (SP)
+	SW        S0, 20 (SP)
+	LW        S0, C (S1)
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	ADDIU     S0, S0, 4
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetVariable}
+	DADDU     S2, V0, R0
+	DADDU     A0, S1, R0
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	DADDU     S0, V0, R0
+	ADDIU     A0, R0, 5
+	MTC1      S2, F2
+	NOP
+	CVT.S.W   F2, F2
+	MFC1      A1, F2
+	MTC1      S0, F2
+	NOP
+	CVT.S.W   F2, F2
+	MFC1      A2, F2
+	MTC1      V0, F2
+	NOP
+	CVT.S.W   F2, F2
+	LIF       F0, 50.0
+	MFC1      A3, F2
+	ADDIU     V1, R0, 28
+	SW        V1, 18 (SP)
+	ADDIU     V1, R0, 1E
+	SW        V1, 1C (SP)
+	SWC1      F0, 10 (SP)
+	JAL       80070550
+	SWC1      F0, 14 (SP)
+	LW        RA, 2C (SP)
+	LW        S2, 28 (SP)
+	LW        S1, 24 (SP)
+	LW        S0, 20 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 30
+
+#new:Function $Function_802A116C
+	ADDIU     SP, SP, FFD8
+	SW        S1, 1C (SP)
+	DADDU     S1, A0, R0
+	SW        RA, 24 (SP)
+	SW        S2, 20 (SP)
+	SW        S0, 18 (SP)
+	LW        S0, C (S1)
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	ADDIU     S0, S0, 4
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetVariable}
+	DADDU     S2, V0, R0
+	DADDU     A0, S1, R0
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	DADDU     S0, V0, R0
+	MTC1      S2, F2
+	NOP
+	CVT.S.W   F2, F2
+	MFC1      A1, F2
+	MTC1      S0, F2
+	NOP
+	CVT.S.W   F2, F2
+	MFC1      A2, F2
+	MTC1      V0, F2
+	NOP
+	CVT.S.W   F2, F2
+	LIF       F0, 30.0
+	MFC1      A3, F2
+	DADDU     A0, R0, R0
+	JAL       8006FEF0
+	SWC1      F0, 10 (SP)
+	LW        RA, 24 (SP)
+	LW        S2, 20 (SP)
+	LW        S1, 1C (SP)
+	LW        S0, 18 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 28
+
+#new:Function $Function_802A1218
+	ADDIU     SP, SP, FFC8
+	SW        S1, 2C (SP)
+	DADDU     S1, A0, R0
+	SW        RA, 34 (SP)
+	SW        S2, 30 (SP)
+	SW        S0, 28 (SP)
+	LW        S0, C (S1)
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	ADDIU     S0, S0, 4
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetVariable}
+	DADDU     S2, V0, R0
+	DADDU     A0, S1, R0
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	DADDU     S0, V0, R0
+	ADDIU     A0, R0, 4
+	MTC1      S2, F4
+	NOP
+	CVT.S.W   F4, F4
+	MFC1      A1, F4
+	MTC1      S0, F4
+	NOP
+	CVT.S.W   F4, F4
+	MFC1      A2, F4
+	MTC1      V0, F4
+	NOP
+	CVT.S.W   F4, F4
+	LIF       F0, 20.0
+	LIF       F2, 1.0
+	MFC1      A3, F4
+	ADDIU     V1, R0, A
+	SW        V1, 1C (SP)
+	ADDIU     V1, R0, F
+	SW        V1, 20 (SP)
+	SWC1      F0, 10 (SP)
+	SWC1      F0, 14 (SP)
+	JAL       80072350
+	SWC1      F2, 18 (SP)
+	LW        RA, 34 (SP)
+	LW        S2, 30 (SP)
+	LW        S1, 2C (SP)
+	LW        S0, 28 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 38
+
+#new:Function $Function_802A12E4
+	ADDIU     SP, SP, FFE8
+	SW        S0, 10 (SP)
+	DADDU     S0, A0, R0
+	BEQ       A1, R0, .o48
+	SW        RA, 14 (SP)
+	JAL       8011D82C
+	ADDIU     A0, R0, 1
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	DADDU     A2, A0, R0
+	DADDU     A3, A0, R0
+	LAW       V0, 801512F0
+	ADDIU     V1, R0, 1
+	JAL       8011BE5C
+	SB        V1, 0 (V0)
+	ADDIU     V0, R0, 14
+	SW        V0, 70 (S0)
+	.o48
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	DADDU     A2, A0, R0
+	LW        V1, 70 (S0)
+	ADDIU     V0, R0, 14
+	SUBU      V0, V0, V1
+	SLL       A3, V0, 2
+	ADDU      A3, A3, V0
+	SLL       A3, A3, 1
+	JAL       8011BE5C
+	ANDI      A3, A3, FE
+	LW        V0, 70 (S0)
+	ADDIU     V0, V0, FFFF
+	SW        V0, 70 (S0)
+	SLTIU     V0, V0, 1
+	LW        RA, 14 (SP)
+	LW        S0, 10 (SP)
+	SLL       V0, V0, 1
+	JR        RA
+	ADDIU     SP, SP, 18
+
+% Origin: HEURISTIC
+#new:Function $Function_802A137C
+	ADDIU     SP, SP, FFE8
+	SW        S0, 10 (SP)
+	DADDU     S0, A0, R0
+	BEQ       A1, R0, .o44
+	SW        RA, 14 (SP)
+	JAL       8011D82C
+	ADDIU     A0, R0, 1
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	DADDU     A2, A0, R0
+	DADDU     A3, A0, R0
+	LAW       V1, 801512F0
+	ADDIU     V0, R0, 1
+	JAL       8011BE5C
+	SB        V0, 0 (V1)
+	SW        R0, 70 (S0)
+	.o44
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	LBU       A3, 73 (S0)
+	JAL       8011BE5C
+	DADDU     A2, A0, R0
+	LW        V0, 70 (S0)
+	ADDIU     V0, V0, A
+	SW        V0, 70 (S0)
+	SLTI      V0, V0, E6
+	BNE       V0, R0, .o88
+	DADDU     V0, R0, R0
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	DADDU     A2, A0, R0
+	JAL       8011BE5C
+	ADDIU     A3, R0, E6
+	ADDIU     V0, R0, 2
+	.o88
+	LW        RA, 14 (SP)
+	LW        S0, 10 (SP)
+	JR        RA
+	ADDIU     SP, SP, 18
+
+#new:Function $Function_802A1414
+	ADDIU     SP, SP, FFE8
+	SW        S0, 10 (SP)
+	DADDU     S0, A0, R0
+	BEQ       A1, R0, .o1C
+	SW        RA, 14 (SP)
+	ADDIU     V0, R0, 14
+	SW        V0, 70 (S0)
+	.o1C
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	LW        V0, 70 (S0)
+	DADDU     A2, A0, R0
+	SLL       A3, V0, 2
+	ADDU      A3, A3, V0
+	SLL       A3, A3, 1
+	JAL       8011BE5C
+	ANDI      A3, A3, FE
+	LW        V0, 70 (S0)
+	ADDIU     V0, V0, FFFF
+	BEQ       V0, R0, .o58
+	SW        V0, 70 (S0)
+	BEQ       R0, R0, .o70
+	DADDU     V0, R0, R0
+	.o58
+	DADDU     A0, R0, R0
+	DADDU     A1, A0, R0
+	DADDU     A2, A0, R0
+	JAL       8011BE5C
+	DADDU     A3, A0, R0
+	ADDIU     V0, R0, 2
+	.o70
+	LW        RA, 14 (SP)
+	LW        S0, 10 (SP)
+	JR        RA
+	ADDIU     SP, SP, 18
+
+#new:Function $Function_802A1494
+	ADDIU     SP, SP, FFE8
+	SW        RA, 10 (SP)
+	LW        V0, C (A0)
+	JAL       {Func:GetVariable}
+	LW        A1, 0 (V0)
+	LAB       A1, 8010F2A2
+	ADDIU     A0, R0, 100
+	SLL       V1, A1, 2
+	ADDU      V1, V1, A1
+	ADDU      V1, V1, V0
+	SLL       V1, V1, 2
+	LTW       A2, V1 (8029C890)
+	JAL       80263CFC
+	DADDU     A1, R0, R0
+	LW        RA, 10 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 18
+
+#new:Function $Function_802A14E8
+	ADDIU     SP, SP, FFE8
+	SW        RA, 10 (SP)
+	JAL       8003AAEC
+	ADDIU     A0, R0, 64
+	DADDU     A0, V0, R0
+	ADDIU     V1, R0, 20
+	SH        V1, A8 (A0)
+	SH        V1, A6 (A0)
+	LW        RA, 10 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 18
+
+#new:Function $Function_802A1518
+	ADDIU     SP, SP, FFE8
+	SW        RA, 14 (SP)
+	SW        S0, 10 (SP)
+	LW        V0, C (A0)
+	JAL       {Func:GetVariable}
+	LW        A1, 0 (V0)
+	LIA       V1, 8010F290
+	LB        A0, 2 (V1)
+	LB        A1, 3 (V1)
+	ADDU      A0, A0, V0
+	SLT       V0, A1, A0
+	BEQ       V0, R0, .o3C
+	DADDU     S0, V1, R0
+	DADDU     A0, A1, R0
+	.o3C
+	SB        A0, 2 (S0)
+	LW        RA, 14 (SP)
+	LW        S0, 10 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 18
+
+#new:Function $Function_802A156C
+	ADDIU     SP, SP, FFD0
+	SW        S1, 1C (SP)
+	DADDU     S1, A0, R0
+	SW        RA, 28 (SP)
+	SW        S3, 24 (SP)
+	SW        S2, 20 (SP)
+	SW        S0, 18 (SP)
+	LW        S0, C (S1)
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	ADDIU     S0, S0, 4
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetVariable}
+	DADDU     S3, V0, R0
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetVariable}
+	DADDU     S2, V0, R0
+	DADDU     A0, S1, R0
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	DADDU     S0, V0, R0
+	MTC1      S3, F0
+	NOP
+	CVT.S.W   F0, F0
+	MFC1      A1, F0
+	MTC1      S2, F0
+	NOP
+	CVT.S.W   F0, F0
+	MFC1      A2, F0
+	MTC1      S0, F0
+	NOP
+	CVT.S.W   F0, F0
+	MFC1      A3, F0
+	DADDU     A0, R0, R0
+	JAL       80071090
+	SW        V0, 10 (SP)
+	LW        RA, 28 (SP)
+	LW        S3, 24 (SP)
+	LW        S2, 20 (SP)
+	LW        S1, 1C (SP)
+	LW        S0, 18 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 30
+
+PADDING: 802A162C to 802A1630 (007923BC to 007923C0)
+00000000 
+
+#new:Script $Script_802A1630
+	Call     GetOwnerID  	( *Var[A] )
+	If  *Var[A]  ==  00000000 
+	   Call     UseCamPreset 	( 00000045 )
+	   Wait     0000000A 
+	   Call     SetAnimation 	( .Actor:Player 00000000 0001001F )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[0]  00000010 
+	   Call     SetActorSpeed 	( .Actor:Player *Fixed[4.0] )
+	   Call     SetGoalToPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Call     80273C64 ( 00000000 )
+	   Wait     00000008 
+	   Call     PlaySound   	( 00000241 )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000000F 
+	   Call     $Function_802A1000 ( *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A12E4 ( )
+	   Wait     00000014 
+	   Call     SetAnimation 	( .Actor:Player 00000000 0001002C )
+	   Wait     0000000A 
+	   Call     PlaySound   	( 00002051 )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A10AC ( *Var[0] *Var[1] *Var[2] )
+	   Wait     0000001E 
+	   Call     SetAnimation 	( .Actor:Player 00000000 0001002A )
+	Else
+	   Call     UseCamPreset 	( 00000045 )
+	   Wait     0000000A 
+	   Call     $Function_802A1494 ( 00000000 )
+	   Call     GetActorPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[0]  00000010 
+	   Call     SetActorSpeed 	( .Actor:Partner *Fixed[4.0] )
+	   Call     SetGoalToPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Call     RunToGoal   	( .Actor:Partner 00000000 .False )
+	   Call     $Function_802A1494 ( 00000004 )
+	   Wait     00000008 
+	   Call     PlaySound   	( 00000241 )
+	   Call     $Function_802A1494 ( 00000001 )
+	   Call     GetActorPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000000F 
+	   Call     $Function_802A1000 ( *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A12E4 ( )
+	   Wait     00000014 
+	   Call     PlaySound   	( 00002051 )
+	   Call     $Function_802A1494 ( 00000001 )
+	   Wait     0000000A 
+	   Call     GetActorPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A10AC ( *Var[0] *Var[1] *Var[2] )
+	   Wait     0000001E 
+	   Call     $Function_802A1494 ( 00000004 )
+	EndIf
+	Return
+	End
+
+% Origin: HEURISTIC
+#new:Script $Script_802A19C8
+	Call     GetOwnerID  	( *Var[A] )
+	If  *Var[A]  ==  00000000 
+	   Call     UseCamPreset 	( 00000045 )
+	   Wait     0000000A 
+	   Call     SetAnimation 	( .Actor:Player 00000000 0001001F )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[0]  00000010 
+	   Call     SetActorSpeed 	( .Actor:Player *Fixed[4.0] )
+	   Call     SetGoalToPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Call     80273C64 ( 00000000 )
+	   Wait     00000008 
+	   Call     PlaySound   	( 00000241 )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000000F 
+	   Call     $Function_802A1000 ( *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A137C ( )
+	   Wait     00000014 
+	   Call     SetAnimation 	( .Actor:Player 00000000 0001002C )
+	   Wait     0000000A 
+	   Call     PlaySound   	( 00002051 )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A10AC ( *Var[0] *Var[1] *Var[2] )
+	   Wait     0000001E 
+	   Call     SetAnimation 	( .Actor:Player 00000000 0001002A )
+	Else
+	   Call     UseCamPreset 	( 00000045 )
+	   Wait     0000000A 
+	   Call     $Function_802A1494 ( 00000000 )
+	   Call     GetActorPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[0]  00000010 
+	   Call     SetActorSpeed 	( .Actor:Partner *Fixed[4.0] )
+	   Call     SetGoalToPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Call     RunToGoal   	( .Actor:Partner 00000000 .False )
+	   Call     $Function_802A1494 ( 00000004 )
+	   Wait     00000008 
+	   Call     PlaySound   	( 00000241 )
+	   Call     $Function_802A1494 ( 00000001 )
+	   Call     GetActorPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000000F 
+	   Call     $Function_802A1000 ( *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A137C ( )
+	   Wait     00000014 
+	   Call     PlaySound   	( 00002051 )
+	   Call     $Function_802A1494 ( 00000001 )
+	   Wait     0000000A 
+	   Call     GetActorPos 	( .Actor:Partner *Var[0] *Var[1] *Var[2] )
+	   Call     $Function_802A10AC ( *Var[0] *Var[1] *Var[2] )
+	   Wait     0000001E 
+	   Call     $Function_802A1494 ( 00000004 )
+	EndIf
+	Return
+	End
+
+#new:Script $Script_802A1D60
+	Wait     00000008 
+	Call     80253AEC ( 00000000 )
+	Call     8024E664 ( 00000049 )
+	Call     MoveCamOver 	( 00000001 )
+	Call     PlaySound   	( 00002041 )
+	Call     802CDBA4 ( 00000064 *Var[0] )
+	Call     $Function_802A14E8 ( )
+	Call     SetNpcFlagBits ( 00000064 00040000 .True )
+	Call     802CDCB0 ( 00000064 FFFFFFB5 00000096 00000000 )
+	Call     802D0118 ( 00000064 00000000 00000005 )
+	Call     $Function_802A116C ( FFFFFFB5 000000A7 00000000 )
+	Wait     0000000A 
+	Call     EnableNpcBlur 	( 00000064 .True )
+	Set  *Var[0]  00000000 
+	Loop     00000008 
+	   Add  *Var[0]  00000043 
+	   Call     SetNpcRotation ( 00000064 00000000 *Var[0] 00000000 )
+	   Wait     00000001 
+	EndLoop
+	Wait     0000000A 
+	Call     EnableNpcBlur 	( 00000064 .False )
+	Thread
+	   Wait     0000000A 
+	   Call     UseCamPreset 	( 00000045 )
+	EndThread
+	Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Add  *Var[1]  00000032 
+	Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000001E 00000000 0000000A )
+	Call     80253AEC ( 00000001 )
+	Return
+	End
+
+#new:Script $Script_802A1F6C
+	Call     GetOwnerID  	( *Var[A] )
+	If  *Var[A]  ==  00000000 
+	   Call     UseCamPreset 	( 00000002 )
+	   Call     PlaySound   	( 00002047 )
+	   Thread
+	      Loop     00000005 
+	         Wait     00000006 
+	         Call     GetNpcPos   	( 00000064 *Var[0] *Var[1] *Var[2] )
+	         Call     $Function_802A1218 ( *Var[0] *Var[1] *Var[2] )
+	      EndLoop
+	   EndThread
+	   Call     EnableNpcBlur 	( 00000064 .True )
+	   Thread
+	      Set  *Var[2]  00000000 
+	      Set  *Var[3]  000002D0 
+	      Call     MakeLerp    	( *Var[2] *Var[3] 0000001E 00000002 )
+	      Loop     
+	         Call     UpdateLerp  	( )
+	         Call     SetNpcRotation ( 00000064 00000000 *Var[0] 00000000 )
+	         Wait     00000001 
+	         If  *Var[1]  ==  00000000 
+	            BreakLoop
+	         EndIf
+	      EndLoop
+	   EndThread
+	   Call     GetNpcPos   	( 00000064 *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000003C 
+	   Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000000F 00000000 0000000A )
+	   Add  *Var[1]  0000008C 
+	   Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000000F 00000000 0000000A )
+	   Wait     0000000A 
+	   Call     EnableNpcBlur 	( 00000064 .False )
+	   Call     802CDC1C ( 00000064 )
+	Else
+	   Call     UseCamPreset 	( 00000002 )
+	   Call     PlaySound   	( 00002045 )
+	   Thread
+	      Loop     00000005 
+	         Wait     00000006 
+	         Call     GetNpcPos   	( 00000064 *Var[0] *Var[1] *Var[2] )
+	         Call     $Function_802A1218 ( *Var[0] *Var[1] *Var[2] )
+	      EndLoop
+	   EndThread
+	   Call     EnableNpcBlur 	( 00000064 .True )
+	   Thread
+	      Set  *Var[2]  00000000 
+	      Set  *Var[3]  000002D0 
+	      Call     MakeLerp    	( *Var[2] *Var[3] 0000001E 00000002 )
+	      Loop     
+	         Call     UpdateLerp  	( )
+	         Call     SetNpcRotation ( 00000064 00000000 *Var[0] 00000000 )
+	         Wait     00000001 
+	         If  *Var[1]  ==  00000000 
+	            BreakLoop
+	         EndIf
+	      EndLoop
+	   EndThread
+	   Call     GetNpcPos   	( 00000064 *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000003C 
+	   Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000000F 00000000 0000000A )
+	   Add  *Var[1]  0000008C 
+	   Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000000F 00000000 0000000A )
+	   Wait     0000000A 
+	   Call     EnableNpcBlur 	( 00000064 .False )
+	   Call     802CDC1C ( 00000064 )
+	EndIf
+	Return
+	End
+
+% Origin: HEURISTIC
+#new:Script $Script_802A23BC
+	Call     GetOwnerID  	( *Var[A] )
+	If  *Var[A]  ==  00000000 
+	   Call     $Function_802A1414 ( )
+	   Wait     0000000F 
+	   Call     SetGoalToHome 	( .Actor:Player )
+	   Call     SetActorSpeed 	( .Actor:Player *Fixed[8.0] )
+	   Call     SetAnimation 	( .Actor:Player 00000000 00010005 )
+	   Call     80273C64 ( 00000000 )
+	   Call     SetAnimation 	( .Actor:Player 00000000 00010002 )
+	Else
+	   Call     $Function_802A1414 ( )
+	   Wait     0000000F 
+	   Call     SetGoalToHome 	( .Actor:Partner )
+	   Call     SetActorSpeed 	( .Actor:Partner *Fixed[8.0] )
+	   Call     $Function_802A1494 ( 00000003 )
+	   Call     RunToGoal   	( .Actor:Partner 00000000 )
+	   Call     $Function_802A1494 ( 00000004 )
+	EndIf
+	Return
+	End
+
+#new:IntTable $IntTable_802A24E8
+0000000F 0000000F FFFFFFDF 0000001B FFFFFFEA FFFFFFE6 0000000A FFFFFFDD 
+00000023 00000000 
+
+#new:Script_Use $Script_UsePower
+	ExecWait $Script_802A1630 
+	SetConst  *Var[0]  001D0000 
+	ExecWait $Script_802A1D60 
+	Wait     00000010 
+	Thread
+	   Wait     0000000A 
+	   Call     SetNpcRotation ( 00000064 00000000 000000B4 00000000 )
+	   Wait     00000001 
+	   Call     SetNpcRotation ( 00000064 00000000 00000096 00000000 )
+	   Wait     00000001 
+	   Call     SetNpcRotation ( 00000064 00000000 00000078 00000000 )
+	   Wait     00000001 
+	   Call     SetNpcRotation ( 00000064 00000000 0000005A 00000000 )
+	   Wait     00000001 
+	   Call     SetNpcRotation ( 00000064 00000000 0000003C 00000000 )
+	   Wait     00000001 
+	   Call     SetNpcRotation ( 00000064 00000000 0000001E 00000000 )
+	   Wait     00000001 
+	   Call     SetNpcRotation ( 00000064 00000000 00000000 00000000 )
+	EndThread
+	Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Add  *Var[1]  00000019 
+	Add  *Var[0]  0000001E 
+	Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 00000014 00000000 0000000A )
+	Wait     0000000F 
+	Call     SetNpcAnimation 	( 00000064 001D0001 )
+	Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Add  *Var[0]  0000000F 
+	Add  *Var[1]  0000000F 
+	Add  *Var[2]  FFFFFFFB 
+	Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000000A 00000000 0000000A )
+	Call     PlaySound   	( 00000245 )
+	Thread
+	   Call     PlayEffect  	( {FX:Recover:LittleHeart} *Var[0] *Var[1] *Var[2] 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+	   Wait     00000002 
+	   UseIntBuffer $IntTable_802A24E8 
+	   Loop     00000005 
+	      Get2Int  *Var[5] *Var[6] 
+	      Set  *Var[3]  *Var[0] 
+	      Set  *Var[4]  *Var[1] 
+	      Add  *Var[3]  *Var[5] 
+	      Add  *Var[4]  *Var[6] 
+	      Call     PlayEffect  	( {FX:Recover:LittleHeart} *Var[3] *Var[4] *Var[2] 00000001 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+	      Wait     00000002 
+	   EndLoop
+	EndThread
+	Thread
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  0000000F 
+	   Add  *Var[0]  00000005 
+	   Call     $Function_802A1000 ( *Var[0] *Var[1] *Var[2] )
+	   Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[1]  00000014 
+	   Add  *Var[0]  00000019 
+	   Call     802CE6FC ( 00000064 *Var[0] *Var[1] *Var[2] 0000000A 00000000 0000000A )
+	EndThread
+	Call     SetAnimation 	( .Actor:Player 00000000 0001002E )
+	Wait     0000000C 
+	Thread
+	   ExecWait $Script_802A1F6C 
+	EndThread
+	Thread
+	   Loop     00000002 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.0] *Fixed[1.0] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.1005859] *Fixed[1.0] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.2001953] *Fixed[0.9501953] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.3007812] *Fixed[0.9003906] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.3505859] *Fixed[0.85058594] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.3808594] *Fixed[0.80078125] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.4003906] *Fixed[0.80078125] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.3007812] *Fixed[0.85058594] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.2001953] *Fixed[0.9003906] *Fixed[1.0] )
+	      Wait     00000001 
+	      Call     SetActorScale 	( .Actor:Self *Fixed[1.1005859] *Fixed[0.9501953] *Fixed[1.0] )
+	      Wait     00000001 
+	   EndLoop
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.0] *Fixed[1.0] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.1005859] *Fixed[1.0] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.2001953] *Fixed[0.9501953] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.3007812] *Fixed[0.9003906] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.3505859] *Fixed[0.85058594] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.3808594] *Fixed[0.80078125] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.4003906] *Fixed[0.80078125] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[0.9003906] *Fixed[1.3007812] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[0.9003906] *Fixed[1.2001953] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[0.9501953] *Fixed[1.1005859] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetActorScale 	( .Actor:Self *Fixed[1.0] *Fixed[1.0] *Fixed[1.0] )
+	   Wait     00000001 
+	   Call     SetAnimation 	( .Actor:Player 00000000 00010002 )
+	EndThread
+	Loop     0000000A 
+	   Wait     00000003 
+	EndLoop
+	Call     UseCamPreset 	( 00000002 )
+	Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Add  *Var[0]  00000000 
+	Add  *Var[1]  00000023 
+	Call     $Function_802A156C ( *Var[0] *Var[1] *Var[2] 00000014 )
+	Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Add  *Var[1]  00000019 
+	Call     802D7520 ( *Var[0] *Var[1] *Var[2] 00000014 )
+	Call     $Function_802A1518 ( 00000014 )
+	Thread
+	   Call     $Function_802A1414 ( )
+	EndThread
+	Call     80276EFC ( )
+	Call     PlaySoundAtActor 	( .Actor:Player 00000160 )
+	Call     SetActorJumpscale 	( .Actor:Player *Fixed[1.0] )
+	Call     SetActorSpeed 	( .Actor:Player *Fixed[1.0] )
+	Call     GetActorPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Call     SetJumpAnimations 	( .Actor:Player 00000000 00010007 00010008 00010009 )
+	Call     SetGoalToPos 	( .Actor:Player *Var[0] *Var[1] *Var[2] )
+	Call     80273444 ( 00000014 00000000 00000000 )
+	Call     SetAnimation 	( .Actor:Player 00000000 00010009 )
+	Wait     00000004 
+	Call     SetAnimation 	( .Actor:Player 00000000 00010002 )
+	Call     SetGoalToHome 	( .Actor:Player )
+	Call     SetActorSpeed 	( .Actor:Player *Fixed[8.0] )
+	Call     SetAnimation 	( .Actor:Player 00000000 00010005 )
+	Call     80273C64 ( 00000000 )
+	Call     SetAnimation 	( .Actor:Player 00000000 00010002 )
+	Return
+	End
+
+PADDING: 802A2F84 to 802A2F90 (00793D14 to 00793D20)
+00000000 00000000 00000000 
+

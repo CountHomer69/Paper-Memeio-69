@@ -1,0 +1,69 @@
+Sun Sep 29 11:40:15 EDT 2019
+Preparing patching process.
+Building string data...
+Reading strings from: 00 Introduction.txt
+Reading strings from: 01 Postgame Celebration.txt
+Reading strings from: 02 Toad Town Gate Sector.txt
+Reading strings from: 03 Toad Town Castle Sector.txt
+Reading strings from: 04 Toad Town Bridge Sector.txt
+Reading strings from: 05 Toad Town Train Sector.txt
+Reading strings from: 06 Toad Town Warehouse Sector.txt
+Reading strings from: 07 Toad Town Docks Sector.txt
+Reading strings from: 08 Minigames.txt
+Reading strings from: 09 Castle Grounds.txt
+Reading strings from: 0A Shooting Star Summit.txt
+Reading strings from: 0B Chapter 0.txt
+Reading strings from: 0C Chapter 1.txt
+Reading strings from: 0D Chapter 2.txt
+Reading strings from: 0E Chapter 3.txt
+Reading strings from: 0F Chapter 4.txt
+Reading strings from: 10 Chapter 5.txt
+Reading strings from: 11 Chapter 6.txt
+Reading strings from: 12 Chapter 7.txt
+Reading strings from: 13 Bowser's Castle.txt
+Reading strings from: 14 Peach Segments.txt
+Reading strings from: 15 Koopa Koot Favors.txt
+Reading strings from: 16 Russ T Advice.txt
+Reading strings from: 17 News Bulletin.txt
+Reading strings from: 18 Gossip Bulletin.txt
+Reading strings from: 19 Map Tattles.txt
+Reading strings from: 1A NPC Tattles.txt
+Reading strings from: 1B Entity Tattles.txt
+Reading strings from: 1C Enemy Tattles.txt
+Reading strings from: 1D Menus I.txt
+Reading strings from: 1E Choices.txt
+Reading strings from: 1F Menus II.txt
+Reading strings from: 20 Party Letters + Luigi's Diary.txt
+Reading strings from: 21 Advice Fortunes.txt
+Reading strings from: 22 Treasure Fortunes.txt
+Reading strings from: 23 Item Descriptions I.txt
+Reading strings from: 24 Item Descriptions II.txt
+Reading strings from: 25 Item Descriptions III.txt
+Reading strings from: 26 Item Names.txt
+Reading strings from: 27 Shop Messages.txt
+Reading strings from: 28 Partner Descriptions.txt
+Reading strings from: 29 Enemy Names.txt
+Reading strings from: 2A Mario Moves.txt
+Reading strings from: 2B Partner Moves.txt
+Reading strings from: 2C Quiz Questions.txt
+Reading strings from: 2D Quiz Options.txt
+Reading strings from: 2E Credits.txt
+Reading strings from: 2F Custom.txt
+Reading map config files...
+Writing map config table...
+Wrote map config table to 0x2804250
+Reading battle config files...
+Reading sprite list...
+Reading direct ROM patches...
+Finished reading global pointers:
+80404250 = $Global_MapConfigTable
+80281104 = $Global_ActorNameTable
+80282B98 = $Global_ActorTattleTable
+80282EE8 = $Global_ActorOffsetsTable
+Building battle data...
+Reading patch file: 02 Area KMR Part 3.bpat
+Found $JrTroopa1 (0)
+Found $Script_TakeTurn_80226F58 (0)
+Found $Script_NextTurn_80227724 (0)
+Found $Script_NextTurn_80223D2C (0)
+Merged 28 regions to 26

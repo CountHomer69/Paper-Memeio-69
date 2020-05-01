@@ -1,0 +1,38 @@
+%800DBFB3 current file name
+%SetMessageString (string, variable index)
+
+#new:Data $CopiedFileName
+00000000 00000000
+00000000 00000000 %these 2 lines will never be written to
+
+#new:Function $GetFileName
+PUSH t0, t1, t2, t3, s0, s1, ra
+LIO s0, 800DBFB3 %beginning of current file name
+LIO s1, $CopiedFileName
+SW r0, 0000 (s1)
+SW r0, 0004 (s1) %clear file name
+ORI t4, r0, 00FD %string terminator
+ORI t3, r0, 0000
+ORI t2, r0, 00F7 %value of space, end of string
+ORI t1, r0, 0008 %max amount of character spaces
+.loop
+LBU t0, 0000 (s0)
+BEQ t0, t2, .exit
+NOP
+SB t0, 0000 (s1)
+ADDIU s0, s0, 0001
+ADDIU s1, s1, 0001
+ADDIU t3, t3, 0001
+BEQ t1, t3, .exit %8 characters copied
+NOP
+BEQ r0, r0, .loop
+NOP
+.exit
+SB t4, 0000 (s1)
+POP t0, t1, t2, t3, s0, s1, ra
+JR RA
+NOP
+
+
+#export $CopiedFileName
+#export $GetFileName

@@ -1,0 +1,28 @@
+@ $JrTroopa1
+% stats
+[Index]        88b 
+[Level]        41`b 
+[MaxHP]        10`b 
+[Coins]         0`b 
+[Flags]       00000000 
+[StatusTable] $StatusTable_80222A38 
+% ai
+[SpriteCount]   1`s 
+[SpriteTable] $SpriteTable_80222AE4 
+[Script]      $Script_Init_80223180 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]  80`b 
+[SpinSmash]     0`b % weight (0-4)
+% ui positions
+[Size]         24`b  32`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]  -15`b  30`b % dx dy
+[StatusIcon]   10`b  20`b % dx dy
+
+@ $SpriteTable_80222AE4
+00800000 01000000 001E00FF $IdleAnimations_802229F0 $DefenseTable_80222A2C 00000010 00000000 00000000 00000000

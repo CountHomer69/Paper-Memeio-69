@@ -1,0 +1,232 @@
+@ $ShopInventory_8024E26C
+.Item:FrightJar      00000005 0024002A % Makes a scary spirit appear and chase some enemies ...
+.Item:TastyTonic     00000007 0024000E % If it works, makes all enemies  sleep for a little ...
+.Item:POWBlock       00000005 00240027 % Flips shell enemies and inflicts 2 damage points o ...
+.Item:FireFlower     0000000A 00240000 % A flower that burns all enemies  with fireballs. A ...
+.Item:HoneySyrup     0000000A 00240016 % Sweet honey syrup. Restores 5 FP.
+.Item:Mushroom       00000005 00240009 % A regular Mushroom. Restores 5 HP.
+00000000 00000000 00000000
+
+@ $NpcGroup_80251124[1F0]
+00000008 $NpcSettings_8024EB90 {Vec3f:NPC_80251314} % 219 0 -45
+00012D09 $Script_Init_80250F5C 00000000 00000000 0000005A 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+{Movement:NPC_80251314}
+003B0001 003B0002 003B0003 003B0003 003B0001 003B0001 003B0006 003B0006 
+003B0003 003B0003 003B0003 003B0003 003B0003 003B0003 003B0003 003B0003 
+00000000 00000000 00000000 001A0014 % This Toad always stands in front of the shop. He k ...
+% 
+
+@ $Script_80249700
+  Call     $Function_80241E04 ( )
+  If  *Flag_MAC_6F  ==  00000000 
+  	Set  *Flag_MAC_6F  00000001 
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 00020004 ) % Oh, salutations. You are Mario, are you not? Of co ...
+  	Return
+  EndIf
+  Call     $Function_80241FF0 ( )
+  If  *Var[0]  ==  00000000 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( 00000000 00A90004 00A90001 00000000 00020008 ) % Ah... Yes... Well... It seems I've told you all I  ...
+  	Return
+  EndIf
+  Call     $Function_80241E80 ( )
+  If  *Var[2]  !=  00000000 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 00020005 ) % Are you talking to me because you crave knowledge  ...
+  Else
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 00020006 ) % Seeking information again, are we, Mario? I once t ...
+  EndIf
+  Call     SayMessage2 	( .Npc:Self 00A90004 00A90001 00000000 *Var[1] ) % variable string ID
+  Call     SayMessage2 	( .Npc:Self 00A90004 00A90001 00000000 00020007 ) % If there's anything else you wish to know, please  ...
+  Return
+  End
+  
+@ $Script_80249880
+  If  *AreaFlag[00D]  ==  00000000 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 0002000A ) % Curses!  Mario... A Shy Guy stole my Dictionary. P ...
+  	Set  *AreaFlag[00D]  00000001 
+  Else
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 0002000B ) % To think of my lovely Dictionary in that Shy Guy's ...
+  EndIf
+  Set  *Var[0]  $???_80249864 
+  Set  *Var[1]  00000000 
+  ExecWait $Script_80248534 
+  Switch  *Var[0] 
+  	Case  ==  00000024 
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 0002000D ) % My Dictionary! Oh, wonderful words! Many thanks, M ...
+  		Set  *Flag_MAC_72  00000001 
+  		Wait     0000000A 
+  		Set  *Var[0]  0000015C 
+  		Set  *Var[1]  00000003 
+  		ExecWait $Script_80245DC4 
+  		Call     AddStarPiece 	( 00000001 )
+  		Wait     0000000A 
+  		If  *Flag_MAC_73  ==  00000001 
+		    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 00020010 ) % "Hit yellow, green, red, and then blue." Hmm... Th ...
+  		EndIf
+  	Case  ==  00000025 
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 0002000F ) % You'd like me to translate this note for you? Let' ...
+  		Set  *Flag_MAC_73  00000001 
+  	Case  ==  FFFFFFFF 
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 0002000C ) % No? Mario, how could you?!
+  	Case  ==  00000000 
+  EndSwitch
+  Return
+  End
+
+@ $Script_80249A7C
+  Set  *Var[A]  00000000 
+  Set  *Var[0]  $???_80249874 
+  Set  *Var[1]  00000000 
+  ExecWait $Script_80248534 
+  Switch  *Var[0] 
+  	Case  ==  00000000 
+  		If  *StoryProgress  <  00000000 
+  			If  *Flag_MAC_73  ==  00000001 
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  				Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 00020010 ) % "Hit yellow, green, red, and then blue." Hmm... Th ...
+  				Set  *Var[A]  00000001 
+  				Return
+  			EndIf
+  		Else
+  		EndIf
+  	Case  ==  FFFFFFFF 
+  	Default
+  		If  *Var[0]  ==  00000025 
+		    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000000 0002000E ) % You'd like me to translate this note for you? Let' ...
+  			Set  *Flag_MAC_73  00000001 
+  			Set  *Var[A]  00000001 
+  		EndIf
+  EndSwitch
+  Return
+  End
+  
+@ $Script_8024F64C
+  Call     DisablePlayerInput 	( .True )
+  Call     UseSettingsFrom 	( .Default FFFFFF1F 00000000 FFFFFED4 )
+  Call     SetPanTarget 	( .Default FFFFFF1F 00000000 FFFFFED4 )
+  Call     SetCamDistance ( .Default *Fixed[800.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Thread
+  	Wait     00000023 
+  	Call     SetCamSpeed 	( .Default *Fixed[2.100586] )
+  	Call     UseSettingsFrom 	( .Default FFFFFF1F 00000000 FFFFFED4 )
+  	Call     SetCamDistance ( .Default *Fixed[300.0] )
+  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  	Wait     0000000A 
+  	Call     InterpNpcYaw 	( 00000007 000000E6 00000000 )
+  	Call     SetNpcJumpscale 	( 00000007 *Fixed[1.5] )
+  	Call     GetNpcPos   	( 00000007 *Var[0] *Var[1] *Var[2] )
+  	Call     NpcJump0    	( 00000007 *Var[0] *Var[1] *Var[2] 00000005 )
+  	Wait     0000000A 
+  	Call     SetNpcAnimation 	( 00000007 00830003 )
+  	Call     MoveNpcTo   	( 00000007 FFFFFF47 FFFFFED9 0000000F )
+  	Call     SetNpcAnimation 	( 00000007 00830001 )
+  EndThread
+  Wait     00000002 
+  Call     MovePlayerTo 	( FFFFFF1F FFFFFED4 00000050 )
+  Call     SetPlayerPos 	( FFFFFF1F 00000000 FFFFFED4 )
+  Wait     00000032 
+  Thread
+  	Wait     00000014 
+  	Call     SetPlayerAnimation 	( 00080007 )
+  EndThread
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000007 00830004 00830001 00000000 0002007E ) % Mario! I'm so glad you're OK! The town is in an up ...
+  Call     DisablePlayerInput 	( .False )
+  Call     SetCamDistance ( .Default *Fixed[400.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Call     PanToTarget 	( .Default 00000000 00000000 )
+  Return
+  End
+  
+@ $Script_8024C08C
+  Set  *Var[0]  00000005 
+  Call     $Function_80242250 ( )
+  If  *Var[0]  ==  00000000 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 00020119 ) % Aargh! No more time! Too bad!! Please try again ne ...
+  	Wait     0000000A 
+  	Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  	Call     PlaySoundAtNpc ( .Npc:Self 000002CD 00000000 )
+  	Call     PlayEffect  	( {FX:BigSmokePuff} *Var[0] *Var[1] *Var[2] 00000001 00000001 00000001 00000001 00000000 00000000 00000000 00000000 00000000 00000000 )
+  	Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  	Set  *Flag_NPC_53  00000000 
+  	Return
+  EndIf
+  Call     $Function_8024228C ( )
+  If  *Var[0]  ==  00000000 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 0002011A ) % Hello! I'm the Toad of the trading event. How are  ...
+  	Return
+  EndIf
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 0002011B ) % Hello! I'm the Toad of the trading event. How are  ...
+  Set  *Var[0]  00000000 
+  Set  *Var[1]  00000018 
+  ExecWait $Script_802486B8 
+  Switch  *Var[0] 
+  	Case  ==  FFFFFFFF 
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 0002011F ) % Hello? You don't want the item?
+  		Return
+  	Case  ==  000000A6 
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 0002011C ) % Congratulations! This is the item for today!
+  		Set  *Var[0]  000000A3 
+  		Set  *Var[1]  00000000 
+  		ExecWait $Script_80245DC4 
+  		Call     AddItem     	( *Var[0] *Var[1] )
+  		Wait     0000000A 
+		    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 0002011D ) % Use it wisely! See you again at the next trading e ...
+  		Wait     0000000A 
+  		Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  		Call     PlaySoundAtNpc ( .Npc:Self 000002CD 00000000 )
+  		Call     PlayEffect  	( {FX:BigSmokePuff} *Var[0] *Var[1] *Var[2] 00000001 00000001 00000001 00000001 00000000 00000000 00000000 00000000 00000000 00000000 )
+  		Call     SetNpcPos   	( .Npc:Self 00000000 FFFFFC18 00000000 )
+  		Set  *Flag_NPC_53  00000000 
+  		Add  *Byte_NPC_08  00000001 
+  	Default
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00830404 00830401 00000000 0002011E ) % Wrong! Sorry. That's not the right item. As a pena ...
+  EndSwitch
+  Return
+  End
+  
+  
+  

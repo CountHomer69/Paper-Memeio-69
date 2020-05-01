@@ -1,0 +1,450 @@
+@ $Script_80244E54
+  Call     DisablePlayerInput 	( .True )
+  Call     $Function_80240480 ( )
+  Call     SetPlayerAnimation 	( 000C000E )
+  Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  Call     DisablePartnerAI 	( 00000000 )
+  Call     SetNpcPos   	( .Npc:Partner 00000208 0000003C FFFFFFDD )
+  Call     SetNpcPos   	( 00000000 FFFFFE3E 00000000 FFFFFFEC )
+  Call     SetNpcPos   	( 00000001 FFFFFE02 00000000 FFFFFFEC )
+  Call     SetNpcYaw   	( 00000000 0000005A )
+  Call     SetNpcYaw   	( 00000001 0000005A )
+  Call     UseSettings 	( .Default *Fixed[90.0] 00000014 000000FA *Fixed[17.0] *Fixed[-11.0] )
+  Wait     0000001E 
+  Call     SayMessage0 	( .Npc:Player 000C000F 000C000E 00000005 00140016 ) % Sniffle...
+  Wait     00000005 
+  Call     InterpPlayerYaw 	( 0000005A 00000005 )
+  Call     MovePlayerTo 	( 00000014 0000001E 0000001E )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Player 000C000F 000C000E 00000005 00140017 ) % Mario's probably hurt...
+  Wait     00000005 
+  Call     InterpPlayerYaw 	( 0000010E 00000005 )
+  Call     MovePlayerTo 	( FFFFFFEC 0000001E 0000001E )
+  Call     SayMessage0 	( .Npc:Player 000C000F 000C000E 00000005 00140018 ) % Everyone's in prison...
+  Wait     00000005 
+  Call     InterpPlayerYaw 	( 0000005A 00000005 )
+  Call     MovePlayerTo 	( 00000014 0000001E 0000001E )
+  Call     SayMessage0 	( .Npc:Player 000C000F 000C000E 00000005 00140019 ) % The Mushroom Kingdom will be destroyed if things c ...
+  Wait     0000001E 
+  Call     $Function_8024049C ( )
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Call     PlaySoundAtPlayer 	( 00000262 00000000 )
+  Call     ShowEmote   	( 00000000 .Emote:Exclamation FFFFFFD3 0000001E 00000000 00000000 00000000 00000000 00000000 )
+  Wait     0000000A 
+  Call     InterpPlayerYaw 	( 0000010E 00000003 )
+  Wait     0000000F 
+  Call     SetMusicTrack 	( 00000000 .Song:BowserTheme 00000000 00000008 )
+  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  Call     SetPanTarget 	( .Default FFFFFEB6 00000000 00000000 )
+  Call     SetCamPosA  	( .Default FFFFFEB6 00000020 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Wait     00000003 
+  Exec     $Script_80244C28 
+  Wait     0000000A 
+  Call     SetNpcVar   	( 00000000 00000000 00000001 )
+  Thread
+  	Call     SetNpcAnimation 	( 00000000 00800004 )
+  	Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  	Call     MoveNpcTo   	( 00000000 FFFFFED4 FFFFFFEC 00000000 )
+  	Call     MoveNpcTo   	( 00000000 FFFFFFCE 0000001E 00000000 )
+  	Call     SetNpcAnimation 	( 00000000 00800002 )
+  	Call     SetNpcVar   	( 00000000 00000000 00000000 )
+  EndThread
+  Thread
+  	Call     SetNpcAnimation 	( 00000001 00600002 )
+  	Call     SetNpcSpeed 	( 00000001 *Fixed[3.0] )
+  	Call     MoveNpcTo   	( 00000001 FFFFFF92 0000001E 00000000 )
+  	Call     SetNpcAnimation 	( 00000001 00600001 )
+  EndThread
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Thread
+  	Wait     00000028 
+  	Call     MakeLerp    	( 000000FA 0000012C 00000050 00000000 )
+  	Loop     
+  		Call     UpdateLerp  	( )
+  		Call     SetCamDistance ( .Default *Var[0] )
+  		Wait     00000001 
+  		If  *Var[1]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  EndThread
+  Loop     
+  	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  	Add  *Var[0]  0000000A 
+  	Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  	Wait     00000001 
+  	Call     GetNpcVar   	( 00000000 00000000 *Var[0] )
+  	If  *Var[0]  ==  00000000 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Wait     00000014 
+  Call     SayMessage0 	( 00000000 00800007 00800007 00000000 0014001A ) % Gwaa ha ha ha ha!! My dear Princess Peach, how are ...
+  Call     SetNpcAnimation 	( 00000000 00800002 )
+  Wait     00000001 
+  Call     SayMessage1 	( 00000000 00800006 00800002 00000000 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000001 00600004 00600001 00000000 0014001B ) % It's no use waiting for Mario this time, my dear!  ...
+  Call     SetNpcAnimation 	( 00000000 00800010 )
+  Wait     0000000A 
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00800009 00800003 00000000 0014001C ) % You know, Princess, as long as I have this Star Ro ...
+  Call     SetPlayerAnimation 	( 000C000D )
+  Call     SetNpcAnimation 	( 00000000 00800002 )
+  Call     SayMessage1 	( 00000000 00800009 00800003 00000000 )
+  Call     SetPlayerAnimation 	( 000A0001 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000001 00600004 00600001 00000000 0014001D ) % Nyeah hee hee hee! Imagine what it's like down in  ...
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00800006 00800002 00000000 0014001E ) % If you, you know, want anything, all you need to d ...
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000001 00600004 00600001 00000000 0014001F ) % You watch yourself, Princess. You'd better not cau ...
+  Wait     0000000F 
+  Thread
+  	Call     SetNpcAnimation 	( 00000000 00800004 )
+  	Call     MoveNpcTo   	( 00000000 FFFFFE3E 0000001E 00000000 )
+  EndThread
+  Thread
+  	Call     InterpNpcYaw 	( 00000001 0000010E 00000005 )
+  	Wait     0000003C 
+  	Call     SetNpcAnimation 	( 00000001 00600002 )
+  	Call     MoveNpcTo   	( 00000001 FFFFFE02 0000001E 00000000 )
+  	Call     SetNpcAnimation 	( 00000001 00600001 )
+  EndThread
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default *Fixed[300.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[0.5] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Call     FadeOutMusic 	( 00000000 000007D0 )
+  Wait     0000003C 
+  Call     SetPlayerAnimation 	( 000C0000 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0026 )
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 00140020 ) % Oh... Please... If only somebody could help me...
+  Call     SetPlayerAnimation 	( 000C0002 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Wait     00000014 
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Add  *Var[0]  00000096 
+  Call     PlaySoundAt 	( 000001D8 00000000 *Var[0] *Var[1] *Var[2] )
+  Wait     0000000A 
+  Call     PlaySoundAt 	( 000001D8 00000000 *Var[0] *Var[1] *Var[2] )
+  Wait     0000000A 
+  Call     PlaySoundAtPlayer 	( 00000263 00000000 )
+  Call     ShowEmote   	( 00000000 .Emote:Question FFFFFFD3 00000014 00000000 00000000 00000000 00000000 00000000 )
+  Wait     00000014 
+  Call     InterpPlayerYaw 	( 00000087 00000005 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0000 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0026 )
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 00140021 ) % Huh?
+  Set  *AreaFlag[003]  00000000 
+  Exec     $Script_80244D88 *Var[A] 
+  Thread
+  	Call     UseSettingsFrom 	( .Default 0000019D 00000000 FFFFFFBE )
+  	Call     SetCamType  	( .Default 00000004 00000000 )
+  	Call     SetCamPosA  	( .Default 00000152 0000002C )
+  	Call     SetCamPosB  	( .Default 0000019D FFFFFFBE )
+  	Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  	Call     PanToTarget 	( .Default 00000000 00000001 )
+  	Call     WaitForCam  	( .Default *Fixed[1.0] )
+  EndThread
+  Wait     0000000A 
+  Call     SetPlayerSpeed ( *Fixed[3.0] )
+  Call     MovePlayerTo 	( 000000B3 FFFFFFFC 00000000 )
+  Call     MovePlayerTo 	( 000001B7 FFFFFFF0 00000000 )
+  Set  *AreaFlag[003]  00000001 
+  Kill     *Var[A] 
+  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  Wait     0000000F 
+  Call     SetPlayerAnimation 	( 000C000B )
+  Call     PlaySoundAtCollider 	( {Collider:tte} 000001CB 00000000 )
+  Call     MakeLerp    	( 00000000 00000050 0000000E 00000004 )
+  Loop     
+  	Call     UpdateLerp  	( )
+  	Call     RotateModel 	( {Model:o83} *Var[0] 00000000 00000001 00000000 )
+  	Call     RotateModel 	( {Model:o85} *Var[0] 00000000 FFFFFFFF 00000000 )
+  	Call     RotateModel 	( {Model:o84} *Var[0] 00000000 00000001 00000000 )
+  	Call     RotateModel 	( {Model:o86} *Var[0] 00000000 FFFFFFFF 00000000 )
+  	Wait     00000001 
+  	If  *Var[1]  ==  00000000 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     SetMusicTrack 	( 00000000 .Song:TwinkTheme 00000000 00000008 )
+  Thread
+  	Call     LoadPath    	( 00000064 $VectorList_80244BB0 00000005 00000000 )
+  	Loop     
+  		Call     GetNextPathPos ( )
+  		Call     SetNpcPos   	( .Npc:Partner *Var[1] *Var[2] *Var[3] )
+  		Wait     00000001 
+  		If  *Var[0]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  	Set  *AreaFlag[003]  00000000 
+  EndThread
+  Thread
+  	Loop     
+  		Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  		If  *Var[0]  <  00000136 
+  			BreakLoop
+  		EndIf
+  		Wait     00000001 
+  	EndLoop
+  	Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  EndThread
+  Loop     
+  	Wait     00000001 
+  	Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  	If  *Var[0]  <  000001AE 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     InterpPlayerYaw 	( 000000DC 00000005 )
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Thread
+  	Wait     00000028 
+  	Call     802D1270 ( 000001A4 00000000 *Fixed[2.0] )
+  EndThread
+  Wait     0000000A 
+  Call     PanToTarget 	( .Default 00000000 00000000 )
+  Wait     0000001E 
+  Call     UseSettingsFrom 	( .Default 00000172 0000001E 00000000 )
+  Call     SetPanTarget 	( .Default 00000172 0000001E 00000000 )
+  Call     SetCamDistance ( .Default *Fixed[300.0] )
+  Call     SetCamPosB  	( .Default *Fixed[370.0] *Fixed[32.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Loop     
+  	Wait     00000001 
+  	If  *AreaFlag[003]  ==  00000000 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     SetPanTarget 	( .Default 00000140 0000001E 00000011 )
+  Call     SetCamDistance ( .Default *Fixed[200.0] )
+  Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-16.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Call     SayMessage0 	( .Npc:Partner 00200009 00200001 00000000 00140022 ) % Hello, Princess Peach! Pleased to meet you! My nam ...
+  Call     SetPanTarget 	( .Default 00000172 0000001E 00000011 )
+  Call     SetCamDistance ( .Default *Fixed[300.0] )
+  Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-10.0] )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Wait     0000000A 
+  Call     SayMessage0 	( .Npc:Player 000D0004 000A0001 00000005 00140023 ) % But you're... You're a Star Kid, aren't you? How'd ...
+  Call     SayMessage0 	( .Npc:Partner 00200009 00200001 00000000 00140024 ) % I came from Star Haven to grant your wish! It's ou ...
+  Call     SetCamSpeed 	( .Default *Fixed[0.40039062] )
+  Call     SetPanTarget 	( .Default 0000015E 0000001E 00000011 )
+  Call     MovePlayerTo 	( 0000017C 00000000 0000001E )
+  Call     SayMessage0 	( .Npc:Player 000D0004 000A0001 00000005 00140025 ) % Oh! You came because I wished that somebody could  ...
+  Call     SayMessage0 	( .Npc:Partner 00200009 00200001 00000000 00140026 ) % Yes, of course!
+  Call     SetCamSpeed 	( .Default *Fixed[4.0] )
+  Call     SetCamDistance ( .Default 000000C8 )
+  Call     SetCamAngles 	( .Default 00000011 FFFFFFF2 )
+  Call     SetPanTarget 	( .Default 0000017C 0000001E 00000011 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Call     SetPlayerAnimation 	( 000C0000 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0026 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 00140027 ) % Oh, that's just great! Thank you so much for comin ...
+  Call     SetPlayerAnimation 	( 000C0002 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Call     SetNpcAnimation 	( .Npc:Partner 00200010 )
+  Call     SetCamSpeed 	( .Default *Fixed[1.0] )
+  Call     SetCamAngles 	( .Default 00000011 FFFFFFF0 )
+  Call     SetPanTarget 	( .Default 00000140 0000001E 00000011 )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+  Call     SayMessage0 	( .Npc:Partner 00200010 00200010 00000000 00140028 ) % ...... Uh...sorry... That's a little much for a no ...
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     SetCamDistance ( .Default 0000012C )
+  Call     SetCamAngles 	( .Default 00000011 FFFFFFF6 )
+  Call     SetPanTarget 	( .Default 0000015E 0000001E 00000011 )
+  Call     SetPlayerAnimation 	( 000C0000 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0026 )
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 00140029 ) % Then... Can you take me away from here? Everyone i ...
+  Call     SetPlayerAnimation 	( 000C0002 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Call     SayMessage0 	( .Npc:Partner 00200010 00200010 00000000 0014002A ) % ...Oh...I'm sorry. I can't grant that wish either, ...
+  Call     SetPlayerAnimation 	( 000C0000 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0026 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 0014002B ) % It's all right... Don't be sad, Twink. Mario will  ...
+  Call     SetPlayerAnimation 	( 000C0002 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Wait     0000001E 
+  Call     SetPlayerAnimation 	( 000C000D )
+  Call     PlaySoundAtPlayer 	( 00000262 00000000 )
+  Call     ShowEmote   	( 00000000 .Emote:Exclamation FFFFFFD3 0000001E 00000000 00000000 00000000 00000000 00000000 )
+  Wait     0000001E 
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Call     SetPlayerAnimation 	( 000C0000 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C0026 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 0014002C ) % Oh! Twink! Do you think you can find Mario? I want ...
+  Call     SetNpcAnimation 	( .Npc:Partner 00200001 )
+  Call     SayMessage1 	( .Npc:Player 000C0001 000C0026 00000005 )
+  Call     SetPlayerAnimation 	( 000C0002 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000C000A )
+  Wait     0000000C 
+  Call     GetPlayerPos 	( *Var[2] *Var[3] *Var[4] )
+  Sub  *Var[2]  0000000A 
+  Add  *Var[3]  00000014 
+  Add  *Var[4]  00000002 
+  Call     MakeItemEntity ( .Item:LuckyStar *Var[2] *Var[3] *Var[4] 00000001 00000000 )
+  Set  *Var[9]  *Var[0] 
+  Wait     0000000A 
+  Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+  Call     SetCamDistance ( .Default *Fixed[200.0] )
+  Call     SetCamAngles 	( .Default *Fixed[17.0] *Fixed[-12.5] )
+  Call     SetPanTarget 	( .Default 0000016D 0000001E 00000011 )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Thread
+  	Call     NpcJumpX    	( .Npc:Partner 0000015E 00000032 FFFFFFFE 0000001E FFFFFFFB 00000000 )
+  EndThread
+  Wait     00000028 
+  Call     SetNpcAnimation 	( .Npc:Partner 00200017 )
+  Call     MakeLerp    	( 00000032 00000046 0000000A 00000004 )
+  Loop     
+  	Add  *Var[2]  FFFFFFFE 
+  	Call     UpdateLerp  	( )
+  	Call     SetItemPos  	( *Var[9] *Var[2] *Var[0] *Var[4] )
+  	Wait     00000001 
+  	If  *Var[1]  ==  00000000 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( .Npc:Partner 00200018 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Partner 00200018 00200018 00000000 0014002D ) % This is a Lucky Star, isn't it? OK! I'll do it! Pr ...
+  Set  *Var[3]  *Var[0] 
+  Loop     0000000A 
+  	Add  *Var[3]  FFFFFFFF 
+  	Call     SetItemPos  	( *Var[9] *Var[2] *Var[3] *Var[4] )
+  	Wait     00000001 
+  EndLoop
+  Call     SetNpcAnimation 	( .Npc:Partner 00200019 )
+  Call     RemoveItemEntity 	( *Var[9] )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( .Npc:Partner 00200001 )
+  Wait     00000014 
+  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  Call     SetNpcAnimation 	( .Npc:Partner 00200005 )
+  Wait     0000000A 
+  Call     SetCamDistance ( .Default 00000190 )
+  Call     SetCamAngles 	( .Default 00000011 FFFFFFF6 )
+  Call     SetPanTarget 	( .Default 00000163 0000001E 00000011 )
+  Thread
+  	Loop     
+  		Wait     00000001 
+  		Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  		If  *Var[0]  >  0000017C 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  	Call     InterpPlayerYaw 	( 0000005A 00000005 )
+  	Call     SetPlayerAnimation 	( 000C0000 )
+  	Wait     0000000A 
+  	Call     SetPlayerAnimation 	( 000C0026 )
+	      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 0014002E ) % Oh! Wait, Twink! Wait one second! Can you also...
+  	Set  *AreaFlag[003]  00000001 
+  EndThread
+  Thread
+  	Loop     
+  		Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  		If  *Var[0]  <  00000136 
+  			BreakLoop
+  		EndIf
+  		Wait     00000001 
+  	EndLoop
+  	Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000000 )
+  EndThread
+  Call     LoadPath    	( 0000003C $VectorList_80244BEC 00000005 00000000 )
+  Loop     
+  	Call     GetNextPathPos ( )
+  	Call     SetNpcPos   	( .Npc:Partner *Var[1] *Var[2] *Var[3] )
+  	Wait     00000001 
+  	If  *Var[0]  ==  00000000 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     SetNpcAnimation 	( .Npc:Partner 00200001 )
+  Call     InterpNpcYaw 	( .Npc:Partner 0000010E 00000000 )
+  Loop     
+  	Wait     00000001 
+  	If  *AreaFlag[003]  ==  00000001 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     SetCamDistance ( .Default 000000FA )
+  Call     SetCamAngles 	( .Default 00000011 FFFFFFF3 )
+  Call     SetPanTarget 	( .Default 00000195 0000001E 00000011 )
+  Call     SetCamPosB  	( .Default *Fixed[400.0] *Fixed[32.0] )
+  Call     WaitForCam  	( .Default *Fixed[1.0] )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 0014002F ) % Please tell Mario that...
+  Call     SetNpcAnimation 	( .Npc:Partner 00200005 )
+  Call     NpcJumpX    	( .Npc:Partner 000001A4 0000003C 00000000 00000014 00000000 00000000 )
+  Call     SetNpcAnimation 	( .Npc:Partner 00200001 )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Player 000C0001 000C0026 00000005 00140030 ) % I'm fine and he shouldn't worry... ...OK? Can you  ...
+  Call     SetPlayerAnimation 	( 000C0002 )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 000A0001 )
+  Thread
+  	Call     MakeLerp    	( 00000000 00000168 0000000A 00000000 )
+  	Loop     
+  		Call     UpdateLerp  	( )
+  		Call     SetNpcRotation ( .Npc:Partner 00000000 *Var[0] 00000000 )
+  		Wait     00000001 
+  		If  *Var[1]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  EndThread
+  Call     GetNpcPos   	( .Npc:Partner *Var[0] *Var[1] *Var[2] )
+  Call     NpcJump0    	( .Npc:Partner *Var[0] *Var[1] *Var[2] 0000000A )
+        	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Partner 00200009 00200001 00000000 00140031 ) % Of course! I'll tell him your exact words, Princes ...
+  Call     SetNpcAnimation 	( .Npc:Partner 00200005 )
+  Call     SetNpcFlagBits ( .Npc:Partner 00000040 .True )
+  Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000005 )
+  Wait     0000000A 
+  Call     FadeOutMusic 	( 00000000 000007D0 )
+  Call     NpcJumpX    	( .Npc:Partner 00000258 00000064 FFFFFFB0 00000028 00000000 00000000 )
+  Wait     0000001E 
+  Call     GotoMap     	( $ASCII_8024A6E8 00000002 )
+  Wait     00000064 
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End

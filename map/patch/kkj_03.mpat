@@ -1,0 +1,76 @@
+@ $Script_80240B40
+  Loop     
+  	Wait     00000001 
+  	Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  	If  *Var[0]  >=  0000020D 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     DisablePlayerInput 	( .True )
+  Call     FadeOutMusic 	( 00000000 0000029A )
+  Wait     00000014 
+  Call     SetMusicTrack 	( 00000000 .Song:PrisonerPeachTheme 00000000 00000008 )
+  Call     PlayerFaceNpc 	( 00000000 00000000 )
+  Call     SetNpcAnimation 	( 00000000 000A0002 )
+  Call     SetNpcSpeed 	( 00000000 *Fixed[2.0] )
+  Call     MoveNpcTo   	( 00000000 00000271 00000000 00000000 )
+  Call     SetNpcAnimation 	( 00000000 000A0001 )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( 00000000 000C0000 )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( 00000000 000C0026 )
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0000004B ) % Oh, Mario! You came to the party to see me! You're ...
+  Call     SetNpcAnimation 	( 00000000 000C0002 )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( 00000000 000A0001 )
+  Thread
+  	Call     802CC3EC ( 00000000 *Fixed[5.0] 00000258 00000000 FFFFFFF4 *Fixed[325.0] *Fixed[17.0] *Fixed[-9.0] )
+  EndThread
+  Call     MovePlayerTo 	( 0000023F 00000000 00000014 )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( 00000000 000C0000 )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( 00000000 000C0026 )
+  Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0000004C ) % I was just resting a bit. It gets tiring, greeting ...
+  Call     SetPlayerAnimation 	( .PlayerAnim:NodYes )
+  Wait     00000014 
+  Call     SetPlayerAnimation 	( 00010002 )
+  Wait     0000000A 
+  Call     SayMessage0 	( 00000000 000C0001 000C0026 00000000 0000004D ) % It was a lovely day today, so I'm sure it's comfor ...
+  Call     SetNpcAnimation 	( 00000000 000C0002 )
+  Wait     0000000A 
+  Call     SetNpcAnimation 	( 00000000 000A0001 )
+  Wait     0000000A 
+  Call     FadeOutMusic 	( 00000000 000003E8 )
+  Thread
+  	Wait     0000000A 
+  	Call     MovePlayerTo 	( 0000024E 00000000 0000000A )
+  	Wait     00000005 
+  	Call     PlaySoundAtPlayer 	( 00000262 00000000 )
+  	Call     ShowEmote   	( 00000000 .Emote:Exclamation FFFFFFD3 00000014 00000000 00000000 00000000 00000000 00000000 )
+  EndThread
+  Thread
+  	Call     InterpNpcYaw 	( 00000000 0000005A 00000007 )
+  	Call     SetNpcAnimation 	( 00000000 000A0002 )
+  	Call     MoveNpcTo   	( 00000000 00000280 00000000 0000000A )
+  	Call     SetNpcAnimation 	( 00000000 000A0001 )
+  	Call     PlaySoundAtNpc ( 00000000 00000262 00000000 )
+  	Call     ShowEmote   	( 00000000 .Emote:Exclamation FFFFFFD3 00000014 00000001 00000000 00000000 00000000 00000000 )
+  	Wait     00000014 
+  	Call     SetNpcAnimation 	( 00000000 000C0011 )
+  	Wait     0000003C 
+  	Call     InterpNpcYaw 	( 00000000 0000010E 00000007 )
+  EndThread
+  Wait     00000011 
+  Thread
+  	Call     PlaySound   	( 80000056 )
+  	Call     ShakeCam    	( .Default 00000000 000000C8 *Fixed[1.0] )
+  EndThread
+  Wait     0000003C 
+  Call     GotoMap     	( $ASCII_802413F8 00000000 )
+  Wait     00000064 
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End

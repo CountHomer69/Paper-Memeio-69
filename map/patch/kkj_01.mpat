@@ -1,0 +1,77 @@
+@ $Script_80241CB0
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00890004 00890001 00000000 00000033 ) % Greetings, Mario! I am the Minister of Princess Pe ...
+  Return
+  End
+  
+@ $Script_80241CE0
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00830204 00830201 00000010 00000038 ) % Well... Today, we have guests from Dry Dry Outpost ...
+  Return
+  End
+  
+@ $Script_80241D70
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00840004 00840001 00000010 0000003B ) % Hello, Mario. I am always on the cutting edge of f ...
+  Return
+  End
+  
+@ $Script_80241DD0
+  Call     GetOwnerVar 	( 00000000 *Var[0] )
+  Switch  *Var[0] 
+  	Case  ==  00000000 
+  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 0000003D ) % This is Princess Peach's room, but I'm afraid she  ...
+  	Case  ==  00000001 
+  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 0000003E ) % Huh? Oh no! Absolutely not! I don't think it's ver ...
+  	CaseOR  ==  00000002 
+  	CaseOR  ==  00000003 
+  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 0000003F ) % I said NO, and that means NO. You are simply not a ...
+  	EndCaseGroup
+  	Case  ==  00000004 
+  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 00000040 ) % Boy, you're persistent! I guess I have no choice.. ...
+  		Wait     0000000A 
+  		Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  		Call     SetNpcAnimation 	( 00000006 00870302 )
+  		If  *Var[0]  >  00000000 
+  			Set  *Var[3]  FFFFFFCE 
+  		Else
+  			Set  *Var[3]  00000032 
+  		EndIf
+  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .True )
+  		Call     SetNpcSpeed 	( .Npc:Self *Fixed[2.0] )
+  		Call     MoveNpcTo   	( .Npc:Self *Var[3] FFFFFF0B 00000000 )
+  		Call     SetNpcFlagBits ( .Npc:Self 00000100 .False )
+  		Call     SetNpcAnimation 	( 00000006 00870301 )
+  		Call     InterpNpcYaw 	( .Npc:Self 000000B4 00000005 )
+  		Set  *AreaFlag[001]  00000001 
+  		Bind     $Script_80241138 .Trigger:WallPressA {Collider:ttn2} 00000001 00000000 
+  	Default
+	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 00000041 ) % I envy you, Mario...
+  EndSwitch
+  Add  *Var[0]  00000001 
+  Call     SetOwnerVar 	( 00000000 *Var[0] )
+  Return
+  End
+  
+@ $Script_80241BF4
+  If  *AreaFlag[002]  ==  00000001 
+  	Return
+  EndIf
+  Call     GetEntryID  	( *Var[0] )
+  If  *Var[0]  !=  00000004 
+  	Return
+  EndIf
+  Call     802D2508 ( )
+  Call     DisablePlayerInput 	( .True )
+  Call     SayMessage0 	( .Npc:Self 00870304 00870301 00000010 00000042 ) % How was it? To tell you the truth, I've never seen ...
+  Set  *AreaFlag[002]  00000001 
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End
+  
+  

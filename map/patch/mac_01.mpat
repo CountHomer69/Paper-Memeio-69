@@ -1,0 +1,1402 @@
+#define .NumRowfBadges 64`
+
+@ $RowfBadgeInventory
+FFFFFF80 .Item:FirstAttack    100`    00240087 % Lets Mario destroy a weaker  enemy with a First St ...
+FFFFFF80 .Item:Multibounce     75`    0024005E % Jumps on all enemies in a row if action command is ...
+FFFFFF80 .Item:DDownPound      75`    00240069 % Disables an enemy's defense power and injures it.
+FFFFFF80 .Item:DodgeMaster    100`    00240080 % Makes the action command work more frequently.
+FFFFFF80 .Item:SleepStomp      50`    0024005C % If it works, the enemy Mario jumps on falls asleep ...
+FFFFFF80 .Item:DoubleDip      100`    0024006D % During battle, lets you use two items during one t ...
+FFFFFF80 .Item:JumpCharge      70`    0024005A % When charged, Mario's Jump power goes up by 2.
+FFFFFF80 .Item:SpinSmash       75`    00240068 % If Mario hits an enemy, it smashes into the ones b ...
+FFFFFF80 .Item:GroupFocus     100`    0024006F % Lets Mario's party members use the Focus command a ...
+FFFFFF80 .Item:AllorNothing   100`    00240093 % If the action command works, attack power +1. If n ...
+FFFFFF80 .Item:HPPlusC        150`    00240071 % Increases maximum HP by 5.
+FFFFFF80 .Item:FPPlusC        150`    00240072 % Increases maximum FP by 5.
+FFFFFF80 .Item:SSmashChg      100`    00240065 % When supercharged, Mario's  Hammer power goes up b ...
+FFFFFF80 .Item:DamageDodgeA   150`    00240075 % If you do the action command, decreases Mario's da ...
+FFFFFF80 .Item:MegaQuake      200`    0024006C % Severely damages all enemies on the ground or ceil ...
+FFFFFF80 .Item:PayOff          80`    00240096 % The more damage Mario takes, the more coins he rec ...
+FFFFFF80 .Item:ChillOut       100`    00240098 % Keeps you from being hit by a First Strike.
+FFFFFF80 .Item:PrettyLucky    125`    00240081 % Makes enemies fail to attack Mario every once in a ...
+FFFFFF80 .Item:FeelingFine    120`    0024008C % Protects Mario from poisoning and dizziness during ...
+FFFFFF80 .Item:HappyHeartA    130`    00240079 % Restores HP automatically during battle at a slow  ...
+FFFFFF80 .Item:HappyFlowerA   130`    0024007A % Restores FP automatically during battle at a slow  ...
+FFFFFF80 .Item:ZapTap         175`    002400C1 % In battle, makes most enemies who touch Mario take ...
+FFFFFF80 .Item:HeartFinder    160`    0024007C % After beating an enemy, makes more hearts appear t ...
+FFFFFF80 .Item:FlowerFinder   160`    0024007D % After beating an enemy, makes  more flowers appear ...
+FFFFFF80 .Item:HPDrain        150`    00240078 % Decreases Mario's attack power  by 1. Restores 1 H ...
+FFFFFF80 .Item:MoneyMoney     200`    0024009A % After a battle, lets Mario get twice as many coins ...
+FFFFFF80 .Item:FlowerSaverA   180`    0024007B % During battle, saves 1 FP every time you attack. 
+FFFFFF80 .Item:PowerPlusA     250`    00240073 % Increases Mario's Jump and Hammer attack powers by ...
+
+@ $Script_802469AC
+  SetGroup 0000001B 
+  Call     UseExitHeading ( 0000003C 00000001 )
+  Exec     ExitWalk 
+  If  *Flag_EVT_01  ==  00000000 
+  	Set  *Flag_EVT_01  00000001 
+  	Call     FadeOutMusic 	( 00000000 000005DC )
+  	Call     GotoMapSpecial ( "end_00" 00000001 00000006 )
+  	Wait     00000064 
+  	Return
+  EndIf
+  Call     GotoMap     	( $ASCII_802626B8 00000000 )
+  Wait     00000064 
+  Return
+  End
+   
+#new:Function $Function_HasBadge % args: A0 = badgeID
+	LIO		A2, 8010F344
+	ADDIU	A3, A2, 100
+	.Loop
+	LH		A1, 0 (A2)
+	BEQL	A0, A1, .End
+	ADDIU	V0, R0, 1 % return true
+	BNE		A2, A3, .Loop
+	ADDIU	A2, A2, 2
+	ADDIU	V0, R0, 0 % return false
+	.End
+	JR		RA
+	NOP
+
+% How does the game know to refresh the badges?
+% A bunch of maps set Flag_Rowf_Badges_Chosen to false in their Main script.
+% Some examples: mim_10, flo_00, hos_00, kmr_10, etc.
+	
+% Modified to support more badges and work with the more detailed table.
+@ $Function_802400C8
+	ADDIU	SP, SP, -80
+	SW		RA, 3C (SP)
+	SW		S8, 38 (SP)
+	SW		S7, 34 (SP)
+	SW		S6, 30 (SP)
+	SW		S5, 2C (SP)
+	SW		S4, 28 (SP)
+	SW		S3, 24 (SP)
+	SW		S2, 20 (SP)
+	SW		S1, 1C (SP)
+	SW		S0, 18 (SP)
+	% save story progress to S5
+	LIO		A1, *StoryProgress
+	JAL		{Func:GetVariable}
+	DADDU	S8, A0, R0
+	DADDU	S5, V0, R0
+	% allocate memory
+	JAL		8002ACE4	% allocate 0x30 bytes for shop inventory
+	ADDIU	A0, R0, 30
+	DADDU	S7, V0, R0
+	SW		R0, 0 (V0)
+	SW		R0, 4 (V0)
+	SW		R0, 8 (V0)
+	SW		R0, 0 (S7)
+	SW		R0, C (S7)
+	SW		R0, 18 (S7)
+	SW		R0, 24 (S7)
+	% check whether we should refresh shop inventory
+	LIO		A1, *Flag_Rowf_Badges_Chosen
+	JAL		{Func:GetVariable}
+	DADDU	A0, S8, R0
+	BNE		V0, R0, .LoadBadges
+	DADDU	A0, S8, R0
+	% loop0: for each badge in Rowf's stock, copy the index
+	% of available badges to a temporary array on the stack
+	DADDU	S1, R0, R0 % badge table counter (0 to NumRowfBadges-1)
+	ADDIU	S2, SP, 50 % index array position
+	DADDU	S3, R0, R0 % saved badge count
+	DADDU	A0, R0, R0
+	.Loop0
+	LIA		S6, $RowfBadgeInventory
+	SLL		S0, S1, 4
+	DADDU	S0, S0, S6 % get ith entry in badge data table
+	% check required story progress
+	LW		V0, 0 (S0)
+	SLT		S4, S5, V0
+	BNEL	S4, R0, .EndLoop0
+	ADDIU	S1, S1, 1
+	% check if player has the badge
+	JAL		$Function_HasBadge
+	LW		A0, 4 (S0)
+	BNEL	V0, R0, .EndLoop0
+	ADDIU	S1, S1, 1
+	% save index to array
+	SB		S1, 0 (S2)
+	ADDIU	S2, S2, 1
+	ADDIU	S3, S3, 1
+	ADDIU	S1, S1, 1
+	.EndLoop0
+	SLTIU V0, S1, .NumRowfBadges
+	BNE		V0, R0, .Loop0
+	% did we find any?
+	DADDU	A0, R0, R0
+	BEQ		S3, R0, .Done1
+	DADDU	S5, R0, R0
+	% randomly choose 3 badges for the shop
+	ADDIU	S4, SP, 50
+	ADDIU	S2, S3, FFFF
+	DADDU	S0, S7, R0
+	.Loop1
+	% get random badge index (0 to num-1)
+	JAL		{Func:GetRandom}
+	DADDU	A0, S2, R0
+	DADDU	S1, V0, R0
+	ADDU	V0, S4, V0
+	LBU		A2, 0 (V0)
+	% get badge from table (entry size increased: C -> 10 bytes)
+	LIA		A3, $RowfBadgeInventory
+	SLL		V1, A2, 4
+	ADDU	V1, V1, A3
+	% copy selected badge to inventory
+	LW		V0, 4 (V1)
+	SW		V0, 0 (S0)
+	LW		V0, 8 (V1)
+	SW		V0, 4 (S0)
+	LW		V0, C (V1)
+	SW		V0, 8 (S0)
+	% save index to (Byte_Rowf_Badge0 + i)
+	LIO		A1, *Byte_Rowf_Badge0
+	ADDU	A1, S5, A1
+	JAL		{Func:SetVariable}
+	DADDU	A0, S8, R0
+  	ADDIU	S5, S5, 1
+	SLTI	V0, S5, 3
+	BEQ		V0, R0, .Done1
+	ADDIU	S0, S0, C
+	% if chosen index < max, remove it from the table
+	SLT		V0, S1, S2
+	BEQ		V0, R0, .EndLoop1
+	DADDU	V1, S1, R0
+	.ShiftTable
+	ADDIU	V0, S1, 1
+	DADDU	S1, V0, R0
+	ADDU	V0, S4, V0
+	LBU		V0, 0 (V0)
+	ADDU	V1, S4, V1
+	SB		V0, 0 (V1)
+	SLT		V0, S1, S2
+	BNE		V0, R0, .ShiftTable
+	DADDU	V1, S1, R0
+	.EndLoop1
+	ADDIU	S3, S3, FFFF
+	BNE		S3, R0, .Loop1
+	ADDIU	S2, S2, FFFF
+	.Done1
+	DADDU	A0, S8, R0
+	LIO		A1, *Byte_Rowf_Num_Badges
+	JAL		{Func:SetVariable}
+	DADDU	A2, S5, R0
+	DADDU	A0, S8, R0
+	LIO		A1, *Flag_Rowf_Badges_Chosen
+	JAL		{Func:SetVariable}
+	ADDIU	A2, R0, 1
+	% Return with Var[3] == 0
+	BEQ		R0, R0, .Return
+	SW		R0, 90 (S8)
+	%
+	.LoadBadges
+	LIO		A1, *Byte_Rowf_Num_Badges
+	JAL		{Func:GetVariable}
+	RESERVED
+	DADDU	S5, V0, R0
+	BLEZ	S5, .Return1
+	DADDU	S1, R0, R0
+	LIO		S3, *Byte_Rowf_Badge0
+	LIA		S6, $RowfBadgeInventory
+	DADDU	S0, S7, R0
+	.Loop3
+	% Load the previously chosen badges to the inventory.
+	% Very similar to the code in Loop1
+	DADDU	A0, S8, R0
+	JAL		{Func:GetVariable}
+	ADDU	A1, S1, S3
+	DADDU	A2, V0, R0
+	% get badge from table (entry size increased: C -> 10 bytes)
+	SLL		V1, A2, 4
+	ADDU	V1, V1, S6
+	% copy selected badge to inventory
+	LW		V0, 4 (V1)
+	SW		V0, 0 (S0)
+	LW		V0, 8 (V1)
+	SW		V0, 4 (S0)
+	LW		V0, C (V1)
+	SW		V0, 8 (S0)
+	ADDIU	S1, S1, 1
+	SLT		V0, S1, S5
+	BNE		V0, R0, .Loop3
+	ADDIU	S0, S0, C
+	.Return1
+	ADDIU	V0, R0, 1
+	SW		V0, 90 (S8) % var[3] = 1
+	.Return
+	SW		S5, 84 (S8) % var[0] = num badges
+	SW		S7, 8C (S8) % var[2] = inventory ptr
+	LW		RA, 3C (SP)
+	LW		S8, 38 (SP)
+	LW		S7, 34 (SP)
+	LW		S6, 30 (SP)
+	LW		S5, 2C (SP)
+	LW		S4, 28 (SP)
+	LW		S3, 24 (SP)
+	LW		S2, 20 (SP)
+	LW		S1, 1C (SP)
+	LW		S0, 18 (SP)
+	ADDIU	V0, R0, 2
+	JR		RA
+	ADDIU	SP, SP, 80
+	
+% this function returns the number of badges remaining on *Var[0]
+% all references to the 'bought' flags are removed
+@ $Function_80244984
+	PUSH	RA, S0, S1, S2, S3
+	DADDU	S3, A0, R0
+	LIA		S0, $RowfBadgeInventory
+	DADDU	S1, R0, R0
+	DADDU	S2, R0, R0
+	.CheckBadgesLoop
+	JAL		$Function_HasBadge
+	LW		A0, 4 (S0)
+	XORI	V0, V0, 1
+	DADDU	S1, S1, V0
+	ADDIU	S2, S2, 1
+	SLTIU	V0, S2, .NumRowfBadges
+	BNE		V0, R0, .CheckBadgesLoop
+	ADDIU	S0, S0, 10
+	SW		S1, 84 (S3)
+	POP		RA, S0, S1, S2, S3
+	JR		RA
+	ADDIU	V0, R0, 2
+
+% Story progress checks are now part of Function_802400C8, do not set flags here.
+@ $Script_80248070
+		% -- Removed --
+  1C0:  Call     $Function_802400C8 ( )
+%  1CC:  Set      *MapVar[2] *Var[1] 
+  1DC:  If       *Var[3] ==  00000000 
+  1EC:     Set      *Flag_Rowf_Has_Badge0 00000000 
+  1FC:     Set      *Flag_Rowf_Has_Badge1 00000000 
+  20C:     Set      *Flag_Rowf_Has_Badge2 00000000 
+  21C:     If       *Var[0]  <  00000003 
+  22C:        Set      *Flag_Rowf_Has_Badge2 00000001 
+  23C:     EndIf
+  244:     If       *Var[0]  <  00000002 
+  254:        Set      *Flag_Rowf_Has_Badge1 00000001 
+  264:     EndIf
+  26C:     If       *Var[0]  <  00000001 
+  27C:        Set      *Flag_Rowf_Has_Badge0 00000001 
+  28C:     EndIf
+  294:  EndIf
+  29C:  Call     MakeShop    	( $RowfItemPositions *Var[2] $RowfDummyPriceList 00000000 )
+  2B8:  Call     MakeShopOwner 	( $ShopOwnerRowf )
+  2C8:  If       *Var[3] ==  00000001 
+  2D8:     If       *Var[0] >=  00000003 
+  2E8:        If       *Flag_Rowf_Has_Badge2 ==  00000001 
+  2F8:           Call     $Function_80240044 ( 00000002 )
+  308:        EndIf
+  310:     EndIf
+  318:     If       *Var[0] >=  00000002 
+  328:        If       *Flag_Rowf_Has_Badge1 ==  00000001 
+  338:           Call     $Function_80240044 ( 00000001 )
+  348:        EndIf
+  350:     EndIf
+  358:     If       *Var[0] >=  00000001 
+  368:        If       *Flag_Rowf_Has_Badge0 ==  00000001 
+  378:           Call     $Function_80240044 ( 00000000 )
+  388:        EndIf
+  390:     EndIf
+  398:  EndIf
+  3A0:  Return
+  3A8:  End
+  
+% this is where the 'bought' flag is usually set,
+% so the function has been modified to skip that.
+@ $Function_80240044
+	PUSH	RA
+	LW		V0, C (A0)
+	JAL		{Func:GetVariable}
+	LW		A1, 0 (V0)
+	LAW		V1, 8007419C
+	ADDIU	A1, R0, 40
+	LW		A0, 140 (V1)
+	SLL		V1, V0, 4
+	ADDU	V1, V1, A0
+	JAL		80134148
+	LW		A0, 0 (V1)
+	POP		RA
+	JR		RA
+	ADDIU	V0, R0, 2
+	
+@ $NpcGroup_8025CCA8[D90]
+00000011 $NpcSettings_80248BD8 {Vec3f:NPC_8025DA38} % 0 -1000 0
+00002D09 $Script_Init_8025833C 00000000 00000000 00000000 
+{NoItems} {NoHP} {NoFP} {NoCoinBonus}
+{Movement:NPC_8025DA38}
+00C10002 00C1000E 00C1000E 00C10002 00C10002 00C10002 00C10002 00C10002 
+00C10002 00C10002 00C10002 00C10002 00C10002 00C10002 00C10002 00C10002 
+00000000 00000000 $ExtraAnimationList_8025CC98 001A0032 % He's one of the Bub-ulbs. Bub-ulbs are a type of t ...
+
+@ $Script_ToggleVis_80247A70
+  Switch  *Var[0] 
+  	Case  ==  00000000 
+  		Switch  *StoryProgress 
+  			Case  <  FFFFFF9A 
+  				ExecWait $Script_802502AC 
+  				Set  *Var[0]  FFFFFFFF 
+  				Return
+  			Case  0000003C  to  0000003D 
+  				Exec     $Script_80252EB0 
+  			Case  FFFFFFD8  to  0000005F 
+  				If  *StoryProgress  ==  0000003C 
+  					BreakCase
+  				EndIf
+  				If  *Flag_MAC_7B  ==  00000000 
+				    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  					Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 0003003C ) % Merlon is here!
+  					Set  *Var[0]  FFFFFFFF 
+  					Return
+  				EndIf
+  			Case  >=  00000060 
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  				Call     ShowMessage 	( 0001003F 000000A0 00000028 ) %  Merlon isn't here now! Go away! 
+  				Set  *Var[0]  FFFFFFFF 
+  				Return
+  		EndSwitch
+  		Call     802C9308 ( 00000031 00000001 )
+  		Set  *MapFlag[0A]  00000001 
+  	Case  ==  00000001 
+  	Case  ==  00000002 
+  	Case  ==  00000003 
+  		Call     802C9308 ( 00000031 00000000 )
+  		Set  *MapFlag[0A]  00000000 
+  EndSwitch
+  Return
+  End
+  
+@ $Script_8024E440
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00B60008 00B60001 00000000 000300E8 ) % Cheers, Mario! Smashing, really, old boy! I'm refi ...
+  Set  *Var[0]  0000015C 
+  Set  *Var[1]  00000003 
+  ExecWait $Script_80248C34 
+  Call     AddStarPiece 	( 00000001 )
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00B60008 00B60001 00000000 000300E9 ) % I'll start examining this the moment I get home. Y ...
+  Set  *Flag_SBK_04  00000001 
+  Return
+  End
+  
+@ $Script_8024F27C
+  Call     DisablePlayerInput 	( .True )
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030036 ) % Ah, Mario. Do you want me to predict the path you  ...
+  Call     ShowCoinCounter 	( .True )
+  Call     ShowChoice  	( 001E000D ) % Yes No 
+  If  *Var[0]  !=  00000000 
+  	Call     ShowCoinCounter 	( .False )
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage2 	( 00000000 00A50004 00A50001 00000000 00030039 ) % You don't want me to predict your future? All righ ...
+  	Call     DisablePlayerInput 	( .False )
+  	Return
+  EndIf
+  Call     $Function_802440E8 ( )
+  If  *Var[0]  <  00000005 
+  	Call     ShowCoinCounter 	( .False )
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage2 	( 00000000 00A50004 00A50001 00000000 0003003A ) % How tragic. You do not have enough coins. As my fa ...
+  	Call     DisablePlayerInput 	( .False )
+  	Return
+  EndIf
+  Call     AddCoin     	( FFFFFFFB )
+  Call     ShowCoinCounter 	( .False )
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage2 	( 00000000 00A50004 00A50001 00000000 00030037 ) % Excellent. Now relax while I read what your future ...
+  Call     SetNpcAnimation 	( 00000000 00A50008 )
+  Wait     0000000A 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00A50008 00A50008 00000000 00030038 ) % Ooooo---------! Crystal eye! Open wide! Aiiii----- ...
+  Exec     $Script_80246824 
+  Wait     00000014 
+  If  *MapVar[C]  ==  00000000 
+  	NewArray 00000014 *MapVar[C] 
+  EndIf
+  UseArray *MapVar[C] 
+  ExecWait $Script_8024EC64 
+  Wait     00000014 
+  Exec     $Script_80246850 
+  Switch  *StoryProgress 
+  	Case  <  FFFFFF9C 
+  		Set  *Var[0]  00210000 
+  	Case  <  FFFFFF9D 
+  		Set  *Var[0]  00210001 
+  	Case  <  FFFFFFA4 
+  		Set  *Var[0]  00210002 
+  	Case  <  FFFFFFA7 
+  		Set  *Var[0]  00210003 
+  	Case  <  FFFFFFAD 
+  		Set  *Var[0]  00210004 
+  	Case  <  FFFFFFB3 
+  		Set  *Var[0]  00210005 
+  	Case  <  FFFFFFBA 
+  		If  *Flag_MAC_9A  ==  00000000 
+  			Set  *Var[0]  00210006 
+  		Else
+  			Set  *Var[0]  00210007 
+  		EndIf
+  	Case  <  FFFFFFBB 
+  		Set  *Var[0]  00210008 
+  	Case  <  FFFFFFBC 
+  		Set  *Var[0]  00210009 
+  	Case  <  FFFFFFBF 
+  		Set  *Var[0]  0021000A 
+  	Case  <  FFFFFFC0 
+  		Set  *Var[0]  0021000B 
+  	Case  <  FFFFFFC1 
+  		Set  *Var[0]  0021000C 
+  	Case  <  FFFFFFC2 
+  		Set  *Var[0]  0021000D 
+  	Case  <  FFFFFFC7 
+  		Set  *Var[0]  0021000E 
+  	Case  <  FFFFFFC9 
+  		Set  *Var[0]  0021000F 
+  	Case  <  FFFFFFCC 
+  		Set  *Var[0]  00210010 
+  	Case  <  FFFFFFCF 
+  		Set  *Var[0]  00210011 
+  	Case  <  FFFFFFD0 
+  		Set  *Var[0]  00210012 
+  	Case  <  FFFFFFD2 
+  		Set  *Var[0]  00210013 
+  	Case  <  FFFFFFD6 
+  		Set  *Var[0]  00210014 
+  	Case  <  FFFFFFD7 
+  		Set  *Var[0]  00210015 
+  	Case  <  FFFFFFDA 
+  		Set  *Var[0]  00210016 
+  	Case  <  FFFFFFDC 
+  		Set  *Var[0]  00210017 
+  	Case  <  FFFFFFE0 
+  		Set  *Var[0]  00210018 
+  	Case  <  FFFFFFF0 
+  		If  *Flag_DGB_08  ==  00000000 
+  			Set  *Var[0]  00210019 
+  			BreakCase
+  		EndIf
+  		If  *Flag_DGB_11  ==  00000000 
+  			Set  *Var[0]  0021001A 
+  			BreakCase
+  		EndIf
+  		If  *Flag_DGB_1D  ==  00000000 
+  			Set  *Var[0]  0021001B 
+  			BreakCase
+  		EndIf
+  		Set  *Var[0]  0021001C 
+  	Case  <  FFFFFFF3 
+  		Set  *Var[0]  0021001D 
+  	Case  <  FFFFFFF6 
+  		Set  *Var[0]  0021001E 
+  	Case  <  FFFFFFF8 
+  		Set  *Var[0]  0021001F 
+  	Case  <  FFFFFFFA 
+  		Set  *Var[0]  00210020 
+  	Case  <  FFFFFFFB 
+  		Set  *Var[0]  00210021 
+  	Case  <  FFFFFFFC 
+  		Set  *Var[0]  00210022 
+  	Case  <  FFFFFFFD 
+  		Set  *Var[0]  00210023 
+  	Case  <  FFFFFFFE 
+  		Set  *Var[0]  00210024 
+  	Case  <  00000000 
+  		Set  *Var[0]  00210025 
+  	Case  <  00000001 
+  		Set  *Var[0]  00210026 
+  	Case  <  00000002 
+  		Set  *Var[0]  00210027 
+  	Case  <  00000007 
+  		Set  *Var[0]  00210028 
+  	Case  <  0000000A 
+  		Set  *Var[0]  00210029 
+  	Case  <  0000000B 
+  		Set  *Var[0]  0021002A 
+  	Case  <  0000000E 
+  		Set  *Var[0]  0021002B 
+  	Case  <  0000000F 
+  		Set  *Var[0]  0021002C 
+  	Case  <  00000010 
+  		Set  *Var[0]  0021002D 
+  	Case  <  00000012 
+  		Set  *Var[0]  0021002E 
+  	Case  <  00000015 
+  		Set  *Var[0]  0021002F 
+  	Case  <  00000019 
+  		Set  *Var[0]  00210030 
+  	Case  <  0000001C 
+  		Set  *Var[0]  00210031 
+  	Case  <  00000027 
+  		Set  *Var[0]  00210032 
+  	Case  <  00000028 
+  		Set  *Var[0]  00210033 
+  	Case  <  0000002B 
+  		Set  *Var[0]  00210034 
+  	Case  <  0000002D 
+  		Set  *Var[0]  00210035 
+  	Case  <  0000002E 
+  		Set  *Var[0]  00210036 
+  	Case  0000002E  to  00000030 
+  		If  *Flag_FLO_0C  ==  00000000 
+  			If  *Flag_FLO_0D  ==  00000000 
+  				Set  *Var[0]  00210037 
+  			Else
+  				Set  *Var[0]  00210038 
+  			EndIf
+  		Else
+  			Set  *Var[0]  00210039 
+  		EndIf
+  	Case  <  00000035 
+  		Set  *Var[0]  0021003A 
+  	Case  <  00000037 
+  		Set  *Var[0]  0021003B 
+  	Case  <  00000039 
+  		Set  *Var[0]  0021003C 
+  	Case  <  0000003E 
+  		Set  *Var[0]  0021003D 
+  	Case  <  00000043 
+  		Set  *Var[0]  0021003E 
+  	Case  <  00000048 
+  		Set  *Var[0]  0021003F 
+  	Case  <  00000049 
+  		Set  *Var[0]  00210040 
+  	Case  <  0000004A 
+  		Set  *Var[0]  00210041 
+  	Case  <  0000004C 
+  		Set  *Var[0]  00210042 
+  	Case  <  0000004E 
+  		Set  *Var[0]  00210043 
+  	Case  <  0000004F 
+  		Set  *Var[0]  00210044 
+  	Case  <  00000050 
+  		Set  *Var[0]  00210045 
+  	Case  <  00000054 
+  		Set  *Var[0]  00210046 
+  	Case  <  00000055 
+  		Set  *Var[0]  00210047 
+  	Case  <  00000059 
+  		Set  *Var[0]  00210048 
+  	Case  <  0000005B 
+  		Set  *Var[0]  00210049 
+  	Case  <  0000005E 
+  		Set  *Var[0]  0021004A 
+  	Case  <  0000005F 
+  		If  *Byte_KPA_01  !=  00000002 
+  			Set  *Var[0]  0021004B 
+  			BreakCase
+  		EndIf
+  		If  *Byte_KPA_02  !=  00000001 
+  			Set  *Var[0]  0021004C 
+  			BreakCase
+  		EndIf
+  		Set  *Var[0]  0021004D 
+  	Case  <  00000060 
+  		Set  *Var[0]  0021004E 
+  EndSwitch
+  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 *Var[0] ) % variable string ID
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End
+  
+@ $Script_80250414
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     ShowMessage 	( 00030020 000000A0 00000028 ) % Why do you keep on knocking? I'm telling you he's  ...
+  Call     802C9308 ( 00000031 00000001 )
+  Thread
+  	Call     PlaySoundAtCollider 	( {Collider:deilitd} .Sound:BasicDoorOpen 00000000 )
+  	Call     MakeLerp    	( 00000000 FFFFFFB0 0000000F 00000008 )
+  	Loop     
+  		Call     UpdateLerp  	( )
+  		Call     RotateModel 	( {Model:door} *Var[0] 00000000 00000001 00000000 )
+  		Wait     00000001 
+  		If  *Var[1]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  EndThread
+  Thread
+  	Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[2.0] )
+  EndThread
+  Thread
+  	Wait     00000001 
+  	Call     DisablePlayerPhysics 	( .True )
+  	Call     SetPlayerFlagBits 	( 00200000 .True )
+  	Call     InterpPlayerYaw 	( 0000010E 00000000 )
+  	Wait     00000001 
+  	Call     SetPlayerAnimation 	( .PlayerAnim:FallBack )
+  	Call     SetPlayerJumpscale 	( *Fixed[1.0] )
+  	Call     802D1904 ( FFFFFF22 00000014 FFFFFF62 00000008 )
+  	Wait     00000005 
+  	Call     SetPlayerFlagBits 	( 00200000 .False )
+  	Call     $Function_80243380 ( 00000001 00000025 )
+  	Call     $Function_80243500 ( FFFFFF29 00000014 FFFFFF62 )
+  	Wait     00000001 
+  	Call     SetPlayerPos 	( FFFFFF29 000003E8 FFFFFF62 )
+  	Call     MakeLerp    	( 00000000 0000005A 0000000A 00000001 )
+  	Loop     
+  		Call     UpdateLerp  	( )
+  		Call     $Function_802435C0 ( *Var[0] 00000000 00000000 )
+  		Wait     00000001 
+  		If  *Var[1]  ==  00000000 
+  			BreakLoop
+  		EndIf
+  	EndLoop
+  	Call     $Function_80243500 ( FFFFFF29 00000015 FFFFFF62 )
+  	Call     PlaySoundAtPlayer 	( 00000162 00000000 )
+  EndThread
+  Wait     00000032 
+  Call     SetNpcPos   	( 00000000 FFFFFF0F 00000014 FFFFFEF2 )
+  Call     SetNpcAnimation 	( 00000000 00A50002 )
+  Call     MoveNpcTo   	( 00000000 FFFFFF58 FFFFFF3A 00000014 )
+  Call     SetNpcAnimation 	( 00000000 00A50001 )
+  Call     GetAngleToPlayer 	( 00000000 *Var[0] )
+  Call     InterpNpcYaw 	( 00000000 *Var[0] 00000005 )
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030021 ) % What the...? Why is someone sleeping in front of m ...
+  Call     $Function_80243500 ( FFFFFF29 00000014 FFFFFF62 )
+  Call     MakeLerp    	( 0000005A 00000000 0000000F 00000004 )
+  Loop     
+  	Call     UpdateLerp  	( )
+  	Call     $Function_802435C0 ( *Var[0] 00000000 00000000 )
+  	Wait     00000001 
+  	If  *Var[1]  ==  00000000 
+  		BreakLoop
+  	EndIf
+  EndLoop
+  Call     SetPlayerPos 	( FFFFFF22 00000014 FFFFFF62 )
+  Call     $Function_80243494 ( )
+  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  Call     802D10D8 ( 00000003 )
+  Call     SetPlayerJumpscale 	( *Fixed[1.0] )
+  Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  Call     PlayerJump  	( *Var[0] *Var[1] *Var[2] 0000000F )
+  Call     802D10D8 ( 0000000A )
+  Wait     0000000A 
+     	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030022 ) % Oh! Maybe... No... Yes! It must be! You're Mario!  ...
+  Thread
+  	Call     SetNpcAnimation 	( 00000000 00A50002 )
+  	Call     MoveNpcTo   	( 00000000 FFFFFEED FFFFFECF 0000001E )
+  	Call     SetNpcAnimation 	( 00000000 00A50001 )
+  	Call     SetNpcPos   	( 00000000 FFFFFEAF 00000014 FFFFFE98 )
+  	Call     SetNpcYaw   	( 00000000 00000087 )
+  EndThread
+  Call     MovePlayerTo 	( FFFFFF58 FFFFFF3A 00000014 )
+  Call     MovePlayerTo 	( FFFFFEED FFFFFECF 0000001E )
+  Exec     $Script_8024E7F0 
+  Wait     00000005 
+  Call     SetNpcPos   	( .Npc:Partner FFFFFF10 00000014 FFFFFEE4 )
+  Call     $Function_802447E0 ( )
+  Thread
+  	Set  *Var[F]  00000035 
+  	Set  *Var[0]  00000000 
+  	Call     $Function_802448A0 ( )
+  EndThread
+  Call     RotateGroup 	( {Model:off_kabe} 000000B4 00000000 00000001 00000000 )
+  Set  *MapFlag[0A]  00000001 
+  Call     DisablePlayerPhysics 	( .False )
+  Call     UseSettingsFrom 	( .Default FFFFFF06 00000014 FFFFFEE8 )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     0000001E 
+  Call     $Function_80244848 ( )
+  Call     InterpNpcYaw 	( 00000000 00000087 00000005 )
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030023 ) % Where to begin...? My name...is Merlon. I am a wiz ...
+  Call     $Function_802447E0 ( )
+  Wait     0000003C 
+  Call     SetPlayerAnimation 	( 0008001D )
+  Thread
+  	Call     $Function_80244848 ( )
+  EndThread
+  Wait     0000000A 
+  Call     SayMessage2 	( 00000000 00A50004 00A50001 00000000 00030024 ) % ........................... ................. .... ...
+  Call     SetPlayerAnimation 	( 0008001E )
+  Wait     0000000A 
+  Call     SetPlayerAnimation 	( 0008001C )
+  Wait     00000032 
+  Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+  Call     SetCamType  	( .Default 00000000 00000000 )
+  Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  Call     SetCamDistance ( .Default 000000C8 )
+  Call     SetCamAngles 	( .Default 0000000F FFFFFFF6 )
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Wait     0000000A 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030025 ) % Oh...all right. ...So, anyway, that is why I am ab ...
+  Set  *StoryProgress  FFFFFF9A 
+  Call     ResetCam    	( .Default *Fixed[5.0] )
+  Thread
+  	Call     ModifyColliderFlags 	( 00000001 {Collider:o336} 7FFFFE00 )
+  	Call     ModifyColliderFlags 	( 00000000 {Collider:o335} 7FFFFE00 )
+  	Call     AwaitPlayerLeave 	( FFFFFEE8 FFFFFED4 00000028 )
+  	Call     ModifyColliderFlags 	( 00000001 {Collider:o335} 7FFFFE00 )
+  	Call     ModifyColliderFlags 	( 00000000 {Collider:o336} 7FFFFE00 )
+  EndThread
+  Return
+  End
+  
+@ $Script_80250DFC
+ Call     SetNpcVar   	( 00000000 00000000 00000000 )
+ Call     802CF56C ( 00000002 )
+ Thread
+ 	Call     SetNpcAnimation 	( 00000000 00A50002 )
+ 	Call     SetNpcSpeed 	( 00000000 *Fixed[4.0] )
+ 	Call     MoveNpcTo   	( 00000000 0000019A 00000000 00000000 )
+ 	Call     SetNpcAnimation 	( 00000000 00A50001 )
+ 	Call     InterpNpcYaw 	( 00000000 0000005A 00000000 )
+ EndThread
+ Call     SayMessage0 	( 00000014 00650104 00650101 00000000 00030029 ) % I told you that you can't pass!
+ Call     SayMessage0 	( 00000015 00650004 00650001 00000000 0003002A ) % Take off!
+ Loop     
+ 	Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+ 	If  *Var[0]  >=  0000019A 
+ 		BreakLoop
+ 	EndIf
+ 	Wait     00000001 
+ EndLoop
+ Call     802CC3EC ( 00000000 *Fixed[4.0] 0000019A 00000000 00000000 00000140 0000000F FFFFFFFA )
+ Thread
+ 	Wait     00000005 
+ 	Call     SetPlayerSpeed ( *Fixed[3.0] )
+ 	Call     MovePlayerTo 	( 000001CC 00000000 00000000 )
+ 	Call     PlayerFaceNpc 	( 00000000 00000000 )
+ EndThread
+ Call     SetNpcAnimation 	( 00000000 00A50001 )
+ Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 0003002B ) % Hmmmm! You aren't Toads, are you?!
+ Call     SetPanTarget 	( .Default 000001E0 00000000 00000000 )
+ Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+ Call     PanToTarget 	( .Default 00000000 00000001 )
+ Call     WaitForCam  	( .Default *Fixed[1.0] )
+ Thread
+ 	Wait     00000005 
+ 	Call     PlayerFaceNpc 	( 00000014 00000000 )
+ EndThread
+ Call     SayMessage0 	( 00000016 00650205 00650201 00000000 0003002C ) % ...Um...we don't know what you're talking about.
+ Call     SayMessage0 	( 00000017 00650305 00650301 00000000 0003002D ) % Yeah, what gives? Ask anyone! We're just cute, ord ...
+ Call     SetPanTarget 	( .Default 0000019A 00000000 00000000 )
+ Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+ Call     PanToTarget 	( .Default 00000000 00000001 )
+ Call     WaitForCam  	( .Default *Fixed[1.0] )
+ Thread
+ 	Wait     00000005 
+ 	Call     PlayerFaceNpc 	( 00000000 00000000 )
+ EndThread
+ Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 0003002E ) % Reveal your true selves!
+ Call     PanToTarget 	( .Default 00000000 00000000 )
+ Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+ Call     WaitForCam  	( .Default *Fixed[1.0] )
+ Call     PlaySoundAtNpc ( 00000000 00000209 00000000 )
+ Call     SetNpcAnimation 	( 00000000 00A50008 )
+ Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+ Add  *Var[1]  0000000A 
+ Call     PlayEffect  	( {FX:RadialFlowIn:YellowLines} *Var[0] *Var[1] *Var[2] 00000001 00000032 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+ Wait     0000003C 
+ Call     SetNpcAnimation 	( 00000000 00A5000A )
+ Wait     00000005 
+ Call     PlayEffect  	( {FX:EnergyWaveOut:White} *Var[0] *Var[1] *Var[2] 00000001 00000014 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+ Add  *Var[1]  000000B4 
+ Call     PlayerFaceNpc 	( 00000014 00000000 )
+ Call     802CC3EC ( 00000000 *Fixed[4.0] 000001E0 00000000 00000000 00000140 0000000F FFFFFFFA )
+ Call     802D5FF8 ( 00000052 00000000 )
+ Thread
+ 	Set  *MapFlag[14]  00000000 
+ 	Wait     00000005 
+ 	Call     SayMessage0 	( 00000018 0066010B 0066010B 00000005 0003002F ) % Aaaaaaaaaaaaaargh!!!
+ 	Set  *MapFlag[14]  00000001 
+ EndThread
+ Thread
+ 	Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+ 	Call     GetNpcPos   	( 00000014 *Var[3] *Var[4] *Var[5] )
+ 	Add  *Var[5]  00000005 
+ 	Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+ 	Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+ 	Call     SetNpcAnimation 	( 00000014 00650106 )
+ 	Wait     00000005 
+ 	Call     PlaySoundAtNpc ( 00000014 00002049 00000000 )
+ 	Call     GetNpcPos   	( 00000014 *Var[3] *Var[4] *Var[5] )
+ 	Call     SetNpcPos   	( 00000014 *Var[3] FFFFFC18 *Var[2] )
+ 	Call     SetNpcPos   	( 00000018 *Var[3] *Var[4] *Var[5] )
+ 	Call     SetNpcJumpscale 	( 00000018 *Fixed[1.0] )
+ 	Call     SetNpcAnimation 	( 00000018 0066010B )
+ 	Call     NpcJump0    	( 00000018 *Var[3] *Var[4] *Var[5] 0000000A )
+ EndThread
+ Thread
+ 	Wait     0000000A 
+ 	Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+ 	Call     GetNpcPos   	( 00000015 *Var[3] *Var[4] *Var[5] )
+ 	Add  *Var[5]  00000005 
+ 	Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+ 	Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+ 	Call     SetNpcAnimation 	( 00000015 00650006 )
+ 	Wait     00000005 
+ 	Call     PlaySoundAtNpc ( 00000015 00002049 00000000 )
+ 	Call     GetNpcPos   	( 00000015 *Var[3] *Var[4] *Var[5] )
+ 	Call     SetNpcPos   	( 00000015 *Var[3] FFFFFC18 *Var[2] )
+ 	Call     SetNpcPos   	( 00000019 *Var[3] *Var[4] *Var[5] )
+ 	Call     SetNpcJumpscale 	( 00000019 *Fixed[1.0] )
+ 	Call     SetNpcAnimation 	( 00000019 0066000B )
+ 	Call     NpcJump0    	( 00000019 *Var[3] *Var[4] *Var[5] 0000000A )
+ EndThread
+ Thread
+ 	Wait     00000014 
+ 	Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+ 	Call     GetNpcPos   	( 00000016 *Var[3] *Var[4] *Var[5] )
+ 	Add  *Var[5]  00000005 
+ 	Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+ 	Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+ 	Call     SetNpcAnimation 	( 00000016 00650206 )
+ 	Wait     00000005 
+ 	Call     PlaySoundAtNpc ( 00000016 00002049 00000000 )
+ 	Call     GetNpcPos   	( 00000016 *Var[3] *Var[4] *Var[5] )
+ 	Call     SetNpcPos   	( 00000016 *Var[3] FFFFFC18 *Var[2] )
+ 	Call     SetNpcPos   	( 0000001A *Var[3] *Var[4] *Var[5] )
+ 	Call     SetNpcJumpscale 	( 0000001A *Fixed[1.0] )
+ 	Call     SetNpcAnimation 	( 0000001A 0066020B )
+ 	Call     NpcJump0    	( 0000001A *Var[3] *Var[4] *Var[5] 0000000A )
+ EndThread
+ Wait     0000001E 
+ Call     PlaySoundAtNpc ( 00000014 0000020A 00000000 )
+ Call     GetNpcPos   	( 00000017 *Var[3] *Var[4] *Var[5] )
+ Add  *Var[5]  00000005 
+ Call     PlayEffect  	( {FX:Lightning} *Var[0] *Var[1] *Var[2] *Var[3] *Var[4] *Var[5] 00000002 00000014 00000000 00000000 00000000 00000000 )
+ Call     PlayEffect  	( {FX:ShimmerBurst:Pink} *Var[3] *Var[4] *Var[5] 00000001 0000001E 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+ Call     SetNpcAnimation 	( 00000017 00650306 )
+ Wait     00000005 
+ Call     PlaySoundAtNpc ( 00000017 00002049 00000000 )
+ Call     GetNpcPos   	( 00000017 *Var[3] *Var[4] *Var[5] )
+ Call     SetNpcPos   	( 00000017 *Var[3] FFFFFC18 *Var[2] )
+ Call     SetNpcPos   	( 0000001B *Var[3] *Var[4] *Var[5] )
+ Call     SetNpcJumpscale 	( 0000001B *Fixed[1.0] )
+ Call     SetNpcAnimation 	( 0000001B 0066030B )
+ Call     NpcJump0    	( 0000001B *Var[3] *Var[4] *Var[5] 0000000A )
+ Call     SetNpcAnimation 	( 00000000 00A50001 )
+ Loop     
+ 	If  *MapFlag[14]  ==  00000001 
+ 		BreakLoop
+ 	EndIf
+ 	Wait     00000001 
+ EndLoop
+ Call     SetNpcAnimation 	( 00000018 00660104 )
+ Call     SetNpcAnimation 	( 00000019 00660004 )
+ Call     SetNpcAnimation 	( 0000001A 00660204 )
+ Call     SetNpcAnimation 	( 0000001B 00660304 )
+ Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030030 ) % Hmph! Just as I thought. You're the Koopa Bros.!!
+ Wait     0000000A 
+ Call     SayMessage0 	( 00000018 00660114 00660104 00000000 00030031 ) % How... How'd you guess it was us? We were perfectl ...
+ Call     InterpNpcYaw 	( 00000018 0000005A 00000000 )
+ Wait     0000000A 
+ Call     SayMessage0 	( 00000018 00660114 00660104 00000005 00030032 ) % Shucks! Black! Yellow! Green! We retreat!! ...for  ...
+ Call     InterpNpcYaw 	( 00000018 0000005A 00000000 )
+ Call     InterpNpcYaw 	( 00000019 0000005A 00000000 )
+ Call     InterpNpcYaw 	( 0000001A 0000005A 00000000 )
+ Call     InterpNpcYaw 	( 0000001B 0000005A 00000000 )
+ Call     SetNpcAnimation 	( 00000018 00660103 )
+ Call     SetNpcAnimation 	( 00000019 00660003 )
+ Call     SetNpcAnimation 	( 0000001A 00660203 )
+ Call     SetNpcAnimation 	( 0000001B 00660303 )
+ Wait     0000000F 
+ Call     PlaySoundAtNpc ( 0000001A 00000174 00000000 )
+ Thread
+ 	Call     SetNpcSpeed 	( 00000018 *Fixed[8.0] )
+ 	Call     MoveNpcTo   	( 00000018 000002BC 00000000 00000000 )
+ EndThread
+ Thread
+ 	Call     SetNpcSpeed 	( 00000019 *Fixed[8.0] )
+ 	Call     MoveNpcTo   	( 00000019 000002BC 00000000 00000000 )
+ EndThread
+ Thread
+ 	Call     SetNpcSpeed 	( 0000001A *Fixed[8.0] )
+ 	Call     MoveNpcTo   	( 0000001A 000002BC 00000000 00000000 )
+ EndThread
+ Wait     00000001 
+ Call     SetNpcSpeed 	( 0000001B *Fixed[8.0] )
+ Call     MoveNpcTo   	( 0000001B 000002BC 00000000 00000000 )
+ Wait     0000000A 
+ Call     802D5FD8 ( )
+ Call     SetPanTarget 	( .Default 0000019A 00000000 00000000 )
+ Call     SetCamSpeed 	( .Default *Fixed[2.0] )
+ Call     PanToTarget 	( .Default 00000000 00000001 )
+ Call     WaitForCam  	( .Default *Fixed[1.0] )
+ Thread
+ 	Wait     00000003 
+ 	Call     PlayerFaceNpc 	( 00000000 00000000 )
+ EndThread
+     	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+ Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030033 ) % Mario, those imposters were none other than the Ko ...
+ Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+ Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+ Set  *Var[3]  *Var[0] 
+ Add  *Var[3]  FFFFFFCE 
+ Call     SetNpcAnimation 	( 00000000 00A50002 )
+ Call     MoveNpcTo   	( 00000000 *Var[3] *Var[2] 00000000 )
+ Call     SetNpcAnimation 	( 00000000 00A50001 )
+ Wait     0000000A 
+ Call     SetNpcAnimation 	( 00000000 00A50002 )
+ Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 00000000 )
+ Call     SetNpcAnimation 	( 00000000 00A50001 )
+     	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+ Call     SayMessage0 	( 00000000 00A50004 00A50001 00000000 00030034 ) % Oh, Mario, there's one part of your fortune I have ...
+ Thread
+ 	Wait     0000000A 
+ 	Call     ResetCam    	( .Default 00000002 )
+ EndThread
+ Call     GetNpcPos   	( 00000000 *Var[0] *Var[1] *Var[2] )
+ Add  *Var[0]  FFFFFF6A 
+ Call     SetNpcAnimation 	( 00000000 00A50002 )
+ Call     MoveNpcTo   	( 00000000 *Var[0] *Var[2] 00000000 )
+ Call     SetNpcAnimation 	( 00000000 00A50001 )
+ Call     InterpNpcYaw 	( 00000000 00000085 00000000 )
+ Call     SetNpcPos   	( 00000000 FFFFFEAF 00000014 FFFFFE98 )
+ Call     ModifyColliderFlags 	( 00000001 {Collider:o335} 7FFFFE00 )
+ Call     ModifyColliderFlags 	( 00000000 {Collider:o336} 7FFFFE00 )
+ Call     ModifyColliderFlags 	( 00000000 {Collider:tt} 7FFFFE00 )
+ Set  *StoryProgress  FFFFFF9C 
+ Set  *AreaFlag[00E]  00000000 
+ Set  *AreaFlag[00F]  00000000 
+ Set  *AreaFlag[010]  00000000 
+ Set  *AreaFlag[011]  00000000 
+ Set  *AreaFlag[012]  00000000 
+ Set  *AreaFlag[013]  00000000 
+ Set  *AreaFlag[014]  00000000 
+ Call     80044478 ( 00000018 )
+ Return
+ End
+ 
+@ $Script_802520D8
+  Switch  *StoryProgress 
+  	Case  <  FFFFFF9B 
+  		If  *Flag_MAC_7A  ==  00000000 
+				    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000010 00030026 ) % Make haste to the east. You must go to the Koopa B ...
+  		Else
+				    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000000 00030027 ) % Come again? Strange Toads blocking the east side o ...
+  			Set  *StoryProgress  FFFFFF9B 
+  			ChildThread
+  				Loop     
+  					Call     PlayerFaceNpc 	( 00000000 00000000 )
+  					Wait     00000001 
+  				EndLoop
+  			EndChildThread
+  			Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  			Call     SetNpcAnimation 	( 00000000 00A50002 )
+  			Call     SetNpcSpeed 	( 00000000 *Fixed[4.0] )
+  			Call     MoveNpcTo   	( 00000000 FFFFFEA2 FFFFFEE8 00000000 )
+  			Call     MoveNpcTo   	( 00000000 FFFFFF1A FFFFFEF2 00000000 )
+  			Call     SetNpcAnimation 	( 00000000 00A50001 )
+  			Call     SetNpcFlagBits ( 00000000 00000100 .False )
+  			Call     PlaySoundAtCollider 	( {Collider:deilitud} .Sound:BasicDoorOpen 00000000 )
+  			Call     MakeLerp    	( 00000000 FFFFFFB0 0000000F 00000000 )
+  			Loop     
+  				Call     UpdateLerp  	( )
+  				Call     RotateModel 	( {Model:door} *Var[0] 00000000 00000001 00000000 )
+  				Wait     00000001 
+  				If  *Var[1]  ==  00000000 
+  					BreakLoop
+  				EndIf
+  			EndLoop
+  			Call     SetNpcAnimation 	( 00000000 00A50002 )
+  			Call     MoveNpcTo   	( 00000000 FFFFFF5D FFFFFF27 00000000 )
+  			Call     ModifyColliderFlags 	( 00000001 {Collider:o336} 7FFFFE00 )
+  			Call     ModifyColliderFlags 	( 00000000 {Collider:o335} 7FFFFE00 )
+  			Call     MakeLerp    	( FFFFFFB0 00000000 0000000F 00000000 )
+  			Loop     
+  				Call     UpdateLerp  	( )
+  				Call     RotateModel 	( {Model:door} *Var[0] 00000000 00000001 00000000 )
+  				Wait     00000001 
+  				If  *Var[1]  ==  00000000 
+  					BreakLoop
+  				EndIf
+  			EndLoop
+  			Call     PlaySoundAtCollider 	( {Collider:deilitud} .Sound:BasicDoorClose 00000000 )
+  			Call     SetNpcPos   	( .Npc:Self FFFFFF6A 0000000A FFFFFF60 )
+  			Call     SetNpcYaw   	( 00000000 0000005A )
+  			Exec     $Script_80250D14 
+  		EndIf
+  	Case  <  FFFFFF9C 
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000010 00030028 ) % Are these the strange Toads you were talking about ...
+  	Case  <  FFFFFFA4 
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000010 00030035 ) % To get to Koopa Bros. Fortress, you first need to  ...
+  	Case  ==  0000003D 
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( 00000000 00A50004 00A50001 00000010 0003004C ) % Mario... you must hurry and find my son in Starbor ...
+  	Case  >=  FFFFFFD8 
+  		If  *Flag_MAC_7B  ==  00000000 
+  			Set  *Var[0]  0003003E 
+  			If  *StoryProgress  >=  FFFFFFF4 
+  				If  *StoryProgress  <  00000007 
+  					Set  *Var[0]  0003003D 
+  				EndIf
+  			EndIf
+  			Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000000 *Var[0] ) % variable string ID
+  			Call     SetPlayerAnimation 	( 00010002 )
+  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  			Call     GetNpcPos   	( 00000000 *Var[3] *Var[4] *Var[5] )
+  			Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  			AddF  *Var[0]  *Var[3] 
+  			AddF  *Var[1]  *Var[4] 
+  			AddF  *Var[2]  *Var[5] 
+  			DivF  *Var[0]  *Fixed[2.0] 
+  			DivF  *Var[1]  *Fixed[2.0] 
+  			DivF  *Var[2]  *Fixed[2.0] 
+  			Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  			Call     SetCamDistance ( .Default *Fixed[300.0] )
+  			Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+  			Call     PanToTarget 	( .Default 00000000 00000001 )
+  			Call     WaitForCam  	( .Default *Fixed[1.0] )
+					    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000000 0003003F ) % I had a dream last night, and another oracle spoke ...
+  			Thread
+  				Loop     
+  					Call     PlayerFaceNpc 	( 00000000 00000000 )
+  					If  *Flag_MAC_7B  ==  00000001 
+  						BreakLoop
+  					EndIf
+  					Wait     00000001 
+  				EndLoop
+  			EndThread
+  			Call     SetNpcFlagBits ( 00000000 00000100 .True )
+  			Call     SetNpcAnimation 	( 00000000 00A50002 )
+  			Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  			Call     MoveNpcTo   	( 00000000 FFFFFF56 FFFFFF1F 00000000 )
+  			Call     SetNpcAnimation 	( 00000000 00A50001 )
+  			Call     802C9308 ( 00000031 00000001 )
+  			ExecWait $Script_8024E740 
+  			Call     SetNpcAnimation 	( 00000000 00A50002 )
+  			Call     SetNpcSpeed 	( 00000000 *Fixed[3.0] )
+  			Call     MoveNpcTo   	( 00000000 FFFFFEF7 FFFFFED4 00000000 )
+  			Call     SetNpcAnimation 	( 00000000 00A50001 )
+  			ExecWait $Script_8024E7F0 
+  			Call     802C9308 ( 00000031 00000000 )
+  			Set  *Flag_MAC_7B  00000001 
+  			Call     InterpNpcYaw 	( 00000000 00000085 00000000 )
+  			Call     SetNpcPos   	( 00000000 FFFFFEAF 00000014 FFFFFE98 )
+  			Call     SetNpcFlagBits ( 00000000 00000100 .False )
+  			Call     ModifyColliderFlags 	( 00000001 {Collider:o335} 7FFFFE00 )
+  			Call     ModifyColliderFlags 	( 00000000 {Collider:o336} 7FFFFE00 )
+  			Call     GetPlayerPos 	( *Var[0] *Var[1] *Var[2] )
+  			Call     UseSettingsFrom 	( .Default *Var[0] *Var[1] *Var[2] )
+  			Call     SetPanTarget 	( .Default *Var[0] *Var[1] *Var[2] )
+  			Call     SetCamSpeed 	( .Default *Fixed[5.0] )
+  			Call     WaitForCam  	( .Default *Fixed[1.0] )
+  			Call     PanToTarget 	( .Default 00000000 00000000 )
+  			Return
+  		Else
+  			If  *Flag_MAC_7C  ==  00000000 
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  				Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000010 00030040 ) % Hmmm... "Desert town, red palm tree, go around and ...
+  			Else
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  				Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000010 0003003B ) % If you want me to predict your future, talk to me  ...
+  			EndIf
+  		EndIf
+  	Default
+	    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  		Call     SayMessage0 	( .Npc:Self 00A50004 00A50001 00000010 0003003B ) % If you want me to predict your future, talk to me  ...
+  EndSwitch
+  ExecWait $Script_8024E1F4 
+  ExecWait $Script_8024E244 
+  If  *Var[C]  !=  00000000 
+  	Return
+  EndIf
+  Return
+  End
+  
+@ $Script_80256DDC
+  If  *StoryProgress  >=  FFFFFFF3 
+  	If  *Flag_MAC_88  ==  00000000 
+  		ExecWait $Script_80256C60 
+  		Return
+  	EndIf
+  EndIf
+  If  *Flag_MAC_86  ==  00000000 
+  	Set  *Flag_MAC_86  00000001 
+  	Call     $Function_80244E90 ( )
+  	Switch  *Var[0] 
+  		Case  ==  FFFFFFFF 
+  			Return
+  		Case  ==  00000001 
+		    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030055 ) % Yes, hello... This is the post office. You can rea ...
+  	EndSwitch
+  Else
+  	Call     $Function_80244E90 ( )
+  	Switch  *Var[0] 
+  		Case  ==  FFFFFFFF 
+  			Return
+  		Case  ==  00000000 
+		    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030057 ) % Ah yes, Mario. Yes, hello. Well... It seems that t ...
+  		Case  ==  00000001 
+		    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030056 ) % Ah yes, Mario. Yes, hello. Well... It seems that y ...
+  	EndSwitch
+  EndIf
+  Call     $Function_80245018 ( )
+  Label    00000000 
+  Call     $Function_80245028 ( )
+  Wait     00000005 
+  If  *Var[1]  ==  FFFFFFFF 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 00030059 ) % Oh? Shall I put the letters away? 
+  	Call     ShowChoice  	( 001E000D ) % Yes No 
+  	Call     802D0A98 ( )
+  	If  *Var[0]  ==  00000000 
+  		Goto     00000063 
+  	Else
+  		Goto     00000000 
+  	EndIf
+  EndIf
+  Set  *Var[A]  *Var[1] 
+  Call     $Function_8024522C ( )
+  Wait     00000005 
+  If  *Var[1]  ==  FFFFFFFF 
+  	Goto     00000000 
+  EndIf
+  Call     $Function_80245440 ( )
+  If  *Var[1]  ==  00000001 
+  	Wait     0000001E 
+  	Call     InterpNpcYaw 	( .Npc:Partner 0000005A 00000001 )
+  EndIf
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005C ) % Here you go.
+  Call     ShowMessage 	( *Var[0] 000000A0 00000028 ) % variable string ID
+  Wait     00000005 
+  If  *StoryProgress  <  FFFFFFB6 
+  	Goto     00000063 
+  EndIf
+  Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005A ) % Would you like to read more letters? 
+  Call     ShowChoice  	( 001E000D ) % Yes No 
+  Call     802D0A98 ( )
+  If  *Var[0]  ==  00000000 
+  	Goto     00000000 
+  EndIf
+  Label    00000063 
+  If  *Flag_MAC_87  ==  00000000 
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005D ) % We'll keep the letters for you. Come on by anytime ...
+  	Set  *Flag_MAC_87  00000001 
+  Else
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  	Call     SayMessage0 	( 00000003 008A0002 008A0001 00000000 0003005E ) % We'll keep the letters for you. Come on by anytime ...
+  EndIf
+  Return
+  End
+  
+@ $Script_80258FFC
+  If  *Var[5]  !=  00000000 
+  	Call     SayMessage0 	( 00000012 00A80004 00A80001 00000000 00030075 ) % Please, Mario, we need seeds from the Bub-ulbs.
+  EndIf
+  Set  *Var[0]  $???_80258A54 
+  Set  *Var[1]  00000012 
+  ExecWait $Script_8024DA90 
+  Switch  *Var[0] 
+  	Case  ==  00000000 
+  		Return
+  	Case  ==  FFFFFFFF 
+  		Return
+  	Case  ==  0000002B 
+  		Set  *Flag_MAC_92  00000001 
+  		Set  *Var[4]  00030076 
+  		Set  *Var[5]  00000000 
+  		ExecWait $Script_80258A68 
+  	Case  ==  0000002C 
+  		Set  *Flag_MAC_93  00000001 
+  		Set  *Var[4]  00030076 
+  		Set  *Var[5]  00000001 
+  		ExecWait $Script_80258A68 
+  	Case  ==  0000002D 
+  		Set  *Flag_MAC_94  00000001 
+  		Set  *Var[4]  00030076 
+  		Set  *Var[5]  00000002 
+  		ExecWait $Script_80258A68 
+  	Case  ==  0000002E 
+  		Set  *Flag_MAC_95  00000001 
+  		Set  *Var[4]  00030076 
+  		Set  *Var[5]  00000003 
+  		ExecWait $Script_80258A68 
+  EndSwitch
+  Return
+  End
+  
+@ $Script_802591CC
+  ExecWait $Script_8024E2C8 
+  ExecWait $Script_8024E318 
+  If  *Var[C]  !=  00000000 
+  	Return
+  EndIf
+  Set  *Var[2]  00000000 
+  Switch  *StoryProgress 
+  	Case  <  FFFFFF96 
+  		Set  *Var[0]  00030065 
+  		Set  *Var[1]  00030065 
+  	Case  <  FFFFFFF1 
+  		Set  *Var[2]  00000001 
+  	Case  <  00000007 
+  		Set  *Var[0]  *Flag_MAC_8E 
+  		Add  *Var[0]  *Flag_MAC_8F 
+  		If  *Var[0]  ==  00000002 
+  			Set  *Var[2]  00000001 
+  		Else
+  			Set  *Var[0]  0003006D 
+  			Set  *Var[1]  0003006E 
+  		EndIf
+  	Case  <  0000002A 
+  		Set  *Var[2]  00000001 
+  	Case  <  00000035 
+  		Set  *Var[0]  00030071 
+  		Set  *Var[1]  00030071 
+  	Case  <  00000059 
+  		Set  *Var[0]  00030072 
+  		Set  *Var[1]  00030072 
+  	Case  <  00000060 
+  		Set  *Var[0]  00030073 
+  		Set  *Var[1]  00030073 
+  	Case  >=  00000060 
+  		Set  *Var[0]  00010042 
+  		Set  *Var[1]  00010042 
+  EndSwitch
+  If  *Var[2]  ==  00000001 
+  	Set  *Var[3]  *Flag_MAC_92 
+  	Add  *Var[3]  *Flag_MAC_93 
+  	Add  *Var[3]  *Flag_MAC_94 
+  	Add  *Var[3]  *Flag_MAC_95 
+  	Switch  *StoryProgress 
+  		Case  00000027  to  00000029 
+  			Set  *Var[4]  *Flag_MAC_99 
+  			Add  *Var[4]  *Flag_IWA_1E 
+  			Add  *Var[4]  *Flag_MIM_06 
+  			Add  *Var[4]  *Flag_JAN_3C 
+  			Set  *Var[5]  *Flag_MAC_91 
+  			If  *Var[5]  ==  00000000 
+  				Call     SayMessage0 	( 00000012 00A80004 00A80001 00000000 00030074 ) % Bub-ulbs come from a flower-filled land called Flo ...
+  				Set  *Flag_MAC_91  00000001 
+  			EndIf
+  			If  *Var[4]  !=  00000000 
+  				ExecWait $Script_80258FFC 
+  				Return
+  			EndIf
+			    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  			Call     SayMessage0 	( 00000012 00A80004 00A80001 00000000 00030075 ) % Please, Mario, we need seeds from the Bub-ulbs.
+  			Return
+  	EndSwitch
+  	Switch  *Var[3] 
+  		Case  ==  00000000 
+  			Set  *Var[0]  00030066 
+  			Set  *Var[1]  00030066 
+  		Case  ==  00000001 
+  			Set  *Var[0]  00030068 
+  			Set  *Var[1]  00030068 
+  		Case  ==  00000002 
+  			Set  *Var[0]  0003006A 
+  			Set  *Var[1]  0003006A 
+  		Case  ==  00000003 
+  			Set  *Var[0]  0003006C 
+  			Set  *Var[1]  0003006C 
+  	EndSwitch
+  EndIf
+  If  *AreaFlag[014]  ==  00000000 
+  	Set  *AreaFlag[014]  00000001 
+  Else
+  	Set  *Var[0]  *Var[1] 
+  	Set  *AreaFlag[014]  00000000 
+  EndIf
+  Call     SayMessage0 	( 00000012 00A80004 00A80001 00000000 *Var[0] ) % variable string ID
+  If  *Var[2]  ==  00000001 
+  	Set  *Var[0]  $???_80258A54 
+  	Set  *Var[1]  00000012 
+  	ExecWait $Script_8024DA90 
+  	Switch  *Var[0] 
+  		Case  ==  00000000 
+  			Return
+  		Case  ==  FFFFFFFF 
+  			Return
+  		Case  ==  0000002B 
+  			Set  *Flag_MAC_92  00000001 
+  			Set  *Var[4]  00030067 
+  			Set  *Var[5]  00000000 
+  			ExecWait $Script_80258A68 
+  		Case  ==  0000002C 
+  			Set  *Flag_MAC_93  00000001 
+  			Set  *Var[4]  00030069 
+  			Set  *Var[5]  00000001 
+  			ExecWait $Script_80258A68 
+  		Case  ==  0000002D 
+  			Set  *Flag_MAC_94  00000001 
+  			Set  *Var[4]  0003006B 
+  			Set  *Var[5]  00000002 
+  			ExecWait $Script_80258A68 
+  		Case  ==  0000002E 
+  			Set  *Var[5]  00000003 
+  			ExecWait $Script_80258A68 
+  	EndSwitch
+  EndIf
+  Return
+  End
+
+@ $Script_8025A49C
+  Call     802D2508 ( )
+  Call     DisablePlayerInput 	( .True )
+  Call     GetNpcPos   	( .Npc:Self *Var[0] *Var[1] *Var[2] )
+  Call     NpcJump0    	( .Npc:Self *Var[0] *Var[1] *Var[2] 0000000A )
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 0000000A 00830004 00830001 00000000 0003007D ) % Oh... Mario! Merlon was looking for you. He lives  ...
+  Set  *StoryProgress  FFFFFF99 
+  Call     DisablePlayerInput 	( .False )
+  Return
+  End
+  
+@ $Script_8025CB7C
+      	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00B60008 00B60001 00000000 000300DF ) % What-ho, old boy! Ahead is Pleasant Path, but...Ke ...
+  ExecWait $Script_8024E4DC 
+  ExecWait $Script_8024E384 
+  ExecWait $Script_8024E3D4 
+  If  *Var[C]  !=  00000000 
+  	Return
+  EndIf
+  Return
+  End

@@ -1,0 +1,5 @@
+@ $Function_802A1A8C
+	LABU      v0, 8008935C
+	SW        v0, 0090 (A0)
+	JR        RA
+	ADDIU     V0, R0, 2

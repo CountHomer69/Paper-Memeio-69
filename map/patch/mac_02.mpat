@@ -1,0 +1,141 @@
+@ $Script_Main
+  If  *StoryProgress  ==  00000028 
+  	Set  *StoryProgress  00000029 
+  EndIf
+  Set  *WorldMapLocation  .Location:ToadTown
+  Call     SetSpriteShading 	( FFFFFFFF )
+  Call     SetCamPerspective 	( .Default 00000003 00000019 00000010 00001000 )
+  Call     SetCamBGColor 	( .Default 00000000 00000000 00000000 )
+  Call     SetCamFlag2 	( .Default .True )
+  Call     SetCamFlag4 	( .Default .False )
+  Set  *AreaFlag[016]  00000000 
+  Set  *AreaFlag[017]  00000000 
+  Set  *AreaFlag[018]  00000000 
+  Set  *AreaFlag[019]  00000000 
+  Set  *AreaFlag[01A]  00000000 
+  Set  *AreaFlag[01B]  00000000 
+  Set  *AreaFlag[01C]  00000000 
+  Set  *AreaFlag[01D]  00000000 
+  Set  *AreaFlag[01E]  00000000 
+  Switch  *StoryProgress 
+  	Case  <  FFFFFFCB 
+  		Call     MakeNpcs    	( 00000000 $NpcGroupList_8024E0B8 )
+  	Case  <  FFFFFFCD 
+  		Call     MakeNpcs    	( 00000000 $NpcGroupList_8024E0D0 )
+  	Case  <  FFFFFFF3 
+  		Call     MakeNpcs    	( 00000000 $NpcGroupList_8024E0B8 )
+  	Case  <  FFFFFFFB 
+  		Call     MakeNpcs    	( 00000000 $NpcGroupList_8024E0F4 )
+  	Default
+  		Call     MakeNpcs    	( 00000000 $NpcGroupList_8024E0B8 )
+  EndSwitch
+  Switch  *StoryProgress 
+  	Case  <  FFFFFF8F 
+  		Call     EnableGroup 	( {Model:st2} .False )
+  		Call     EnableGroup 	( {Model:st3} .False )
+  	Case  <  FFFFFF8F 
+  		Call     EnableGroup 	( {Model:st1} .False )
+  		Call     EnableGroup 	( {Model:st3} .False )
+  		Call     ModifyColliderFlags 	( 00000000 {Collider:st1} 7FFFFE00 )
+  	Default
+  		Call     EnableGroup 	( {Model:st1} .False )
+  		Call     EnableGroup 	( {Model:st2} .False )
+  		Call     ModifyColliderFlags 	( 00000000 {Collider:g47} 7FFFFE00 )
+  EndSwitch
+  Call     EnableTexPanning 	( {Model:hori} .True )
+  Thread
+  	Set  *Var[0]  00000001 
+  	Set  *Var[1]  00000064 
+  	Set  *Var[2]  00000028 
+  	Set  *Var[3]  000000C8 
+  	Set  *Var[4]  FFFFFFD8 
+  	Set  *Var[5]  00000001 
+  	Set  *Var[6]  00000001 
+  	Set  *Var[7]  00000001 
+  	Set  *Var[8]  00000001 
+  	Set  *Var[9]  00000000 
+  	Set  *Var[A]  00000000 
+  	Set  *Var[B]  00000000 
+  	Set  *Var[C]  00000000 
+  	Exec     $Script_80244360 
+  EndThread
+  Exec     $Script_80244EC8 
+  Exec     $Script_80245B14 
+  Exec     $Script_802435C0 
+  Call     GetEntryID  	( *Var[0] )
+  If  *Var[0]  <=  00000003 
+  	Set  *Var[0]  $Script_80244624 
+  	Exec     EnterWalk 
+  Else
+  	Set  *Var[A]  $Script_80244624 
+  	Exec     $Script_80243630 
+  EndIf
+  Return
+  End
+  
+@ $Script_OpenDoor_80244BB0
+  Call     RotateModel 	( {Model:c_door} *Var[0] 00000000 FFFFFFFF 00000000 )
+  Return
+  End
+   
+@ $Script_OpenDoor_80244D44
+  Call     RotateModel 	( {Model:sk_door} *Var[0] 00000000 FFFFFFFF 00000000 )
+  Return
+  End
+   
+@ $Script_MoveWalls_80244D74
+  Set  *Var[1]  *Var[0] 
+  Call     RotateModel 	( {Model:sk1} *Var[1] 00000000 00000000 00000001 )
+  Call     RotateModel 	( {Model:sk2} *Var[1] 00000000 00000000 00000001 )
+  Return
+  End
+   
+@ $Script_MoveWalls_80244BE0
+	Set  *Var[1]  *Var[0] 
+	Call     RotateModel 	( {Model:ck1} *Var[1] 00000001 00000000 00000000 )
+	Call     RotateModel 	( {Model:ck2} *Var[1] 00000001 00000000 00000000 )
+	Call     RotateModel 	( {Model:ck3} *Var[1] 00000001 00000000 00000000 )
+	Call     RotateModel 	( {Model:cy1} *Var[1] FFFFFFFF 00000000 00000000 )
+	Call     RotateModel 	( {Model:cy2} *Var[1] FFFFFFFF 00000000 00000000 )
+	Call     RotateModel 	( {Model:cy3} *Var[1] FFFFFFFF 00000000 00000000 )
+	Return
+	End
+   
+@ $Script_80244EC8
+  Call     MakeDoorAdvanced 	( 00000002 $Script_OpenDoor_80244BB0 $Script_MoveWalls_80244BE0 00000000 $Script_ToggleVis_80244CC0 {Collider:deilit1u} {Collider:deilit1} {Model:cooking} $NpcList_80244EBC )
+  Call     MakeDoorAdvanced 	( 00000002 $Script_OpenDoor_80244D44 $Script_MoveWalls_80244D74 00000000 $Script_ToggleVis_80244DD4 {Collider:deilit2} {Collider:deilit2u} {Model:souko} $NpcList_80244EC4 )
+  Call     GetEntryID  	( *Var[0] )
+  If  *Var[0]  ==  00000005 
+  	Set  *Var[0]  00000003 
+  	Exec     $Script_ToggleVis_80244CC0 
+  	Call     802C9308 ( 00000039 00000001 )
+  	Call     $Function_802405F0 ( )
+  	Set  *Var[0]  0000005A 
+  	Call     RotateModel 	( {Model:sk1} *Var[0] 00000000 00000000 00000001 )
+  	Call     RotateModel 	( {Model:sk2} *Var[0] 00000000 00000000 00000001 )
+  Else
+  	Set  *Var[0]  00000003 
+  	Exec     $Script_ToggleVis_80244CC0 
+  	Exec     $Script_ToggleVis_80244DD4 
+  EndIf
+  Return
+  End
+  
+@ $Script_ToggleVis_80244CC0
+  Switch  *Var[0] 
+  	Case  ==  00000000 
+  		Call     802C9308 ( 0000005A 00000001 )
+  		Set  *MapFlag[0A]  00000001 
+  	Case  ==  00000003 
+  		Call     802C9308 ( 0000005A 00000000 )
+  		Set  *MapFlag[0A]  00000000 
+  EndSwitch
+  Return
+  End
+
+% Origin: HEURISTIC
+@ $Script_8024459C
+	Call     GotoMap     	( "gv_01"	00000001 )
+	Wait     00000064 
+	Return
+	End

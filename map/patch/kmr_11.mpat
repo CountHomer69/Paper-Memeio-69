@@ -1,0 +1,150 @@
+@ $Script_80243514
+  Call     DisablePlayerInput 	( .True )
+  ExecWait $Script_802422C8 
+  Call     SetCamSpeed 	( .Default *Fixed[0.30078125] )
+  Call     PanToTarget 	( .Default *Fixed[0.5] 00000001 )
+  Wait     000000AA 
+  Call     SetNpcPos   	( 00000000 FFFFFCC2 00000000 FFFFFFBA )
+  Call     SetNpcPos   	( 00000001 FFFFFCE0 00000000 FFFFFFEC )
+  Call     SetNpcAnimation 	( 00000000 00620107 )
+  Call     SetNpcAnimation 	( 00000001 00620007 )
+  Call     SetNpcSpeed 	( 00000000 *Fixed[4.0] )
+  Call     SetNpcSpeed 	( 00000001 *Fixed[4.0] )
+  Wait     00000032 
+  Thread
+  	Call     MoveNpcTo   	( 00000000 FFFFFDF7 FFFFFF9C 00000000 )
+  EndThread
+  Call     MoveNpcTo   	( 00000001 FFFFFE08 FFFFFFB6 00000000 )
+  Call     SayMessage0 	( 00000001 00620005 00620003 00000005 000B00C3 ) % King Goomba! Help us!
+  Call     SayMessage0 	( 00000000 00620105 00620103 00000005 000B00C4 ) % Mario beat us up!
+  Call     PlaySoundAtCollider 	( {Collider:tt} .Sound:MetalDoorOpen 00000000 )
+  Call     MakeLerp    	( 00000000 0000005A 0000001E 0000000A )
+  Label    00000000 
+  Call     UpdateLerp  	( )
+  Call     RotateModel 	( {Model:o416} *Var[0] 00000000 FFFFFFFF 00000000 )
+  Call     RotateModel 	( {Model:o415} *Var[0] 00000000 00000001 00000000 )
+  Wait     00000001 
+  If  *Var[1]  ==  00000001 
+  	Goto     00000000 
+  EndIf
+  Thread
+  	Call     MoveNpcTo   	( 00000000 FFFFFE9F FFFFFFA3 00000000 )
+  EndThread
+  Call     MoveNpcTo   	( 00000001 FFFFFE94 FFFFFFB3 00000000 )
+  Call     MakeLerp    	( 0000005A 00000000 0000001E 0000000A )
+  Label    00000001 
+  Call     UpdateLerp  	( )
+  Call     RotateModel 	( {Model:o416} *Var[0] 00000000 FFFFFFFF 00000000 )
+  Call     RotateModel 	( {Model:o415} *Var[0] 00000000 00000001 00000000 )
+  Wait     00000001 
+  If  *Var[1]  ==  00000001 
+  	Goto     00000001 
+  EndIf
+  Call     PlaySoundAtCollider 	( {Collider:tt} .Sound:MetalDoorClose 00000000 )
+  Call     PlaySoundAt 	( 000020EC 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlaySoundAt 	( 000020B4 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD2B 00000075 FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD97 0000006C FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[0.5] )
+  Call     SetPlayerPos 	( FFFFFC68 00000000 FFFFFFDD )
+  Call     SetPlayerSpeed ( *Fixed[3.0] )
+  Call     MovePlayerTo 	( FFFFFDC1 FFFFFFC4 00000000 )
+  Wait     0000001E 
+  Call     DisablePartnerAI 	( 00000000 )
+  Wait     0000000A 
+  Call     PlayerFaceNpc 	( .Npc:Partner 00000000 )
+  Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000B00C5 ) % Hey, look, Mario! See that building over there? I' ...
+  Call     InterpPlayerYaw 	( 0000005A 00000000 )
+  Wait     00000028 
+  Call     PlaySoundAt 	( 000020EC 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlaySoundAt 	( 000020B4 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD2B 00000075 FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD97 0000006C FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[0.20019531] )
+  Set  *Var[3]  00000002 
+  Exec     $Script_80243460 
+  Wait     0000003C 
+  Call     PlaySoundAt 	( 000020EC 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlaySoundAt 	( 000020B4 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD2B 00000075 FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD97 0000006C FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[0.60058594] )
+  Set  *Var[3]  00000004 
+  Exec     $Script_80243460 
+  Wait     0000003C 
+  Call     PlaySoundAt 	( 000020EC 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlaySoundAt 	( 000020B4 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD2B 00000075 FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD97 0000006C FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.0] )
+  Set  *Var[3]  00000006 
+  Exec     $Script_80243460 
+  Wait     0000003C 
+  Call     PlaySoundAt 	( 000020EC 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlaySoundAt 	( 000020B4 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD2B 00000075 FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD97 0000006C FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  Call     ShakeCam    	( .Default 00000000 00000005 *Fixed[1.5] )
+  Set  *Var[3]  00000008 
+  Exec     $Script_80243460 
+  Wait     0000001C 
+  Call     SetMusicTrack 	( 00000000 .Song:GoombaKingTheme 00000000 00000008 )
+  Wait     00000020 
+  Call     SetNpcAnimation 	( 00000000 00620102 )
+  Call     SetNpcAnimation 	( 00000001 00620002 )
+  Call     SetNpcJumpscale 	( 00000000 *Fixed[0.80078125] )
+  Call     SetNpcJumpscale 	( 00000001 *Fixed[0.80078125] )
+  Thread
+  	Call     SetNpcPos   	( 00000000 FFFFFE70 00000000 FFFFFF5E )
+  	Call     PlaySoundAtNpc ( 00000000 0000010F 00000000 )
+  	Call     NpcJump0    	( 00000000 FFFFFE50 00000082 FFFFFF6E 0000001E )
+  EndThread
+  Call     SetNpcPos   	( 00000001 FFFFFE70 00000000 FFFFFFD7 )
+  Call     PlaySoundAtNpc ( 00000001 0000010F 00000000 )
+  Call     NpcJump0    	( 00000001 FFFFFE64 00000082 FFFFFFDD 0000001E )
+  Wait     0000000A 
+  Thread
+  	Call     SetNpcJumpscale 	( 00000002 *Fixed[0.80078125] )
+  	Call     SetNpcPos   	( 00000002 FFFFFE6B 00000000 FFFFFFA5 )
+  	Call     PlaySoundAtNpc ( 00000002 000003E7 00000000 )
+  	Call     NpcJump0    	( 00000002 FFFFFE5D 00000077 FFFFFFA5 0000001E )
+  	Call     PlaySoundAt 	( 000020EC 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  	Call     PlaySoundAt 	( 000020B4 00000000 FFFFFEB6 00000000 FFFFFF7E )
+  	Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD2B 00000075 FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  	Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFD97 0000006C FFFFFF77 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+  	Call     ShakeCam    	( .Default 00000000 0000000A *Fixed[1.0] )
+  EndThread
+  ExecWait $Script_80242430 
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     00000037 
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000002 00630001 00630001 00000000 000B00C6 ) % So, Mario, it's true! You've made it this far.  I  ...
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000001 00620004 00620002 00000000 000B00C7 ) % You hear that, Mario! No farther! Not one step! Ar ...
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000000 00620104 00620102 00000000 000B00C8 ) % Bah ha ha!!! Yeah, you're scared, all right. You w ...
+  ExecWait $Script_8024237C 
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Call     DisablePartnerAI 	( 00000000 )
+  Wait     00000005 
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Partner 00010008 00010001 00000000 000B00C9 ) % Wow... That King Goomba is... really huge! I'm sur ...
+  Call     DisablePartnerAI 	( 00000000 )
+  ExecWait $Script_80242430 
+  Call     SetCamSpeed 	( .Default *Fixed[90.0] )
+  Call     PanToTarget 	( .Default 00000000 00000001 )
+  Wait     00000005 
+    	  Call     $GetFileName()
+	  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( 00000002 00630001 00630001 00000000 000B00CA ) % Ready to meet my wrath, Mario? You'd better be!!
+  Call     PanToTarget 	( .Default 00000000 00000000 )
+  Wait     0000001E 
+  Call     SetNpcVar   	( 00000002 00000000 00000001 )
+  Return
+  End

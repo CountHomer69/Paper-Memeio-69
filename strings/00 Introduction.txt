@@ -1,0 +1,615 @@
+00-000
+[END]
+
+00-001
+{Func_29:9F}Today...[END]
+
+00-002
+{Func_29:9F}I'm going to tell you the saga[BR]
+of Paper Mario Modding.[END]
+
+00-003
+{Func_29:9F}On the PM64 Modding Discord Server,[END]
+
+00-004
+{Func_29:9F}In the lobby chat room,[END]
+
+00-005
+{Func_29:9F}it's been said that Mov[BR]
+and Thamz were fighting.[END]
+
+00-006
+{Func_29:9F}In the sanctuary of Dank Mods.[END]
+
+00-007
+{Func_29:9F}What are they fighting for?[BR]
+The last copy of the Star Rod tool.[END]
+
+00-008
+{Func_29:9F}which has the power to fuck up[BR]
+Paper Mario in funny-ass ways.[END]
+
+00-009
+{Func_29:9F}Using this wondrous Star Rod,[BR]
+all PM64 Modders,[END]
+
+00-00A
+{Func_29:9F}made some dank ass ROM Hacks[END]
+
+00-00B
+{Func_29:9F}carefully...very carefully.[END]
+
+00-00C
+{Func_29:9F}And then...[END]
+
+00-00D
+{Func_29:9F}"You're going on an unrelated[BR]
+tangent, Mov!"[END]
+
+00-00E
+{Func_29:9F}Aw shit, it's the meme[BR]
+lord CountHomer69![END]
+
+00-00F
+{Func_29:9F}YO YO YO YO YO! What it[BR]
+is motherfuckers!?[END]
+
+00-010
+{Func_29:9F}{StartFX:Wavy}IT IS I WHO NUTS TO THAT!!![BR]
+{EndFX:Wavy}[END]
+
+00-011
+{Func_29:9F}So I can, at long last, finish my[BR]
+epic PM64 hack![END]
+
+00-012
+{Func_29:9F}Go get 'em, Toad![END]
+
+00-013
+{Func_29:9F}You bois better start runnin'![END]
+
+00-014
+{Func_29:9F}[END]
+
+00-015
+{Func_29:9F}NO! NOT CLOVER!!![END]
+
+00-016
+{Func_29:9F}Yeah! Now let's try using it![END]
+
+00-017
+{Func_29:9F}Stop it, Toad![END]
+
+00-018
+{Func_29:9F}You'll never get away with this![END]
+
+00-019
+{Func_29:9F}Kiss my ass, Thamz![END]
+
+00-01A
+{Func_29:9F}Time to make this mod![BR]
+Gwaa ha ha![END]
+
+00-01B
+{Func_29:9F}Now CountHomer has made[BR]
+a really epic PM Hack.[END]
+
+00-01C
+{Func_29:9F}Memes are everywhere, now![BR]
+[END]
+
+00-01D
+{Func_29:9F}Have fun, you asshat![BR]
+- CountHomer69[END]
+
+00-01E
+[STYLE:RIGHT]I'M GOING TO SHIT ALL OVER[BR]
+YOUR HOUSE, MARIO![WAIT][END]
+
+00-01F
+[STYLE:RIGHT]Expecting Luigi?[BR]
+[PAUSE:0A]Too bad![BR]
+[PAUSE:0A]WALUIGI TIME![WAIT][END]
+
+00-020
+[STYLE:RIGHT]I'm your bro now, Mario![BR]
+Take this shitty paper I found![WAIT][END]
+
+00-021
+[STYLE:RIGHT]I can't read, dickhead![BR]
+You read it![WAIT][END]
+
+00-022
+{Image7:00:00:55:61:01:FF:0F}{Func_04}[END]
+
+00-023
+[STYLE:NARRATE][PAUSE:04]{InputOn}Hey, Mario, Bowser's[BR]
+coming to kidnap me again.[BR]
+[PAUSE:0A]I need you over,[BR]
+RIGHT THIS INSTANT![BR]
+[WAIT][BR]
+[NEXT]
+{Down:05}He's going to lift up [BR]
+{Down:05}my goddamn castle.[BR]
+[WAIT][BR]
+{Up:0A}[NEXT]
+So you better hurry![BR]
+I'll make you some of[BR]
+that soap cake you like![BR]
+[PAUSE:0F]{Indent:6E}- Princess BITCH[BR]
+[WAIT]{Func_04}[END]
+
+00-024
+[STYLE:RIGHT]What a magnificent castle![BR]
+Sure doesn't beat my[BR]
+smelly dumpster! WAH HA HAH![BR]
+[WAIT][NEXT]
+Why don't you go see what these[BR]
+LOSERS have to say![WAIT][END]
+
+00-025
+[STYLE:RIGHT]Also go tell your bitch that[BR]
+Waluigi wants to eat that ass.[BR]
+[PAUSE:0A]I might do it fucking later.[BR]
+Let me get my pants off first.[BR]
+[WAIT][NEXT]
+Shoutouts to Eekits{PushColor}{Color:10}[B]{PopColor}owser![WAIT][END]
+
+00-026
+[STYLE:RIGHT]WHERE THE FUCK ARE YOU GOING?[BR]
+[WAIT][NEXT]
+WE'RE IN A GODDAMN CASTLE![BR]
+STAY A WHILE![WAIT][END]
+
+00-027
+[STYLE:RIGHT]Hey Mario![BR]
+[PAUSE:0A]Do you know the channel[BR]
+EekitsBowser?[BR]
+[WAIT][NEXT]
+Go subscribe to him![BR]
+He makes Paper Mario Mod vids.[WAIT][END]
+
+00-028
+[STYLE:RIGHT]Princess Peach is such a[BR]
+smexy girl...........OH SHIT![BR]
+[PAUSE:0A]I hope you didn't hear that![BR]
+[WAIT][NEXT]
+Shoutouts to EekitsBowser[WAIT][END]
+
+00-029
+[STYLE:RIGHT]Mario, you're pretty gay today![BR]
+[PAUSE:0F]Please sub to EekitsBowser, OK?[WAIT][END]
+
+00-02A
+[STYLE:RIGHT]Wow! I've never seen so many[BR]
+guests from different parts of[BR]
+the world in one place![BR]
+[WAIT][NEXT]
+I didn't change that dialogue[BR]
+to fool you! KISS MY ASS![BR]
+Shoutouts to EekitsBowser[WAIT][END]
+
+00-02B
+[STYLE:RIGHT]Hey...urp...Mario![BR]
+[PAUSE:0A]GIVE ME SOME BEER!!! NOW!!![BR]
+I love drinking beer and[BR]
+shitting my pants![BR]
+[WAIT][NEXT]
+Shoutouts to Eekit'sBowser[BR]
+Uh oh, I'm about to vomit![BR]
+[WAIT][NEXT]
+Urp...[PAUSE:05]BLEAAAAAUUGH!!!![BR]
+I need more beer to wash it down![BR]
+GIMME SOME BEER! [WAIT][END]
+
+00-02C
+[STYLE:RIGHT]I think Princess Peach has been[BR]
+taking up shrooms.[BR]
+Just like you, Mario![BR]
+[WAIT][NEXT]
+Shoutouts to EekitsBowser[BR]
+[PAUSE:0A]Man, Peach... [PAUSE:05]What a whore...[WAIT][END]
+
+00-02D
+[STYLE:RIGHT]Oh! Welcome, Mario![BR]
+[PAUSE:0A]Did you see the video of you[BR]
+taking a piss?[BR]
+[WAIT][NEXT]
+Oh! By the way,[BR]
+[PAUSE:0A]Shoutouts to EekitsBowser![WAIT][END]
+
+00-02E
+[STYLE:RIGHT]Welcome to Bitch's Castle![WAIT][END]
+
+00-02F
+[STYLE:RIGHT]Princess Peach went into her[BR]
+private chambers just now.[BR]
+[WAIT][NEXT]
+She's getting ready[BR]
+to get kidnapped. AGAIN...[WAIT][END]
+
+00-030
+[STYLE:RIGHT]Wow...[BR]
+[PAUSE:0A]This castle is absolutely[BR]
+gay, don't you think?[BR]
+[WAIT][NEXT]
+I wish I could redesign[BR]
+it with memes.[BR]
+Oh wait...that already happened.[WAIT][END]
+
+00-031
+[STYLE:RIGHT]WHAT THE HELL ARE YOU DOING[BR]
+IN MY GODDAMN KITCHEN!?[BR]
+[PAUSE:0A]I'M GORDON RAMSAY![BR]
+[PAUSE:0A]WHERE'S THE LAMB SAUCE!?!?[BR]
+[WAIT][NEXT]
+I COOKED THE FOOD HERE![BR]
+BETCHYA YOU COOK LIKE SHIT![BR]
+WITH YOUR MUSHROOMS AND NO[BR]
+FUCKING LAMB SAUCE!!!!![BR]
+[WAIT][NEXT]
+ALSO, ONE MORE THING![BR]
+[PAUSE:0A]THIS KITCHEN IS SHIT![BR]
+THERE'S NO FUCKING LAMB SAUCE![BR]
+[WAIT][NEXT]
+THIS IS WIMPY ASS[BR]
+HEAVEN'S KITCHEN![WAIT][END]
+
+00-032
+[STYLE:RIGHT]I've been on Hell's Kitchen[BR]
+before, and it's not easy at all![BR]
+[WAIT][NEXT]
+I hope that someday I get good[BR]
+enough to cook food that'll[BR]
+actually impress Chef Ramsay.[BR]
+[WAIT][NEXT]
+I'll put some lamb sauce on it.[BR]
+POUR THE WHOLE BOTTLE ALL OVER![BR]
+[PAUSE:0A]Personally, I think cooking is[BR]
+dangerous if Ramsay is involved.[WAIT][END]
+
+00-033
+[STYLE:RIGHT]Greetings, Mario![BR]
+[PAUSE:0A]I am the Minister of Princess[BR]
+Bitch's Castle.[BR]
+[WAIT][NEXT]
+It's good to see you here. When[BR]
+you're here, I feel like you[BR]
+should take my goddamn job[BR]
+from me so I can fucking retire.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]Shoutouts to Eekit'sBowser![WAIT][END]
+
+00-034
+[STYLE:RIGHT]I come from a desert town called[BR]
+Dry Dry Terrorland. [BR]
+[WAIT][NEXT]
+EekitsBowser is a good channel,[BR]
+isn't it? Truly amazing. Allah is[BR]
+proud of his work![BR]
+[WAIT][NEXT]
+I even got the chance to rail[BR]
+Princess Peach.[BR]
+[WAIT][NEXT]
+Oh fuck yeah! When I return to[BR]
+Dry Dry Terrorland, I'm going to[BR]
+tell everyone the details![WAIT][END]
+
+00-035
+[STYLE:RIGHT]I'm a Nomadimouse, and I[BR]
+betrayed the people of Dry Dry Terrorland.[BR]
+[WAIT][NEXT]
+Everyone I've met in this town[BR]
+seems to accept my beliefs.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]I think I'll move here so I don't[BR]
+get my ass blasted by the guards.[BR]
+Also, sub to EekitsBowser![WAIT][END]
+
+00-036
+[STYLE:RIGHT]I'm here on behalf of lovely[BR]
+Shiver City. I'm the Mayor there,[BR]
+and I don't have much long to live.[BR]
+Get the joke?[BR]
+[WAIT][NEXT]
+My goodness, look at the time![BR]
+[PAUSE:0A]WALUIGI TIME! No, I'm wrong.[BR]
+Shoutouts to EekitsBowser.[WAIT][END]
+
+00-037
+[STYLE:RIGHT]I come from Koopa Village, which[BR]
+is just down the road from here.[BR]
+[WAIT][NEXT]
+Ohhh... I just had the honor of[BR]
+touching the Princess's Peach![BR]
+[PAUSE:0A]She has tastes for[BR]
+all kinds of men![HEART][BR]
+Also, go check out EekitsBowser[WAIT][END]
+
+00-038
+[STYLE:RIGHT]Well... [PAUSE:05]Today, we have guests[BR]
+[PAUSE:0A]from Dry Dry Terrorland,[BR]
+Shiver City, Koopa Village...[BR]
+[WAIT][NEXT]
+There're so many folks here,[BR]
+But where's EekitsBowser?[BR]
+[WAIT][NEXT]
+Oh, we're just shouting him out.[BR]
+[PAUSE:14]Wait... [PAUSE:0A]You're Mario!?[BR]
+[PAUSE:0A]I... [PAUSE:05]I can't stand people who[BR]
+jump on turtles![WAIT][END]
+
+00-039
+[STYLE:RIGHT]Does Princess Peach have a[BR]
+special man in her life?[BR]
+[WAIT][NEXT]
+Oh, right. She bangs everyone[BR]
+in the kingdom. No wonder[BR]
+why Bowser's still around![BR]
+Sub to his PM mod channel![WAIT][END]
+
+00-03A
+[STYLE:RIGHT]Do you know of a place called[BR]
+Shitting Star Summit?[BR]
+[PAUSE:0A]It's near this castle. It's such[BR]
+a great place to take a dump.[BR]
+[WAIT][NEXT]
+It's definitely the best place,[BR]
+but there's no toilet paper. [BR]
+[PAUSE:0A]You should try it out![BR]
+Shoutouts to EekitsBowser.[WAIT][END]
+
+00-03B
+[STYLE:RIGHT]Hello, Mario.[BR]
+[PAUSE:0A]I am always edgy when it comes[BR]
+to fashion, and I must say...[BR]
+[WAIT][NEXT]
+...you need to wear black and[BR]
+pierce your genitals![HEART][BR]
+[PAUSE:0A]Shoutouts to EekitsBowser.[WAIT][END]
+
+00-03C
+[STYLE:RIGHT]I... [PAUSE:05]I'm new here, sir.[BR]
+[WAIT][NEXT]
+What's all the blabber about[BR]
+this EekitsBowser guy?[BR]
+He sounds cool...[BR]
+NOW LEAVE ME ALONE![BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}PLEASE [PAUSE:03]KILL [PAUSE:03]ME [PAUSE:03]NOW!{EndFX:Shrinking}[PAUSE:03]...[WAIT][END]
+
+00-03D
+[STYLE:RIGHT]This is Princess Bitch's room,[BR]
+[PAUSE:14]but I'm afraid she took a break [BR]
+from all the guys she banged.[WAIT][END]
+
+00-03E
+[STYLE:RIGHT]Huh?[BR]
+[PAUSE:14]Oh no! Absolutely not![BR]
+[WAIT][NEXT]
+I don't think it's very polite to[BR]
+panty raid her dresser without[BR]
+your old pal, GUARD TOAD! [WAIT][END]
+
+00-03F
+[STYLE:RIGHT]I said NO, and that means NO.[BR]
+[PAUSE:0A]You can't raid the dresser[BR]
+without me![WAIT][END]
+
+00-040
+[STYLE:RIGHT]Boy, you're really horny![BR]
+[PAUSE:0F]I guess I have no choice...[BR]
+[WAIT][NEXT]
+Hurry up in there, though![BR]
+Don't you dare do anything[BR]
+smexy in there without me![WAIT][END]
+
+00-041
+[STYLE:RIGHT]I envy you, Mario...[BR]
+(This line was too good to change)[WAIT][END]
+
+00-042
+[STYLE:RIGHT]How was it?[BR]
+[PAUSE:0A]To tell you the truth, I've never[BR]
+done something so immature...[WAIT][END]
+
+00-043
+[STYLE:INSPECT]AH, IT BURNS![BR]
+[PAUSE:0A]Step away from the damn fire![BR]
+You're paper![WAIT][END]
+
+00-044
+[STYLE:INSPECT]Goddamn it Mario, you're[BR]
+raiding the dresser without him![BR]
+[PAUSE:0A]I really hope the guard[BR]
+doesn't find out![WAIT][END]
+
+00-045
+[STYLE:INSPECT]These are cosmetics.[BR]
+[PAUSE:0A]Mario thinks they look like[BR]
+Joker makeup.[WAIT][END]
+
+00-046
+[STYLE:INSPECT]A picture of a fat italian man.[BR]
+[PAUSE:0A]....IT'S YOU, YA DUMBASS!!![WAIT][END]
+
+00-047
+[STYLE:INSPECT]Sweet! a Tempur Pedic bed![BR]
+[PAUSE:0A]But this bed is way too familiar[BR]
+to Mario....[WAIT][END]
+
+00-048
+[STYLE:INSPECT]A vase with a P.P. inside.[BR]
+[PAUSE:0A]P.P. = Piranah Plant[BR]
+[PAUSE:0A]...Dumbass.[WAIT][END]
+
+00-049
+[STYLE:RIGHT]It's nice and quiet here with[BR]
+no guests around.[BR]
+[PAUSE:0A]EEEEEEWW!!! A HUMAN BEING![WAIT][END]
+
+00-04A
+[STYLE:RIGHT]Princess Peach went into her[BR]
+private chambers just now.[BR]
+[PAUSE:0A]Doing private things...[WAIT][END]
+
+00-04B
+[STYLE:RIGHT]Oh, Mario![BR]
+[PAUSE:0A]You came to stop Bowser![BR]
+You're a legend![BR]
+[PAUSE:14]Thank you![HEART][WAIT][END]
+
+00-04C
+[STYLE:RIGHT]I was just resting a bit. It[BR]
+gets tiring, banging all those[BR]
+men out there![HEART][BR]
+[WAIT][NEXT]
+Nobody will bother us here.[BR]
+[PAUSE:0A]Shall we "Do the Mario", as[BR]
+you like to call it? [WAIT][END]
+
+00-04D
+[STYLE:RIGHT]Memes are all over the kingdom,[BR]
+why not have a good laugh?[BR]
+After we "Do the Mario" of course.[BR]
+[PAUSE:0A]You up for it?[WAIT][END]
+
+00-04E
+[STYLE:RIGHT]HOLY SHIT! Are you OK, Mario?[BR]
+[PAUSE:0A]...it must be Bowser's work.[BR]
+Just as expected...[WAIT][END]
+
+00-04F
+[STYLE:RIGHT]Oh my! Look, Mario![BR]
+[PAUSE:0A]Bowser gave us a nice view![BR]
+[PAUSE:0A]... But we need to get back down...[WAIT][END]
+
+00-050
+[STYLE:RIGHT]{SpeechSound:01}Expecting Bowser?[BR]
+{StartFX:Wavy}AH HA HA HA HA HA HA HA![BR]
+{EndFX:Shrinking}[PAUSE:05]IT WAS ME, TOAD![WAIT][END]
+
+00-051
+[STYLE:RIGHT]...TOAD?![BR]
+[PAUSE:0A]But this can't be![BR]
+Wait, so what's Bowser up[BR]
+to then?[BR]
+[WAIT][NEXT]
+DID YOU KILL MY BOYFRIEND?![WAIT][END]
+
+00-052
+[STYLE:RIGHT]{SpeechSound:01}{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:20:20}BUP BUP BUP![BR]
+{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][BR]
+{Scroll:03}{Up:0C}He quit to make mod videos[BR]
+and I took over the Koopa Troop![BR]
+Weren't expecting ME to do it,[BR]
+[PAUSE:0A]huh? HAH! TAKE THAT![BR]
+[WAIT][NEXT]
+Ha! This castle's now MINE![BR]
+As well as the Mushroom Kingdom![BR]
+[PAUSE:0A]ALL HAIL ME, TOAD![WAIT][END]
+
+00-053
+[STYLE:RIGHT]{SpeechSound:01}Aww, shit![BR]
+[PAUSE:0A]It's this paisano again![BR]
+[WAIT][NEXT]
+You know what, Mario?[BR]
+I have something to say to you.[BR]
+[WAIT][NEXT]
+[PAUSE:0A]{Down:08}{StartFX:Shrinking}{StartFX:Wavy}{Size:20:20}FUCK YOU WHORE!{SizeReset}{EndFX:Shrinking}{EndFX:Wavy}[WAIT][BR]
+[WAIT][NEXT]
+WE LIKE FORNITE![BR]
+WE LIKE FORTNITE![WAIT][END]
+
+00-054
+[STYLE:RIGHT]Stop it, Toad! You're making[BR]
+a goddamn fool out of yourself![BR]
+[WAIT][NEXT]
+Mario will whoop your ass[BR]
+[PAUSE:0A]if you don't stop this![WAIT][END]
+
+00-055
+[STYLE:RIGHT]{SpeechSound:01}LICK MY BALLS,[BR]
+PRINCESS BITCH![BR]
+I CAN BEAT MARIO'S ASS...[BR]
+[WAIT][NEXT]
+{StartFX:Shrinking}...AND EAT YOURS![WAIT][BR]
+{EndFX:Shrinking}[WAIT][END]
+
+00-056
+[STYLE:RIGHT]{SpeechSound:01}LET'S GO, BITCH![BR]
+[PAUSE:0A]WHERE WE DROPPIN'?[WAIT][END]
+
+00-057
+[STYLE:RIGHT]Mario, [PAUSE:05]stop this foul man![WAIT][END]
+
+00-058
+[STYLE:RIGHT]{SpeechSound:01}HEY MARIO! LISTEN UP BITCH![BR]
+[PAUSE:0A]YOU'RE GAY LIKE MY SHELL![BR]
+[WAIT][NEXT]
+AIN'T NO GAY PRICK LIKE YOU[BR]
+GON' STOP ME, TOAD![WAIT][END]
+
+00-059
+[STYLE:RIGHT]{SpeechSound:01}LOOK WHAT I GOT[BR]
+[PAUSE:05]FROM MOVMARIOPAPER![BR]
+IT'S THE {Color:20}STAR ROD{Color:0A} MODDING TOOL![BR]
+[WAIT][NEXT]
+COUNTHOMER AND I HAVE BEEN[BR]
+SPREADING MEMES ACROSS THE[BR]
+MUSHROOM KINGDOM![BR]
+[WAIT][NEXT]
+AND I WILL 1-HIT KO YOU[BR]
+WITH SOME BATTLE MODDING![BR]
+SUCK MY DICK![WAIT][END]
+
+00-05A
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}BUP BUPPITY BUP![BR]
+{EndFX:Shrinking}CHOKE ON MY SPORES, PLUMBER![WAIT][END]
+
+00-05B
+[STYLE:RIGHT]{SpeechSound:01}{StartFX:Shrinking}HAHAHAHAHAHAH![BR]
+{EndFX:Shrinking}[PAUSE:05]MY DEFENSE IS 99![BR]
+THERE'S NO WAY YOU CAN STOP ME[BR]
+FROM MAKING MAC AND CHEESE![WAIT][END]
+
+00-05C
+[STYLE:RIGHT]{SpeechSound:01}THERE'S NO KILLING ME,[BR]
+THE BUP BOI!!!![BR]
+[WAIT][NEXT]
+SO I'M GOING TO END YOU HERE[BR]
+ON OUT, PLUMBER'S ASS![BR]
+[PAUSE:0A]ENJOY THIS MEME HELL![BR]
+[WAIT][NEXT]
+PREPARE YOUR ANUS[BR]
+{StartFX:Shrinking}FOR MY[BR]
+{StartFX:Shrinking}M A X  N U T !{EndFX:Shrinking}[WAIT][END]
+
+00-05D
+[STYLE:RIGHT]{StartFX:Shrinking}Oh no! YOU MONSTER![WAIT][END]
+
+00-05E
+[STYLE:RIGHT]{SpeechSound:01}No HE'S THE MONSTER, BITCH![BR]
+[WAIT][NEXT]
+HE KILLS TURTLES![BR]
+THAT'S ANIMAL ABUSE,[BR]
+MOTHERFUCKER![WAIT][END]
+
+00-05F
+[STYLE:RIGHT]Congratulations on your victory,[BR]
+Your Viciousness![BR]
+[PAUSE:05]That's why you're the King![WAIT][END]
+
+00-060
+[STYLE:RIGHT]{SpeechSound:01}AS LONG AS I HAVE THE STAR ROD,[BR]
+THIS MOD WILL BE EPIC![BR]
+[PAUSE:0A]SO EPIC, SEND PETER![WAIT][END]
+
+00-061
+[STYLE:RIGHT]{SpeechSound:01}OH, RIGHT...[BR]
+[PAUSE:0A]IT'S TIME TO TAKE OUT THE TRASH![BR]
+THAT'S YOU, ANUS LIPS![WAIT][END]
+
+00-062
+[STYLE:RIGHT]{StartFX:Shrinking}Oh, no! Mario------!![WAIT][END]
+

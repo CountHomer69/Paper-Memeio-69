@@ -1,0 +1,497 @@
+% Automatically dumped from section 01
+
+#new:Actor $01_GoomnutTree
+% stats
+[Index]        93b 
+[Level]         1`b 
+[MaxHP]        -1`b 
+[Coins]         0`b 
+[Flags]       02004004 
+[StatusTable] $StatusTable_802232F0_01 
+% ai
+[SpriteCount]   5`s 
+[SpriteTable] $SpriteTable_8022339C_01 
+[Script]      $Script_Init_80223488_01 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]   0`b 
+[SpinSmash]     4`b % weight (0-4)
+% ui positions
+[Size]          0`b   0`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]    0`b   0`b % dx dy
+[StatusIcon]    0`b   0`b % dx dy
+
+#new:Function $Function_80218B10_01
+	ADDIU     SP, SP, FFD0
+	SDC1      F20, 18 (SP)
+	MTC1      A1, F20
+	SDC1      F22, 20 (SP)
+	MTC1      A2, F22
+	SW        S0, 10 (SP)
+	SDC1      F24, 28 (SP)
+	MTC1      A3, F24
+	SW        RA, 14 (SP)
+	JAL       800674A0
+	DADDU     S0, A0, R0
+	MUL.S     F22, F20, F22
+	NOP
+	MUL.S     F20, F20, F24
+	NOP
+	LIF       F0, 1.0
+	NOP
+	SWC1      F0, 14 (S0)
+	SWC1      F22, 10 (S0)
+	SWC1      F20, 18 (S0)
+	LW        RA, 14 (SP)
+	LW        S0, 10 (SP)
+	LDC1      F24, 28 (SP)
+	LDC1      F22, 20 (SP)
+	LDC1      F20, 18 (SP)
+	JR        RA
+	ADDIU     SP, SP, 30
+
+#new:Function $Function_80218B80_01
+	ADDIU     SP, SP, FF78
+	SW        S1, 54 (SP)
+	DADDU     S1, A0, R0
+	SW        RA, 5C (SP)
+	SW        S2, 58 (SP)
+	SW        S0, 50 (SP)
+	SDC1      F28, 80 (SP)
+	SDC1      F26, 78 (SP)
+	SDC1      F24, 70 (SP)
+	SDC1      F22, 68 (SP)
+	SDC1      F20, 60 (SP)
+	LW        S0, C (S1)
+	LW        A1, 0 (S0)
+	JAL       {Func:GetVariable}
+	ADDIU     S0, S0, 4
+	JAL       8011B010
+	DADDU     A0, V0, R0
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetFloatVariable}
+	DADDU     S2, V0, R0
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetFloatVariable}
+	MOV.S     F28, F0
+	LW        A1, 0 (S0)
+	ADDIU     S0, S0, 4
+	DADDU     A0, S1, R0
+	JAL       {Func:GetFloatVariable}
+	MOV.S     F26, F0
+	DADDU     A0, S1, R0
+	LW        A1, 0 (S0)
+	JAL       {Func:GetFloatVariable}
+	MOV.S     F22, F0
+	DADDU     A0, S2, R0
+	JAL       8011AD30
+	MOV.S     F24, F0
+	DADDU     S1, V0, R0
+	LHU       V0, 0 (S1)
+	ANDI      V0, V0, 400
+	BNE       V0, R0, .o124
+	ADDIU     S0, S1, 58
+	MTC1      R0, F20
+	MFC1      A2, F22
+	MFC1      A1, F20
+	MFC1      A3, F20
+	JAL       80067900
+	DADDU     A0, S0, R0
+	MFC1      A1, F28
+	MFC1      A2, F26
+	MFC1      A3, F24
+	JAL       $Function_80218B10_01
+	ADDIU     A0, SP, 10
+	ADDIU     A0, SP, 10
+	DADDU     A1, S0, R0
+	JAL       80067600
+	DADDU     A2, S0, R0
+	ADDIU     A0, SP, 10
+	NEG.S     F22, F22
+	MFC1      A1, F20
+	MFC1      A2, F22
+	JAL       80067900
+	DADDU     A3, A1, R0
+	ADDIU     A0, SP, 10
+	DADDU     A1, S0, R0
+	JAL       80067600
+	DADDU     A2, A1, R0
+	LHU       V0, 0 (S1)
+	ORI       V0, V0, 1400
+	BEQ       R0, R0, .o19C
+	SH        V0, 0 (S1)
+	.o124
+	MTC1      R0, F20
+	MFC1      A2, F22
+	MFC1      A1, F20
+	MFC1      A3, F20
+	JAL       80067900
+	ADDIU     A0, SP, 10
+	ADDIU     A0, SP, 10
+	ADDIU     S0, S1, 58
+	DADDU     A1, S0, R0
+	JAL       80067600
+	DADDU     A2, S0, R0
+	MFC1      A1, F28
+	MFC1      A2, F26
+	MFC1      A3, F24
+	JAL       $Function_80218B10_01
+	ADDIU     A0, SP, 10
+	ADDIU     A0, SP, 10
+	DADDU     A1, S0, R0
+	JAL       80067600
+	DADDU     A2, S0, R0
+	ADDIU     A0, SP, 10
+	NEG.S     F22, F22
+	MFC1      A1, F20
+	MFC1      A2, F22
+	JAL       80067900
+	DADDU     A3, A1, R0
+	ADDIU     A0, SP, 10
+	DADDU     A1, S0, R0
+	JAL       80067600
+	DADDU     A2, A1, R0
+	.o19C
+	LW        RA, 5C (SP)
+	LW        S2, 58 (SP)
+	LW        S1, 54 (SP)
+	LW        S0, 50 (SP)
+	LDC1      F28, 80 (SP)
+	LDC1      F26, 78 (SP)
+	LDC1      F24, 70 (SP)
+	LDC1      F22, 68 (SP)
+	LDC1      F20, 60 (SP)
+	ADDIU     V0, R0, 2
+	JR        RA
+	ADDIU     SP, SP, 88
+
+#new:IdleAnimations $IdleAnimations_802232D0_01
+.Status:Normal    00640000
+.Status:End
+
+#new:DefenseTable $DefenseTable_802232DC_01
+.Element:Normal 00000000
+.Element:Hammer 00000000
+.Element:End
+
+#new:StatusTable $StatusTable_802232F0_01
+.Status:Normal      0`
+.Status:Default     0`
+.Status:Sleep       0`
+.Status:Poison      0`
+.Status:Frozen      0`
+.Status:Dizzy       0`
+.Status:Fear        0`
+.Status:Static      0`
+.Status:Paralyze    0`
+.Status:Shrink      0`
+.Status:Stop        0`
+.Status:DefaultTurnMod    0`
+.Status:SleepTurnMod      0`
+.Status:PoisonTurnMod     0`
+.Status:FrozenTurnMod     0`
+.Status:DizzyTurnMod      0`
+.Status:FearTurnMod       0`
+.Status:StaticTurnMod     0`
+.Status:ParalyzeTurnMod   0`
+.Status:ShrinkTurnMod     0`
+.Status:StopTurnMod       0`
+.Status:End
+
+#new:SpriteTable $SpriteTable_8022339C_01
+00800000 01000000 000A00FF 00000000 $DefenseTable_802232DC_01 00000000 00000000 00000000 00000000 
+00120000 02000000 000A00FF $IdleAnimations_802232D0_01 $DefenseTable_802232DC_01 00000000 00000000 00000000 00000000 
+00120000 03000000 000A00FF $IdleAnimations_802232D0_01 $DefenseTable_802232DC_01 00000000 00000000 00000000 00000000 
+00120000 04000000 000A00FF $IdleAnimations_802232D0_01 $DefenseTable_802232DC_01 00000000 00000000 00000000 00000000 
+00120000 05000000 000A00FF $IdleAnimations_802232D0_01 $DefenseTable_802232DC_01 00000000 00000000 00000000 00000000 
+
+#new:Script $Script_Init_80223488_01
+	Call     BindTakeTurn 	( .Actor:Self $Script_TakeTurn_80223804_01 )
+	Call     BindIdle    	( .Actor:Self $Script_Idle_80223678_01 )
+	Call     BindHandleEvent 	( .Actor:Self $Script_HandleEvent_80223688_01 )
+	Call     SetActorVar 	( .Actor:Self 00000000 00000000 )
+	Call     SetActorVar 	( .Actor:Self 00000001 00000000 )
+	Call     SetActorVar 	( .Actor:Self 00000002 00000000 )
+	Call     SetActorVar 	( .Actor:Self 00000003 00000000 )
+	Call     SetActorVar 	( .Actor:Self 00000004 00000000 )
+	Call     SetActorVar 	( .Actor:Self 00000005 00000000 )
+	Call     SetActorVar 	( .Actor:Self 00000006 00000001 )
+	Call     SetSpritePos 	( .Actor:Self 00000002 0000000A 0000008C 0000000A )
+	Call     SetSpritePos 	( .Actor:Self 00000003 FFFFFFA1 0000008C 0000000A )
+	Call     SetSpritePos 	( .Actor:Self 00000004 FFFFFF8D 00000082 00000000 )
+	Call     SetSpritePos 	( .Actor:Self 00000005 FFFFFFBF 00000076 00000005 )
+	Call     SetSpriteScale ( .Actor:Self 00000003 *Fixed[0.5] *Fixed[0.5] *Fixed[1.0] )
+	Call     SetSpriteScale ( .Actor:Self 00000004 *Fixed[0.5] *Fixed[0.5] *Fixed[1.0] )
+	Call     SetSpriteScale ( .Actor:Self 00000005 *Fixed[0.5] *Fixed[0.5] *Fixed[1.0] )
+	Call     8026D158 ( FFFFFF81 00000001 00000004 00000001 )
+	Return
+	End
+
+#new:Script $Script_Idle_80223678_01
+	Return
+	End
+
+#new:Script $Script_HandleEvent_80223688_01
+	Call     UseIdleAnimation 	( .Actor:Self .False )
+	Call     EnableIdleScript 	( .Actor:Self 00000000 )
+	Call     GetLastElement ( *Var[E] )
+	Call     GetEventType 	( .Actor:Self *Var[0] )
+	Switch  *Var[0] 
+	   CaseOR  ==  .Event:HitCombo
+	   CaseOR  ==  00000017
+	      ExecWait $Script_80223D90_01 
+	   EndCaseGroup
+	   CaseOR  ==  .Event:Hit
+	   CaseOR  ==  .Event:Immune
+	      ExecWait $Script_80223D90_01 
+	      ExecWait $Script_80223DBC_01 
+	   EndCaseGroup
+	   Case  ==  .Event:MultibounceHit
+	      ExecWait $Script_80223D90_01 
+	      ExecWait $Script_80223DBC_01 
+	   Case  ==  .Event:Death
+	      ExecWait $Script_80223D90_01 
+	   Case  ==  .Event:MultibounceDeath
+	      ExecWait $Script_80223D90_01 
+	   Case  ==  .Event:SpikeContact
+	   Case  ==  .Event:ShockHit
+	   Case  ==  .Event:EndFirstStrike
+	   Default
+	EndSwitch
+	Call     EnableIdleScript 	( .Actor:Self 00000001 )
+	Call     UseIdleAnimation 	( .Actor:Self .True )
+	Return
+	End
+
+#new:Script $Script_TakeTurn_80223804_01
+	Switch  *Var[0] 
+	   Case  ==  00000006 
+	      Return
+	EndSwitch
+	Switch  *Var[0] 
+	   Case  ==  00000000 
+	   Case  ==  0000000A 
+	EndSwitch
+	Call     EnableIdleScript 	( .Actor:Self 00000001 )
+	Call     UseIdleAnimation 	( .Actor:Self .True )
+	Return
+	End
+
+#new:Script $Script_80223890_01
+	SetTimescale *Fixed[2.0] 
+	UseIntBuffer *Var[0] 
+	Get4Int  *Var[1] *Var[2] *Var[3] *Var[4] 
+	Get1Int  *Var[5] 
+	Call     GetActorPos 	( .Actor:Player *Var[6] *Var[F] *Var[8] )
+	Call     PlaySound   	( 00000165 )
+	Call     PlaySound   	( 00000166 )
+	Thread
+	   Set  *Flag[00]  00000000 
+	   If  *Var[1]  !=  00000000 
+	      Wait     00000001 
+	      Loop     00000005 
+	         UseIntBuffer *Var[1] 
+	         Get1Int  *Var[2] 
+	         Loop     *Var[2] 
+	            Get1Int  *Var[3] 
+	            Call     $Function_80218B80_01 ( *Var[3] *Fixed[0.10058594] *Fixed[0.20019531] *Var[F] 00000000 )
+	            If  *Flag[00]  ==  00000000 
+	               Set  *Flag[00]  00000001 
+	               Call     PlaySoundAtModel 	( *Var[3] 00000166 00000000 )
+	            EndIf
+	         EndLoop
+	         Wait     00000001 
+	         UseIntBuffer *Var[1] 
+	         Get1Int  *Var[2] 
+	         Loop     *Var[2] 
+	            Get1Int  *Var[3] 
+	            Call     $Function_80218B80_01 ( *Var[3] *Fixed[0.10058594] *Fixed[-0.19921875] *Var[F] 00000000 )
+	         EndLoop
+	         Wait     00000001 
+	      EndLoop
+	      UseIntBuffer *Var[1] 
+	      Get1Int  *Var[2] 
+	      Loop     *Var[2] 
+	         Get1Int  *Var[3] 
+	         Call     TranslateModel ( *Var[3] 00000000 00000000 00000000 )
+	      EndLoop
+	      Wait     00000001 
+	   EndIf
+	EndThread
+	Thread
+	   Set  *Flag[00]  00000000 
+	   If  *Var[2]  !=  00000000 
+	      Loop     00000005 
+	         UseIntBuffer *Var[2] 
+	         Get1Int  *Var[3] 
+	         Loop     *Var[3] 
+	            Get1Int  *Var[4] 
+	            Call     $Function_80218B80_01 ( *Var[4] *Fixed[0.10058594] *Fixed[0.20019531] *Var[F] 00000000 )
+	            If  *Flag[00]  ==  00000000 
+	               Set  *Flag[00]  00000001 
+	               Call     PlaySoundAtModel 	( *Var[4] 00000165 00000000 )
+	            EndIf
+	         EndLoop
+	         Wait     00000001 
+	         UseIntBuffer *Var[2] 
+	         Get1Int  *Var[3] 
+	         Loop     *Var[3] 
+	            Get1Int  *Var[4] 
+	            Call     $Function_80218B80_01 ( *Var[4] *Fixed[0.10058594] *Fixed[-0.19921875] *Var[F] 00000000 )
+	         EndLoop
+	         Wait     00000001 
+	      EndLoop
+	      UseIntBuffer *Var[2] 
+	      Get1Int  *Var[3] 
+	      Loop     *Var[3] 
+	         Get1Int  *Var[4] 
+	         Call     TranslateModel ( *Var[4] 00000000 00000000 00000000 )
+	      EndLoop
+	      Wait     00000001 
+	   EndIf
+	EndThread
+	Thread
+	   If  *Var[4]  !=  00000000 
+	      UseIntBuffer *Var[4] 
+	      Get1Int  *Var[5] 
+	      Loop     *Var[5] 
+	         Get3Int  *Var[6] *Var[7] *Var[8] 
+	         Call     PlayEffect  	( {FX:DropLeaves:Random} *Var[6] *Var[7] *Var[8] 00000064 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+	      EndLoop
+	   EndIf
+	EndThread
+	Wait     0000000F 
+	Return
+	End
+
+#new:Script $Script_80223D90_01
+	Set  *Var[0]  $???_80223D7C_01 
+	ExecWait $Script_80223890_01 
+	Return
+	End
+
+#new:Script $Script_80223DBC_01
+	Call     PlayEffect  	( {FX:DropLeaves:Random} FFFFFFE7 00000078 00000000 0000005A 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 )
+	Call     GetActorVar 	( .Actor:Self 00000005 *Var[0] )
+	If  *Var[0]  !=  00000000 
+	   Return
+	EndIf
+	Call     UseCamPreset 	( 0000000F )
+	Call     CamTargetActor ( .Actor:Enemy0 )
+	Wait     00000014 
+	Call     SetActorVar 	( .Actor:Self 00000005 00000001 )
+	Call     ActorExists 	( .Actor:Enemy0 *Var[0] )
+	If  *Var[0]  ==  00000000 
+	   Call     SetGoalToPos 	( .Actor:Self 0000000A 00000000 0000000A )
+	   Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .False )
+	   Call     PlaySoundAtSprite 	( .Actor:Self 00000002 00000301 )
+	   Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.80078125] )
+	   Call     SetSpriteSpeed ( .Actor:Self 00000002 *Fixed[4.0] )
+	   Call     JumpSpriteB 	( .Actor:Self 00000002 0000000A 00000014 0000000A 00000014 )
+	   Call     JumpSpriteA 	( .Actor:Self 00000002 0000001E 00000014 0000000A 0000000A .True )
+	   Call     JumpSpriteA 	( .Actor:Self 00000002 00000028 00000014 0000000A 00000005 .True )
+	   Loop     00000014 
+	      Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .False )
+	      Wait     00000001 
+	      Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .True )
+	      Wait     00000001 
+	   EndLoop
+	   Return
+	EndIf
+	Call     PlaySoundAtSprite 	( .Actor:Self 00000002 00000301 )
+	Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.80078125] )
+	Call     SetSpriteSpeed ( .Actor:Self 00000002 *Fixed[4.0] )
+	Call     GetStatusFlags ( .Actor:Enemy0 *Var[0] )
+	If  *Var[0]  !&  00080000 
+	   Call     JumpSpriteB 	( .Actor:Self 00000002 0000000A 00000050 0000000A 0000000A )
+	Else
+	   Call     JumpSpriteB 	( .Actor:Self 00000002 0000000A 00000020 0000000A 0000000A )
+	EndIf
+	Call     UseCamPreset 	( 00000002 )
+	Call     MoveCamOver 	( 0000001E )
+	Call     SetOwnerTarget ( 00000200 00000002 )
+	Call     SetGoalToTarget 	( .Actor:Self )
+	Call     DamageTarget 	( .Actor:Self *Var[0] 08000000 00000000 00000000 00000003 00000020 )
+	Call     ActorExists 	( .Actor:Enemy1 *Var[0] )
+	If  *Var[0]  ==  00000000 
+	   Call     GetSpriteOffset 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[0]  00000041 
+	   Set  *Var[1]  00000014 
+	   Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.7001953] )
+	   Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000014 .True )
+	   Add  *Var[0]  0000000C 
+	   Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000008 .True )
+	   Loop     00000014 
+	      Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .False )
+	      Wait     00000001 
+	      Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .True )
+	      Wait     00000001 
+	   EndLoop
+	   Return
+	EndIf
+	Call     GetActorPos 	( .Actor:Enemy1 *Var[0] *Var[1] *Var[2] )
+	Call     GetStatusFlags ( .Actor:Enemy1 *Var[3] )
+	If  *Var[3]  !&  00080000 
+	   Add  *Var[1]  00000032 
+	Else
+	   Add  *Var[1]  00000014 
+	EndIf
+	Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.7001953] )
+	Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000014 .True )
+	Call     SetOwnerTarget ( 00000201 00000001 )
+	Call     SetGoalToTarget 	( .Actor:Self )
+	Call     DamageTarget 	( .Actor:Self *Var[0] 08000000 00000000 00000000 00000003 00000020 )
+	Call     ActorExists 	( .Actor:Enemy2 *Var[0] )
+	If  *Var[0]  ==  00000000 
+	   Call     GetSpriteOffset 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] )
+	   Add  *Var[0]  00000023 
+	   Set  *Var[1]  00000014 
+	   Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.7001953] )
+	   Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000014 .True )
+	   Add  *Var[0]  0000000C 
+	   Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000008 .True )
+	   Loop     00000014 
+	      Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .False )
+	      Wait     00000001 
+	      Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .True )
+	      Wait     00000001 
+	   EndLoop
+	   Return
+	EndIf
+	Call     GetActorPos 	( .Actor:Enemy2 *Var[0] *Var[1] *Var[2] )
+	Call     GetStatusFlags ( .Actor:Enemy2 *Var[3] )
+	If  *Var[3]  !&  00080000 
+	   Add  *Var[1]  00000032 
+	Else
+	   Add  *Var[1]  00000014 
+	EndIf
+	Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.7001953] )
+	Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000014 .True )
+	Call     SetOwnerTarget ( 00000202 00000001 )
+	Call     SetGoalToTarget 	( .Actor:Self )
+	Call     DamageTarget 	( .Actor:Self *Var[0] 08000000 00000000 00000000 00000003 00000020 )
+	Call     GetSpriteOffset 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] )
+	Add  *Var[0]  00000014 
+	Set  *Var[1]  00000014 
+	Call     SetSpriteJumpscale 	( .Actor:Self 00000002 *Fixed[0.7001953] )
+	Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000014 .True )
+	Add  *Var[0]  0000000C 
+	Call     JumpSpriteA 	( .Actor:Self 00000002 *Var[0] *Var[1] *Var[2] 00000008 .True )
+	Loop     00000014 
+	   Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .False )
+	   Wait     00000001 
+	   Call     SetSpriteFlagBits 	( .Actor:Self 00000002 00000001 .True )
+	   Wait     00000001 
+	EndLoop
+	Return
+	End
+

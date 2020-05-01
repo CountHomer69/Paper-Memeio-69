@@ -1,0 +1,139 @@
+@ $BlueGoomba1
+% stats
+[Index]        90b 
+[Level]        20`b 
+[MaxHP]         7`b 
+[Coins]         0`b 
+[Flags]       00000000 
+[StatusTable] $StatusTable_802198BC 
+% ai
+[SpriteCount]   1`s 
+[SpriteTable] $SpriteTable_80219968 
+[Script]      $Script_Init_8021B268 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]  80`b 
+[SpinSmash]     0`b % weight (0-4)
+% ui positions
+[Size]         32`b  32`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]  -10`b  20`b % dx dy
+[StatusIcon]    8`b  25`b % dx dy
+
+@ $SpriteTable_80219968
+00800000 01000000 001800FF $IdleAnimations_802199B4 $DefenseTable_802198B0 00000080 00000000 00FD0000 00000000
+
+@ $BlueGoomba2
+% stats
+[Index]        90b 
+[Level]        20`b 
+[MaxHP]         4`b 
+[Coins]         0`b 
+[Flags]       00000000 
+[StatusTable] $StatusTable_8021D40C 
+% ai
+[SpriteCount]   1`s 
+[SpriteTable] $SpriteTable_8021D4B8 
+[Script]      $Script_Init_8021EDB8 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]  80`b 
+[SpinSmash]     0`b % weight (0-4)
+% ui positions
+[Size]         32`b  32`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]  -10`b  20`b % dx dy
+[StatusIcon]    8`b  25`b % dx dy
+
+@ $RedGoomba1
+% stats
+[Index]        91b 
+[Level]        20`b 
+[MaxHP]         7`b 
+[Coins]         0`b 
+[Flags]       00000000 
+[StatusTable] $StatusTable_8021B6CC 
+% ai
+[SpriteCount]   1`s 
+[SpriteTable] $SpriteTable_8021B778 
+[Script]      $Script_Init_8021D078 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]  80`b 
+[SpinSmash]     0`b % weight (0-4)
+% ui positions
+[Size]         32`b  32`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]  -10`b  20`b % dx dy
+[StatusIcon]    8`b  25`b % dx dy
+
+@ $SpriteTable_8021B778
+00800000 01000000 001800FF $IdleAnimations_8021B7C4 $DefenseTable_8021B6C0 00000002 00000000 00FD0000 00000000
+
+@ $RedGoomba2
+% stats
+[Index]        91b 
+[Level]        20`b 
+[MaxHP]         4`b 
+[Coins]         0`b 
+[Flags]       00000000 
+[StatusTable] $StatusTable_8021EE0C 
+% ai
+[SpriteCount]   1`s 
+[SpriteTable] $SpriteTable_8021EEB8 
+[Script]      $Script_Init_802207B8 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]  80`b 
+[SpinSmash]     0`b % weight (0-4)
+% ui positions
+[Size]         32`b  32`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]  -10`b  20`b % dx dy
+[StatusIcon]    8`b  25`b % dx dy
+
+@ $GoombaKing
+% stats
+[Index]        92b 
+[Level]        49`b 
+[MaxHP]        10`b 
+[Coins]         0`b 
+[Flags]       00000000 
+[StatusTable] $StatusTable_8022091C 
+% ai
+[SpriteCount]   2`s 
+[SpriteTable] $SpriteTable_802209C8 
+[Script]      $Script_Init_80220A38 
+% move effectiveness
+[Escape]        0`b 
+[Item]          0`b 
+[AirLift]       0`b 
+[Hurricane]     0`b % Bow's "Spook" as well
+[UpAndAway]     0`b 
+[PowerBounce]  80`b 
+[SpinSmash]     4`b % weight (0-4)
+% ui positions
+[Size]         56`b  80`b % width height
+[HealthBar]     0`b   0`b % dx dy
+[StatusTurn]   -6`b  38`b % dx dy
+[StatusIcon]   12`b  75`b % dx dy
+
+@ $SpriteTable_802209C8
+00020020 01000000 E70F00FF $IdleAnimations_80220800 $DefenseTable_80220910 00000010 00000000 00000000 00000000 
+00800020 02000000 005000FF 00000000 $DefenseTable_80220910 00000010 00000000 00000000 00000000 

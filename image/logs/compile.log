@@ -1,0 +1,4146 @@
+Sun Oct 06 10:55:28 EDT 2019
+Preparing patching process.
+Building string data...
+Reading map config files...
+Indexing map objects...
+Loaded kmr_00.xml in 303.73 ms
+Loaded kmr_02.xml in 1.08 seconds
+Loaded kmr_03.xml in 116.06 ms
+Loaded kmr_04.xml in 66.99 ms
+Loaded kmr_05.xml in 145.27 ms
+Loaded kmr_06.xml in 28.24 ms
+Loaded kmr_07.xml in 38.43 ms
+Loaded kmr_09.xml in 44.17 ms
+Loaded kmr_10.xml in 126.60 ms
+Loaded kmr_11.xml in 135.23 ms
+Loaded kmr_12.xml in 17.27 ms
+Loaded kmr_20.xml in 240.35 ms
+Loaded kmr_21.xml in 6.07 ms
+Loaded kmr_22.xml in 14.16 ms
+Loaded kmr_23.xml in 6.21 ms
+Loaded kmr_24.xml in 3.73 ms
+Loaded kmr_30.xml in 63.87 ms
+Loaded machi.xml in 178.30 ms
+Loaded mac_00.xml in 216.48 ms
+Loaded mac_01.xml in 247.05 ms
+Loaded mac_02.xml in 64.81 ms
+Loaded mac_03.xml in 69.54 ms
+Loaded mac_04.xml in 116.70 ms
+Loaded mac_05.xml in 81.18 ms
+Loaded mac_06.xml in 180.44 ms
+Loaded tik_01.xml in 27.11 ms
+Loaded tik_02.xml in 18.17 ms
+Loaded tik_03.xml in 28.74 ms
+Loaded tik_04.xml in 33.85 ms
+Loaded tik_05.xml in 22.45 ms
+Loaded tik_06.xml in 32.95 ms
+Loaded tik_07.xml in 54.08 ms
+Loaded tik_08.xml in 37.62 ms
+Loaded tik_09.xml in 34.73 ms
+Loaded tik_10.xml in 21.07 ms
+Loaded tik_12.xml in 19.18 ms
+Loaded tik_14.xml in 13.87 ms
+Loaded tik_15.xml in 24.79 ms
+Loaded tik_17.xml in 52.00 ms
+Loaded tik_18.xml in 16.93 ms
+Loaded tik_19.xml in 38.07 ms
+Loaded tik_20.xml in 37.05 ms
+Loaded tik_21.xml in 23.66 ms
+Loaded tik_22.xml in 15.55 ms
+Loaded tik_23.xml in 92.93 ms
+Loaded tik_24.xml in 4.36 ms
+Loaded tik_25.xml in 13.34 ms
+Loaded kgr_01.xml in 23.52 ms
+Loaded kgr_02.xml in 16.18 ms
+Loaded kkj_00.xml in 62.09 ms
+Loaded kkj_01.xml in 83.04 ms
+Loaded kkj_02.xml in 39.48 ms
+Loaded kkj_03.xml in 40.74 ms
+Loaded kkj_10.xml in 54.21 ms
+Loaded kkj_11.xml in 47.90 ms
+Loaded kkj_12.xml in 42.56 ms
+Loaded kkj_13.xml in 185.77 ms
+Loaded kkj_14.xml in 323.44 ms
+Loaded kkj_15.xml in 208.41 ms
+Loaded kkj_16.xml in 155.26 ms
+Loaded kkj_17.xml in 42.13 ms
+Loaded kkj_18.xml in 55.01 ms
+Loaded kkj_19.xml in 81.85 ms
+Loaded kkj_20.xml in 43.70 ms
+Loaded kkj_21.xml in 30.33 ms
+Loaded kkj_22.xml in 0.58 seconds
+Loaded kkj_23.xml in 39.04 ms
+Loaded kkj_24.xml in 45.72 ms
+Loaded kkj_25.xml in 104.79 ms
+Loaded kkj_26.xml in 21.80 ms
+Loaded kkj_27.xml in 22.72 ms
+Loaded kkj_28.xml in 76.27 ms
+Loaded kkj_29.xml in 158.92 ms
+Loaded hos_00.xml in 236.73 ms
+Loaded hos_01.xml in 56.04 ms
+Loaded hos_02.xml in 31.98 ms
+Loaded hos_03.xml in 105.19 ms
+Loaded hos_04.xml in 122.81 ms
+Loaded hos_05.xml in 78.73 ms
+Loaded hos_06.xml in 93.08 ms
+Loaded hos_10.xml in 304.82 ms
+Loaded hos_20.xml in 11.01 ms
+Loaded nok_01.xml in 79.21 ms
+Loaded nok_02.xml in 133.05 ms
+Loaded nok_03.xml in 44.20 ms
+Loaded nok_04.xml in 77.79 ms
+Loaded nok_11.xml in 42.75 ms
+Loaded nok_12.xml in 91.71 ms
+Loaded nok_13.xml in 61.18 ms
+Loaded nok_14.xml in 54.01 ms
+Loaded nok_15.xml in 168.04 ms
+Loaded trd_00.xml in 65.44 ms
+Loaded trd_01.xml in 27.38 ms
+Loaded trd_02.xml in 27.14 ms
+Loaded trd_03.xml in 30.45 ms
+Loaded trd_04.xml in 25.95 ms
+Loaded trd_05.xml in 43.73 ms
+Loaded trd_06.xml in 52.80 ms
+Loaded trd_07.xml in 28.91 ms
+Loaded trd_08.xml in 13.26 ms
+Loaded trd_09.xml in 40.71 ms
+Loaded trd_10.xml in 23.62 ms
+Loaded iwa_00.xml in 32.31 ms
+Loaded iwa_01.xml in 44.49 ms
+Loaded iwa_02.xml in 41.11 ms
+Loaded iwa_03.xml in 45.17 ms
+Loaded iwa_04.xml in 40.91 ms
+Loaded iwa_10.xml in 76.21 ms
+Loaded iwa_11.xml in 46.74 ms
+Loaded dro_01.xml in 93.20 ms
+Loaded dro_02.xml in 67.65 ms
+Loaded sbk_00.xml in 30.07 ms
+Loaded sbk_01.xml in 10.50 ms
+Loaded sbk_02.xml in 63.09 ms
+Loaded sbk_03.xml in 13.26 ms
+Loaded sbk_04.xml in 27.07 ms
+Loaded sbk_05.xml in 12.22 ms
+Loaded sbk_06.xml in 8.24 ms
+Loaded sbk_10.xml in 12.78 ms
+Loaded sbk_11.xml in 11.32 ms
+Loaded sbk_12.xml in 13.82 ms
+Loaded sbk_13.xml in 16.94 ms
+Loaded sbk_14.xml in 13.42 ms
+Loaded sbk_15.xml in 8.15 ms
+Loaded sbk_16.xml in 11.60 ms
+Loaded sbk_20.xml in 27.23 ms
+Loaded sbk_21.xml in 11.96 ms
+Loaded sbk_22.xml in 9.34 ms
+Loaded sbk_23.xml in 11.91 ms
+Loaded sbk_24.xml in 11.89 ms
+Loaded sbk_25.xml in 10.57 ms
+Loaded sbk_26.xml in 8.06 ms
+Loaded sbk_30.xml in 36.19 ms
+Loaded sbk_31.xml in 14.66 ms
+Loaded sbk_32.xml in 10.30 ms
+Loaded sbk_33.xml in 14.21 ms
+Loaded sbk_34.xml in 9.93 ms
+Loaded sbk_35.xml in 12.64 ms
+Loaded sbk_36.xml in 22.10 ms
+Loaded sbk_40.xml in 11.49 ms
+Loaded sbk_41.xml in 12.11 ms
+Loaded sbk_42.xml in 7.62 ms
+Loaded sbk_43.xml in 15.16 ms
+Loaded sbk_44.xml in 8.17 ms
+Loaded sbk_45.xml in 26.58 ms
+Loaded sbk_46.xml in 12.41 ms
+Loaded sbk_50.xml in 11.39 ms
+Loaded sbk_51.xml in 17.14 ms
+Loaded sbk_52.xml in 12.10 ms
+Loaded sbk_53.xml in 19.29 ms
+Loaded sbk_54.xml in 17.57 ms
+Loaded sbk_55.xml in 9.54 ms
+Loaded sbk_56.xml in 0.77 seconds
+Loaded sbk_60.xml in 14.91 ms
+Loaded sbk_61.xml in 7.34 ms
+Loaded sbk_62.xml in 15.52 ms
+Loaded sbk_63.xml in 17.73 ms
+Loaded sbk_64.xml in 9.18 ms
+Loaded sbk_65.xml in 11.22 ms
+Loaded sbk_66.xml in 11.40 ms
+Loaded sbk_99.xml in 24.27 ms
+Loaded isk_01.xml in 21.30 ms
+Loaded isk_02.xml in 32.65 ms
+Loaded isk_03.xml in 34.91 ms
+Loaded isk_04.xml in 29.69 ms
+Loaded isk_05.xml in 13.05 ms
+Loaded isk_06.xml in 39.31 ms
+Loaded isk_07.xml in 48.27 ms
+Loaded isk_08.xml in 24.25 ms
+Loaded isk_09.xml in 66.86 ms
+Loaded isk_10.xml in 18.42 ms
+Loaded isk_11.xml in 69.18 ms
+Loaded isk_12.xml in 62.99 ms
+Loaded isk_13.xml in 19.33 ms
+Loaded isk_14.xml in 20.13 ms
+Loaded isk_16.xml in 16.33 ms
+Loaded isk_18.xml in 32.73 ms
+Loaded isk_19.xml in 12.08 ms
+Loaded mim_01.xml in 74.23 ms
+Loaded mim_02.xml in 57.61 ms
+Loaded mim_03.xml in 55.28 ms
+Loaded mim_04.xml in 51.16 ms
+Loaded mim_05.xml in 53.44 ms
+Loaded mim_06.xml in 70.50 ms
+Loaded mim_07.xml in 49.45 ms
+Loaded mim_08.xml in 51.22 ms
+Loaded mim_09.xml in 51.10 ms
+Loaded mim_10.xml in 22.61 ms
+Loaded mim_11.xml in 53.91 ms
+Loaded mim_12.xml in 21.62 ms
+Loaded obk_01.xml in 68.08 ms
+Loaded obk_02.xml in 49.03 ms
+Loaded obk_03.xml in 71.16 ms
+Loaded obk_04.xml in 14.84 ms
+Loaded obk_05.xml in 23.58 ms
+Loaded obk_06.xml in 30.48 ms
+Loaded obk_07.xml in 27.32 ms
+Loaded obk_08.xml in 31.86 ms
+Loaded obk_09.xml in 50.41 ms
+Loaded arn_02.xml in 75.06 ms
+Loaded arn_03.xml in 76.64 ms
+Loaded arn_04.xml in 58.22 ms
+Loaded arn_05.xml in 217.79 ms
+Loaded arn_07.xml in 56.25 ms
+Loaded arn_08.xml in 23.04 ms
+Loaded arn_09.xml in 24.02 ms
+Loaded arn_10.xml in 17.86 ms
+Loaded arn_11.xml in 19.92 ms
+Loaded arn_12.xml in 11.94 ms
+Loaded arn_13.xml in 10.88 ms
+Loaded arn_20.xml in 38.84 ms
+Loaded dgb_00.xml in 7.10 ms
+Loaded dgb_01.xml in 188.08 ms
+Loaded dgb_02.xml in 29.92 ms
+Loaded dgb_03.xml in 61.03 ms
+Loaded dgb_04.xml in 45.37 ms
+Loaded dgb_05.xml in 35.77 ms
+Loaded dgb_06.xml in 24.95 ms
+Loaded dgb_07.xml in 17.57 ms
+Loaded dgb_08.xml in 75.12 ms
+Loaded dgb_09.xml in 29.31 ms
+Loaded dgb_10.xml in 20.67 ms
+Loaded dgb_11.xml in 17.27 ms
+Loaded dgb_12.xml in 17.38 ms
+Loaded dgb_13.xml in 43.23 ms
+Loaded dgb_14.xml in 25.49 ms
+Loaded dgb_15.xml in 59.74 ms
+Loaded dgb_16.xml in 11.20 ms
+Loaded dgb_17.xml in 17.84 ms
+Loaded dgb_18.xml in 102.76 ms
+Loaded omo_01.xml in 68.21 ms
+Loaded omo_02.xml in 64.24 ms
+Loaded omo_03.xml in 142.41 ms
+Loaded omo_04.xml in 88.99 ms
+Loaded omo_05.xml in 42.39 ms
+Loaded omo_06.xml in 51.86 ms
+Loaded omo_07.xml in 109.65 ms
+Loaded omo_08.xml in 48.98 ms
+Loaded omo_09.xml in 54.95 ms
+Loaded omo_10.xml in 51.00 ms
+Loaded omo_11.xml in 36.56 ms
+Loaded omo_12.xml in 30.85 ms
+Loaded omo_13.xml in 20.52 ms
+Loaded omo_14.xml in 16.49 ms
+Loaded omo_15.xml in 23.71 ms
+Loaded omo_16.xml in 62.55 ms
+Loaded omo_17.xml in 74.97 ms
+Loaded jan_00.xml in 50.16 ms
+Loaded jan_01.xml in 45.01 ms
+Loaded jan_02.xml in 168.09 ms
+Loaded jan_03.xml in 194.40 ms
+Loaded jan_04.xml in 132.47 ms
+Loaded jan_05.xml in 325.67 ms
+Loaded jan_06.xml in 91.44 ms
+Loaded jan_07.xml in 115.70 ms
+Loaded jan_08.xml in 72.45 ms
+Loaded jan_09.xml in 52.92 ms
+Loaded jan_10.xml in 28.23 ms
+Loaded jan_11.xml in 51.81 ms
+Loaded jan_12.xml in 18.58 ms
+Loaded jan_13.xml in 31.98 ms
+Loaded jan_14.xml in 23.70 ms
+Loaded jan_15.xml in 21.39 ms
+Loaded jan_16.xml in 58.18 ms
+Loaded jan_17.xml in 20.01 ms
+Loaded jan_18.xml in 14.38 ms
+Loaded jan_19.xml in 19.51 ms
+Loaded jan_22.xml in 186.37 ms
+Loaded jan_23.xml in 16.71 ms
+Loaded kzn_01.xml in 31.95 ms
+Loaded kzn_02.xml in 53.45 ms
+Loaded kzn_03.xml in 55.59 ms
+Loaded kzn_04.xml in 13.79 ms
+Loaded kzn_05.xml in 19.51 ms
+Loaded kzn_06.xml in 31.93 ms
+Loaded kzn_07.xml in 25.44 ms
+Loaded kzn_08.xml in 20.88 ms
+Loaded kzn_09.xml in 40.80 ms
+Loaded kzn_10.xml in 19.76 ms
+Loaded kzn_11.xml in 47.96 ms
+Loaded kzn_17.xml in 84.85 ms
+Loaded kzn_18.xml in 58.45 ms
+Loaded kzn_19.xml in 101.63 ms
+Loaded kzn_20.xml in 102.51 ms
+Loaded kzn_22.xml in 168.35 ms
+Loaded kzn_23.xml in 148.21 ms
+Loaded flo_00.xml in 189.71 ms
+Loaded flo_03.xml in 36.45 ms
+Loaded flo_07.xml in 34.55 ms
+Loaded flo_08.xml in 53.58 ms
+Loaded flo_09.xml in 45.09 ms
+Loaded flo_10.xml in 46.83 ms
+Loaded flo_11.xml in 232.18 ms
+Loaded flo_12.xml in 57.82 ms
+Loaded flo_13.xml in 152.64 ms
+Loaded flo_14.xml in 122.06 ms
+Loaded flo_15.xml in 38.69 ms
+Loaded flo_16.xml in 68.83 ms
+Loaded flo_17.xml in 44.46 ms
+Loaded flo_18.xml in 175.68 ms
+Loaded flo_19.xml in 80.94 ms
+Loaded flo_21.xml in 44.68 ms
+Loaded flo_22.xml in 45.28 ms
+Loaded flo_23.xml in 25.55 ms
+Loaded flo_24.xml in 56.92 ms
+Loaded flo_25.xml in 32.52 ms
+Loaded sam_01.xml in 115.29 ms
+Loaded sam_02.xml in 100.32 ms
+Loaded sam_03.xml in 55.73 ms
+Loaded sam_04.xml in 29.64 ms
+Loaded sam_05.xml in 63.91 ms
+Loaded sam_06.xml in 3.26 seconds
+Loaded sam_07.xml in 94.15 ms
+Loaded sam_08.xml in 45.89 ms
+Loaded sam_09.xml in 27.15 ms
+Loaded sam_10.xml in 62.94 ms
+Loaded sam_11.xml in 355.70 ms
+Loaded sam_12.xml in 42.21 ms
+Loaded pra_01.xml in 50.79 ms
+Loaded pra_02.xml in 44.02 ms
+Loaded pra_03.xml in 19.37 ms
+Loaded pra_04.xml in 22.89 ms
+Loaded pra_05.xml in 7.96 ms
+Loaded pra_06.xml in 3.49 ms
+Loaded pra_09.xml in 16.63 ms
+Loaded pra_10.xml in 14.78 ms
+Loaded pra_11.xml in 14.28 ms
+Loaded pra_12.xml in 7.55 ms
+Loaded pra_13.xml in 26.58 ms
+Loaded pra_14.xml in 23.02 ms
+Loaded pra_15.xml in 18.08 ms
+Loaded pra_16.xml in 28.88 ms
+Loaded pra_18.xml in 93.15 ms
+Loaded pra_19.xml in 32.71 ms
+Loaded pra_20.xml in 22.29 ms
+Loaded pra_21.xml in 29.83 ms
+Loaded pra_22.xml in 24.37 ms
+Loaded pra_27.xml in 3.25 ms
+Loaded pra_28.xml in 4.12 ms
+Loaded pra_29.xml in 33.84 ms
+Loaded pra_31.xml in 32.27 ms
+Loaded pra_32.xml in 28.94 ms
+Loaded pra_33.xml in 23.32 ms
+Loaded pra_34.xml in 17.09 ms
+Loaded pra_35.xml in 34.00 ms
+Loaded pra_36.xml in 3.88 ms
+Loaded pra_37.xml in 4.79 ms
+Loaded pra_38.xml in 3.14 ms
+Loaded pra_39.xml in 3.94 ms
+Loaded pra_40.xml in 10.50 ms
+Loaded kpa_01.xml in 128.65 ms
+Loaded kpa_03.xml in 104.93 ms
+Loaded kpa_04.xml in 13.26 ms
+Loaded kpa_08.xml in 38.56 ms
+Loaded kpa_09.xml in 49.08 ms
+Loaded kpa_10.xml in 102.19 ms
+Loaded kpa_11.xml in 100.22 ms
+Loaded kpa_12.xml in 130.53 ms
+Loaded kpa_13.xml in 188.25 ms
+Loaded kpa_14.xml in 206.33 ms
+Loaded kpa_15.xml in 31.57 ms
+Loaded kpa_16.xml in 110.12 ms
+Loaded kpa_17.xml in 24.65 ms
+Loaded kpa_32.xml in 62.98 ms
+Loaded kpa_33.xml in 56.35 ms
+Loaded kpa_40.xml in 57.60 ms
+Loaded kpa_41.xml in 100.47 ms
+Loaded kpa_50.xml in 74.03 ms
+Loaded kpa_51.xml in 7.15 ms
+Loaded kpa_52.xml in 81.56 ms
+Loaded kpa_53.xml in 7.36 ms
+Loaded kpa_60.xml in 0.53 seconds
+Loaded kpa_61.xml in 57.94 ms
+Loaded kpa_62.xml in 204.70 ms
+Loaded kpa_63.xml in 112.65 ms
+Loaded kpa_70.xml in 236.49 ms
+Loaded kpa_81.xml in 17.25 ms
+Loaded kpa_82.xml in 5.80 ms
+Loaded kpa_83.xml in 8.82 ms
+Loaded kpa_90.xml in 87.20 ms
+Loaded kpa_91.xml in 86.83 ms
+Loaded kpa_94.xml in 63.64 ms
+Loaded kpa_95.xml in 93.12 ms
+Loaded kpa_96.xml in 73.80 ms
+Loaded kpa_100.xml in 9.19 ms
+Loaded kpa_101.xml in 16.54 ms
+Loaded kpa_102.xml in 54.77 ms
+Loaded kpa_111.xml in 21.62 ms
+Loaded kpa_112.xml in 56.16 ms
+Loaded kpa_113.xml in 31.08 ms
+Loaded kpa_114.xml in 9.71 ms
+Loaded kpa_115.xml in 31.34 ms
+Loaded kpa_116.xml in 29.23 ms
+Loaded kpa_117.xml in 11.87 ms
+Loaded kpa_118.xml in 31.70 ms
+Loaded kpa_119.xml in 11.26 ms
+Loaded kpa_121.xml in 103.00 ms
+Loaded kpa_130.xml in 85.05 ms
+Loaded kpa_133.xml in 44.13 ms
+Loaded kpa_134.xml in 61.86 ms
+Loaded kpa_80.xml in 35.28 ms
+Loaded osr_00.xml in 88.97 ms
+Loaded osr_01.xml in 38.72 ms
+Loaded osr_02.xml in 153.31 ms
+Loaded osr_03.xml in 425.16 ms
+Loaded osr_04.xml in 4.81 ms
+Loaded end_00.xml in 244.19 ms
+Loaded end_01.xml in 220.72 ms
+Loaded mgm_00.xml in 50.00 ms
+Loaded mgm_01.xml in 51.32 ms
+Loaded mgm_02.xml in 87.73 ms
+Loaded mgm_03.xml in 25.77 ms
+Loaded gv_01.xml in 40.51 ms
+Loaded tst_01.xml in 40.99 ms
+Loaded tst_02.xml in 28.93 ms
+Loaded tst_03.xml in 119.71 ms
+Loaded tst_04.xml in 42.10 ms
+Loaded tst_10.xml in 16.80 ms
+Loaded tst_11.xml in 42.34 ms
+Loaded tst_12.xml in 83.93 ms
+Loaded tst_13.xml in 6.40 ms
+Loaded tst_20.xml in 89.35 ms
+Indexing animations...
+Writing map config table...
+Wrote map config table to 0x2804350
+Reading battle config files...
+Reading direct ROM patches...
+Compressed scripts enabled.
+Choosing location for global struct: $DebugMapName
+Choosing location for global struct: $DebugBattleID
+Choosing location for global struct: $DebugStringBuffer
+Choosing location for global struct: $DebugPrintfBuffer
+Choosing location for global struct: $DebugState
+Choosing location for global struct: $Buttons
+Choosing location for global struct: $UpdateButtons
+Choosing location for global struct: $fmtStory
+Choosing location for global struct: $fmtMapName
+Choosing location for global struct: $strPos
+Choosing location for global struct: $fmtCoord
+Choosing location for global struct: $fmtAction
+Choosing location for global struct: $fmtBattle
+Choosing location for global struct: $strWarpMode
+Choosing location for global struct: $fmtWarpBattle
+Choosing location for global struct: $strGodMode
+Choosing location for global struct: $strHeapCollision
+Choosing location for global struct: $strHeapWorld
+Choosing location for global struct: $strHeapSprite
+Choosing location for global struct: $strHeapBattle
+Choosing location for global struct: $fmtHeapUsage
+Choosing location for global struct: $fmtScriptCount
+Choosing location for global struct: $mainMenuMapSelect
+Choosing location for global struct: $mainMenuBattleSelect
+Choosing location for global struct: $mainSetStory
+Choosing location for global struct: $mainMenuFullRestore
+Choosing location for global struct: $mainMenuPlaySound
+Choosing location for global struct: $arrowLeft
+Choosing location for global struct: $arrowRight
+Choosing location for global struct: $strEntry
+Choosing location for global struct: $fmtEntry
+Choosing location for global struct: $fmtDigit
+Choosing location for global struct: $fmtByte
+Choosing location for global struct: $strValue
+Choosing location for global struct: $strFormation
+Choosing location for global struct: $strDash
+Choosing location for global struct: $strParenL
+Choosing location for global struct: $strParenR
+Choosing location for global struct: $OverrideMap
+Choosing location for global struct: $ASCIItoPM
+Choosing location for global struct: $PrintDebugString
+Choosing location for global struct: $CheckHeapUsage
+Choosing location for global struct: $PrintHeapUsage
+Choosing location for global struct: $PrintBasicInfo
+Choosing location for global struct: $PrintDetailedInfo
+Choosing location for global struct: $NavigateVerticalMenu1D
+Choosing location for global struct: $NavigateVerticalWrappedMenu1D
+Choosing location for global struct: $NavigateHorizontalMenu1D
+Choosing location for global struct: $NavigateHorizontalWrappedMenu1D
+Choosing location for global struct: $NavigateWrappedMenu2D
+Choosing location for global struct: $JumpTable_CheatMenu
+Choosing location for global struct: $UpdateCheatMenu
+Choosing location for global struct: $MainMenuJumpTable
+Choosing location for global struct: $MainMenuStringsTable
+Choosing location for global struct: $UpdateMainMenu
+Choosing location for global struct: $UpdateAreaSelect
+Choosing location for global struct: $UpdateMapSelect
+Choosing location for global struct: $UpdateEntrySelect
+Choosing location for global struct: $WarpToMap
+Choosing location for global struct: $UpdateBattleSelect
+Choosing location for global struct: $UpdateStoryProgress
+Choosing location for global struct: $UpdatePlaySound
+Choosing location for global struct: $PrintDebug
+Writing global struct $DebugMapName to 80404530
+Writing global struct $DebugBattleID to 8040453C
+Writing global struct $DebugStringBuffer to 80404540
+Writing global struct $DebugPrintfBuffer to 80404580
+Writing global struct $DebugState to 804045C0
+Writing global struct $Buttons to 804045E0
+Writing global struct $UpdateButtons to 804045F8
+Writing global struct $fmtStory to 80404638
+Writing global struct $fmtMapName to 80404644
+Writing global struct $strPos to 80404650
+Writing global struct $fmtCoord to 80404658
+Writing global struct $fmtAction to 8040465C
+Writing global struct $fmtBattle to 80404670
+Writing global struct $strWarpMode to 80404688
+Writing global struct $fmtWarpBattle to 80404694
+Writing global struct $strGodMode to 804046A8
+Writing global struct $strHeapCollision to 804046B8
+Writing global struct $strHeapWorld to 804046C4
+Writing global struct $strHeapSprite to 804046CC
+Writing global struct $strHeapBattle to 804046D8
+Writing global struct $fmtHeapUsage to 804046E4
+Writing global struct $fmtScriptCount to 804046F8
+Writing global struct $mainMenuMapSelect to 80404710
+Writing global struct $mainMenuBattleSelect to 80404720
+Writing global struct $mainSetStory to 80404730
+Writing global struct $mainMenuFullRestore to 80404744
+Writing global struct $mainMenuPlaySound to 80404754
+Writing global struct $arrowLeft to 80404764
+Writing global struct $arrowRight to 80404768
+Writing global struct $strEntry to 8040476C
+Writing global struct $fmtEntry to 80404778
+Writing global struct $fmtDigit to 8040477C
+Writing global struct $fmtByte to 80404784
+Writing global struct $strValue to 8040478C
+Writing global struct $strFormation to 8040479C
+Writing global struct $strDash to 804047A8
+Writing global struct $strParenL to 804047AC
+Writing global struct $strParenR to 804047B0
+Writing global struct $OverrideMap to 804047B4
+Writing global struct $ASCIItoPM to 80404830
+Writing global struct $PrintDebugString to 8040487C
+Writing global struct $CheckHeapUsage to 80404904
+Writing global struct $PrintHeapUsage to 80404934
+Writing global struct $PrintBasicInfo to 804049E8
+Writing global struct $PrintDetailedInfo to 80404B44
+Writing global struct $NavigateVerticalMenu1D to 80404CA8
+Writing global struct $NavigateVerticalWrappedMenu1D to 80404CF4
+Writing global struct $NavigateHorizontalMenu1D to 80404D40
+Writing global struct $NavigateHorizontalWrappedMenu1D to 80404D8C
+Writing global struct $NavigateWrappedMenu2D to 80404DD8
+Writing global struct $JumpTable_CheatMenu to 80404EE8
+Writing global struct $UpdateCheatMenu to 80404F04
+Writing global struct $MainMenuJumpTable to 80404F78
+Writing global struct $MainMenuStringsTable to 80404F8C
+Writing global struct $UpdateMainMenu to 80404FA0
+Writing global struct $UpdateAreaSelect to 8040516C
+Writing global struct $UpdateMapSelect to 804052AC
+Writing global struct $UpdateEntrySelect to 80405514
+Writing global struct $WarpToMap to 80405658
+Writing global struct $UpdateBattleSelect to 804056C8
+Writing global struct $UpdateStoryProgress to 8040590C
+Writing global struct $UpdatePlaySound to 80405A88
+Writing global struct $PrintDebug to 80405C08
+Finished reading global pointers:
+80404350 = $Global_MapConfigTable
+80281104 = $Global_ActorNameTable
+80282B98 = $Global_ActorTattleTable
+80282EE8 = $Global_ActorOffsetsTable
+80500000 = $Global_CollisionHeap
+805C0000 = $Global_WorldHeap
+80680000 = $Global_SpriteHeap
+80740000 = $Global_BattleHeap
+80404520 = $Global_DebugMap
+80404528 = $Global_DebugBattle
+Building battle data...
+Executing patch: 00 Goombario.bpat
+Found $Function_80238B60 (0)
+Found $Function_80238BCC (0)
+Merged 3 regions to 2
+Changing pointer 8023CDA4 to 8023CD9C ($End[4])
+Changing pointer 8023CDA0 to 8023CD98 ($End)
+Changing pointer 8023CDA0 to 8023CD98 ($End)
+Changing pointer 8023CDA4 to 8023CD9C ($End[4])
+Building map data...
+Patching tables...
+Patching world map...
+Patching icons...
+Writing direct ROM patches...
+Boot code written from 0x02805DE0 to 0x0280614C
+Version information will be stored at 0x80406480
+Writing strings...
+Writing string section 00 to 1B830C0 (99 strings)
+Writing string section 01 to 1B83250 (111 strings)
+Writing string section 02 to 1B83410 (288 strings)
+Writing string section 03 to 1B83894 (234 strings)
+Writing string section 04 to 1B83C40 (148 strings)
+Writing string section 05 to 1B83E94 (103 strings)
+Writing string section 06 to 1B84034 (212 strings)
+Writing string section 07 to 1B84388 (198 strings)
+Writing string section 08 to 1B846A4 (73 strings)
+Writing string section 09 to 1B847CC (20 strings)
+Writing string section 0A to 1B84820 (113 strings)
+Writing string section 0B to 1B849E8 (265 strings)
+Writing string section 0C to 1B84E10 (311 strings)
+Writing string section 0D to 1B852F0 (245 strings)
+Writing string section 0E to 1B856C8 (260 strings)
+Writing string section 0F to 1B85ADC (118 strings)
+Writing string section 10 to 1B85CB8 (280 strings)
+Writing string section 11 to 1B8611C (223 strings)
+Writing string section 12 to 1B8649C (368 strings)
+Writing string section 13 to 1B86A60 (178 strings)
+Writing string section 14 to 1B86D2C (409 strings)
+Writing string section 15 to 1B87394 (61 strings)
+Writing string section 16 to 1B8748C (36 strings)
+Writing string section 17 to 1B87520 (26 strings)
+Writing string section 18 to 1B8758C (26 strings)
+Writing string section 19 to 1B875F8 (393 strings)
+Writing string section 1A to 1B87C20 (290 strings)
+Writing string section 1B to 1B880AC (38 strings)
+Writing string section 1C to 1B88148 (150 strings)
+Writing string section 1D to 1B883A4 (428 strings)
+Writing string section 1E to 1B88A58 (80 strings)
+Writing string section 1F to 1B88B9C (53 strings)
+Writing string section 20 to 1B88C74 (93 strings)
+Writing string section 21 to 1B88DEC (79 strings)
+Writing string section 22 to 1B88F2C (158 strings)
+Writing string section 23 to 1B891A8 (268 strings)
+Writing string section 24 to 1B895DC (268 strings)
+Writing string section 25 to 1B89A10 (268 strings)
+Writing string section 26 to 1B89E44 (269 strings)
+Writing string section 27 to 1B8A27C (211 strings)
+Writing string section 28 to 1B8A5CC (104 strings)
+Writing string section 29 to 1B8A770 (131 strings)
+Writing string section 2A to 1B8A980 (27 strings)
+Writing string section 2B to 1B8A9F0 (32 strings)
+Writing string section 2C to 1B8AA74 (64 strings)
+Writing string section 2D to 1B8AB78 (64 strings)
+Writing string section 2E to 1B8AC7C (136 strings)
+Writing string section 2F to 1B8AEA0 (0 strings)
+Writing config tables...
+Wrote battle section table to 0x70E30
+Wrote move script table to 0x1C2760
+Wrote partner script table.
+In-game RAM usage: 69A0 bytes (2.58% of available)
+Boot process hooked.
+Writing world_map to ROM.
+Writing spirits_bg to ROM.
+Writing peach_letter to ROM.
+Writing logo-N64 to ROM.
+Writing logo-IS to ROM.
+Writing logo-nintendo to ROM.
+Building texture archives...
+Building texture archive: arn_tex.txa
+Writing texture: arn_berosaidetif
+Writing texture: arn_doa2tif
+Writing texture: arn_doa3tif
+Writing texture: arn_doatif
+Writing texture: arn_frametif
+Writing texture: arn_grayframetif
+Writing texture: arn_haguruma1tif
+Writing texture: arn_hane1tif
+Writing texture: arn_hari1tif
+Writing texture: arn_haritif
+Writing texture: arn_hasira1tif
+Writing texture: arn_iwa_4tif
+Writing texture: arn_jamp1tif
+Writing texture: arn_jamp2tif
+Writing texture: arn_jimen_edgetif
+Writing texture: arn_jimenbtif
+Writing texture: arn_jimenctif
+Writing texture: arn_kabe10tif
+Writing texture: arn_kabe1tif
+Writing texture: arn_kabe2tif
+Writing texture: arn_kabe6tif
+Writing texture: arn_ki5tif
+Writing texture: arn_kusatif
+Writing texture: arn_mado1tif
+Writing texture: arn_mado2tif
+Writing texture: arn_renga1tif
+Writing texture: arn_star1tif
+Writing texture: arn_waku2tif
+Writing texture: arn_yane1tif
+Writing texture: arn_yane3tif
+Writing texture: arn_zassoutif
+Writing texture: arn_zimen2tif
+Writing texture: arn_zimen4tif
+Building texture archive: dgb_tex.txa
+Writing texture: dgb_berosaidetif
+Writing texture: dgb_ciock3tif
+Writing texture: dgb_d_ana04tif
+Writing texture: dgb_d_anatif
+Writing texture: dgb_d_chear2tif
+Writing texture: dgb_doatif
+Writing texture: dgb_frametif
+Writing texture: dgb_hasira1tif
+Writing texture: dgb_hibi1tif
+Writing texture: dgb_hibi3tif
+Writing texture: dgb_hikaritif
+Writing texture: dgb_hokori1tif
+Writing texture: dgb_isuasi1tif
+Writing texture: dgb_iwa_4tif
+Writing texture: dgb_jimen_edgetif
+Writing texture: dgb_jimenbtif
+Writing texture: dgb_jimenctif
+Writing texture: dgb_kabe10tif
+Writing texture: dgb_kabe1tif
+Writing texture: dgb_kabe2tif
+Writing texture: dgb_kabe3tif
+Writing texture: dgb_kabe6tif
+Writing texture: dgb_katen1tif
+Writing texture: dgb_katen3tif
+Writing texture: dgb_kazari3tif
+Writing texture: dgb_ki5tif
+Writing texture: dgb_mado1tif
+Writing texture: dgb_mado2tif
+Writing texture: dgb_moyou1tif
+Writing texture: dgb_moyou2tif
+Writing texture: dgb_moyou3tif
+Writing texture: dgb_syokudaitif
+Writing texture: dgb_tenjo2tif
+Writing texture: dgb_tesuri1tif
+Writing texture: dgb_tesuri2tif
+Writing texture: dgb_tesuri3tif
+Writing texture: dgb_togetif
+Writing texture: dgb_yuka1tif
+Writing texture: dgb_zassoutif
+Writing texture: dgb_zyu1tif
+Writing texture: dgb_zyu2tif
+Building texture archive: dro_tex.txa
+Writing texture: dro_berosaidetif
+Writing texture: dro_binn2tif
+Writing texture: dro_blocktif
+Writing texture: dro_d_t_doatif
+Writing texture: dro_d_tubo01tif
+Writing texture: dro_doa1tif
+Writing texture: dro_flower_02tif
+Writing texture: dro_frametif
+Writing texture: dro_gyuutann2tif
+Writing texture: dro_hasira1tif
+Writing texture: dro_hata2tif
+Writing texture: dro_hon2tif
+Writing texture: dro_hon3tif
+Writing texture: dro_honetif
+Writing texture: dro_kabe_htif
+Writing texture: dro_kabe1tif
+Writing texture: dro_kannbanntif
+Writing texture: dro_kemutif
+Writing texture: dro_kinopiotif
+Writing texture: dro_kudamonotif
+Writing texture: dro_mado6tif
+Writing texture: dro_moyou2tif
+Writing texture: dro_nuno2tif
+Writing texture: dro_nunoyanetif
+Writing texture: dro_papyrustif
+Writing texture: dro_posuta2tif
+Writing texture: dro_posutatif
+Writing texture: dro_ranputif
+Writing texture: dro_road3tif
+Writing texture: dro_sabakureeftif
+Writing texture: dro_sakutif
+Writing texture: dro_spider_nettif
+Writing texture: dro_suna3tif
+Writing texture: dro_taru1tif
+Writing texture: dro_wall_ftif
+Building texture archive: end_tex.txa
+Writing texture: end_bg_yamatif
+Writing texture: end_castle_atif
+Writing texture: end_castle_btif
+Writing texture: end_cycadtif
+Writing texture: end_ensekitif
+Writing texture: end_green_gradetif
+Writing texture: end_greentif
+Writing texture: end_heiho_neontif
+Writing texture: end_hoppetif
+Writing texture: end_iwatif
+Writing texture: end_kagetif
+Writing texture: end_kamitif
+Writing texture: end_kawa_atif
+Writing texture: end_kino_fbtif
+Writing texture: end_kino_fctif
+Writing texture: end_kino_fdtif
+Writing texture: end_kobock_btif
+Writing texture: end_kobock_reeftif
+Writing texture: end_kokobock_eyetif
+Writing texture: end_kubiwatif
+Writing texture: end_kumo_anitif
+Writing texture: end_light_aatif
+Writing texture: end_light_btif
+Writing texture: end_light_dtif
+Writing texture: end_light_etif
+Writing texture: end_light_ftif
+Writing texture: end_light_gtif
+Writing texture: end_light_htif
+Writing texture: end_light_itif
+Writing texture: end_light_jtif
+Writing texture: end_light_ltif
+Writing texture: end_light_mtif
+Writing texture: end_m_backtif
+Writing texture: end_mac_britshcuttif
+Writing texture: end_mac_britshtreetif
+Writing texture: end_mac_fieldtif
+Writing texture: end_mariohouse_btif
+Writing texture: end_me_btif
+Writing texture: end_midori03tif
+Writing texture: end_nuno_greentif
+Writing texture: end_nunotif
+Writing texture: end_pacntif
+Writing texture: end_rainbowtif
+Writing texture: end_reef_jantif
+Writing texture: end_ryusei_gou_btif
+Writing texture: end_ryusei_goutif
+Writing texture: end_s_roadtif
+Writing texture: end_snow_fieldtif
+Writing texture: end_starlinetif
+Writing texture: end_sutif
+Writing texture: end_treetif
+Writing texture: end_tumikitif
+Writing texture: end_umitif
+Writing texture: end_yosflo_1tif
+Writing texture: end_yosflo_2tif
+Writing texture: end_yoshitif
+Writing texture: end_yougantif
+Writing texture: end_yuka_block3tif
+Writing texture: end_yuka_block4tif
+Building texture archive: flo_tex.txa
+Writing texture: flo_baraha2tif
+Writing texture: flo_barahanatif
+Writing texture: flo_barahatif
+Writing texture: flo_barakakine7tif
+Writing texture: flo_baratulutif
+Writing texture: flo_berosaidetif
+Writing texture: flo_botantif
+Writing texture: flo_chibikumo2tif
+Writing texture: flo_chibikumotif
+Writing texture: flo_comp03tif
+Writing texture: flo_f_achi2tif
+Writing texture: flo_f_dokantif
+Writing texture: flo_f_hatenatif
+Writing texture: flo_f_hikarabi4tif
+Writing texture: flo_f_kusa02tif
+Writing texture: flo_f_kusatif
+Writing texture: flo_f_saku5tif
+Writing texture: flo_f_sitakusatif
+Writing texture: flo_f_yane02tif
+Writing texture: flo_flo_hanatif
+Writing texture: flo_flo_kusa1tif
+Writing texture: flo_flo_kusa2tif
+Writing texture: flo_flo_renga2tif
+Writing texture: flo_flo_roadtif
+Writing texture: flo_flo_top2tif
+Writing texture: flo_flower_dtif
+Writing texture: flo_flower_edge4tif
+Writing texture: flo_flower_field3tif
+Writing texture: flo_flower_top3tif
+Writing texture: flo_frametif
+Writing texture: flo_hanatabatif
+Writing texture: flo_happa2tif
+Writing texture: flo_happa3tif
+Writing texture: flo_happa4tif
+Writing texture: flo_hasiratif
+Writing texture: flo_hunsuitif
+Writing texture: flo_ibaratif
+Writing texture: flo_jack3tif
+Writing texture: flo_jack4tif
+Writing texture: flo_ki_atif
+Writing texture: flo_kinoha5tif
+Writing texture: flo_kinoha6tif
+Writing texture: flo_kinoha7tif
+Writing texture: flo_kinoita3tif
+Writing texture: flo_kinoitatif
+Writing texture: flo_kirikabutif
+Writing texture: flo_kuki6tif
+Writing texture: flo_kumo2tif
+Writing texture: flo_kumokumo2tif
+Writing texture: flo_kumokumotif
+Writing texture: flo_kumonokage2tif
+Writing texture: flo_kumonoue11tif
+Writing texture: flo_kumonoue12tif
+Writing texture: flo_kumonoue15tif
+Writing texture: flo_kumonoue18tif
+Writing texture: flo_kumonoue21tif
+Writing texture: flo_kumonoue22tif
+Writing texture: flo_kumonoue23tif
+Writing texture: flo_kumotif
+Writing texture: flo_kuristalu2tif
+Writing texture: flo_kuristalutif
+Writing texture: flo_marutakuntif
+Writing texture: flo_mizu_kabetif
+Writing texture: flo_moguraana2tif
+Writing texture: flo_mon2tif
+Writing texture: flo_mon3tif
+Writing texture: flo_naminami4tif
+Writing texture: flo_niji2tif
+Writing texture: flo_niji3tif
+Writing texture: flo_oldtree_metif
+Writing texture: flo_oldtree_reef3tif
+Writing texture: flo_panji02tif
+Writing texture: flo_panjitif
+Writing texture: flo_renga3tif
+Writing texture: flo_renga4tif
+Writing texture: flo_rengatif
+Writing texture: flo_ryuusuitif
+Writing texture: flo_shabon4tif
+Writing texture: flo_shabon6tif
+Writing texture: flo_shabonnhanatif
+Writing texture: flo_sirohana2tif
+Writing texture: flo_sirohanatif
+Writing texture: flo_tetugousitif
+Writing texture: flo_tobiratif
+Writing texture: flo_tutitif
+Writing texture: flo_watertif
+Writing texture: flo_yabu2tif
+Building texture archive: gv__tex.txa
+Writing texture: gv__atif
+Writing texture: gv__entif
+Writing texture: gv__etif
+Writing texture: gv__gtif
+Writing texture: gv__mtif
+Writing texture: gv__otif
+Writing texture: gv__rtif
+Writing texture: gv__vtif
+Building texture archive: hos_tex.txa
+Writing texture: hos_akaritif
+Writing texture: hos_berosaidetif
+Writing texture: hos_demo_backtif
+Writing texture: hos_demo_star_btif
+Writing texture: hos_flower_02tif
+Writing texture: hos_frametif
+Writing texture: hos_fx_cartaintif
+Writing texture: hos_grayframetif
+Writing texture: hos_h_bed2tif
+Writing texture: hos_h_ha2tif
+Writing texture: hos_h_ha6tif
+Writing texture: hos_h_hana_02tif
+Writing texture: hos_h_hatif
+Writing texture: hos_h_hosikabetif
+Writing texture: hos_h_hutontif
+Writing texture: hos_h_jimentif
+Writing texture: hos_h_kabe3tif
+Writing texture: hos_h_kabe5tif
+Writing texture: hos_h_kabe6tif
+Writing texture: hos_h_karpettif
+Writing texture: hos_h_kitif
+Writing texture: hos_h_kusa02tif
+Writing texture: hos_h_mado2tif
+Writing texture: hos_h_madotif
+Writing texture: hos_h_renga3tif
+Writing texture: hos_h_renga4tif
+Writing texture: hos_h_sakutif
+Writing texture: hos_h_sinden2tif
+Writing texture: hos_h_sinden7tif
+Writing texture: hos_h_star_02tif
+Writing texture: hos_h_tobira2tif
+Writing texture: hos_h_tobira3tif
+Writing texture: hos_h_tobira4tif
+Writing texture: hos_h_yane2tif
+Writing texture: hos_hasiratif
+Writing texture: hos_hikaritif
+Writing texture: hos_hos_jimentif
+Writing texture: hos_hos_kumotif
+Writing texture: hos_hos9dentif
+Writing texture: hos_hutikusatif
+Writing texture: hos_iwa_big_demotif
+Writing texture: hos_jimen2tif
+Writing texture: hos_jimtif
+Writing texture: hos_kabe_blocktif
+Writing texture: hos_kabe2tif
+Writing texture: hos_kabe3tif
+Writing texture: hos_kazaritif
+Writing texture: hos_kinopiotif
+Writing texture: hos_kirakiratif
+Writing texture: hos_kousokutif
+Writing texture: hos_kumo2tif
+Writing texture: hos_kumo3tif
+Writing texture: hos_kumo4tif
+Writing texture: hos_kumo5tif
+Writing texture: hos_kumo6tif
+Writing texture: hos_kumo7tif
+Writing texture: hos_kusa5tif
+Writing texture: hos_kusshontif
+Writing texture: hos_linestartif
+Writing texture: hos_mac_edgetif
+Writing texture: hos_mokume2tif
+Writing texture: hos_mokume3tif
+Writing texture: hos_mon2tif
+Writing texture: hos_moontif
+Writing texture: hos_mtif
+Writing texture: hos_naminami3tif
+Writing texture: hos_ochi_mariotif
+Writing texture: hos_piramitif
+Writing texture: hos_rainbow_btif
+Writing texture: hos_rainbowtif
+Writing texture: hos_renga2tif
+Writing texture: hos_rengamiti03tif
+Writing texture: hos_rengatif
+Writing texture: hos_ryusei_gou_btif
+Writing texture: hos_ryusei_goutif
+Writing texture: hos_ryuseitif
+Writing texture: hos_shirokabetif
+Writing texture: hos_shiroyanetif
+Writing texture: hos_sirokurotif
+Writing texture: hos_star_door_demotif
+Writing texture: hos_stargate_ctif
+Writing texture: hos_stargate_etif
+Writing texture: hos_stargatetif
+Writing texture: hos_sterlighttif
+Writing texture: hos_t_hei2tif
+Writing texture: hos_t_mac_fieldtif
+Writing texture: hos_t_mac_house7tif
+Writing texture: hos_t_mac_sakutif
+Writing texture: hos_tukitif
+Writing texture: hos_water_sokotif
+Writing texture: hos_water3tif
+Writing texture: hos_watertif
+Writing texture: hos_yellow_blocktif
+Writing texture: hos_yuka6tif
+Writing texture: hos_yukatif
+Building texture archive: isk_tex.txa
+Writing texture: isk_TG2tif
+Writing texture: isk_ana_ctif
+Writing texture: isk_block_ctif
+Writing texture: isk_blocktif
+Writing texture: isk_coin_walltif
+Writing texture: isk_en_2tif
+Writing texture: isk_grayframetif
+Writing texture: isk_hatenatif
+Writing texture: isk_hekiga12tif
+Writing texture: isk_hekiga3tif
+Writing texture: isk_hekiga7tif
+Writing texture: isk_hekiga8tif
+Writing texture: isk_hekiga9tif
+Writing texture: isk_hikaritif
+Writing texture: isk_hitugi3tif
+Writing texture: isk_isk_block02btif
+Writing texture: isk_isk_block03btif
+Writing texture: isk_isk_block04btif
+Writing texture: isk_isk_yuka1tif
+Writing texture: isk_kabe_htif
+Writing texture: isk_mark2tif
+Writing texture: isk_oreme_btif
+Writing texture: isk_sabaku_btif
+Writing texture: isk_sakutif
+Writing texture: isk_sikaku_2tif
+Writing texture: isk_suna_4tif
+Writing texture: isk_suna3tif
+Writing texture: isk_tizu5tif
+Writing texture: isk_tizu6tif
+Writing texture: isk_wang1tif
+Writing texture: isk_wang2tif
+Writing texture: isk_wang3tif
+Writing texture: isk_yuka_ctif
+Building texture archive: iwa_tex.txa
+Writing texture: iwa_back_2tif
+Writing texture: iwa_berosaidetif
+Writing texture: iwa_dropwater_btif
+Writing texture: iwa_dropwatertif
+Writing texture: iwa_frametif
+Writing texture: iwa_g_and_btif
+Writing texture: iwa_green_etif
+Writing texture: iwa_hanastif
+Writing texture: iwa_hapa34tif
+Writing texture: iwa_iwa_sakutif
+Writing texture: iwa_iwa_togo_atif
+Writing texture: iwa_iwa_walltif
+Writing texture: iwa_iwa_woodtif
+Writing texture: iwa_iwasakutif
+Writing texture: iwa_kabe12tif
+Writing texture: iwa_kabekusatif
+Writing texture: iwa_komonotif
+Writing texture: iwa_mac_britshcuttif
+Writing texture: iwa_mac_britshtreetif
+Writing texture: iwa_mac_clocktif
+Writing texture: iwa_mac_edgetif
+Writing texture: iwa_mac_fieldtif
+Writing texture: iwa_mac_fumikiritif
+Writing texture: iwa_mac_house2tif
+Writing texture: iwa_mac_kemuritif
+Writing texture: iwa_mac_koushitif
+Writing texture: iwa_mac_pistontif
+Writing texture: iwa_mac_railwaytif
+Writing texture: iwa_mac_roof1tif
+Writing texture: iwa_mac_sakutif
+Writing texture: iwa_mac_senrosakutif
+Writing texture: iwa_midori03tif
+Writing texture: iwa_nejiwoodtif
+Writing texture: iwa_noisetif
+Writing texture: iwa_popo_4rtif
+Writing texture: iwa_popo_5tif
+Writing texture: iwa_reef_ltif
+Writing texture: iwa_roadtif
+Writing texture: iwa_rock_edge_atif
+Writing texture: iwa_rock_edge_stif
+Writing texture: iwa_rock_edgetif
+Writing texture: iwa_ropetif
+Writing texture: iwa_s_road_2tif
+Writing texture: iwa_s_road_3tif
+Writing texture: iwa_sakutif
+Writing texture: iwa_steamtif
+Writing texture: iwa_su_1tif
+Writing texture: iwa_suberidaitif
+Writing texture: iwa_sutif
+Writing texture: iwa_syarintif
+Writing texture: iwa_t_taki1tif
+Writing texture: iwa_temae1tif
+Writing texture: iwa_wood_pole_b_btif
+Building texture archive: jan_tex.txa
+Writing texture: jan_bananahatif
+Writing texture: jan_berosaidetif
+Writing texture: jan_block_ctif
+Writing texture: jan_boaltif
+Writing texture: jan_cycad_reeftif
+Writing texture: jan_cycadtif
+Writing texture: jan_daikinohatif
+Writing texture: jan_dekaikitif
+Writing texture: jan_flower_02tif
+Writing texture: jan_frametif
+Writing texture: jan_green_ctif
+Writing texture: jan_hana_ftif
+Writing texture: jan_hikiato2tif
+Writing texture: jan_hoppetif
+Writing texture: jan_hunsuitif
+Writing texture: jan_iwashitatif
+Writing texture: jan_iwatemaetif
+Writing texture: jan_iwayukatif
+Writing texture: jan_j_isi2tif
+Writing texture: jan_j_isitif
+Writing texture: jan_j_iwatif
+Writing texture: jan_j_kazariha2tif
+Writing texture: jan_j_sakutif
+Writing texture: jan_j_tuta02tif
+Writing texture: jan_j_tuta06tif
+Writing texture: jan_j_tutatif
+Writing texture: jan_j_tutitif
+Writing texture: jan_jan_jimentif
+Writing texture: jan_jan_kabemizutif
+Writing texture: jan_jan_kabetif
+Writing texture: jan_jan_kukitif
+Writing texture: jan_jan_marutatif
+Writing texture: jan_jan_mizukabetif
+Writing texture: jan_jan_reef02tif
+Writing texture: jan_jan_reeftif
+Writing texture: jan_jan_sigemi_02tif
+Writing texture: jan_jan_sigemitif
+Writing texture: jan_jan_treetif
+Writing texture: jan_janguluhatif
+Writing texture: jan_jangulukusa_02tif
+Writing texture: jan_jangulukusa4tif
+Writing texture: jan_jangulukusatif
+Writing texture: jan_jankitif
+Writing texture: jan_jb_hasira3tif
+Writing texture: jan_jb_isitif
+Writing texture: jan_jb_moyou2tif
+Writing texture: jan_jb_moyou3tif
+Writing texture: jan_kagotif
+Writing texture: jan_kanbantif
+Writing texture: jan_kassya2tif
+Writing texture: jan_kassyatif
+Writing texture: jan_kinoha5tif
+Writing texture: jan_kinoita3tif
+Writing texture: jan_kinoita4tif
+Writing texture: jan_kinoitatif
+Writing texture: jan_kinokusa2tif
+Writing texture: jan_kinokusa6tif
+Writing texture: jan_kinokusatif
+Writing texture: jan_kinometif
+Writing texture: jan_kinopiotif
+Writing texture: jan_kokekusatif
+Writing texture: jan_kujira_haratif
+Writing texture: jan_kusa5tif
+Writing texture: jan_kusatif
+Writing texture: jan_mac_house6tif
+Writing texture: jan_nami2tif
+Writing texture: jan_naminami4tif
+Writing texture: jan_namitif
+Writing texture: jan_qchannosutif
+Writing texture: jan_rock_btif
+Writing texture: jan_ropetif
+Writing texture: jan_sima4tif
+Writing texture: jan_sunahama4tif
+Writing texture: jan_t_dokankun3tif
+Writing texture: jan_t_iwahashitif
+Writing texture: jan_t_iwayougantif
+Writing texture: jan_t_sizuku1tif
+Writing texture: jan_to1_iwakabetif
+Writing texture: jan_tree_jantif
+Writing texture: jan_tutitutitif
+Writing texture: jan_yasiha4tif
+Writing texture: jan_yasiki2tif
+Writing texture: jan_yasimi2tif
+Writing texture: jan_yougantif
+Building texture archive: kgr_tex.txa
+Writing texture: kgr_binn2tif
+Writing texture: kgr_grayframetif
+Writing texture: kgr_kinoitatif
+Writing texture: kgr_m_honetif
+Writing texture: kgr_m_kabe2tif
+Writing texture: kgr_m_kabetif
+Writing texture: kgr_mac_berotif
+Writing texture: kgr_mac_doortif
+Writing texture: kgr_mac_house2tif
+Writing texture: kgr_water3tif
+Building texture archive: kkj_tex.txa
+Writing texture: kkj_akaritif
+Writing texture: kkj_berosaidetif
+Writing texture: kkj_bouquettif
+Writing texture: kkj_brcktif
+Writing texture: kkj_checktif
+Writing texture: kkj_d_kitif
+Writing texture: kkj_d_lighttif
+Writing texture: kkj_dec_planttif
+Writing texture: kkj_donchoutif
+Writing texture: kkj_doresu_02tif
+Writing texture: kkj_etif
+Writing texture: kkj_floor_btif
+Writing texture: kkj_goldsakutif
+Writing texture: kkj_grayframetif
+Writing texture: kkj_hana_ftif
+Writing texture: kkj_hanatif
+Writing texture: kkj_hikaritif
+Writing texture: kkj_hikidasitif
+Writing texture: kkj_hon2tif
+Writing texture: kkj_hon3tif
+Writing texture: kkj_hon4tif
+Writing texture: kkj_hontif
+Writing texture: kkj_huwahuwa3tif
+Writing texture: kkj_i_togetif
+Writing texture: kkj_iwatif
+Writing texture: kkj_jyuutan2tif
+Writing texture: kkj_k_batutif
+Writing texture: kkj_k_denki11tif
+Writing texture: kkj_k_denki12tif
+Writing texture: kkj_k_denki13tif
+Writing texture: kkj_k_denki14tif
+Writing texture: kkj_k_denki15tif
+Writing texture: kkj_k_donchoutif
+Writing texture: kkj_k_eggtif
+Writing texture: kkj_k_hatenatif
+Writing texture: kkj_k_hutontif
+Writing texture: kkj_k_itigotif
+Writing texture: kkj_k_kabe2tif
+Writing texture: kkj_k_kabesitatif
+Writing texture: kkj_k_konatif
+Writing texture: kkj_k_kumo_02tif
+Writing texture: kkj_k_kumotif
+Writing texture: kkj_k_marutif
+Writing texture: kkj_k_mokumetif
+Writing texture: kkj_k_nabe2tif
+Writing texture: kkj_k_nagasitif
+Writing texture: kkj_k_obuntif
+Writing texture: kkj_k_otamatif
+Writing texture: kkj_k_pole02tif
+Writing texture: kkj_k_senzaitif
+Writing texture: kkj_k_star_doortif
+Writing texture: kkj_k_teppann2tif
+Writing texture: kkj_k_tutitif
+Writing texture: kkj_k_walltif
+Writing texture: kkj_k_yuka2tif
+Writing texture: kkj_k_yuka4tif
+Writing texture: kkj_kabe_blocktif
+Writing texture: kkj_kabe_edgetif
+Writing texture: kkj_kabekazaritif
+Writing texture: kkj_kabin3tif
+Writing texture: kkj_kabintif
+Writing texture: kkj_kagetif
+Writing texture: kkj_kagotif
+Writing texture: kkj_kazaritif
+Writing texture: kkj_kinoita3tif
+Writing texture: kkj_kinotif
+Writing texture: kkj_kkj_bouquettif
+Writing texture: kkj_kkj_chandeliertif
+Writing texture: kkj_kkj_kabetif
+Writing texture: kkj_kkj_planttif
+Writing texture: kkj_kkj_poletif
+Writing texture: kkj_kkj_star_doortif
+Writing texture: kkj_kkj_wall3tif
+Writing texture: kkj_kkj_walltif
+Writing texture: kkj_kusshontif
+Writing texture: kkj_long_windowtif
+Writing texture: kkj_mac_fieldtif
+Writing texture: kkj_mac_house7tif
+Writing texture: kkj_mac_house8tif
+Writing texture: kkj_mado_akaritif
+Writing texture: kkj_madotif
+Writing texture: kkj_metif
+Writing texture: kkj_nunosiwatif
+Writing texture: kkj_puropera2tif
+Writing texture: kkj_red_carpettif
+Writing texture: kkj_relieftif
+Writing texture: kkj_ropetif
+Writing texture: kkj_rousoku_ftif
+Writing texture: kkj_rousoku4tif
+Writing texture: kkj_sakutif
+Writing texture: kkj_saratif
+Writing texture: kkj_shirokabetif
+Writing texture: kkj_shiroyanetif
+Writing texture: kkj_star_door_bluetif
+Writing texture: kkj_sunlighttif
+Writing texture: kkj_tesuritif
+Writing texture: kkj_tokei_dtif
+Writing texture: kkj_tukue2tif
+Writing texture: kkj_tukuetif
+Writing texture: kkj_wall_etif
+Writing texture: kkj_wall_mtif
+Writing texture: kkj_yellow_blocktif
+Writing texture: kkj_yuka6tif
+Building texture archive: kmr_tex.txa
+Writing texture: kmr_00_0tif
+Writing texture: kmr_00_reef_ltif
+Writing texture: kmr_00_reef_mtif
+Writing texture: kmr_00a_reef_h2tif
+Writing texture: kmr_00b_reef_h2tif
+Writing texture: kmr_berandatif
+Writing texture: kmr_berosaidetif
+Writing texture: kmr_bintif
+Writing texture: kmr_block_smalltif
+Writing texture: kmr_castle_pointtif
+Writing texture: kmr_cha_kinokotif
+Writing texture: kmr_dec_planttif
+Writing texture: kmr_dokantif
+Writing texture: kmr_door_01_btif
+Writing texture: kmr_dtif
+Writing texture: kmr_etif
+Writing texture: kmr_fencetif
+Writing texture: kmr_flower_01tif
+Writing texture: kmr_frametif
+Writing texture: kmr_graytif
+Writing texture: kmr_gree_edge1tif
+Writing texture: kmr_gree_edgetif
+Writing texture: kmr_green_c_roadtif
+Writing texture: kmr_green_ctif
+Writing texture: kmr_green_edgetif
+Writing texture: kmr_green_etif
+Writing texture: kmr_green_wtif
+Writing texture: kmr_hangatif
+Writing texture: kmr_hashi53tif
+Writing texture: kmr_heya_2tif
+Writing texture: kmr_htif
+Writing texture: kmr_in_2tif
+Writing texture: kmr_iwashitatif
+Writing texture: kmr_iwatemaetif
+Writing texture: kmr_iwatif
+Writing texture: kmr_iwayukatif
+Writing texture: kmr_kanbantif
+Writing texture: kmr_kemuritif
+Writing texture: kmr_kidayotif
+Writing texture: kmr_kinopiotif
+Writing texture: kmr_kkg_doortif
+Writing texture: kmr_kkg_madotif
+Writing texture: kmr_kkg_wall_atif
+Writing texture: kmr_kkg_wall_btif
+Writing texture: kmr_kkg_wall_ctif
+Writing texture: kmr_kkg_yukatif
+Writing texture: kmr_kmr_batu01tif
+Writing texture: kmr_kmr_green_00c_1tif
+Writing texture: kmr_kmr_green_00c_2tif
+Writing texture: kmr_kmr_sakutif
+Writing texture: kmr_kmr_waku3tif
+Writing texture: kmr_krm_gaketif
+Writing texture: kmr_kurikinokotif
+Writing texture: kmr_layer_c2tif
+Writing texture: kmr_layer_ctif
+Writing texture: kmr_m_backtif
+Writing texture: kmr_m_carpettif
+Writing texture: kmr_m_hanatif
+Writing texture: kmr_m_hontif
+Writing texture: kmr_m_kanban2tif
+Writing texture: kmr_m_kanban3tif
+Writing texture: kmr_m_mado3tif
+Writing texture: kmr_m_madotif
+Writing texture: kmr_m_tikatif
+Writing texture: kmr_m_turuhatif
+Writing texture: kmr_m_turutif
+Writing texture: kmr_mac_edgetif
+Writing texture: kmr_mac_fieldtif
+Writing texture: kmr_mac_house2tif
+Writing texture: kmr_mac_house3tif
+Writing texture: kmr_mac_house7tif
+Writing texture: kmr_mac_roof1tif
+Writing texture: kmr_mattif
+Writing texture: kmr_nagatif
+Writing texture: kmr_nenrintif
+Writing texture: kmr_ntif
+Writing texture: kmr_reef_00h_itif
+Writing texture: kmr_reef_00htif
+Writing texture: kmr_reef_htif
+Writing texture: kmr_reef_i_kukitif
+Writing texture: kmr_reef_itif
+Writing texture: kmr_reef_jtif
+Writing texture: kmr_reef_ltif
+Writing texture: kmr_reef_mtif
+Writing texture: kmr_reef_ntif
+Writing texture: kmr_reef_ptif
+Writing texture: kmr_s_roadberotif
+Writing texture: kmr_s_roadtif
+Writing texture: kmr_skystartif
+Writing texture: kmr_star_objtif
+Writing texture: kmr_t_dokankun3tif
+Writing texture: kmr_t_iwahashiratif
+Writing texture: kmr_t_iwahashitif
+Writing texture: kmr_t_iwakabe2tif
+Writing texture: kmr_t_iwayougantif
+Writing texture: kmr_tatetif
+Writing texture: kmr_teritif
+Writing texture: kmr_to1_iwakabetif
+Writing texture: kmr_ttif
+Writing texture: kmr_uso_kinokotif
+Writing texture: kmr_windou_frametif
+Writing texture: kmr_wood_ctif
+Writing texture: kmr_wood_dtif
+Writing texture: kmr_wood_floor_ctif
+Writing texture: kmr_woody_plate_jtif
+Writing texture: kmr_yougantif
+Writing texture: kmr_yuka6tif
+Building texture archive: kpa_tex.txa
+Writing texture: kpa_akari02tif
+Writing texture: kpa_ana_ctif
+Writing texture: kpa_backtif
+Writing texture: kpa_batu01tif
+Writing texture: kpa_berosaidetif
+Writing texture: kpa_chandeliertif
+Writing texture: kpa_coin3tif
+Writing texture: kpa_doa2tif
+Writing texture: kpa_edge_atif
+Writing texture: kpa_floor_btif
+Writing texture: kpa_floor_ctif
+Writing texture: kpa_floortif
+Writing texture: kpa_grayframetif
+Writing texture: kpa_hi_01tif
+Writing texture: kpa_hitif
+Writing texture: kpa_iwa_bigtif
+Writing texture: kpa_iwagattaitif
+Writing texture: kpa_jimtif
+Writing texture: kpa_jutantif
+Writing texture: kpa_k_ana02tif
+Writing texture: kpa_k_sakutif
+Writing texture: kpa_k_taki1tif
+Writing texture: kpa_kabe_blocktif
+Writing texture: kpa_kabe12btif
+Writing texture: kpa_kabe12tif
+Writing texture: kpa_kabe17tif
+Writing texture: kpa_kabe18tif
+Writing texture: kpa_kabe19tif
+Writing texture: kpa_kabe4btif
+Writing texture: kpa_kabe4tif
+Writing texture: kpa_kabe8btif
+Writing texture: kpa_kabe8tif
+Writing texture: kpa_kinoitatif
+Writing texture: kpa_kpa_greentif
+Writing texture: kpa_kpa_hako10tif
+Writing texture: kpa_kpa_hako6tif
+Writing texture: kpa_kpa_madotif
+Writing texture: kpa_kpa_yaritif
+Writing texture: kpa_kpa_yohane2tif
+Writing texture: kpa_kpa_yohane3tif
+Writing texture: kpa_kpa5_eyetif
+Writing texture: kpa_kpasmoketif
+Writing texture: kpa_kumo2tif
+Writing texture: kpa_kumotif
+Writing texture: kpa_kup_floor1tif
+Writing texture: kpa_kup_floor2tif
+Writing texture: kpa_kup_kumo1tif
+Writing texture: kpa_kup_wall1tif
+Writing texture: kpa_kup_wall2tif
+Writing texture: kpa_kup_wall3tif
+Writing texture: kpa_kup_wall4tif
+Writing texture: kpa_kup_window1tif
+Writing texture: kpa_kuppatif
+Writing texture: kpa_kusari_uetif
+Writing texture: kpa_kusaritif
+Writing texture: kpa_maru01tif
+Writing texture: kpa_me_atif
+Writing texture: kpa_mtif
+Writing texture: kpa_patarntif
+Writing texture: kpa_plane_blocktif
+Writing texture: kpa_renga_btif
+Writing texture: kpa_ryusei_gou_btif
+Writing texture: kpa_ryusei_goutif
+Writing texture: kpa_shirokabetif
+Writing texture: kpa_shiroyanetif
+Writing texture: kpa_star_doortif
+Writing texture: kpa_sui1tif
+Writing texture: kpa_syounyuudou2tif
+Writing texture: kpa_syounyuudou4tif
+Writing texture: kpa_t_marutif
+Writing texture: kpa_tesuri2tif
+Writing texture: kpa_to_wall_aatif
+Writing texture: kpa_togetif
+Writing texture: kpa_trd_kusaritif
+Writing texture: kpa_tsubotif
+Writing texture: kpa_wall_atif
+Writing texture: kpa_wall_btif
+Writing texture: kpa_wall_ctif
+Writing texture: kpa_wall_dtif
+Writing texture: kpa_wall_ftif
+Writing texture: kpa_water3tif
+Writing texture: kpa_windowtif
+Writing texture: kpa_yellow_blocktif
+Writing texture: kpa_yogan04tif
+Writing texture: kpa_yougan05tif
+Writing texture: kpa_yuka2tif
+Writing texture: kpa_yuka3tif
+Writing texture: kpa_yuka5tif
+Writing texture: kpa_yukatif
+Writing texture: kpa_zyou1tif
+Writing texture: kpa_zyou2tif
+Writing texture: kpa_zyou3tif
+Building texture archive: kzn_tex.txa
+Writing texture: kzn_boaltif
+Writing texture: kzn_bubble_3tif
+Writing texture: kzn_bubbletif
+Writing texture: kzn_fpack_headtif
+Writing texture: kzn_fpack_kuki0tif
+Writing texture: kzn_fpack_kuki1tif
+Writing texture: kzn_fpack_shokushutif
+Writing texture: kzn_goron_togetif
+Writing texture: kzn_gorontif
+Writing texture: kzn_grayframetif
+Writing texture: kzn_hibitif
+Writing texture: kzn_iwashitatif
+Writing texture: kzn_iwatemae_itif
+Writing texture: kzn_iwatemaetif
+Writing texture: kzn_iwayukatif
+Writing texture: kzn_kassya2tif
+Writing texture: kzn_kassyatif
+Writing texture: kzn_kemuritif
+Writing texture: kzn_kzn_renga1tif
+Writing texture: kzn_ropetif
+Writing texture: kzn_t_ha_iwahashiratif
+Writing texture: kzn_t_iwahashiratif
+Writing texture: kzn_t_iwahashitif
+Writing texture: kzn_t_iwakabe2_iitif
+Writing texture: kzn_t_iwakabe2tif
+Writing texture: kzn_t_iwapointtif
+Writing texture: kzn_t_iwayougantif
+Writing texture: kzn_t1_iwakabetif
+Writing texture: kzn_tatetif
+Writing texture: kzn_to1_iwakabetif
+Writing texture: kzn_yougan05tif
+Writing texture: kzn_yougantif
+Writing texture: kzn_yuka_btif
+Building texture archive: mac_tex.txa
+Writing texture: mac_ahotif
+Writing texture: mac_berosaidetif
+Writing texture: mac_boo_bushtif
+Writing texture: mac_bottlestif
+Writing texture: mac_club64tif
+Writing texture: mac_curtaintif
+Writing texture: mac_dec_planttif
+Writing texture: mac_decorationtif
+Writing texture: mac_dr_curtaintif
+Writing texture: mac_dr_yukatif
+Writing texture: mac_flokukitif
+Writing texture: mac_flotif
+Writing texture: mac_flower_02tif
+Writing texture: mac_flowertif
+Writing texture: mac_frametif
+Writing texture: mac_fx_cartaintif
+Writing texture: mac_green_etif
+Writing texture: mac_hanatif
+Writing texture: mac_hontif
+Writing texture: mac_hoppetif
+Writing texture: mac_kanban_ekitif
+Writing texture: mac_kinoitatif
+Writing texture: mac_kinoko_town_ustif
+Writing texture: mac_kinokodoutif
+Writing texture: mac_kinopiotif
+Writing texture: mac_kitchentif
+Writing texture: mac_kkj_gatetif
+Writing texture: mac_komonotif
+Writing texture: mac_kujira_haratif
+Writing texture: mac_kusa1tif
+Writing texture: mac_l_0tif
+Writing texture: mac_l_1tif
+Writing texture: mac_l_2tif
+Writing texture: mac_l_3tif
+Writing texture: mac_l_4tif
+Writing texture: mac_l_5tif
+Writing texture: mac_l_6tif
+Writing texture: mac_l_7tif
+Writing texture: mac_mac_britshcuttif
+Writing texture: mac_mac_britshtreetif
+Writing texture: mac_mac_clocktif
+Writing texture: mac_mac_doortif
+Writing texture: mac_mac_edgetif
+Writing texture: mac_mac_fieldtif
+Writing texture: mac_mac_fumikiritif
+Writing texture: mac_mac_futontif
+Writing texture: mac_mac_hashigotif
+Writing texture: mac_mac_house2tif
+Writing texture: mac_mac_house3tif
+Writing texture: mac_mac_house4tif
+Writing texture: mac_mac_house5tif
+Writing texture: mac_mac_house6tif
+Writing texture: mac_mac_house7tif
+Writing texture: mac_mac_house8tif
+Writing texture: mac_mac_housedertif
+Writing texture: mac_mac_jutan_uratif
+Writing texture: mac_mac_jutantif
+Writing texture: mac_mac_kadantif
+Writing texture: mac_mac_kemuritif
+Writing texture: mac_mac_koushitif
+Writing texture: mac_mac_pistontif
+Writing texture: mac_mac_railwaytif
+Writing texture: mac_mac_ranma2tif
+Writing texture: mac_mac_roof1tif
+Writing texture: mac_mac_roofdertif
+Writing texture: mac_mac_sakutif
+Writing texture: mac_mac_senrosakutif
+Writing texture: mac_mac_taremakutif
+Writing texture: mac_mac_ukiwatif
+Writing texture: mac_mac_waku1tif
+Writing texture: mac_mac_waku2tif
+Writing texture: mac_mac_waku3tif
+Writing texture: mac_mac_waku4tif
+Writing texture: mac_mac_window2tif
+Writing texture: mac_mac_window3tif
+Writing texture: mac_mac_windowtif
+Writing texture: mac_mac_woodgstif
+Writing texture: mac_mac_woodtif
+Writing texture: mac_mac_ytana2tif
+Writing texture: mac_mac_ytanatif
+Writing texture: mac_macdoortif
+Writing texture: mac_mirror2tif
+Writing texture: mac_mizutif
+Writing texture: mac_newspapertif
+Writing texture: mac_papertif
+Writing texture: mac_popo_4stif
+Writing texture: mac_popo_5tif
+Writing texture: mac_post_kanbantif
+Writing texture: mac_rakugakitif
+Writing texture: mac_relieftif
+Writing texture: mac_road_signtif
+Writing texture: mac_rock_3btif
+Writing texture: mac_s_roadberotif
+Writing texture: mac_standtif
+Writing texture: mac_syarintif
+Writing texture: mac_t_dokankun3tif
+Writing texture: mac_tablecrosstif
+Writing texture: mac_tanatif
+Writing texture: mac_tobiratif
+Writing texture: mac_toyboxtif
+Writing texture: mac_umisokotif
+Writing texture: mac_umitif
+Writing texture: mac_wall_mtif
+Writing texture: mac_wood_pole_btif
+Building texture archive: mgm_tex.txa
+Writing texture: mgm_1cointif
+Writing texture: mgm_3coinstif
+Writing texture: mgm_3timestif
+Writing texture: mgm_boardtif
+Writing texture: mgm_c1tif
+Writing texture: mgm_floortif
+Writing texture: mgm_hishitif
+Writing texture: mgm_kino_box_btif
+Writing texture: mgm_kino_box_gtif
+Writing texture: mgm_koopa_cardtif
+Writing texture: mgm_peach_cointif
+Writing texture: mgm_platetif
+Writing texture: mgm_spottif
+Writing texture: mgm_star_floortif
+Writing texture: mgm_t_dokankun3tif
+Building texture archive: mim_tex.txa
+Writing texture: mim_bedtif
+Writing texture: mim_berosaidetif
+Writing texture: mim_danrotif
+Writing texture: mim_dark_berotif
+Writing texture: mim_dark_bushtif
+Writing texture: mim_dark_eye444tif
+Writing texture: mim_dark_hana1tif
+Writing texture: mim_dark_hana3tif
+Writing texture: mim_dark_kinoko2tif
+Writing texture: mim_dark_kinokotif
+Writing texture: mim_dark_mitikusatif
+Writing texture: mim_dark_mouse2tif
+Writing texture: mim_dark_mouse3tif
+Writing texture: mim_dark_redeyetif
+Writing texture: mim_dark_reeftif
+Writing texture: mim_dark_roadtif
+Writing texture: mim_dark_rocktif
+Writing texture: mim_darkgreen2tif
+Writing texture: mim_darkwoodtif
+Writing texture: mim_doortif
+Writing texture: mim_grayframetif
+Writing texture: mim_h_greentif
+Writing texture: mim_h_kabe2tif
+Writing texture: mim_h_kabetif
+Writing texture: mim_h_kazaritif
+Writing texture: mim_h_sakutif
+Writing texture: mim_h_yane1tif
+Writing texture: mim_hachinosutif
+Writing texture: mim_hanatif
+Writing texture: mim_hashira_atif
+Writing texture: mim_hashiratif
+Writing texture: mim_hilltif
+Writing texture: mim_iwa_2tif
+Writing texture: mim_kabebe_mtif
+Writing texture: mim_kaidan_5tif
+Writing texture: mim_kare_edatif
+Writing texture: mim_kusa1tif
+Writing texture: mim_kusaritif
+Writing texture: mim_kusatif
+Writing texture: mim_mac_britshcuttif
+Writing texture: mim_mac_britshtreetif
+Writing texture: mim_mac_edgetif
+Writing texture: mim_mac_sakutif
+Writing texture: mim_mado_2tif
+Writing texture: mim_wood_floor_ctif
+Writing texture: mim_yuka_t1tif
+Writing texture: mim_yuka_tairu3tif
+Writing texture: mim_zimen2tif
+Building texture archive: nok_tex.txa
+Writing texture: nok_amitif
+Writing texture: nok_ana_ctif
+Writing texture: nok_back_2tif
+Writing texture: nok_berosaidetif
+Writing texture: nok_block_ctif
+Writing texture: nok_blook2tif
+Writing texture: nok_blooktif
+Writing texture: nok_dec_planttif
+Writing texture: nok_flower_02tif
+Writing texture: nok_frametif
+Writing texture: nok_g_and_btif
+Writing texture: nok_green_etif
+Writing texture: nok_hana_btif
+Writing texture: nok_hana_ftif
+Writing texture: nok_hanastif
+Writing texture: nok_hapa34tif
+Writing texture: nok_hapatif
+Writing texture: nok_hashi33tif
+Writing texture: nok_hon2tif
+Writing texture: nok_hontif
+Writing texture: nok_huton_02tif
+Writing texture: nok_itatif
+Writing texture: nok_iwa_atif
+Writing texture: nok_jimentif
+Writing texture: nok_kabe10tif
+Writing texture: nok_kabe12_btif
+Writing texture: nok_kabe12_wtif
+Writing texture: nok_kabe12tif
+Writing texture: nok_kabe6tif
+Writing texture: nok_kabe8tif
+Writing texture: nok_kabegami_3tif
+Writing texture: nok_kabegami_ftif
+Writing texture: nok_kabekusatif
+Writing texture: nok_kabetif
+Writing texture: nok_kanban4tif
+Writing texture: nok_kanban6tif
+Writing texture: nok_kinopiotif
+Writing texture: nok_kirakiratif
+Writing texture: nok_kishikakutif
+Writing texture: nok_kusakusa1tif
+Writing texture: nok_kusatif
+Writing texture: nok_log_sidetif
+Writing texture: nok_mac_fieldtif
+Writing texture: nok_mac_house7tif
+Writing texture: nok_mac_house8tif
+Writing texture: nok_mac_sakutif
+Writing texture: nok_mado_9tif
+Writing texture: nok_midori03tif
+Writing texture: nok_miki4tif
+Writing texture: nok_n_yasihatif
+Writing texture: nok_n_yasikitif
+Writing texture: nok_nagaretif
+Writing texture: nok_nok_suimentif
+Writing texture: nok_radio2tif
+Writing texture: nok_reef_htif
+Writing texture: nok_reef_i_kukitif
+Writing texture: nok_ren_atif
+Writing texture: nok_renga_edgetif
+Writing texture: nok_renga10tif
+Writing texture: nok_renga12tif
+Writing texture: nok_sabaku_btif
+Writing texture: nok_sakusakutif
+Writing texture: nok_sakusatif
+Writing texture: nok_sakutif
+Writing texture: nok_simatif
+Writing texture: nok_t_dokankun3tif
+Writing texture: nok_tana_1tif
+Writing texture: nok_tana_3tif
+Writing texture: nok_tana_ctif
+Writing texture: nok_temae1tif
+Writing texture: nok_tesuritif
+Writing texture: nok_tizutif
+Writing texture: nok_turu_1tif
+Writing texture: nok_wall_mtif
+Writing texture: nok_water_sokotif
+Writing texture: nok_wood_floor_ctif
+Writing texture: nok_yuka3tif
+Writing texture: nok_yuka6tif
+Writing texture: nok_yuka7tif
+Writing texture: nok_yukatif
+Building texture archive: obk_tex.txa
+Writing texture: obk_bedtif
+Writing texture: obk_danrotif
+Writing texture: obk_denki_3btif
+Writing texture: obk_denki_rtif
+Writing texture: obk_denki64tif
+Writing texture: obk_door_01_btif
+Writing texture: obk_door_1tif
+Writing texture: obk_doortif
+Writing texture: obk_hashira_atif
+Writing texture: obk_hashira_u_1tif
+Writing texture: obk_hashiratif
+Writing texture: obk_hei_1tif
+Writing texture: obk_heitif
+Writing texture: obk_hi_1_atif
+Writing texture: obk_hibitif
+Writing texture: obk_hokori1tif
+Writing texture: obk_hon2tif
+Writing texture: obk_howahowa_mtif
+Writing texture: obk_howahowatif
+Writing texture: obk_kabe_heyatif
+Writing texture: obk_kabebe_12tif
+Writing texture: obk_kabebe_mtif
+Writing texture: obk_kabebetif
+Writing texture: obk_kaidan_01tif
+Writing texture: obk_kaidan_3tif
+Writing texture: obk_kaidan_5tif
+Writing texture: obk_kaidan_6tif
+Writing texture: obk_kaidantif
+Writing texture: obk_kusari_stif
+Writing texture: obk_kusaritif
+Writing texture: obk_mado_3tif
+Writing texture: obk_mattif
+Writing texture: obk_nuno_1tif
+Writing texture: obk_nuno_2tif
+Writing texture: obk_nuno_3tif
+Writing texture: obk_reco2tif
+Writing texture: obk_sofatif
+Writing texture: obk_sotokabetif
+Writing texture: obk_tabul_1tif
+Writing texture: obk_tabultif
+Writing texture: obk_takitif
+Writing texture: obk_tansutif
+Writing texture: obk_tere_e_a_2tif
+Writing texture: obk_tere_tere_ttif
+Writing texture: obk_tere_teretif
+Writing texture: obk_tererere_1tif
+Writing texture: obk_tererere_2tif
+Writing texture: obk_tkomonotif
+Writing texture: obk_to_1tif
+Writing texture: obk_tokeitif
+Writing texture: obk_totif
+Writing texture: obk_yuka_mctif
+Writing texture: obk_yuka_t1tif
+Writing texture: obk_yuka_tairu3tif
+Writing texture: obk_yuka_tairutif
+Building texture archive: omo_tex.txa
+Writing texture: omo_1tif
+Writing texture: omo_2tif
+Writing texture: omo_3tif
+Writing texture: omo_4tif
+Writing texture: omo_5tif
+Writing texture: omo_a_2tif
+Writing texture: omo_amiami2tif
+Writing texture: omo_ana_2tif
+Writing texture: omo_berosaidetif
+Writing texture: omo_c_s2_2_utif
+Writing texture: omo_c_s2_2tif
+Writing texture: omo_c_s2_3_utif
+Writing texture: omo_c_s2_3tif
+Writing texture: omo_c_s2_4_utif
+Writing texture: omo_c_s2_4tif
+Writing texture: omo_c_s2_6_utif
+Writing texture: omo_c_s2_6tif
+Writing texture: omo_c_s23tif
+Writing texture: omo_denkitif
+Writing texture: omo_e_1_1tif
+Writing texture: omo_e_2tif
+Writing texture: omo_e_r2tif
+Writing texture: omo_e_rgtif
+Writing texture: omo_e_rhtif
+Writing texture: omo_e_ritif
+Writing texture: omo_e1tif
+Writing texture: omo_e2tif
+Writing texture: omo_etif
+Writing texture: omo_frametif
+Writing texture: omo_humitif
+Writing texture: omo_i_2tif
+Writing texture: omo_jamp2tif
+Writing texture: omo_kabe_2tif
+Writing texture: omo_kabe2tif
+Writing texture: omo_kabetif
+Writing texture: omo_kazaritif
+Writing texture: omo_kmr_saku2tif
+Writing texture: omo_kmr_saku333tif
+Writing texture: omo_kmr_sakutif
+Writing texture: omo_linetif
+Writing texture: omo_m1_atif
+Writing texture: omo_m2_atif
+Writing texture: omo_m3_atif
+Writing texture: omo_m4_atif
+Writing texture: omo_m5_atif
+Writing texture: omo_m6_atif
+Writing texture: omo_mado_2tif
+Writing texture: omo_mado_3_1tif
+Writing texture: omo_madotif
+Writing texture: omo_n_2tif
+Writing texture: omo_nezi2tif
+Writing texture: omo_nor_1btif
+Writing texture: omo_nor_3ctif
+Writing texture: omo_nor_nejitif
+Writing texture: omo_nor_syarintif
+Writing texture: omo_o_2tif
+Writing texture: omo_omo_2_3tif
+Writing texture: omo_omo_3tif
+Writing texture: omo_omo_hibitif
+Writing texture: omo_po_2tif
+Writing texture: omo_potif
+Writing texture: omo_s_2tif
+Writing texture: omo_senro_2tif
+Writing texture: omo_senrotif
+Writing texture: omo_shirotif
+Writing texture: omo_shirushi_1tif
+Writing texture: omo_shirushi_2tif
+Writing texture: omo_shirushi_3tif
+Writing texture: omo_shirushi_4tif
+Writing texture: omo_shy_atafuta0tif
+Writing texture: omo_slot_3_1_2tif
+Writing texture: omo_slot_3tif
+Writing texture: omo_slot_cointif
+Writing texture: omo_slot_miniheitif
+Writing texture: omo_slot_startif
+Writing texture: omo_slottif
+Writing texture: omo_start1tif
+Writing texture: omo_t_2tif
+Writing texture: omo_tokeitif
+Writing texture: omo_tumiki_1tif
+Writing texture: omo_tumiki_2_1tif
+Writing texture: omo_tumiki_3_1_2tif
+Writing texture: omo_tumiki_4_1tif
+Writing texture: omo_tumiki_4_atif
+Writing texture: omo_tumiki_5_1tif
+Writing texture: omo_tumiki_7_1tif
+Writing texture: omo_tumiki_8_1tif
+Writing texture: omo_wood_floor_ctif
+Writing texture: omo_yaji_1tif
+Writing texture: omo_yaji1_1tif
+Writing texture: omo_yaji1tif
+Writing texture: omo_yajiruc_1itif
+Writing texture: omo_yajitif
+Writing texture: omo_yane_atif
+Writing texture: omo_yuka_block3tif
+Writing texture: omo_yuka_block4_1tif
+Writing texture: omo_yuka_block4tif
+Building texture archive: osr_tex.txa
+Writing texture: osr_berosaidetif
+Writing texture: osr_bloktif
+Writing texture: osr_brcktif
+Writing texture: osr_checktif
+Writing texture: osr_dec_planttif
+Writing texture: osr_doa2tif
+Writing texture: osr_flagtif
+Writing texture: osr_floortif
+Writing texture: osr_frametif
+Writing texture: osr_funtif
+Writing texture: osr_gake_atif
+Writing texture: osr_gake_btif
+Writing texture: osr_grayframetif
+Writing texture: osr_green_etif
+Writing texture: osr_hanatif
+Writing texture: osr_howahowatif
+Writing texture: osr_i_togetif
+Writing texture: osr_iwa_bigtif
+Writing texture: osr_iwagattaitif
+Writing texture: osr_jim2tif
+Writing texture: osr_jimentif
+Writing texture: osr_jimtif
+Writing texture: osr_k_star_doortif
+Writing texture: osr_k_walltif
+Writing texture: osr_kabe_blocktif
+Writing texture: osr_kabe_edgetif
+Writing texture: osr_kemuri_anitif
+Writing texture: osr_kinotif
+Writing texture: osr_kumo3tif
+Writing texture: osr_kumotif
+Writing texture: osr_kusari_uetif
+Writing texture: osr_kusaritif
+Writing texture: osr_mac_britshcuttif
+Writing texture: osr_mac_britshtreetif
+Writing texture: osr_mac_edgetif
+Writing texture: osr_mac_field_gakestif
+Writing texture: osr_mac_field_gaketif
+Writing texture: osr_mac_fieldtif
+Writing texture: osr_mac_house6tif
+Writing texture: osr_mac_house7tif
+Writing texture: osr_mac_house8tif
+Writing texture: osr_mac_sakutif
+Writing texture: osr_madotif
+Writing texture: osr_me_atif
+Writing texture: osr_mizutif
+Writing texture: osr_mtif
+Writing texture: osr_osr_green_2tif
+Writing texture: osr_osr_greentif
+Writing texture: osr_osr_sakutif
+Writing texture: osr_plane_blocktif
+Writing texture: osr_renga_btif
+Writing texture: osr_ryusei_gou_btif
+Writing texture: osr_ryusei_goutif
+Writing texture: osr_sakutif
+Writing texture: osr_shirokabetif
+Writing texture: osr_shiroyanetif
+Writing texture: osr_t_hei2tif
+Writing texture: osr_t_mac_britshcuttif
+Writing texture: osr_t_mac_fieldtif
+Writing texture: osr_t_mac_house7tif
+Writing texture: osr_t_mac_sakutif
+Writing texture: osr_t_marutif
+Writing texture: osr_to_toge_atif
+Writing texture: osr_to_wall_aatif
+Writing texture: osr_togetif
+Writing texture: osr_wall_ctif
+Writing texture: osr_wall_etif
+Writing texture: osr_wall_mtif
+Writing texture: osr_yellow_blocktif
+Building texture archive: pra_tex.txa
+Writing texture: pra_batutif
+Writing texture: pra_gabonn_1tif
+Writing texture: pra_gabonn_2tif
+Writing texture: pra_grayframetif
+Writing texture: pra_hansya3tif
+Writing texture: pra_hatenatif
+Writing texture: pra_ice_dossuntif
+Writing texture: pra_odo_iwahashi3tif
+Writing texture: pra_odo_iwatif
+Writing texture: pra_pen_snow2tif
+Writing texture: pra_pen_snowtif
+Writing texture: pra_pra_ana_atif
+Writing texture: pra_pra_daitif
+Writing texture: pra_pra_doortif
+Writing texture: pra_pra_field3tif
+Writing texture: pra_pra_hari_btif
+Writing texture: pra_pra_hashi1_itif
+Writing texture: pra_pra_hashi2_atif
+Writing texture: pra_pra_hashira_btif
+Writing texture: pra_pra_hashira3_btif
+Writing texture: pra_pra_hashira5tif
+Writing texture: pra_pra_hashiratif
+Writing texture: pra_pra_icetif
+Writing texture: pra_pra_rennga02tif
+Writing texture: pra_pra_tenjou2tif
+Writing texture: pra_pra_walltif
+Writing texture: pra_pra_zoumetif
+Writing texture: pra_pra_zoushitatif
+Writing texture: pra_pra_zoutogetif
+Writing texture: pra_pra_zouuetif
+Writing texture: pra_s_yama1tif
+Writing texture: pra_s_yama3tif
+Building texture archive: sam_tex.txa
+Writing texture: sam_berosaidetif
+Writing texture: sam_binn2tif
+Writing texture: sam_bintif
+Writing texture: sam_dannro02tif
+Writing texture: sam_doa1tif
+Writing texture: sam_dokankuntif
+Writing texture: sam_flower_02tif
+Writing texture: sam_frametif
+Writing texture: sam_grayframetif
+Writing texture: sam_hasira1tif
+Writing texture: sam_himo01tif
+Writing texture: sam_hon01tif
+Writing texture: sam_hon02tif
+Writing texture: sam_hon03tif
+Writing texture: sam_hon04tif
+Writing texture: sam_hon2tif
+Writing texture: sam_hon3tif
+Writing texture: sam_hontif
+Writing texture: sam_ice3tif
+Writing texture: sam_kago2tif
+Writing texture: sam_kagotif
+Writing texture: sam_kakigouri1tif
+Writing texture: sam_kakigouri2tif
+Writing texture: sam_kami02tif
+Writing texture: sam_kami03tif
+Writing texture: sam_kazari2tif
+Writing texture: sam_keito1tif
+Writing texture: sam_ki3tif
+Writing texture: sam_kinoitatif
+Writing texture: sam_kinopiotif
+Writing texture: sam_nabe_atif
+Writing texture: sam_nabe_btif
+Writing texture: sam_nabe_ctif
+Writing texture: sam_nabe_dtif
+Writing texture: sam_odo_iwahashi3tif
+Writing texture: sam_odo_iwatif
+Writing texture: sam_pen_snow2tif
+Writing texture: sam_pen_snow3tif
+Writing texture: sam_pen_snowtif
+Writing texture: sam_ranpu01tif
+Writing texture: sam_s_anatif
+Writing texture: sam_s_dannro1tif
+Writing texture: sam_s_dannro2tif
+Writing texture: sam_s_danro3tif
+Writing texture: sam_s_danro4tif
+Writing texture: sam_s_doa1tif
+Writing texture: sam_s_doa2tif
+Writing texture: sam_s_doatif
+Writing texture: sam_s_futon2tif
+Writing texture: sam_s_futon3tif
+Writing texture: sam_s_kabe1tif
+Writing texture: sam_s_kabe2tif
+Writing texture: sam_s_kabe3tif
+Writing texture: sam_s_kabetif
+Writing texture: sam_s_kazari1tif
+Writing texture: sam_s_kemutif
+Writing texture: sam_s_kesyou2tif
+Writing texture: sam_s_mado1tif
+Writing texture: sam_s_mado2tif
+Writing texture: sam_s_mafuretif
+Writing texture: sam_s_metif
+Writing texture: sam_s_road1tif
+Writing texture: sam_s_saku3tif
+Writing texture: sam_s_sakutif
+Writing texture: sam_s_treetif
+Writing texture: sam_s_turara2tif
+Writing texture: sam_s_zyuutantif
+Writing texture: sam_sam_block01tif
+Writing texture: sam_star1tif
+Writing texture: sam_sui01tif
+Writing texture: sam_t_chear2tif
+Writing texture: sam_t_cheartif
+Writing texture: sam_t_dokankun3tif
+Writing texture: sam_t_katen1tif
+Writing texture: sam_taru1tif
+Writing texture: sam_woody_plate_jtif
+Writing texture: sam_yamatif
+Writing texture: sam_yane_yukitif
+Building texture archive: sbk_tex.txa
+Writing texture: sbk_berosaidetif
+Writing texture: sbk_blocktif
+Writing texture: sbk_coin_walltif
+Writing texture: sbk_flower1tif
+Writing texture: sbk_flower2tif
+Writing texture: sbk_frametif
+Writing texture: sbk_gyuutanntif
+Writing texture: sbk_ha1tif
+Writing texture: sbk_iseki_floortif
+Writing texture: sbk_iwa_togo_atif
+Writing texture: sbk_iwa_walltif
+Writing texture: sbk_iwa_woodtif
+Writing texture: sbk_iwa01tif
+Writing texture: sbk_iwasakutif
+Writing texture: sbk_kabe_htif
+Writing texture: sbk_kabe1tif
+Writing texture: sbk_kemuritif
+Writing texture: sbk_kusa3tif
+Writing texture: sbk_miki1tif
+Writing texture: sbk_mizu1tif
+Writing texture: sbk_moyou2tif
+Writing texture: sbk_noisetif
+Writing texture: sbk_papyrustif
+Writing texture: sbk_ramptif
+Writing texture: sbk_rock_edge_atif
+Writing texture: sbk_rock_edgetif
+Writing texture: sbk_s_road_3tif
+Writing texture: sbk_sabakuiwatif
+Writing texture: sbk_sabakureeftif
+Writing texture: sbk_sabo02tif
+Writing texture: sbk_sabo2tif
+Writing texture: sbk_sabotif
+Writing texture: sbk_sndtif
+Writing texture: sbk_suna2tif
+Writing texture: sbk_suna3tif
+Writing texture: sbk_tenttif
+Writing texture: sbk_togetif
+Writing texture: sbk_upperlighttif
+Writing texture: sbk_wang1tif
+Writing texture: sbk_wang2tif
+Writing texture: sbk_wang3tif
+Writing texture: sbk_woody_plate_dtif
+Writing texture: sbk_yuka_ctif
+Writing texture: sbk_zimen2tif
+Building texture archive: tik_tex.txa
+Writing texture: tik_bin_rbr01tif
+Writing texture: tik_doa1tif
+Writing texture: tik_frozentif
+Writing texture: tik_grayframetif
+Writing texture: tik_icetif
+Writing texture: tik_kan1tif
+Writing texture: tik_kinoitatif
+Writing texture: tik_mac_doortif
+Writing texture: tik_oregl3tif
+Writing texture: tik_t_chear2tif
+Writing texture: tik_t_cheartif
+Writing texture: tik_t_doatif
+Writing texture: tik_t_dokankun2tif
+Writing texture: tik_t_dokankun3tif
+Writing texture: tik_t_ice3tif
+Writing texture: tik_t_katen1tif
+Writing texture: tik_t_kazari1tif
+Writing texture: tik_t_kiri1tif
+Writing texture: tik_t_sakutif
+Writing texture: tik_t_sizuku1tif
+Writing texture: tik_t_taki1tif
+Writing texture: tik_t_taki5tif
+Writing texture: tik_t_taki6tif
+Writing texture: tik_t_taki7tif
+Writing texture: tik_t_turara1tif
+Writing texture: tik_t_yuka1tif
+Writing texture: tik_tn_kabe3tif
+Writing texture: tik_togetif
+Building texture archive: trd_tex.txa
+Writing texture: trd_ana_ctif
+Writing texture: trd_berosaidetif
+Writing texture: trd_block_dtif
+Writing texture: trd_block_e2ttif
+Writing texture: trd_block_etif
+Writing texture: trd_doatif
+Writing texture: trd_frametif
+Writing texture: trd_futa1tif
+Writing texture: trd_grayframetif
+Writing texture: trd_green_etif
+Writing texture: trd_hikaritif
+Writing texture: trd_kabe10tif
+Writing texture: trd_kabe3tif
+Writing texture: trd_kabe5tif
+Writing texture: trd_kabe6tif
+Writing texture: trd_kabe8tif
+Writing texture: trd_kabekusatif
+Writing texture: trd_kabetif
+Writing texture: trd_kamitif
+Writing texture: trd_kawa_atif
+Writing texture: trd_kitif
+Writing texture: trd_komatif
+Writing texture: trd_kubiwatif
+Writing texture: trd_kusaritif
+Writing texture: trd_mado6tif
+Writing texture: trd_mado7tif
+Writing texture: trd_me_btif
+Writing texture: trd_nuno_ctif
+Writing texture: trd_nuno_etif
+Writing texture: trd_peachtif
+Writing texture: trd_saku2tif
+Writing texture: trd_saku3tif
+Writing texture: trd_saku4tif
+Writing texture: trd_saku5tif
+Writing texture: trd_sakutif
+Writing texture: trd_sui1tif
+Writing texture: trd_t_sui2tif
+Writing texture: trd_trd_block2tif
+Writing texture: trd_trd_kusaritif
+Writing texture: trd_trd_taki1tif
+Writing texture: trd_trd_taki2tif
+Writing texture: trd_water_sokotif
+Writing texture: trd_water3tif
+Writing texture: trd_yuka3tif
+Writing texture: trd_yuka4tif
+Building texture archive: tst_tex.txa
+Writing texture: tst_berosaidetif
+Writing texture: tst_c_block02rgb
+Writing texture: tst_dokantif
+Writing texture: tst_flo_kusa1tif
+Writing texture: tst_flo_kusa2tif
+Writing texture: tst_flo_roadtif
+Writing texture: tst_flower_ac4tif
+Writing texture: tst_flower_edge3tif
+Writing texture: tst_flower_field3tif
+Writing texture: tst_flower_top2tif
+Writing texture: tst_flower_top3tif
+Writing texture: tst_frametif
+Writing texture: tst_green_etif
+Writing texture: tst_hana_ftif
+Writing texture: tst_hanatabatif
+Writing texture: tst_happa2tif
+Writing texture: tst_hashi33tif
+Writing texture: tst_hi_blocktif
+Writing texture: tst_ibaratif
+Writing texture: tst_ichimatsu1tif
+Writing texture: tst_ichimatsu4tif
+Writing texture: tst_itatif
+Writing texture: tst_kabe12_wtif
+Writing texture: tst_kabe12tif
+Writing texture: tst_ki_atif
+Writing texture: tst_kinoha5tif
+Writing texture: tst_kinoita2tif
+Writing texture: tst_kirakiratif
+Writing texture: tst_kuki3tif
+Writing texture: tst_log_sidetif
+Writing texture: tst_mac_fieldtif
+Writing texture: tst_mario_rtif
+Writing texture: tst_miki4tif
+Writing texture: tst_mikitif
+Writing texture: tst_pra_backtif
+Writing texture: tst_pra_field2tif
+Writing texture: tst_pra_field4tif
+Writing texture: tst_pra_hasgira2tif
+Writing texture: tst_pra_hashiratif
+Writing texture: tst_pra_icetif
+Writing texture: tst_pra_walltif
+Writing texture: tst_reef_etif
+Writing texture: tst_reef_ktif
+Writing texture: tst_renga_edgetif
+Writing texture: tst_renga10tif
+Writing texture: tst_renga2tif
+Writing texture: tst_rengatif
+Writing texture: tst_s_roadberotif
+Writing texture: tst_s_roadtif
+Writing texture: tst_sirohanatif
+Writing texture: tst_togetif
+Writing texture: tst_water_sokotif
+Writing texture: tst_wood_ctif
+Writing texture: tst_wood_floor_ctif
+Writing texture: tst_wooden_boardtif
+Writing texture: tst_woody_plate_btif
+Writing texture: tst_woody_plate_itif
+Writing texture: tst_yougan_sidetif
+Writing texture: tst_yougantif
+Writing texture: tst_yuka2tif
+Building backgrounds...
+Writing map assets...
+Writing resource: kmr_00_shape
+Writing resource: kmr_00_hit
+Writing resource: kmr_02_shape
+Writing resource: kmr_02_hit
+Writing resource: kmr_03_shape
+Writing resource: kmr_03_hit
+Writing resource: kmr_04_shape
+Writing resource: kmr_04_hit
+Writing resource: kmr_05_shape
+Writing resource: kmr_05_hit
+Writing resource: kmr_06_shape
+Writing resource: kmr_06_hit
+Writing resource: kmr_07_shape
+Writing resource: kmr_07_hit
+Writing resource: kmr_09_shape
+Writing resource: kmr_09_hit
+Writing resource: kmr_10_shape
+Writing resource: kmr_10_hit
+Writing resource: kmr_11_shape
+Writing resource: kmr_11_hit
+Writing resource: kmr_12_shape
+Writing resource: kmr_12_hit
+Writing resource: kmr_20_shape
+Writing resource: kmr_20_hit
+Writing resource: kmr_30_shape
+Writing resource: kmr_30_hit
+Writing resource: kmr_bt03_shape
+Writing resource: kmr_bt03_hit
+Writing resource: kmr_bt04_shape
+Writing resource: kmr_bt04_hit
+Writing resource: kmr_bt05_shape
+Writing resource: kmr_bt05_hit
+Writing resource: kmr_bt06_shape
+Writing resource: kmr_bt06_hit
+Writing resource: machi_shape
+Writing resource: machi_hit
+Writing resource: mac_00_shape
+Writing resource: mac_00_hit
+Writing resource: mac_01_shape
+Writing resource: mac_01_hit
+Writing resource: mac_02_shape
+Writing resource: mac_02_hit
+Writing resource: mac_03_shape
+Writing resource: mac_03_hit
+Writing resource: mac_04_shape
+Writing resource: mac_04_hit
+Writing resource: mac_05_shape
+Writing resource: mac_05_hit
+Writing resource: mac_06_shape
+Writing resource: mac_06_hit
+Writing resource: mac_bt01_shape
+Writing resource: mac_bt01_hit
+Writing resource: mac_bt02_shape
+Writing resource: mac_bt02_hit
+Writing resource: tik_01_shape
+Writing resource: tik_01_hit
+Writing resource: tik_02_shape
+Writing resource: tik_02_hit
+Writing resource: tik_03_shape
+Writing resource: tik_03_hit
+Writing resource: tik_04_shape
+Writing resource: tik_04_hit
+Writing resource: tik_05_shape
+Writing resource: tik_05_hit
+Writing resource: tik_06_shape
+Writing resource: tik_06_hit
+Writing resource: tik_07_shape
+Writing resource: tik_07_hit
+Writing resource: tik_08_shape
+Writing resource: tik_08_hit
+Writing resource: tik_09_shape
+Writing resource: tik_09_hit
+Writing resource: tik_10_shape
+Writing resource: tik_10_hit
+Writing resource: tik_12_shape
+Writing resource: tik_12_hit
+Writing resource: tik_14_shape
+Writing resource: tik_14_hit
+Writing resource: tik_15_shape
+Writing resource: tik_15_hit
+Writing resource: tik_17_shape
+Writing resource: tik_17_hit
+Writing resource: tik_18_shape
+Writing resource: tik_18_hit
+Writing resource: tik_19_shape
+Writing resource: tik_19_hit
+Writing resource: tik_20_shape
+Writing resource: tik_20_hit
+Writing resource: tik_21_shape
+Writing resource: tik_21_hit
+Writing resource: tik_22_shape
+Writing resource: tik_22_hit
+Writing resource: tik_23_shape
+Writing resource: tik_23_hit
+Writing resource: tik_25_shape
+Writing resource: tik_25_hit
+Writing resource: tik_bt01_shape
+Writing resource: tik_bt01_hit
+Writing resource: tik_bt02_shape
+Writing resource: tik_bt02_hit
+Writing resource: tik_bt03_shape
+Writing resource: tik_bt03_hit
+Writing resource: tik_bt04_shape
+Writing resource: tik_bt04_hit
+Writing resource: tik_bt05_shape
+Writing resource: tik_bt05_hit
+Writing resource: kgr_01_shape
+Writing resource: kgr_01_hit
+Writing resource: kgr_02_shape
+Writing resource: kgr_02_hit
+Writing resource: kgr_bt01_shape
+Writing resource: kgr_bt01_hit
+Writing resource: kkj_00_shape
+Writing resource: kkj_00_hit
+Writing resource: kkj_01_shape
+Writing resource: kkj_01_hit
+Writing resource: kkj_02_shape
+Writing resource: kkj_02_hit
+Writing resource: kkj_03_shape
+Writing resource: kkj_03_hit
+Writing resource: kkj_10_shape
+Writing resource: kkj_10_hit
+Writing resource: kkj_11_shape
+Writing resource: kkj_11_hit
+Writing resource: kkj_12_shape
+Writing resource: kkj_12_hit
+Writing resource: kkj_13_shape
+Writing resource: kkj_13_hit
+Writing resource: kkj_14_shape
+Writing resource: kkj_14_hit
+Writing resource: kkj_15_shape
+Writing resource: kkj_15_hit
+Writing resource: kkj_16_shape
+Writing resource: kkj_16_hit
+Writing resource: kkj_17_shape
+Writing resource: kkj_17_hit
+Writing resource: kkj_18_shape
+Writing resource: kkj_18_hit
+Writing resource: kkj_19_shape
+Writing resource: kkj_19_hit
+Writing resource: kkj_20_shape
+Writing resource: kkj_20_hit
+Writing resource: kkj_21_shape
+Writing resource: kkj_21_hit
+Writing resource: kkj_22_shape
+Writing resource: kkj_22_hit
+Writing resource: kkj_23_shape
+Writing resource: kkj_23_hit
+Writing resource: kkj_24_shape
+Writing resource: kkj_24_hit
+Writing resource: kkj_25_shape
+Writing resource: kkj_25_hit
+Writing resource: kkj_26_shape
+Writing resource: kkj_26_hit
+Writing resource: kkj_27_shape
+Writing resource: kkj_27_hit
+Writing resource: kkj_28_shape
+Writing resource: kkj_28_hit
+Writing resource: kkj_29_shape
+Writing resource: kkj_29_hit
+Writing resource: kkj_bt01_shape
+Writing resource: kkj_bt01_hit
+Writing resource: kkj_bt02_shape
+Writing resource: kkj_bt02_hit
+Writing resource: hos_00_shape
+Writing resource: hos_00_hit
+Writing resource: hos_01_shape
+Writing resource: hos_01_hit
+Writing resource: hos_02_shape
+Writing resource: hos_02_hit
+Writing resource: hos_03_shape
+Writing resource: hos_03_hit
+Writing resource: hos_04_shape
+Writing resource: hos_04_hit
+Writing resource: hos_05_shape
+Writing resource: hos_05_hit
+Writing resource: hos_06_shape
+Writing resource: hos_06_hit
+Writing resource: hos_10_shape
+Writing resource: hos_10_hit
+Writing resource: hos_20_shape
+Writing resource: hos_20_hit
+Writing resource: hos_bt01_shape
+Writing resource: hos_bt01_hit
+Writing resource: hos_bt02_shape
+Writing resource: hos_bt02_hit
+Writing resource: nok_01_shape
+Writing resource: nok_01_hit
+Writing resource: nok_02_shape
+Writing resource: nok_02_hit
+Writing resource: nok_03_shape
+Writing resource: nok_03_hit
+Writing resource: nok_04_shape
+Writing resource: nok_04_hit
+Writing resource: nok_11_shape
+Writing resource: nok_11_hit
+Writing resource: nok_12_shape
+Writing resource: nok_12_hit
+Writing resource: nok_13_shape
+Writing resource: nok_13_hit
+Writing resource: nok_14_shape
+Writing resource: nok_14_hit
+Writing resource: nok_15_shape
+Writing resource: nok_15_hit
+Writing resource: nok_bt01_shape
+Writing resource: nok_bt01_hit
+Writing resource: nok_bt02_shape
+Writing resource: nok_bt02_hit
+Writing resource: nok_bt03_shape
+Writing resource: nok_bt03_hit
+Writing resource: nok_bt04_shape
+Writing resource: nok_bt04_hit
+Writing resource: trd_00_shape
+Writing resource: trd_00_hit
+Writing resource: trd_01_shape
+Writing resource: trd_01_hit
+Writing resource: trd_02_shape
+Writing resource: trd_02_hit
+Writing resource: trd_03_shape
+Writing resource: trd_03_hit
+Writing resource: trd_04_shape
+Writing resource: trd_04_hit
+Writing resource: trd_05_shape
+Writing resource: trd_05_hit
+Writing resource: trd_06_shape
+Writing resource: trd_06_hit
+Writing resource: trd_07_shape
+Writing resource: trd_07_hit
+Writing resource: trd_08_shape
+Writing resource: trd_08_hit
+Writing resource: trd_09_shape
+Writing resource: trd_09_hit
+Writing resource: trd_10_shape
+Writing resource: trd_10_hit
+Writing resource: trd_bt00_shape
+Writing resource: trd_bt00_hit
+Writing resource: trd_bt01_shape
+Writing resource: trd_bt01_hit
+Writing resource: trd_bt02_shape
+Writing resource: trd_bt02_hit
+Writing resource: trd_bt03_shape
+Writing resource: trd_bt03_hit
+Writing resource: trd_bt04_shape
+Writing resource: trd_bt04_hit
+Writing resource: trd_bt05_shape
+Writing resource: trd_bt05_hit
+Writing resource: iwa_00_shape
+Writing resource: iwa_00_hit
+Writing resource: iwa_01_shape
+Writing resource: iwa_01_hit
+Writing resource: iwa_02_shape
+Writing resource: iwa_02_hit
+Writing resource: iwa_03_shape
+Writing resource: iwa_03_hit
+Writing resource: iwa_04_shape
+Writing resource: iwa_04_hit
+Writing resource: iwa_10_shape
+Writing resource: iwa_10_hit
+Writing resource: iwa_11_shape
+Writing resource: iwa_11_hit
+Writing resource: iwa_bt01_shape
+Writing resource: iwa_bt01_hit
+Writing resource: iwa_bt02_shape
+Writing resource: iwa_bt02_hit
+Writing resource: dro_01_shape
+Writing resource: dro_01_hit
+Writing resource: dro_02_shape
+Writing resource: dro_02_hit
+Writing resource: sbk_00_shape
+Writing resource: sbk_00_hit
+Writing resource: sbk_01_shape
+Writing resource: sbk_01_hit
+Writing resource: sbk_02_shape
+Writing resource: sbk_02_hit
+Writing resource: sbk_03_shape
+Writing resource: sbk_03_hit
+Writing resource: sbk_04_shape
+Writing resource: sbk_04_hit
+Writing resource: sbk_05_shape
+Writing resource: sbk_05_hit
+Writing resource: sbk_06_shape
+Writing resource: sbk_06_hit
+Writing resource: sbk_10_shape
+Writing resource: sbk_10_hit
+Writing resource: sbk_11_shape
+Writing resource: sbk_11_hit
+Writing resource: sbk_12_shape
+Writing resource: sbk_12_hit
+Writing resource: sbk_13_shape
+Writing resource: sbk_13_hit
+Writing resource: sbk_14_shape
+Writing resource: sbk_14_hit
+Writing resource: sbk_15_shape
+Writing resource: sbk_15_hit
+Writing resource: sbk_16_shape
+Writing resource: sbk_16_hit
+Writing resource: sbk_20_shape
+Writing resource: sbk_20_hit
+Writing resource: sbk_21_shape
+Writing resource: sbk_21_hit
+Writing resource: sbk_22_shape
+Writing resource: sbk_22_hit
+Writing resource: sbk_23_shape
+Writing resource: sbk_23_hit
+Writing resource: sbk_24_shape
+Writing resource: sbk_24_hit
+Writing resource: sbk_25_shape
+Writing resource: sbk_25_hit
+Writing resource: sbk_26_shape
+Writing resource: sbk_26_hit
+Writing resource: sbk_30_shape
+Writing resource: sbk_30_hit
+Writing resource: sbk_31_shape
+Writing resource: sbk_31_hit
+Writing resource: sbk_32_shape
+Writing resource: sbk_32_hit
+Writing resource: sbk_33_shape
+Writing resource: sbk_33_hit
+Writing resource: sbk_34_shape
+Writing resource: sbk_34_hit
+Writing resource: sbk_35_shape
+Writing resource: sbk_35_hit
+Writing resource: sbk_36_shape
+Writing resource: sbk_36_hit
+Writing resource: sbk_40_shape
+Writing resource: sbk_40_hit
+Writing resource: sbk_41_shape
+Writing resource: sbk_41_hit
+Writing resource: sbk_42_shape
+Writing resource: sbk_42_hit
+Writing resource: sbk_43_shape
+Writing resource: sbk_43_hit
+Writing resource: sbk_44_shape
+Writing resource: sbk_44_hit
+Writing resource: sbk_45_shape
+Writing resource: sbk_45_hit
+Writing resource: sbk_46_shape
+Writing resource: sbk_46_hit
+Writing resource: sbk_50_shape
+Writing resource: sbk_50_hit
+Writing resource: sbk_51_shape
+Writing resource: sbk_51_hit
+Writing resource: sbk_52_shape
+Writing resource: sbk_52_hit
+Writing resource: sbk_53_shape
+Writing resource: sbk_53_hit
+Writing resource: sbk_54_shape
+Writing resource: sbk_54_hit
+Writing resource: sbk_55_shape
+Writing resource: sbk_55_hit
+Writing resource: sbk_56_shape
+Writing resource: sbk_56_hit
+Writing resource: sbk_60_shape
+Writing resource: sbk_60_hit
+Writing resource: sbk_61_shape
+Writing resource: sbk_61_hit
+Writing resource: sbk_62_shape
+Writing resource: sbk_62_hit
+Writing resource: sbk_63_shape
+Writing resource: sbk_63_hit
+Writing resource: sbk_64_shape
+Writing resource: sbk_64_hit
+Writing resource: sbk_65_shape
+Writing resource: sbk_65_hit
+Writing resource: sbk_66_shape
+Writing resource: sbk_66_hit
+Writing resource: sbk_99_shape
+Writing resource: sbk_99_hit
+Writing resource: sbk_bt02_shape
+Writing resource: sbk_bt02_hit
+Writing resource: isk_01_shape
+Writing resource: isk_01_hit
+Writing resource: isk_02_shape
+Writing resource: isk_02_hit
+Writing resource: isk_03_shape
+Writing resource: isk_03_hit
+Writing resource: isk_04_shape
+Writing resource: isk_04_hit
+Writing resource: isk_05_shape
+Writing resource: isk_05_hit
+Writing resource: isk_06_shape
+Writing resource: isk_06_hit
+Writing resource: isk_07_shape
+Writing resource: isk_07_hit
+Writing resource: isk_08_shape
+Writing resource: isk_08_hit
+Writing resource: isk_09_shape
+Writing resource: isk_09_hit
+Writing resource: isk_10_shape
+Writing resource: isk_10_hit
+Writing resource: isk_11_shape
+Writing resource: isk_11_hit
+Writing resource: isk_12_shape
+Writing resource: isk_12_hit
+Writing resource: isk_13_shape
+Writing resource: isk_13_hit
+Writing resource: isk_14_shape
+Writing resource: isk_14_hit
+Writing resource: isk_16_shape
+Writing resource: isk_16_hit
+Writing resource: isk_18_shape
+Writing resource: isk_18_hit
+Writing resource: isk_19_shape
+Writing resource: isk_19_hit
+Writing resource: isk_bt01_shape
+Writing resource: isk_bt01_hit
+Writing resource: isk_bt02_shape
+Writing resource: isk_bt02_hit
+Writing resource: isk_bt03_shape
+Writing resource: isk_bt03_hit
+Writing resource: isk_bt04_shape
+Writing resource: isk_bt04_hit
+Writing resource: isk_bt05_shape
+Writing resource: isk_bt05_hit
+Writing resource: isk_bt06_shape
+Writing resource: isk_bt06_hit
+Writing resource: isk_bt07_shape
+Writing resource: isk_bt07_hit
+Writing resource: isk_bt08_shape
+Writing resource: isk_bt08_hit
+Writing resource: mim_01_shape
+Writing resource: mim_01_hit
+Writing resource: mim_02_shape
+Writing resource: mim_02_hit
+Writing resource: mim_03_shape
+Writing resource: mim_03_hit
+Writing resource: mim_04_shape
+Writing resource: mim_04_hit
+Writing resource: mim_05_shape
+Writing resource: mim_05_hit
+Writing resource: mim_06_shape
+Writing resource: mim_06_hit
+Writing resource: mim_07_shape
+Writing resource: mim_07_hit
+Writing resource: mim_08_shape
+Writing resource: mim_08_hit
+Writing resource: mim_09_shape
+Writing resource: mim_09_hit
+Writing resource: mim_10_shape
+Writing resource: mim_10_hit
+Writing resource: mim_11_shape
+Writing resource: mim_11_hit
+Writing resource: mim_12_shape
+Writing resource: mim_12_hit
+Writing resource: mim_bt01_shape
+Writing resource: mim_bt01_hit
+Writing resource: obk_01_shape
+Writing resource: obk_01_hit
+Writing resource: obk_02_shape
+Writing resource: obk_02_hit
+Writing resource: obk_03_shape
+Writing resource: obk_03_hit
+Writing resource: obk_04_shape
+Writing resource: obk_04_hit
+Writing resource: obk_05_shape
+Writing resource: obk_05_hit
+Writing resource: obk_06_shape
+Writing resource: obk_06_hit
+Writing resource: obk_07_shape
+Writing resource: obk_07_hit
+Writing resource: obk_08_shape
+Writing resource: obk_08_hit
+Writing resource: obk_09_shape
+Writing resource: obk_09_hit
+Writing resource: arn_02_shape
+Writing resource: arn_02_hit
+Writing resource: arn_03_shape
+Writing resource: arn_03_hit
+Writing resource: arn_04_shape
+Writing resource: arn_04_hit
+Writing resource: arn_05_shape
+Writing resource: arn_05_hit
+Writing resource: arn_07_shape
+Writing resource: arn_07_hit
+Writing resource: arn_08_shape
+Writing resource: arn_08_hit
+Writing resource: arn_09_shape
+Writing resource: arn_09_hit
+Writing resource: arn_10_shape
+Writing resource: arn_10_hit
+Writing resource: arn_11_shape
+Writing resource: arn_11_hit
+Writing resource: arn_12_shape
+Writing resource: arn_12_hit
+Writing resource: arn_13_shape
+Writing resource: arn_13_hit
+Writing resource: arn_20_shape
+Writing resource: arn_20_hit
+Writing resource: arn_bt01_shape
+Writing resource: arn_bt01_hit
+Writing resource: arn_bt02_shape
+Writing resource: arn_bt02_hit
+Writing resource: arn_bt03_shape
+Writing resource: arn_bt03_hit
+Writing resource: arn_bt04_shape
+Writing resource: arn_bt04_hit
+Writing resource: arn_bt05_shape
+Writing resource: arn_bt05_hit
+Writing resource: arn_bt06_shape
+Writing resource: arn_bt06_hit
+Writing resource: dgb_01_shape
+Writing resource: dgb_01_hit
+Writing resource: dgb_02_shape
+Writing resource: dgb_02_hit
+Writing resource: dgb_03_shape
+Writing resource: dgb_03_hit
+Writing resource: dgb_04_shape
+Writing resource: dgb_04_hit
+Writing resource: dgb_05_shape
+Writing resource: dgb_05_hit
+Writing resource: dgb_06_shape
+Writing resource: dgb_06_hit
+Writing resource: dgb_07_shape
+Writing resource: dgb_07_hit
+Writing resource: dgb_08_shape
+Writing resource: dgb_08_hit
+Writing resource: dgb_09_shape
+Writing resource: dgb_09_hit
+Writing resource: dgb_10_shape
+Writing resource: dgb_10_hit
+Writing resource: dgb_11_shape
+Writing resource: dgb_11_hit
+Writing resource: dgb_12_shape
+Writing resource: dgb_12_hit
+Writing resource: dgb_13_shape
+Writing resource: dgb_13_hit
+Writing resource: dgb_14_shape
+Writing resource: dgb_14_hit
+Writing resource: dgb_15_shape
+Writing resource: dgb_15_hit
+Writing resource: dgb_16_shape
+Writing resource: dgb_16_hit
+Writing resource: dgb_17_shape
+Writing resource: dgb_17_hit
+Writing resource: dgb_18_shape
+Writing resource: dgb_18_hit
+Writing resource: dgb_bt01_shape
+Writing resource: dgb_bt01_hit
+Writing resource: dgb_bt02_shape
+Writing resource: dgb_bt02_hit
+Writing resource: dgb_bt03_shape
+Writing resource: dgb_bt03_hit
+Writing resource: dgb_bt04_shape
+Writing resource: dgb_bt04_hit
+Writing resource: dgb_bt05_shape
+Writing resource: dgb_bt05_hit
+Writing resource: omo_01_shape
+Writing resource: omo_01_hit
+Writing resource: omo_02_shape
+Writing resource: omo_02_hit
+Writing resource: omo_03_shape
+Writing resource: omo_03_hit
+Writing resource: omo_04_shape
+Writing resource: omo_04_hit
+Writing resource: omo_05_shape
+Writing resource: omo_05_hit
+Writing resource: omo_06_shape
+Writing resource: omo_06_hit
+Writing resource: omo_07_shape
+Writing resource: omo_07_hit
+Writing resource: omo_08_shape
+Writing resource: omo_08_hit
+Writing resource: omo_09_shape
+Writing resource: omo_09_hit
+Writing resource: omo_10_shape
+Writing resource: omo_10_hit
+Writing resource: omo_11_shape
+Writing resource: omo_11_hit
+Writing resource: omo_12_shape
+Writing resource: omo_12_hit
+Writing resource: omo_13_shape
+Writing resource: omo_13_hit
+Writing resource: omo_14_shape
+Writing resource: omo_14_hit
+Writing resource: omo_15_shape
+Writing resource: omo_15_hit
+Writing resource: omo_16_shape
+Writing resource: omo_16_hit
+Writing resource: omo_17_shape
+Writing resource: omo_17_hit
+Writing resource: omo_bt01_shape
+Writing resource: omo_bt01_hit
+Writing resource: omo_bt02_shape
+Writing resource: omo_bt02_hit
+Writing resource: omo_bt03_shape
+Writing resource: omo_bt03_hit
+Writing resource: omo_bt04_shape
+Writing resource: omo_bt04_hit
+Writing resource: omo_bt05_shape
+Writing resource: omo_bt05_hit
+Writing resource: omo_bt06_shape
+Writing resource: omo_bt06_hit
+Writing resource: omo_bt07_shape
+Writing resource: omo_bt07_hit
+Writing resource: jan_00_shape
+Writing resource: jan_00_hit
+Writing resource: jan_01_shape
+Writing resource: jan_01_hit
+Writing resource: jan_02_shape
+Writing resource: jan_02_hit
+Writing resource: jan_03_shape
+Writing resource: jan_03_hit
+Writing resource: jan_04_shape
+Writing resource: jan_04_hit
+Writing resource: jan_05_shape
+Writing resource: jan_05_hit
+Writing resource: jan_06_shape
+Writing resource: jan_06_hit
+Writing resource: jan_07_shape
+Writing resource: jan_07_hit
+Writing resource: jan_08_shape
+Writing resource: jan_08_hit
+Writing resource: jan_09_shape
+Writing resource: jan_09_hit
+Writing resource: jan_10_shape
+Writing resource: jan_10_hit
+Writing resource: jan_11_shape
+Writing resource: jan_11_hit
+Writing resource: jan_12_shape
+Writing resource: jan_12_hit
+Writing resource: jan_13_shape
+Writing resource: jan_13_hit
+Writing resource: jan_14_shape
+Writing resource: jan_14_hit
+Writing resource: jan_15_shape
+Writing resource: jan_15_hit
+Writing resource: jan_16_shape
+Writing resource: jan_16_hit
+Writing resource: jan_17_shape
+Writing resource: jan_17_hit
+Writing resource: jan_18_shape
+Writing resource: jan_18_hit
+Writing resource: jan_19_shape
+Writing resource: jan_19_hit
+Writing resource: jan_22_shape
+Writing resource: jan_22_hit
+Writing resource: jan_23_shape
+Writing resource: jan_23_hit
+Writing resource: jan_bt00_shape
+Writing resource: jan_bt00_hit
+Writing resource: jan_bt01_shape
+Writing resource: jan_bt01_hit
+Writing resource: jan_bt02_shape
+Writing resource: jan_bt02_hit
+Writing resource: jan_bt03_shape
+Writing resource: jan_bt03_hit
+Writing resource: jan_bt04_shape
+Writing resource: jan_bt04_hit
+Writing resource: kzn_01_shape
+Writing resource: kzn_01_hit
+Writing resource: kzn_02_shape
+Writing resource: kzn_02_hit
+Writing resource: kzn_03_shape
+Writing resource: kzn_03_hit
+Writing resource: kzn_04_shape
+Writing resource: kzn_04_hit
+Writing resource: kzn_05_shape
+Writing resource: kzn_05_hit
+Writing resource: kzn_06_shape
+Writing resource: kzn_06_hit
+Writing resource: kzn_07_shape
+Writing resource: kzn_07_hit
+Writing resource: kzn_08_shape
+Writing resource: kzn_08_hit
+Writing resource: kzn_09_shape
+Writing resource: kzn_09_hit
+Writing resource: kzn_10_shape
+Writing resource: kzn_10_hit
+Writing resource: kzn_11_shape
+Writing resource: kzn_11_hit
+Writing resource: kzn_17_shape
+Writing resource: kzn_17_hit
+Writing resource: kzn_18_shape
+Writing resource: kzn_18_hit
+Writing resource: kzn_19_shape
+Writing resource: kzn_19_hit
+Writing resource: kzn_20_shape
+Writing resource: kzn_20_hit
+Writing resource: kzn_22_shape
+Writing resource: kzn_22_hit
+Writing resource: kzn_23_shape
+Writing resource: kzn_23_hit
+Writing resource: kzn_bt01_shape
+Writing resource: kzn_bt01_hit
+Writing resource: kzn_bt02_shape
+Writing resource: kzn_bt02_hit
+Writing resource: kzn_bt04_shape
+Writing resource: kzn_bt04_hit
+Writing resource: kzn_bt05_shape
+Writing resource: kzn_bt05_hit
+Writing resource: flo_00_shape
+Writing resource: flo_00_hit
+Writing resource: flo_03_shape
+Writing resource: flo_03_hit
+Writing resource: flo_07_shape
+Writing resource: flo_07_hit
+Writing resource: flo_08_shape
+Writing resource: flo_08_hit
+Writing resource: flo_09_shape
+Writing resource: flo_09_hit
+Writing resource: flo_10_shape
+Writing resource: flo_10_hit
+Writing resource: flo_11_shape
+Writing resource: flo_11_hit
+Writing resource: flo_12_shape
+Writing resource: flo_12_hit
+Writing resource: flo_13_shape
+Writing resource: flo_13_hit
+Writing resource: flo_14_shape
+Writing resource: flo_14_hit
+Writing resource: flo_15_shape
+Writing resource: flo_15_hit
+Writing resource: flo_16_shape
+Writing resource: flo_16_hit
+Writing resource: flo_17_shape
+Writing resource: flo_17_hit
+Writing resource: flo_18_shape
+Writing resource: flo_18_hit
+Writing resource: flo_19_shape
+Writing resource: flo_19_hit
+Writing resource: flo_21_shape
+Writing resource: flo_21_hit
+Writing resource: flo_22_shape
+Writing resource: flo_22_hit
+Writing resource: flo_23_shape
+Writing resource: flo_23_hit
+Writing resource: flo_24_shape
+Writing resource: flo_24_hit
+Writing resource: flo_25_shape
+Writing resource: flo_25_hit
+Writing resource: flo_bt01_shape
+Writing resource: flo_bt01_hit
+Writing resource: flo_bt02_shape
+Writing resource: flo_bt02_hit
+Writing resource: flo_bt03_shape
+Writing resource: flo_bt03_hit
+Writing resource: flo_bt04_shape
+Writing resource: flo_bt04_hit
+Writing resource: flo_bt05_shape
+Writing resource: flo_bt05_hit
+Writing resource: flo_bt06_shape
+Writing resource: flo_bt06_hit
+Writing resource: sam_01_shape
+Writing resource: sam_01_hit
+Writing resource: sam_02_shape
+Writing resource: sam_02_hit
+Writing resource: sam_03_shape
+Writing resource: sam_03_hit
+Writing resource: sam_04_shape
+Writing resource: sam_04_hit
+Writing resource: sam_05_shape
+Writing resource: sam_05_hit
+Writing resource: sam_06_shape
+Writing resource: sam_06_hit
+Writing resource: sam_07_shape
+Writing resource: sam_07_hit
+Writing resource: sam_08_shape
+Writing resource: sam_08_hit
+Writing resource: sam_09_shape
+Writing resource: sam_09_hit
+Writing resource: sam_10_shape
+Writing resource: sam_10_hit
+Writing resource: sam_11_shape
+Writing resource: sam_11_hit
+Writing resource: sam_12_shape
+Writing resource: sam_12_hit
+Writing resource: sam_bt01_shape
+Writing resource: sam_bt01_hit
+Writing resource: sam_bt02_shape
+Writing resource: sam_bt02_hit
+Writing resource: sam_bt03_shape
+Writing resource: sam_bt03_hit
+Writing resource: sam_bt04_shape
+Writing resource: sam_bt04_hit
+Writing resource: pra_01_shape
+Writing resource: pra_01_hit
+Writing resource: pra_02_shape
+Writing resource: pra_02_hit
+Writing resource: pra_03_shape
+Writing resource: pra_03_hit
+Writing resource: pra_04_shape
+Writing resource: pra_04_hit
+Writing resource: pra_05_shape
+Writing resource: pra_05_hit
+Writing resource: pra_09_shape
+Writing resource: pra_09_hit
+Writing resource: pra_10_shape
+Writing resource: pra_10_hit
+Writing resource: pra_11_shape
+Writing resource: pra_11_hit
+Writing resource: pra_13_shape
+Writing resource: pra_13_hit
+Writing resource: pra_14_shape
+Writing resource: pra_14_hit
+Writing resource: pra_15_shape
+Writing resource: pra_15_hit
+Writing resource: pra_16_shape
+Writing resource: pra_16_hit
+Writing resource: pra_18_shape
+Writing resource: pra_18_hit
+Writing resource: pra_19_shape
+Writing resource: pra_19_hit
+Writing resource: pra_20_shape
+Writing resource: pra_20_hit
+Writing resource: pra_21_shape
+Writing resource: pra_21_hit
+Writing resource: pra_22_shape
+Writing resource: pra_22_hit
+Writing resource: pra_29_shape
+Writing resource: pra_29_hit
+Writing resource: pra_31_shape
+Writing resource: pra_31_hit
+Writing resource: pra_32_shape
+Writing resource: pra_32_hit
+Writing resource: pra_33_shape
+Writing resource: pra_33_hit
+Writing resource: pra_34_shape
+Writing resource: pra_34_hit
+Writing resource: pra_35_shape
+Writing resource: pra_35_hit
+Writing resource: pra_40_shape
+Writing resource: pra_40_hit
+Writing resource: pra_bt01_shape
+Writing resource: pra_bt01_hit
+Writing resource: pra_bt02_shape
+Writing resource: pra_bt02_hit
+Writing resource: pra_bt03_shape
+Writing resource: pra_bt03_hit
+Writing resource: pra_bt04_shape
+Writing resource: pra_bt04_hit
+Writing resource: kpa_01_shape
+Writing resource: kpa_01_hit
+Writing resource: kpa_03_shape
+Writing resource: kpa_03_hit
+Writing resource: kpa_04_shape
+Writing resource: kpa_04_hit
+Writing resource: kpa_08_shape
+Writing resource: kpa_08_hit
+Writing resource: kpa_09_shape
+Writing resource: kpa_09_hit
+Writing resource: kpa_10_shape
+Writing resource: kpa_10_hit
+Writing resource: kpa_11_shape
+Writing resource: kpa_11_hit
+Writing resource: kpa_12_shape
+Writing resource: kpa_12_hit
+Writing resource: kpa_13_shape
+Writing resource: kpa_13_hit
+Writing resource: kpa_14_shape
+Writing resource: kpa_14_hit
+Writing resource: kpa_15_shape
+Writing resource: kpa_15_hit
+Writing resource: kpa_16_shape
+Writing resource: kpa_16_hit
+Writing resource: kpa_17_shape
+Writing resource: kpa_17_hit
+Writing resource: kpa_32_shape
+Writing resource: kpa_32_hit
+Writing resource: kpa_33_shape
+Writing resource: kpa_33_hit
+Writing resource: kpa_40_shape
+Writing resource: kpa_40_hit
+Writing resource: kpa_41_shape
+Writing resource: kpa_41_hit
+Writing resource: kpa_50_shape
+Writing resource: kpa_50_hit
+Writing resource: kpa_52_shape
+Writing resource: kpa_52_hit
+Writing resource: kpa_60_shape
+Writing resource: kpa_60_hit
+Writing resource: kpa_61_shape
+Writing resource: kpa_61_hit
+Writing resource: kpa_62_shape
+Writing resource: kpa_62_hit
+Writing resource: kpa_63_shape
+Writing resource: kpa_63_hit
+Writing resource: kpa_70_shape
+Writing resource: kpa_70_hit
+Writing resource: kpa_90_shape
+Writing resource: kpa_90_hit
+Writing resource: kpa_91_shape
+Writing resource: kpa_91_hit
+Writing resource: kpa_94_shape
+Writing resource: kpa_94_hit
+Writing resource: kpa_95_shape
+Writing resource: kpa_95_hit
+Writing resource: kpa_96_shape
+Writing resource: kpa_96_hit
+Writing resource: kpa_102_shape
+Writing resource: kpa_102_hit
+Writing resource: kpa_111_shape
+Writing resource: kpa_111_hit
+Writing resource: kpa_112_shape
+Writing resource: kpa_112_hit
+Writing resource: kpa_113_shape
+Writing resource: kpa_113_hit
+Writing resource: kpa_115_shape
+Writing resource: kpa_115_hit
+Writing resource: kpa_116_shape
+Writing resource: kpa_116_hit
+Writing resource: kpa_117_shape
+Writing resource: kpa_117_hit
+Writing resource: kpa_118_shape
+Writing resource: kpa_118_hit
+Writing resource: kpa_119_shape
+Writing resource: kpa_119_hit
+Writing resource: kpa_121_shape
+Writing resource: kpa_121_hit
+Writing resource: kpa_130_shape
+Writing resource: kpa_130_hit
+Writing resource: kpa_133_shape
+Writing resource: kpa_133_hit
+Writing resource: kpa_134_shape
+Writing resource: kpa_134_hit
+Writing resource: kpa_80_shape
+Writing resource: kpa_80_hit
+Writing resource: kpa_bt01_shape
+Writing resource: kpa_bt01_hit
+Writing resource: kpa_bt02_shape
+Writing resource: kpa_bt02_hit
+Writing resource: kpa_bt03_shape
+Writing resource: kpa_bt03_hit
+Writing resource: kpa_bt04_shape
+Writing resource: kpa_bt04_hit
+Writing resource: kpa_bt05_shape
+Writing resource: kpa_bt05_hit
+Writing resource: kpa_bt07_shape
+Writing resource: kpa_bt07_hit
+Writing resource: kpa_bt08_shape
+Writing resource: kpa_bt08_hit
+Writing resource: kpa_bt09_shape
+Writing resource: kpa_bt09_hit
+Writing resource: kpa_bt11_shape
+Writing resource: kpa_bt11_hit
+Writing resource: kpa_bt13_shape
+Writing resource: kpa_bt13_hit
+Writing resource: kpa_bt14_shape
+Writing resource: kpa_bt14_hit
+Writing resource: osr_00_shape
+Writing resource: osr_00_hit
+Writing resource: osr_01_shape
+Writing resource: osr_01_hit
+Writing resource: osr_02_shape
+Writing resource: osr_02_hit
+Writing resource: osr_03_shape
+Writing resource: osr_03_hit
+Writing resource: end_00_shape
+Writing resource: end_00_hit
+Writing resource: end_01_shape
+Writing resource: end_01_hit
+Writing resource: mgm_00_shape
+Writing resource: mgm_00_hit
+Writing resource: mgm_01_shape
+Writing resource: mgm_01_hit
+Writing resource: mgm_02_shape
+Writing resource: mgm_02_hit
+Writing resource: mgm_03_shape
+Writing resource: mgm_03_hit
+Writing resource: gv_01_shape
+Writing resource: gv_01_hit
+Writing resource: tst_01_shape
+Writing resource: tst_01_hit
+Writing resource: tst_02_shape
+Writing resource: tst_02_hit
+Writing resource: tst_03_shape
+Writing resource: tst_03_hit
+Writing resource: tst_04_shape
+Writing resource: tst_04_hit
+Writing resource: tst_10_shape
+Writing resource: tst_10_hit
+Writing resource: tst_11_shape
+Writing resource: tst_11_hit
+Writing resource: tst_12_shape
+Writing resource: tst_12_hit
+Writing resource: tst_13_shape
+Writing resource: tst_13_hit
+Writing resource: tst_20_shape
+Writing resource: tst_20_hit
+Writing resource: mac_tex
+Writing resource: tik_tex
+Writing resource: kgr_tex
+Writing resource: kmr_tex
+Writing resource: iwa_tex
+Writing resource: sbk_tex
+Writing resource: dro_tex
+Writing resource: isk_tex
+Writing resource: trd_tex
+Writing resource: nok_tex
+Writing resource: hos_tex
+Writing resource: kpa_tex
+Writing resource: osr_tex
+Writing resource: kkj_tex
+Writing resource: tst_tex
+Writing resource: jan_tex
+Writing resource: mim_tex
+Writing resource: obk_tex
+Writing resource: arn_tex
+Writing resource: dgb_tex
+Writing resource: kzn_tex
+Writing resource: flo_tex
+Writing resource: sam_tex
+Writing resource: pra_tex
+Writing resource: omo_tex
+Writing resource: end_tex
+Writing resource: mgm_tex
+Writing resource: gv__tex
+Writing resource: kmr_bg
+Writing resource: nok_bg
+Writing resource: sbk_bg
+Writing resource: sbk3_bg
+Writing resource: iwa_bg
+Writing resource: hos_bg
+Writing resource: arn_bg
+Writing resource: obk_bg
+Writing resource: omo_bg
+Writing resource: yos_bg
+Writing resource: jan_bg
+Writing resource: fla_bg
+Writing resource: flb_bg
+Writing resource: sra_bg
+Writing resource: yki_bg
+Writing resource: sam_bg
+Writing resource: kpa_bg
+Writing resource: title_bg
+Writing resource: title_data
+Writing resource: party_kurio
+Writing resource: party_kameki
+Writing resource: party_pinki
+Writing resource: party_pareta
+Writing resource: party_resa
+Writing resource: party_akari
+Writing resource: party_opuku
+Writing resource: party_pokopi
+Writing battle data...
+Wrote 00 Area KMR Part 1.bin to 4309A0
+Wrote 01 Area KMR Part 2.bin to 432828
+Wrote 02 Area KMR Part 3.bin to 435526
+Wrote 03 Area MAC.bin to 43B1D0
+Wrote 04 Area HOS.bin to 440680
+Wrote 05 Area NOK.bin to 442E96
+Wrote 06 Area TRD Part 1.bin to 446DBC
+Wrote 07 Area TRD Part 2.bin to 4494D2
+Wrote 08 Area TRD Part 3.bin to 44DA48
+Wrote 09 Area IWA.bin to 44DEA2
+Wrote 0A Area SBK.bin to 44F886
+Wrote 0B Area ISK Part 1.bin to 4512B2
+Wrote 0C Area ISK Part 2.bin to 453B5A
+Wrote 0D Area MIM.bin to 45589E
+Wrote 0E Area ARN.bin to 456E8A
+Wrote 0F Area DGB.bin to 45A264
+Wrote 10 Area OMO.bin to 45ACEC
+Wrote 11 Area OMO2.bin to 45F79C
+Wrote 12 Area OMO3.bin to 466904
+Wrote 13 Area KGR.bin to 46B298
+Wrote 14 Area JAN.bin to 46C46C
+Wrote 15 Area JAN2.bin to 46F400
+Wrote 16 Area KZN.bin to 47099E
+Wrote 17 Area KZN2.bin to 473DBA
+Wrote 18 Area FLO.bin to 478A74
+Wrote 19 Area FLO2.bin to 47DFA2
+Wrote 1A Area TIK.bin to 482A42
+Wrote 1B Area TIK2.bin to 487D08
+Wrote 1C Area TIK3.bin to 48A752
+Wrote 1D Area SAM.bin to 48C354
+Wrote 1E Area SAM2.bin to 49146A
+Wrote 1F Area PRA.bin to 493D4E
+Wrote 20 Area PRA2.bin to 497DAA
+Wrote 21 Area PRA3.bin to 499B36
+Wrote 22 Area KPA.bin to 49EEE4
+Wrote 23 Area KPA2.bin to 4A3432
+Wrote 24 Area KPA3.bin to 4AA044
+Wrote 25 Area KPA4.bin to 4AD888
+Wrote 26 Area KKJ.bin to 4B0298
+Wrote 27 Area DIG.bin to 4B0C6C
+Wrote 29 Area OMO2_1.bin to 4B46DA
+Wrote 2A Area OMO2_2.bin to 4B551A
+Wrote 2B Area OMO2_3.bin to 4B6390
+Wrote 2C Area OMO2_4.bin to 4B72A4
+Wrote 2D Area OMO2_5.bin to 4B751C
+Wrote 2E Area OMO2_6.bin to 4B800E
+Wrote Move_Hammer.bin to 7345A0
+Wrote Move_SpinSmash.bin to 737890
+Wrote Move_QuakeHammer.bin to 73AED0
+Wrote Move_D-DownPound.bin to 73D860
+Wrote Move_HammerCharge0.bin to 740040
+Wrote Move_HammerThrow.bin to 743360
+Wrote Move_MegaQuake.bin to 747690
+Wrote Move_HammerCharge1.bin to 74A4C0
+Wrote Move_HammerCharge2.bin to 74D890
+Wrote Move_AutoSmash.bin to 750BE0
+Wrote Move_PowerQuake.bin to 7532C0
+Wrote Move_PowerSmash.bin to 755E60
+Wrote Move_SuperSmash.bin to 7583C0
+Wrote Move_MegaSmash.bin to 75A950
+Wrote Move_ShrinkSmash.bin to 75CF50
+Wrote Move_ShellCrack.bin to 75F610
+Wrote Move_Jump.bin to 761CF0
+Wrote Move_Multibounce.bin to 765150
+Wrote Move_PowerBounce.bin to 768280
+Wrote Move_SleepStomp.bin to 76B2A0
+Wrote Move_DizzyStomp.bin to 76D260
+Wrote Move_JumpCharge0.bin to 76F220
+Wrote Move_JumpCharge1.bin to 770DE0
+Wrote Move_JumpCharge2.bin to 772A30
+Wrote Move_AutoJump.bin to 774650
+Wrote Move_AutoMultibounce.bin to 7766C0
+Wrote Move_PowerJump.bin to 7795F0
+Wrote Move_SuperJump.bin to 77B1C0
+Wrote Move_MegaJump.bin to 77CDC0
+Wrote Move_D-DownJump.bin to 77EA30
+Wrote Move_ShrinkStomp.bin to 780CB0
+Wrote Move_EarthquakeJump.bin to 782C30
+Wrote 00 Goombario.bin to 6F0B30
+Wrote 01 Kooper.bin to 6F58C8
+Wrote 02 Bombette.bin to 6FA758
+Wrote 03 Parakarry.bin to 6FF7C8
+Wrote 04 Goompa.bin to 703538
+Wrote 05 Watt.bin to 703AE8
+Wrote 06 Sushi.bin to 707C98
+Wrote 07 Lakilester.bin to 70BD08
+Wrote 08 Bow.bin to 710EE8
+Wrote 0A Twink.bin to 714CE8
+Patching sprite sheets...
+Writing sprite sheet 01 of E9...
+Wrote sprite sheet 01 to 19E6B60
+Writing sprite sheet 02 of E9...
+Wrote sprite sheet 02 to 19E7522
+Writing sprite sheet 03 of E9...
+Wrote sprite sheet 03 to 19E9734
+Writing sprite sheet 04 of E9...
+Wrote sprite sheet 04 to 19EAE9E
+Writing sprite sheet 05 of E9...
+Wrote sprite sheet 05 to 19EC426
+Writing sprite sheet 06 of E9...
+Wrote sprite sheet 06 to 19EDC50
+Writing sprite sheet 07 of E9...
+Wrote sprite sheet 07 to 19EEA22
+Writing sprite sheet 08 of E9...
+Wrote sprite sheet 08 to 19EFF52
+Writing sprite sheet 09 of E9...
+Wrote sprite sheet 09 to 19F1464
+Writing sprite sheet 0A of E9...
+Wrote sprite sheet 0A to 19F258A
+Writing sprite sheet 0B of E9...
+Wrote sprite sheet 0B to 19F51F6
+Writing sprite sheet 0C of E9...
+Wrote sprite sheet 0C to 19F717C
+Writing sprite sheet 0D of E9...
+Wrote sprite sheet 0D to 19F9EB6
+Writing sprite sheet 0E of E9...
+Wrote sprite sheet 0E to 19FC810
+Writing sprite sheet 0F of E9...
+Wrote sprite sheet 0F to 19FEA4E
+Writing sprite sheet 10 of E9...
+Wrote sprite sheet 10 to 1A0060E
+Writing sprite sheet 11 of E9...
+Wrote sprite sheet 11 to 1A0294A
+Writing sprite sheet 12 of E9...
+Wrote sprite sheet 12 to 1A0401E
+Writing sprite sheet 13 of E9...
+Wrote sprite sheet 13 to 1A05144
+Writing sprite sheet 14 of E9...
+Wrote sprite sheet 14 to 1A05F56
+Writing sprite sheet 15 of E9...
+Wrote sprite sheet 15 to 1A06B48
+Writing sprite sheet 16 of E9...
+Wrote sprite sheet 16 to 1A076FE
+Writing sprite sheet 17 of E9...
+Wrote sprite sheet 17 to 1A09BCE
+Writing sprite sheet 18 of E9...
+Wrote sprite sheet 18 to 1A0A7DA
+Writing sprite sheet 19 of E9...
+Wrote sprite sheet 19 to 1A0B27A
+Writing sprite sheet 1A of E9...
+Wrote sprite sheet 1A to 1A0B6D2
+Writing sprite sheet 1B of E9...
+Wrote sprite sheet 1B to 1A0BAE8
+Writing sprite sheet 1C of E9...
+Wrote sprite sheet 1C to 1A0BF1C
+Writing sprite sheet 1D of E9...
+Wrote sprite sheet 1D to 1A0C338
+Writing sprite sheet 1E of E9...
+Wrote sprite sheet 1E to 1A0CCA8
+Writing sprite sheet 1F of E9...
+Wrote sprite sheet 1F to 1A0D06A
+Writing sprite sheet 20 of E9...
+Wrote sprite sheet 20 to 1A0D426
+Writing sprite sheet 21 of E9...
+Wrote sprite sheet 21 to 1A0E97A
+Writing sprite sheet 22 of E9...
+Wrote sprite sheet 22 to 1A132D6
+Writing sprite sheet 23 of E9...
+Wrote sprite sheet 23 to 1A151C8
+Writing sprite sheet 24 of E9...
+Wrote sprite sheet 24 to 1A17CFC
+Writing sprite sheet 25 of E9...
+Wrote sprite sheet 25 to 1A19EC4
+Writing sprite sheet 26 of E9...
+Wrote sprite sheet 26 to 1A1BE48
+Writing sprite sheet 27 of E9...
+Wrote sprite sheet 27 to 1A1CF1E
+Writing sprite sheet 28 of E9...
+Wrote sprite sheet 28 to 1A1DCBA
+Writing sprite sheet 29 of E9...
+Wrote sprite sheet 29 to 1A1EBA4
+Writing sprite sheet 2A of E9...
+Wrote sprite sheet 2A to 1A21E80
+Writing sprite sheet 2B of E9...
+Wrote sprite sheet 2B to 1A24154
+Writing sprite sheet 2C of E9...
+Wrote sprite sheet 2C to 1A255DA
+Writing sprite sheet 2D of E9...
+Wrote sprite sheet 2D to 1A27718
+Writing sprite sheet 2E of E9...
+Wrote sprite sheet 2E to 1A282E4
+Writing sprite sheet 2F of E9...
+Wrote sprite sheet 2F to 1A28D6E
+Writing sprite sheet 30 of E9...
+Wrote sprite sheet 30 to 1A2B316
+Writing sprite sheet 31 of E9...
+Wrote sprite sheet 31 to 1A2D76C
+Writing sprite sheet 32 of E9...
+Wrote sprite sheet 32 to 1A2EA30
+Writing sprite sheet 33 of E9...
+Wrote sprite sheet 33 to 1A3130C
+Writing sprite sheet 34 of E9...
+Wrote sprite sheet 34 to 1A3308E
+Writing sprite sheet 35 of E9...
+Wrote sprite sheet 35 to 1A35136
+Writing sprite sheet 36 of E9...
+Wrote sprite sheet 36 to 1A35F0A
+Writing sprite sheet 37 of E9...
+Wrote sprite sheet 37 to 1A38AE4
+Writing sprite sheet 38 of E9...
+Wrote sprite sheet 38 to 1A3A4A4
+Writing sprite sheet 39 of E9...
+Wrote sprite sheet 39 to 1A3B77E
+Writing sprite sheet 3A of E9...
+Wrote sprite sheet 3A to 1A3F082
+Writing sprite sheet 3B of E9...
+Wrote sprite sheet 3B to 1A4170A
+Writing sprite sheet 3C of E9...
+Wrote sprite sheet 3C to 1A43CA8
+Writing sprite sheet 3D of E9...
+Wrote sprite sheet 3D to 1A4581A
+Writing sprite sheet 3E of E9...
+Wrote sprite sheet 3E to 1A48576
+Writing sprite sheet 3F of E9...
+Wrote sprite sheet 3F to 1A49E74
+Writing sprite sheet 40 of E9...
+Wrote sprite sheet 40 to 1A4C97A
+Writing sprite sheet 41 of E9...
+Wrote sprite sheet 41 to 1A4D1AC
+Writing sprite sheet 42 of E9...
+Wrote sprite sheet 42 to 1A4EB82
+Writing sprite sheet 43 of E9...
+Wrote sprite sheet 43 to 1A5228E
+Writing sprite sheet 44 of E9...
+Wrote sprite sheet 44 to 1A52DE6
+Writing sprite sheet 45 of E9...
+Wrote sprite sheet 45 to 1A55C7C
+Writing sprite sheet 46 of E9...
+Wrote sprite sheet 46 to 1A57EEA
+Writing sprite sheet 47 of E9...
+Wrote sprite sheet 47 to 1A594EA
+Writing sprite sheet 48 of E9...
+Wrote sprite sheet 48 to 1A618BE
+Writing sprite sheet 49 of E9...
+Wrote sprite sheet 49 to 1A62F48
+Writing sprite sheet 4A of E9...
+Wrote sprite sheet 4A to 1A653EE
+Writing sprite sheet 4B of E9...
+Wrote sprite sheet 4B to 1A67538
+Writing sprite sheet 4C of E9...
+Wrote sprite sheet 4C to 1A6B26C
+Writing sprite sheet 4D of E9...
+Wrote sprite sheet 4D to 1A6C1AA
+Writing sprite sheet 4E of E9...
+Wrote sprite sheet 4E to 1A6DB32
+Writing sprite sheet 4F of E9...
+Wrote sprite sheet 4F to 1A6FB46
+Writing sprite sheet 50 of E9...
+Wrote sprite sheet 50 to 1A73A5A
+Writing sprite sheet 51 of E9...
+Wrote sprite sheet 51 to 1A77434
+Writing sprite sheet 52 of E9...
+Wrote sprite sheet 52 to 1A782DC
+Writing sprite sheet 53 of E9...
+Wrote sprite sheet 53 to 1A7C08E
+Writing sprite sheet 54 of E9...
+Wrote sprite sheet 54 to 1A7D772
+Writing sprite sheet 55 of E9...
+Wrote sprite sheet 55 to 1A7D8AA
+Writing sprite sheet 56 of E9...
+Wrote sprite sheet 56 to 1A81C7E
+Writing sprite sheet 57 of E9...
+Wrote sprite sheet 57 to 1A83E40
+Writing sprite sheet 58 of E9...
+Wrote sprite sheet 58 to 1A860DA
+Writing sprite sheet 59 of E9...
+Wrote sprite sheet 59 to 1A8A67C
+Writing sprite sheet 5A of E9...
+Wrote sprite sheet 5A to 1A8E484
+Writing sprite sheet 5B of E9...
+Wrote sprite sheet 5B to 1A92468
+Writing sprite sheet 5C of E9...
+Wrote sprite sheet 5C to 1A92748
+Writing sprite sheet 5D of E9...
+Wrote sprite sheet 5D to 1A92A3E
+Writing sprite sheet 5E of E9...
+Wrote sprite sheet 5E to 1A92C62
+Writing sprite sheet 5F of E9...
+Wrote sprite sheet 5F to 1A92FB6
+Writing sprite sheet 60 of E9...
+Wrote sprite sheet 60 to 1A9320C
+Writing sprite sheet 61 of E9...
+Wrote sprite sheet 61 to 1A9727E
+Writing sprite sheet 62 of E9...
+Wrote sprite sheet 62 to 1A99ED8
+Writing sprite sheet 63 of E9...
+Wrote sprite sheet 63 to 1A9BF72
+Writing sprite sheet 64 of E9...
+Wrote sprite sheet 64 to 1A9E3F6
+Writing sprite sheet 65 of E9...
+Wrote sprite sheet 65 to 1A9EA3E
+Writing sprite sheet 66 of E9...
+Wrote sprite sheet 66 to 1A9F3A0
+Writing sprite sheet 67 of E9...
+Wrote sprite sheet 67 to 1AA4FE8
+Writing sprite sheet 68 of E9...
+Wrote sprite sheet 68 to 1AAB73C
+Writing sprite sheet 69 of E9...
+Wrote sprite sheet 69 to 1AAFCC0
+Writing sprite sheet 6A of E9...
+Wrote sprite sheet 6A to 1AB041C
+Writing sprite sheet 6B of E9...
+Wrote sprite sheet 6B to 1AB8154
+Writing sprite sheet 6C of E9...
+Wrote sprite sheet 6C to 1ABF1A2
+Writing sprite sheet 6D of E9...
+Wrote sprite sheet 6D to 1AC15A0
+Writing sprite sheet 6E of E9...
+Wrote sprite sheet 6E to 1AC977E
+Writing sprite sheet 6F of E9...
+Wrote sprite sheet 6F to 1ACBAF6
+Writing sprite sheet 70 of E9...
+Wrote sprite sheet 70 to 1ACD372
+Writing sprite sheet 71 of E9...
+Wrote sprite sheet 71 to 1ACE120
+Writing sprite sheet 72 of E9...
+Wrote sprite sheet 72 to 1ACE5DA
+Writing sprite sheet 73 of E9...
+Wrote sprite sheet 73 to 1ACF8BC
+Writing sprite sheet 74 of E9...
+Wrote sprite sheet 74 to 1ACFD72
+Writing sprite sheet 75 of E9...
+Wrote sprite sheet 75 to 1AD0216
+Writing sprite sheet 76 of E9...
+Wrote sprite sheet 76 to 1AD02C6
+Writing sprite sheet 77 of E9...
+Wrote sprite sheet 77 to 1AD1EC2
+Writing sprite sheet 78 of E9...
+Wrote sprite sheet 78 to 1AD2124
+Writing sprite sheet 79 of E9...
+Wrote sprite sheet 79 to 1AD316C
+Writing sprite sheet 7A of E9...
+Wrote sprite sheet 7A to 1AD75E0
+Writing sprite sheet 7B of E9...
+Wrote sprite sheet 7B to 1AD7D14
+Writing sprite sheet 7C of E9...
+Wrote sprite sheet 7C to 1ADA7A6
+Writing sprite sheet 7D of E9...
+Wrote sprite sheet 7D to 1ADF7B8
+Writing sprite sheet 7E of E9...
+Wrote sprite sheet 7E to 1AE04C4
+Writing sprite sheet 7F of E9...
+Wrote sprite sheet 7F to 1AE3F36
+Writing sprite sheet 80 of E9...
+Wrote sprite sheet 80 to 1AE8B96
+Writing sprite sheet 81 of E9...
+Wrote sprite sheet 81 to 1AF1BEE
+Writing sprite sheet 82 of E9...
+Wrote sprite sheet 82 to 1AF9C4E
+Writing sprite sheet 83 of E9...
+Wrote sprite sheet 83 to 1AFC812
+Writing sprite sheet 84 of E9...
+Wrote sprite sheet 84 to 1AFD6F8
+Writing sprite sheet 85 of E9...
+Wrote sprite sheet 85 to 1AFE432
+Writing sprite sheet 86 of E9...
+Wrote sprite sheet 86 to 1AFEC9E
+Writing sprite sheet 87 of E9...
+Wrote sprite sheet 87 to 1AFF1C0
+Writing sprite sheet 88 of E9...
+Wrote sprite sheet 88 to 1AFF9FC
+Writing sprite sheet 89 of E9...
+Wrote sprite sheet 89 to 1B0019E
+Writing sprite sheet 8A of E9...
+Wrote sprite sheet 8A to 1B00C8C
+Writing sprite sheet 8B of E9...
+Wrote sprite sheet 8B to 1B01640
+Writing sprite sheet 8C of E9...
+Wrote sprite sheet 8C to 1B01FFC
+Writing sprite sheet 8D of E9...
+Wrote sprite sheet 8D to 1B029C0
+Writing sprite sheet 8E of E9...
+Wrote sprite sheet 8E to 1B03C88
+Writing sprite sheet 8F of E9...
+Wrote sprite sheet 8F to 1B04C38
+Writing sprite sheet 90 of E9...
+Wrote sprite sheet 90 to 1B063FC
+Writing sprite sheet 91 of E9...
+Wrote sprite sheet 91 to 1B08212
+Writing sprite sheet 92 of E9...
+Wrote sprite sheet 92 to 1B08916
+Writing sprite sheet 93 of E9...
+Wrote sprite sheet 93 to 1B094A4
+Writing sprite sheet 94 of E9...
+Wrote sprite sheet 94 to 1B09A14
+Writing sprite sheet 95 of E9...
+Wrote sprite sheet 95 to 1B0A07C
+Writing sprite sheet 96 of E9...
+Wrote sprite sheet 96 to 1B0BA7C
+Writing sprite sheet 97 of E9...
+Wrote sprite sheet 97 to 1B0DB80
+Writing sprite sheet 98 of E9...
+Wrote sprite sheet 98 to 1B0F828
+Writing sprite sheet 99 of E9...
+Wrote sprite sheet 99 to 1B10396
+Writing sprite sheet 9A of E9...
+Wrote sprite sheet 9A to 1B131EC
+Writing sprite sheet 9B of E9...
+Wrote sprite sheet 9B to 1B13EDC
+Writing sprite sheet 9C of E9...
+Wrote sprite sheet 9C to 1B145EA
+Writing sprite sheet 9D of E9...
+Wrote sprite sheet 9D to 1B1608C
+Writing sprite sheet 9E of E9...
+Wrote sprite sheet 9E to 1B16D9C
+Writing sprite sheet 9F of E9...
+Wrote sprite sheet 9F to 1B18614
+Writing sprite sheet A0 of E9...
+Wrote sprite sheet A0 to 1B189CE
+Writing sprite sheet A1 of E9...
+Wrote sprite sheet A1 to 1B194B8
+Writing sprite sheet A2 of E9...
+Wrote sprite sheet A2 to 1B19A3E
+Writing sprite sheet A3 of E9...
+Wrote sprite sheet A3 to 1B1E890
+Writing sprite sheet A4 of E9...
+Wrote sprite sheet A4 to 1B1FEB0
+Writing sprite sheet A5 of E9...
+Wrote sprite sheet A5 to 1B21F90
+Writing sprite sheet A6 of E9...
+Wrote sprite sheet A6 to 1B231EE
+Writing sprite sheet A7 of E9...
+Wrote sprite sheet A7 to 1B24F26
+Writing sprite sheet A8 of E9...
+Wrote sprite sheet A8 to 1B26758
+Writing sprite sheet A9 of E9...
+Wrote sprite sheet A9 to 1B27172
+Writing sprite sheet AA of E9...
+Wrote sprite sheet AA to 1B27EBA
+Writing sprite sheet AB of E9...
+Wrote sprite sheet AB to 1B29392
+Writing sprite sheet AC of E9...
+Wrote sprite sheet AC to 1B2A256
+Writing sprite sheet AD of E9...
+Wrote sprite sheet AD to 1B2ADBA
+Writing sprite sheet AE of E9...
+Wrote sprite sheet AE to 1B2B7E6
+Writing sprite sheet AF of E9...
+Wrote sprite sheet AF to 1B2C484
+Writing sprite sheet B0 of E9...
+Wrote sprite sheet B0 to 1B2E426
+Writing sprite sheet B1 of E9...
+Wrote sprite sheet B1 to 1B2F9CA
+Writing sprite sheet B2 of E9...
+Wrote sprite sheet B2 to 1B30A38
+Writing sprite sheet B3 of E9...
+Wrote sprite sheet B3 to 1B312B6
+Writing sprite sheet B4 of E9...
+Wrote sprite sheet B4 to 1B31588
+Writing sprite sheet B5 of E9...
+Wrote sprite sheet B5 to 1B31DFA
+Writing sprite sheet B6 of E9...
+Wrote sprite sheet B6 to 1B32DA8
+Writing sprite sheet B7 of E9...
+Wrote sprite sheet B7 to 1B3507E
+Writing sprite sheet B8 of E9...
+Wrote sprite sheet B8 to 1B363B4
+Writing sprite sheet B9 of E9...
+Wrote sprite sheet B9 to 1B36BEC
+Writing sprite sheet BA of E9...
+Wrote sprite sheet BA to 1B37116
+Writing sprite sheet BB of E9...
+Wrote sprite sheet BB to 1B38D4E
+Writing sprite sheet BC of E9...
+Wrote sprite sheet BC to 1B39380
+Writing sprite sheet BD of E9...
+Wrote sprite sheet BD to 1B39948
+Writing sprite sheet BE of E9...
+Wrote sprite sheet BE to 1B3A1B0
+Writing sprite sheet BF of E9...
+Wrote sprite sheet BF to 1B3B8B8
+Writing sprite sheet C0 of E9...
+Wrote sprite sheet C0 to 1B3C886
+Writing sprite sheet C1 of E9...
+Wrote sprite sheet C1 to 1B3CF42
+Writing sprite sheet C2 of E9...
+Wrote sprite sheet C2 to 1B45BE8
+Writing sprite sheet C3 of E9...
+Wrote sprite sheet C3 to 1B489E8
+Writing sprite sheet C4 of E9...
+Wrote sprite sheet C4 to 1B4A44A
+Writing sprite sheet C5 of E9...
+Wrote sprite sheet C5 to 1B4C2B4
+Writing sprite sheet C6 of E9...
+Wrote sprite sheet C6 to 1B4D1CC
+Writing sprite sheet C7 of E9...
+Wrote sprite sheet C7 to 1B4DFBA
+Writing sprite sheet C8 of E9...
+Wrote sprite sheet C8 to 1B50676
+Writing sprite sheet C9 of E9...
+Wrote sprite sheet C9 to 1B543D0
+Writing sprite sheet CA of E9...
+Wrote sprite sheet CA to 1B56500
+Writing sprite sheet CB of E9...
+Wrote sprite sheet CB to 1B57DEA
+Writing sprite sheet CC of E9...
+Wrote sprite sheet CC to 1B58EDE
+Writing sprite sheet CD of E9...
+Wrote sprite sheet CD to 1B5AB74
+Writing sprite sheet CE of E9...
+Wrote sprite sheet CE to 1B5AF84
+Writing sprite sheet CF of E9...
+Wrote sprite sheet CF to 1B5CA6A
+Writing sprite sheet D0 of E9...
+Wrote sprite sheet D0 to 1B5E764
+Writing sprite sheet D1 of E9...
+Wrote sprite sheet D1 to 1B5F50E
+Writing sprite sheet D2 of E9...
+Wrote sprite sheet D2 to 1B6098C
+Writing sprite sheet D3 of E9...
+Wrote sprite sheet D3 to 1B618D8
+Writing sprite sheet D4 of E9...
+Wrote sprite sheet D4 to 1B61AFC
+Writing sprite sheet D5 of E9...
+Wrote sprite sheet D5 to 1B61F36
+Writing sprite sheet D6 of E9...
+Wrote sprite sheet D6 to 1B62318
+Writing sprite sheet D7 of E9...
+Wrote sprite sheet D7 to 1B655EA
+Writing sprite sheet D8 of E9...
+Wrote sprite sheet D8 to 1B6832A
+Writing sprite sheet D9 of E9...
+Wrote sprite sheet D9 to 1B69D42
+Writing sprite sheet DA of E9...
+Wrote sprite sheet DA to 1B6B0CA
+Writing sprite sheet DB of E9...
+Wrote sprite sheet DB to 1B6D57A
+Writing sprite sheet DC of E9...
+Wrote sprite sheet DC to 1B6E7C6
+Writing sprite sheet DD of E9...
+Wrote sprite sheet DD to 1B6FA26
+Writing sprite sheet DE of E9...
+Wrote sprite sheet DE to 1B706AA
+Writing sprite sheet DF of E9...
+Wrote sprite sheet DF to 1B72CEE
+Writing sprite sheet E0 of E9...
+Wrote sprite sheet E0 to 1B74D4E
+Writing sprite sheet E1 of E9...
+Wrote sprite sheet E1 to 1B7589A
+Writing sprite sheet E2 of E9...
+Wrote sprite sheet E2 to 1B75D7A
+Writing sprite sheet E3 of E9...
+Wrote sprite sheet E3 to 1B76864
+Writing sprite sheet E4 of E9...
+Wrote sprite sheet E4 to 1B76E56
+Writing sprite sheet E5 of E9...
+Wrote sprite sheet E5 to 1B7796E
+Writing sprite sheet E6 of E9...
+Wrote sprite sheet E6 to 1B7AA1A
+Writing sprite sheet E7 of E9...
+Wrote sprite sheet E7 to 1B7BCDC
+Writing sprite sheet E8 of E9...
+Wrote sprite sheet E8 to 1B7DBF4
+Writing sprite sheet E9 of E9...
+Wrote sprite sheet E9 to 1B7DDC4
+Writing audio data...
+Writing 00_117.bgm to F00E20
+Writing 01_118.bgm to F027C0
+Writing 02_191.bgm to F03DA0
+Writing 03_120.bgm to F04A50
+Writing 04_119.bgm to F07A20
+Writing 05_121.bgm to F093A0
+Writing 06_192.bgm to F09C60
+Writing 07_193.bgm to F0ABB0
+Writing 08_194.bgm to F0C140
+Writing 09_195.bgm to F0E520
+Writing 0A_196.bgm to F10380
+Writing 0B_122.bgm to F11730
+Writing 0C_328.bgm to F11D20
+Writing 0D_184.bgm to F12980
+Writing 0E_187.bgm to F14280
+Writing 0F_306.bgm to F165A0
+Writing 10_135.bgm to F175E0
+Writing 11_134.bgm to F17830
+Writing 12_224.bgm to F179D0
+Writing 13_814.bgm to F17BD0
+Writing 14_124.bgm to F18FA0
+Writing 15_123.bgm to F19A30
+Writing 16_186.bgm to F1A220
+Writing 17_125.bgm to F1AD50
+Writing 18_126.bgm to F1B230
+Writing 19_127.bgm to F1CE70
+Writing 1A_128.bgm to F1E250
+Writing 1B_187.bgm to F1F940
+Writing 1C_129.bgm to F21650
+Writing 1D_188.bgm to F21DE0
+Writing 1E_189.bgm to F23060
+Writing 1F_190.bgm to F24060
+Writing 20_309.bgm to F24E70
+Writing 21_307.bgm to F258A0
+Writing 22_308.bgm to F268C0
+Writing 23_112.bgm to F27EA0
+Writing 24_108.bgm to F28480
+Writing 25_198.bgm to F29480
+Writing 26_210.bgm to F2A120
+Writing 27_311.bgm to F2E790
+Writing 28_312.bgm to F2F5F0
+Writing 29_303.bgm to F30BF0
+Writing 2A_305.bgm to F31F10
+Writing 2B_304.bgm to F32880
+Writing 2C_220.bgm to F336C0
+Writing 2D_301.bgm to F34100
+Writing 2E_302.bgm to F34570
+Writing 2F_104.bgm to F35B40
+Writing 30_103.bgm to F36530
+Writing 31_105.bgm to F36CF0
+Writing 32_106.bgm to F38040
+Writing 33_107.bgm to F38BD0
+Writing 34_110.bgm to F397C0
+Writing 35_111.bgm to F3A730
+Writing 36_827.bgm to F3AAB0
+Writing 37_202.bgm to F3B580
+Writing 38_109.bgm to F3C790
+Writing 39_113.bgm to F3D320
+Writing 3A_114.bgm to F3E790
+Writing 3B_141.bgm to F3FA40
+Writing 3C_203.bgm to F41560
+Writing 3D_115.bgm to F43590
+Writing 3E_116.bgm to F45B60
+Writing 3F_838.bgm to F46C40
+Writing 40_205.bgm to F47B00
+Writing 41_291.bgm to F48470
+Writing 42_144.bgm to F48A70
+Writing 43_145.bgm to F4AEE0
+Writing 44_142.bgm to F4C260
+Writing 45_143.bgm to F4ECF0
+Writing 46_148.bgm to F51060
+Writing 47_146.bgm to F52B80
+Writing 48_147.bgm to F562E0
+Writing 49_139.bgm to F59530
+Writing 4A_149.bgm to F59910
+Writing 4B_137.bgm to F5B650
+Writing 4C_138.bgm to F5CF30
+Writing 4D_150.bgm to F5E5A0
+Writing 4E_151.bgm to F5FB60
+Writing 4F_208.bgm to F61D60
+Writing 50_177.bgm to F634B0
+Writing 51_178.bgm to F64880
+Writing 52_209.bgm to F65310
+Writing 53_207.bgm to F66190
+Writing 54_179.bgm to F66CF0
+Writing 55_178.bgm to F671D0
+Writing 56_154.bgm to F685E0
+Writing 57_155.bgm to F69CA0
+Writing 58_157.bgm to F6A6B0
+Writing 59_156.bgm to F6C8D0
+Writing 5A_169.bgm to F6D530
+Writing 5B_170.bgm to F6F4A0
+Writing 5C_153.bgm to F739F0
+Writing 5D_185.bgm to F75850
+Writing 5E_167.bgm to F76020
+Writing 5F_161.bgm to F77860
+Writing 60_162.bgm to F77CE0
+Writing 61_158.bgm to F78C60
+Writing 62_159.bgm to F796D0
+Writing 63_160.bgm to F7A720
+Writing 64_163.bgm to F7B0A0
+Writing 65_164.bgm to F7B3F0
+Writing 66_166.bgm to F7C500
+Writing 67_152.bgm to F7CDE0
+Writing 68_165.bgm to F7E260
+Writing 69_175.bgm to F7E7F0
+Writing 6A_176.bgm to F7F480
+Writing 6B_174.bgm to F80890
+Writing 6C_181.bgm to F818C0
+Writing 6D_183.bgm to F82AC0
+Writing 6E_001.bgm to F83360
+Writing 6F_168.bgm to F84420
+Writing 70_171.bgm to F85BF0
+Writing 71_172.bgm to F86740
+Writing 72_182.bgm to F87660
+Writing 73_199.bgm to F87C70
+Writing 74_136.bgm to F89190
+Writing 75_311.bgm to F89BD0
+Writing 76_310.bgm to F8B150
+Writing 77_313.bgm to F8BE80
+Writing 78_130.bgm to F8C3F0
+Writing 79_132.bgm to F8C9C0
+Writing 7A_130.bgm to F8D770
+Writing 7B_314.bgm to F8DA40
+Writing 7C_323.bgm to F90EE0
+Writing 7D_315.bgm to F930B0
+Writing 7E_322.bgm to F95B70
+Writing 7F_316.bgm to F968E0
+Writing 80_319.bgm to F98B80
+Writing 81_318.bgm to F995F0
+Writing 82_320.bgm to F9BE90
+Writing 83_321.bgm to F9DA10
+Writing 84_317.bgm to F9DCF0
+Writing 85_327.bgm to F9F590
+Writing 86_102.bgm to FA0090
+Writing 87_101.bgm to FA0F00
+Writing 88_324.bgm to FA42C0
+Writing 89_325.bgm to FA8C50
+Writing 8A_326.bgm to FAC4F0
+Writing 8B_221.bgm to FAD2E0
+Writing 8C_222.bgm to FAD870
+Writing 8D_223.bgm to FADF50
+Writing 8E_226.bgm to FAE4D0
+Writing 8F_DAT1.sef to FAEEC0
+Writing 90_PS01.bk to FB3F00
+Writing 91_PS02.bk to FE8AE0
+Writing 92_PS03.bk to 100D2E0
+Writing 93_PS04.bk to 1023AD0
+Writing 94_PS05.bk to 103B6F0
+Writing 95_PS11.bk to 1063B60
+Writing 96_GM01.bk to 1084450
+Writing 97_GM02.bk to 10AEA10
+Writing 98_GM03.bk to 10FD100
+Writing 99_GM04.bk to 113FB20
+Writing 9A_GM05.bk to 11775E0
+Writing 9B_GM06.bk to 11D0160
+Writing 9C_GM07.bk to 1224B90
+Writing 9D_GM08.bk to 1290DE0
+Writing 9E_GM09.bk to 12D1070
+Writing 9F_GM10.bk to 130FC10
+Writing A0_GM11.bk to 133A250
+Writing A1_SPC0.bk to 1350CC0
+Writing A2_SPC1.bk to 1353440
+Writing A3_SPC2.bk to 1358360
+Writing A4_SPC3.bk to 135B210
+Writing A5_REC1.bk to 136C030
+Writing A6_STG5.bk to 1382CB0
+Writing A7_STG8.bk to 13A0350
+Writing A8_CHO1.bk to 13A5190
+Writing A9_SYS0.bk to 13A6080
+Writing AA_SYS1.bk to 13B0980
+Writing AB_SYS2.bk to 13C2780
+Writing AC_MAR0.bk to 13D14B0
+Writing AD_MAR1.bk to 13DE170
+Writing AE_ENV0.bk to 13F1B70
+Writing AF_PAR0.bk to 14277B0
+Writing B0_PAR1.bk to 1449DB0
+Writing B1_PAR2.bk to 1470210
+Writing B2_ETC0.bk to 14732D0
+Writing B3_ETC1.bk to 148A160
+Writing B4_ETC2.bk to 14A1CC0
+Writing B5_ENE0.bk to 14B0700
+Writing B6_ENE1.bk to 14BDC10
+Writing B7_EVT0.bk to 14D7E60
+Writing B8_EVT1.bk to 14F07F0
+Writing B9_EVT2.bk to 1521D10
+Writing BA_EVT3.bk to 154B440
+Writing BB_EVT4.bk to 15621D0
+Writing BC_EVT5.bk to 157F730
+Writing BD_EVT6.bk to 15B94D0
+Writing BE_EVT7.bk to 15DA930
+Writing BF_EVT8.bk to 15FE200
+Writing C0_MOB0.bk to 1625900
+Writing C1_PEA0.bk to 1638A90
+Writing C2_MAR2.bk to 164CEE0
+Writing C3_MAR3.bk to 1666220
+Writing C4_MAR4.bk to 1683A20
+Writing C5_BTL0.bk to 16A4120
+Writing C6_BTL1.bk to 16C6AB0
+Writing C7_BTL2.bk to 1708480
+Writing C8_BTL3.bk to 1731090
+Writing C9_BT20.bk to 173E480
+Writing CA_BT21.bk to 1755020
+Writing CB_BT22.bk to 1780250
+Writing CC_BT23.bk to 1799B10
+Writing CD_BT24.bk to 17B5950
+Writing CE_BT25.bk to 17D0AF0
+Writing CF_BT26.bk to 17EB2A0
+Writing D0_BT27.bk to 180CE40
+Writing D1_BT28.bk to 18464B0
+Writing D2_BT29.bk to 1861CE0
+Writing D3_BT2A.bk to 18744D0
+Writing D4_BT2B.bk to 1882150
+Writing D5_BT2C.bk to 189E490
+Writing D6_BT2D.bk to 18CFDA0
+Writing D7_PHR1.bk to 18D3920
+Writing D8_ENV1.bk to 18EA240
+Writing D9_SET1.per to 1937C10
+Writing DA_SET1.prg to 1937F80
+Writing DB_501.mseq to 1937FD0
+Writing DC_502.mseq to 1938510
+Writing DD_503.mseq to 19393F0
+Writing DE_504.mseq to 193A000
+Writing DF_505.mseq to 193AC40
+Writing E0_506.mseq to 193B7B0
+Writing E1_507.mseq to 193C320
+Writing E2_508.mseq to 193CF00
+Writing E3_509.mseq to 193DF40
+Writing E4_510.mseq to 193E760
+Writing E5_511.mseq to 193F330
+Writing E6_512.mseq to 193FB40
+Writing E7_513.mseq to 19402E0
+Writing E8_521.mseq to 1940760
+Writing E9_522.mseq to 1941150
+Writing EA_523.mseq to 1941A10
+Writing EB_521.mseq to 1942230
+Calculating new CRC values...
+Wrote new CRCs to ROM (D2A8F386 5DE271F4)
+Empty region from 0006B450 to 0006EAC0 (3670 bytes)
+Empty region from 00073DA0 to 00073E10 (70 bytes)
+Empty region from 00073E2C to 00074EA0 (1074 bytes)
+Empty region from 027A8DAE to 027FEE22 (56074 bytes)
+Empty region from 004B825C to 00543570 (8B314 bytes)
+Empty region from 005573E0 to 006F0B30 (199750 bytes)
+Empty region from 00786F70 to 00789E60 (2EF0 bytes)
+Empty region from 00715848 to 00715850 (8 bytes)
+Empty region from 01B7DF6C to 01B82208 (429C bytes)
+Done editing C:\Users\karen\Desktop\Starrod 0.1.13\mod\image\out\Paper Mario.z64
+Mod compilation took 433.09 seconds
+Sun Oct 06 11:02:41 EDT 2019

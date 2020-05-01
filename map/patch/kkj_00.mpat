@@ -1,0 +1,50 @@
+@ $Script_80241E64
+  Call     SetNpcAnimation 	( 00000001 00830001 )
+  Call     SetNpcAnimation 	( 00000000 00820004 )
+  Wait     0000000A 
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00830004 00830001 00000010 00000029 ) % Mario, you're looking well! Please enjoy the party ...
+  Return
+  End
+  
+@ $Script_80241EF8
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00830304 00830301 00000000 0000002B ) % Hey...urp...Mario! I hope you brought an appetite! ...
+  Return
+  End
+  
+@ $Script_80241F28
+  Call     SetNpcAnimation 	( 00000004 00840101 )
+  Call     SetNpcAnimation 	( 00000005 00840201 )
+  Wait     0000000A 
+  Wait     0000000A
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00840104 00840101 00000010 0000002C ) % I think Princess Peach has been looking forward to ...
+  Return
+  End
+
+  
+@ $Script_80241F8C
+  Call     EnableNpcAI 	( 00000004 .False )
+  Call     SetNpcAnimation 	( 00000005 00840201 )
+  Call     SetNpcAnimation 	( 00000004 00840101 )
+  Wait     0000000A
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00840204 00840201 00000010 0000002D ) % Oh! Welcome, Mario! The last party was lovely, was ...
+  Call     EnableNpcAI 	( 00000004 .True )
+  Return
+  End
+
+@ $Script_80242018
+  Call     SetNpcAnimation 	( 00000007 009B0101 )
+  Call     SetNpcAnimation 	( 00000006 00A90001 )
+  Wait     0000000A 
+  Call     $GetFileName()
+  Call     SetMessageString ($CopiedFileName 00000000)
+  Call     SayMessage0 	( .Npc:Self 00A90004 00A90001 00000010 00000027 ) % Ah! Salutations, Mario!  Do you know Frost T. here ...
+  Return
+  End
